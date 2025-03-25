@@ -1,0 +1,1 @@
+{"access_token":"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","token_type":"bearer","scope":"read:org,user:email"}

@@ -1,0 +1,18 @@
+{
+    "payment_patterns": [
+        "paypal\\.com",
+        "stripe\\.com",
+        "creditcard",
+        "payment",
+        "checkout"
+    ],
+    "adware_patterns": [
+        "ads\\.",
+        "tracking\\.",
+        "analytics\\.",
+        "doubleclick\\.net",
+        "googlesyndication\\.com"
+    ],
+    "whitelist": [],
+    "blacklist": []
+}
