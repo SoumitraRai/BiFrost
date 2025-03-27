@@ -1,0 +1,6 @@
+mitmproxy>=9.0.1  # Handles HTTP/HTTPS interception
+asyncio  # Python's async networking
+logging  # Built-in logging module
+json  # JSON handling (built-in, but explicitly mentioned)
+os  # Built-in module for file handling
+sys  # System-specific parameters
