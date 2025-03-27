@@ -90,9 +90,8 @@ In a world where digital payments are ubiquitous, financial security is more cru
 #### Clone & Install Dependencies
 ```bash
 git clone https://github.com/your-username/bifrost.git
-cd bifrost/backend
+cd bifrost/ProxyVPN
 pip install -r requirements.txt
-pip install mitmproxy
 ```
 
 ### Frontend (Electron + React Native)
