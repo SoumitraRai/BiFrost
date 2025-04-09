@@ -1,0 +1,851 @@
+2025-04-01 16:47:31,616 - INFO: HTTP(S) proxy listening at *:8080.
+2025-04-01 16:48:45,866 - INFO: client connect
+2025-04-01 16:48:45,889 - INFO: client connect
+2025-04-01 16:48:46,121 - INFO: client connect
+2025-04-01 16:48:46,150 - INFO: client connect
+2025-04-01 16:48:51,292 - INFO: server connect main.vscode-cdn.net:443 (13.107.246.58:443)
+2025-04-01 16:48:51,321 - INFO: server connect main.vscode-cdn.net:443 (13.107.246.58:443)
+2025-04-01 16:48:51,439 - INFO: server connect main.vscode-cdn.net:443 (13.107.246.58:443)
+2025-04-01 16:48:51,443 - INFO: server connect main.vscode-cdn.net:443 (13.107.246.58:443)
+2025-04-01 16:48:57,598 - INFO: server disconnect main.vscode-cdn.net:443 (13.107.246.58:443)
+2025-04-01 16:49:26,230 - INFO: client connect
+2025-04-01 16:49:26,489 - INFO: client connect
+2025-04-01 16:49:35,921 - INFO: client connect
+2025-04-01 16:49:36,188 - INFO: client connect
+2025-04-01 16:49:47,299 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 16:49:47,310 - INFO: client disconnect
+2025-04-01 16:49:47,553 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 16:49:47,558 - INFO: client disconnect
+2025-04-01 16:49:52,544 - INFO: client connect
+2025-04-01 16:49:52,787 - INFO: client connect
+2025-04-01 16:49:53,005 - INFO: server connect alive.github.com:443 (140.82.112.26:443)
+2025-04-01 16:49:53,134 - INFO: server connect alive.github.com:443 (140.82.112.26:443)
+2025-04-01 16:49:53,368 - INFO: Request: {
+  "method": "GET",
+  "url": "https://alive.github.com/_sockets/u/118096135/ws?session=eyJ2IjoiVjMiLCJ1IjoxMTgwOTYxMzUsInMiOjE2MjkwMzEyODgsImMiOjI0Mjc4NDk3MzUsInQiOjE3NDM1MDQ0MDl9--bbb169253efaa93e58ae82a8bdd043d3fc08af2bfc5a287b6f8cd02b798cd91b&shared=true&p=1261793593_1743504416.2",
+  "headers": {
+    "Host": "alive.github.com",
+    "Connection": "Upgrade",
+    "Pragma": "no-cache",
+    "Cache-Control": "no-cache",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "Upgrade": "websocket",
+    "Origin": "https://github.com",
+    "Sec-WebSocket-Version": "13",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "_octo=GH1.1.53029652.1742896787; logged_in=yes; dotcom_user=SoumitraRai; GHCC=Required:1-Analytics:0-SocialMedia:0-Advertising:0; cpu_bucket=xlg; preferred_color_mode=dark; color_mode=%7B%22color_mode%22%3A%22auto%22%2C%22light_theme%22%3A%7B%22name%22%3A%22light%22%2C%22color_mode%22%3A%22light%22%7D%2C%22dark_theme%22%3A%7B%22name%22%3A%22dark%22%2C%22color_mode%22%3A%22dark%22%7D%7D; tz=Asia%2FCalcutta",
+    "Sec-WebSocket-Key": "ZxBBKbcarFf7A2XlqQgK2Q==",
+    "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+  },
+  "body": ""
+}
+2025-04-01 16:49:54,118 - INFO: Response: {
+  "status_code": 101,
+  "url": "https://alive.github.com/_sockets/u/118096135/ws?session=eyJ2IjoiVjMiLCJ1IjoxMTgwOTYxMzUsInMiOjE2MjkwMzEyODgsImMiOjI0Mjc4NDk3MzUsInQiOjE3NDM1MDQ0MDl9--bbb169253efaa93e58ae82a8bdd043d3fc08af2bfc5a287b6f8cd02b798cd91b&shared=true&p=1261793593_1743504416.2",
+  "headers": {
+    "connection": "Upgrade",
+    "Content-Security-Policy": "default-src 'none'; form-action 'none'; frame-ancestors 'none'; sandbox",
+    "Referrer-Policy": "no-referrer",
+    "sec-websocket-accept": "z1XkYj7S3TuUouYwqihABb8Jy/w=",
+    "Strict-Transport-Security": "max-age=31536000",
+    "upgrade": "websocket",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "deny",
+    "x-github-alive": "GitHub Alive (140e16d8) @ frontend-85bc8846f9-kwmd7",
+    "Date": "Tue, 01 Apr 2025 11:19:53 GMT",
+    "X-GitHub-Request-Id": "86DF:290F3C:5B0C1:764B1:67EBCBD8",
+    "Server": "github.com"
+  },
+  "body": ""
+}
+2025-04-01 16:49:54,131 - ERROR: Error saving file: [Errno 22] Invalid argument: 'proxy_logs\\files\\alive.github.com___sockets_u_118096135_ws?session=eyJ2IjoiVjMiLCJ1IjoxMTgwOTYxMzUsInMiOjE2MjkwMzEyODgsImMiOjI0Mjc4NDk3MzUsInQiOjE3NDM1MDQ0MDl9--bbb169253efaa93e58ae82a8bdd043d3fc08af2bfc5a287b6f8cd02b798cd91b&shared=true&p=1261793593_1743504416.2_request.txt'
+2025-04-01 16:49:54,133 - INFO: server disconnect alive.github.com:443 (140.82.112.26:443)
+2025-04-01 16:49:54,134 - INFO: client disconnect
+2025-04-01 16:49:54,139 - INFO: client connect
+2025-04-01 16:49:54,337 - INFO: server connect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 16:49:54,396 - INFO: client connect
+2025-04-01 16:49:54,447 - INFO: client connect
+2025-04-01 16:49:54,503 - INFO: server connect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 16:49:54,511 - INFO: client connect
+2025-04-01 16:49:54,589 - INFO: server connect github.com:443 (20.207.73.82:443)
+2025-04-01 16:49:54,618 - INFO: server connect dash.cloudflare.com:443 (104.17.110.184:443)
+2025-04-01 16:49:54,691 - INFO: Request: {
+  "method": "GET",
+  "url": "https://github.com/_alive",
+  "headers": {
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "accept": "application/json",
+    "sec-gpc": "1",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-dest": "empty",
+    "referer": "https://github.com/assets-cdn/worker/socket-worker-eff89a71ae86.js?module=true",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "cookie": "_octo=GH1.1.53029652.1742896787, _device_id=c1f6dd83096a222b1efd1e50b24af644, saved_user_sessions=118096135%3AmdkXMnA9zQU0wXUyJ2VL583BuykrEinfELOOvVIy2BaS0D4c, user_session=mdkXMnA9zQU0wXUyJ2VL583BuykrEinfELOOvVIy2BaS0D4c, __Host-user_session_same_site=mdkXMnA9zQU0wXUyJ2VL583BuykrEinfELOOvVIy2BaS0D4c, logged_in=yes, dotcom_user=SoumitraRai, GHCC=Required:1-Analytics:0-SocialMedia:0-Advertising:0, cpu_bucket=xlg, preferred_color_mode=dark, color_mode=%7B%22color_mode%22%3A%22auto%22%2C%22light_theme%22%3A%7B%22name%22%3A%22light%22%2C%22color_mode%22%3A%22light%22%7D%2C%22dark_theme%22%3A%7B%22name%22%3A%22dark%22%2C%22color_mode%22%3A%22dark%22%7D%7D, _gh_sess=Gs7KZs7lnwd3YJV4jVO1LdvzKB8X%2FdwQgcDy8CkoYhWa%2BS2%2Bd6QLOKxIwyP3beTvJHrIO6yNWja%2FORMymRDqM%2FTz0YbDk9bqQ6QuzJ5lppCgrt3JSTaehZzP8DmLAXqmJvtaiq2lAfzVBo1C9e08RWp%2B689W5WEJS1eJ7d31KhPskroZDHgeENzeCkRbspQb7wkGQXIi%2B2efVkqgJIKLVSJ63v8qN4t5KlH51D5X7oCzZqVzCWz3GHfITCOwPGeMIauf1aNb5QSDEfVksII4Kd%2Bqstt%2B2zgZqmXmmMqmCXN6xTEcGhIzwq6Uoae4EYBKK1M1h8mi5jQ8uUbU8Vzkx9cXvTHS%2FF1Tvx8%2FxQ%3D%3D--uex1A3WRF%2FKO8cWp--93%2F%2FsIWVv5MaKwAcX7lUYw%3D%3D, tz=Asia%2FCalcutta",
+    "priority": "u=1, i"
+  },
+  "body": ""
+}
+2025-04-01 16:49:54,701 - INFO: client connect
+2025-04-01 16:49:54,826 - INFO: client connect
+2025-04-01 16:49:55,170 - INFO: server connect github.com:443 (20.207.73.82:443)
+2025-04-01 16:49:55,337 - INFO: server connect dash.cloudflare.com:443 (104.17.110.184:443)
+2025-04-01 16:49:55,556 - INFO: Response: {
+  "status_code": 200,
+  "url": "https://github.com/_alive",
+  "headers": {
+    "date": "Tue, 01 Apr 2025 11:19:54 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "vary": "X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame,Accept-Encoding, Accept, X-Requested-With",
+    "etag": "W/\"3f0c532b150e2c9fe1472e333235cf60\"",
+    "cache-control": "max-age=0, private, must-revalidate",
+    "set-cookie": "_gh_sess=djqHfi7wicBvcKkjLR1OswlZWq3u2VV9hfxEgZLNGehsun62%2FOCBLg6L3T3zgB4anFnanhjLesbErc0YhJG%2F%2BuAOVvhTHfqu%2FkJBMJcjC0ymhRx9qkhzf4yWjd1c2gpGi0JeuWLuYvBk9wc9cVm%2B3NzA79qZroWtZSnes3SzBpRKbrdmqNjrRuJRwykoqCr%2BqEhVCWUl%2F6rCfXvTbfy4YOdRbgsUB6J%2BRI0Rl6exsQtkNN0szcmX%2FGrdYZDy74KQsecZvoUqBe0Cvgt5EiNrqoALTaENuTKtN5V0bcflV%2FzMis8TZBZpvJ5gTWSVcbulbbOy%2Fr57ANO851MR6EDJahjgIay1BHzqTlAwqw%3D%3D--csYTPTA%2B1%2FWkh7Ae--mGIQs8Fz1vfMGzh%2BdPVkkg%3D%3D; path=/; secure; HttpOnly; SameSite=Lax",
+    "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+    "x-frame-options": "deny",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "0",
+    "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+    "content-security-policy": "default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/",
+    "content-encoding": "gzip",
+    "server": "github.com",
+    "x-github-request-id": "0839:38A151:18BF3B:1BF543:67EBCBDA"
+  },
+  "body": "{\"url\":\"https://github.com/_alive\",\"token\":\"-G2MJZnTIqIwc9JXk8FmxT3tvK5FIef_Erd5THYSuKUxYeoKxG6C6meOcvl0oKi1NZV4DmKIfz372UcYF3Zg1Q\"}"
+}
+2025-04-01 16:49:55,567 - INFO: client connect
+2025-04-01 16:49:55,571 - INFO: Request: {
+  "method": "POST",
+  "url": "https://github.com/_alive",
+  "headers": {
+    "content-length": "0",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "scoped-csrf-token": "-G2MJZnTIqIwc9JXk8FmxT3tvK5FIef_Erd5THYSuKUxYeoKxG6C6meOcvl0oKi1NZV4DmKIfz372UcYF3Zg1Q",
+    "accept": "*/*",
+    "sec-gpc": "1",
+    "accept-language": "en-US,en;q=0.9",
+    "origin": "https://github.com",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-mode": "same-origin",
+    "sec-fetch-dest": "empty",
+    "referer": "https://github.com/assets-cdn/worker/socket-worker-eff89a71ae86.js?module=true",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "cookie": "_octo=GH1.1.53029652.1742896787, _device_id=c1f6dd83096a222b1efd1e50b24af644, saved_user_sessions=118096135%3AmdkXMnA9zQU0wXUyJ2VL583BuykrEinfELOOvVIy2BaS0D4c, user_session=mdkXMnA9zQU0wXUyJ2VL583BuykrEinfELOOvVIy2BaS0D4c, __Host-user_session_same_site=mdkXMnA9zQU0wXUyJ2VL583BuykrEinfELOOvVIy2BaS0D4c, logged_in=yes, dotcom_user=SoumitraRai, GHCC=Required:1-Analytics:0-SocialMedia:0-Advertising:0, cpu_bucket=xlg, preferred_color_mode=dark, color_mode=%7B%22color_mode%22%3A%22auto%22%2C%22light_theme%22%3A%7B%22name%22%3A%22light%22%2C%22color_mode%22%3A%22light%22%7D%2C%22dark_theme%22%3A%7B%22name%22%3A%22dark%22%2C%22color_mode%22%3A%22dark%22%7D%7D, tz=Asia%2FCalcutta, _gh_sess=djqHfi7wicBvcKkjLR1OswlZWq3u2VV9hfxEgZLNGehsun62%2FOCBLg6L3T3zgB4anFnanhjLesbErc0YhJG%2F%2BuAOVvhTHfqu%2FkJBMJcjC0ymhRx9qkhzf4yWjd1c2gpGi0JeuWLuYvBk9wc9cVm%2B3NzA79qZroWtZSnes3SzBpRKbrdmqNjrRuJRwykoqCr%2BqEhVCWUl%2F6rCfXvTbfy4YOdRbgsUB6J%2BRI0Rl6exsQtkNN0szcmX%2FGrdYZDy74KQsecZvoUqBe0Cvgt5EiNrqoALTaENuTKtN5V0bcflV%2FzMis8TZBZpvJ5gTWSVcbulbbOy%2Fr57ANO851MR6EDJahjgIay1BHzqTlAwqw%3D%3D--csYTPTA%2B1%2FWkh7Ae--mGIQs8Fz1vfMGzh%2BdPVkkg%3D%3D",
+    "priority": "u=1, i"
+  },
+  "body": ""
+}
+2025-04-01 16:49:55,810 - INFO: client connect
+2025-04-01 16:49:55,813 - INFO: client connect
+2025-04-01 16:49:55,941 - INFO: Response: {
+  "status_code": 200,
+  "url": "https://github.com/_alive",
+  "headers": {
+    "date": "Tue, 01 Apr 2025 11:19:55 GMT",
+    "content-type": "text/plain; charset=utf-8",
+    "vary": "X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame,Accept-Encoding, Accept, X-Requested-With",
+    "etag": "W/\"edc1c01e919681f8e22d526aa4236af6\"",
+    "cache-control": "max-age=0, private, must-revalidate",
+    "set-cookie": "_gh_sess=4W4efzcJKgSPZeaWY9kHqLQ8PWP8Af32Y92SPDi5bdsNnvHfV9o4LOTx6RkLzY73i5A33qdcVaebwx0yWM94sRGiZ2qMdaf%2BwxoOwqAxbxZzJTH%2FWj%2FkdaWDzDs8q%2FyRNY9poiAeSgzhQG2uCFYJX0PzT10fOwjqmH81IvFG5%2FliBHIZ0yIVZOLHTBqmsbfrHSst%2FkZf3zezAA7ldIBnODnk%2Fa6HKYMhdlcxXlg9JmvCL5XHMe5lSfvvTW6kotqNudAcThTq1EfM6ypcy8Vq3PEk0Lz%2FiAue8EpoZ6r%2BGRVTAUI%2BY0Y1fIlArbzsVewMh0yRO55lRgAkdRcPYwKOhxWSH7N832E0xi5k%2FQ%3D%3D--mWdJCxO%2B%2Fd9KVtaV--sA4luknFxTAb9aKa3EaDTQ%3D%3D; path=/; secure; HttpOnly; SameSite=Lax",
+    "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+    "x-frame-options": "deny",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "0",
+    "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+    "content-security-policy": "default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/",
+    "content-encoding": "gzip",
+    "server": "github.com",
+    "x-github-request-id": "0839:38A151:18BF9B:1BF5CF:67EBCBDA"
+  },
+  "body": "wss://alive.github.com/_sockets/u/118096135/ws?session=eyJ2IjoiVjMiLCJ1IjoxMTgwOTYxMzUsInMiOjE2MjkwMzEyODgsImMiOjM3ODI2NjMzMTMsInQiOjE3NDM1MDYzOTV9--fe1010151ae08ca565ffe4b226e507fc457ea9a5f407ddfde921a5cf97e0097c"
+}
+2025-04-01 16:49:55,962 - INFO: Request: {
+  "method": "GET",
+  "url": "https://alive.github.com/_sockets/u/118096135/ws?session=eyJ2IjoiVjMiLCJ1IjoxMTgwOTYxMzUsInMiOjE2MjkwMzEyODgsImMiOjM3ODI2NjMzMTMsInQiOjE3NDM1MDYzOTV9--fe1010151ae08ca565ffe4b226e507fc457ea9a5f407ddfde921a5cf97e0097c&shared=true&p=1261793593_1743504416.3",
+  "headers": {
+    "Host": "alive.github.com",
+    "Connection": "Upgrade",
+    "Pragma": "no-cache",
+    "Cache-Control": "no-cache",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "Upgrade": "websocket",
+    "Origin": "https://github.com",
+    "Sec-WebSocket-Version": "13",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "_octo=GH1.1.53029652.1742896787; logged_in=yes; dotcom_user=SoumitraRai; GHCC=Required:1-Analytics:0-SocialMedia:0-Advertising:0; cpu_bucket=xlg; preferred_color_mode=dark; color_mode=%7B%22color_mode%22%3A%22auto%22%2C%22light_theme%22%3A%7B%22name%22%3A%22light%22%2C%22color_mode%22%3A%22light%22%7D%2C%22dark_theme%22%3A%7B%22name%22%3A%22dark%22%2C%22color_mode%22%3A%22dark%22%7D%7D; tz=Asia%2FCalcutta",
+    "Sec-WebSocket-Key": "St6+cHA1xmAPvVBiNY7wFA==",
+    "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+  },
+  "body": ""
+}
+2025-04-01 16:49:56,061 - INFO: client connect
+2025-04-01 16:49:56,097 - INFO: server connect r.stripe.com:443 (54.187.159.182:443)
+2025-04-01 16:49:56,129 - INFO: server connect r.stripe.com:443 (54.187.159.182:443)
+2025-04-01 16:49:56,131 - INFO: server connect r.stripe.com:443 (54.187.159.182:443)
+2025-04-01 16:49:56,398 - INFO: server connect r.stripe.com:443 (54.187.159.182:443)
+2025-04-01 16:49:56,407 - INFO: Response: {
+  "status_code": 101,
+  "url": "https://alive.github.com/_sockets/u/118096135/ws?session=eyJ2IjoiVjMiLCJ1IjoxMTgwOTYxMzUsInMiOjE2MjkwMzEyODgsImMiOjM3ODI2NjMzMTMsInQiOjE3NDM1MDYzOTV9--fe1010151ae08ca565ffe4b226e507fc457ea9a5f407ddfde921a5cf97e0097c&shared=true&p=1261793593_1743504416.3",
+  "headers": {
+    "connection": "Upgrade",
+    "Content-Security-Policy": "default-src 'none'; form-action 'none'; frame-ancestors 'none'; sandbox",
+    "Referrer-Policy": "no-referrer",
+    "sec-websocket-accept": "a+S5yCdFT26yCXlAQfklJZrHcx0=",
+    "Strict-Transport-Security": "max-age=31536000",
+    "upgrade": "websocket",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "deny",
+    "x-github-alive": "GitHub Alive (140e16d8) @ frontend-545d6b84f7-4lvw7",
+    "Date": "Tue, 01 Apr 2025 11:19:55 GMT",
+    "X-GitHub-Request-Id": "86D0:27E32E:595F7:74628:67EBCBD8",
+    "Server": "github.com"
+  },
+  "body": ""
+}
+2025-04-01 16:49:56,416 - ERROR: Error saving file: [Errno 22] Invalid argument: 'proxy_logs\\files\\alive.github.com___sockets_u_118096135_ws?session=eyJ2IjoiVjMiLCJ1IjoxMTgwOTYxMzUsInMiOjE2MjkwMzEyODgsImMiOjM3ODI2NjMzMTMsInQiOjE3NDM1MDYzOTV9--fe1010151ae08ca565ffe4b226e507fc457ea9a5f407ddfde921a5cf97e0097c&shared=true&p=1261793593_1743504416.3_request.txt'
+2025-04-01 16:49:57,560 - INFO: client connect
+2025-04-01 16:49:57,787 - INFO: client connect
+2025-04-01 16:49:57,815 - INFO: client connect
+2025-04-01 16:49:57,873 - INFO: server connect nexus-websocket-a.intercom.io:443 (34.237.73.95:443)
+2025-04-01 16:49:58,057 - INFO: client connect
+2025-04-01 16:49:58,090 - INFO: server connect nexus-websocket-a.intercom.io:443 (34.237.73.95:443)
+2025-04-01 16:49:58,135 - INFO: server connect mobile.events.data.microsoft.com:443 (20.42.73.25:443)
+2025-04-01 16:49:58,393 - INFO: server connect mobile.events.data.microsoft.com:443 (20.42.73.25:443)
+2025-04-01 16:50:05,931 - INFO: client disconnect
+2025-04-01 16:50:05,934 - INFO: error establishing server connection: client disconnected
+2025-04-01 16:50:06,189 - INFO: client disconnect
+2025-04-01 16:50:06,192 - INFO: error establishing server connection: client disconnected
+2025-04-01 16:50:06,244 - INFO: client connect
+2025-04-01 16:50:06,495 - INFO: client connect
+2025-04-01 16:50:06,675 - INFO: server connect go-updater.brave.com:443 (54.244.25.122:443)
+2025-04-01 16:50:06,838 - INFO: server connect go-updater.brave.com:443 (54.244.25.122:443)
+2025-04-01 16:50:16,194 - INFO: client connect
+2025-04-01 16:50:16,457 - INFO: client connect
+2025-04-01 16:50:17,023 - INFO: server connect claude.ai:443 (160.79.104.10:443)
+2025-04-01 16:50:17,027 - INFO: server connect claude.ai:443 (160.79.104.10:443)
+2025-04-01 16:50:19,458 - INFO: server disconnect go-updater.brave.com:443 (54.244.25.122:443)
+2025-04-01 16:50:20,647 - INFO: server disconnect nexus-websocket-a.intercom.io:443 (34.237.73.95:443)
+2025-04-01 16:50:20,649 - INFO: client disconnect
+2025-04-01 16:50:20,671 - INFO: server disconnect go-updater.brave.com:443 (54.244.25.122:443)
+2025-04-01 16:50:21,142 - INFO: client connect
+2025-04-01 16:50:21,395 - INFO: client connect
+2025-04-01 16:50:21,407 - INFO: client connect
+2025-04-01 16:50:21,659 - INFO: client connect
+2025-04-01 16:50:21,709 - INFO: client connect
+2025-04-01 16:50:23,215 - INFO: server connect js.stripe.com:443 (52.84.206.61:443)
+2025-04-01 16:50:23,218 - INFO: server connect js.stripe.com:443 (52.84.206.61:443)
+2025-04-01 16:50:23,294 - INFO: server connect a-api.anthropic.com:443 (160.79.104.10:443)
+2025-04-01 16:50:23,296 - INFO: server connect a-api.anthropic.com:443 (160.79.104.10:443)
+2025-04-01 16:50:23,297 - INFO: server connect a-api.anthropic.com:443 (160.79.104.10:443)
+2025-04-01 16:50:23,586 - INFO: client disconnect
+2025-04-01 16:50:23,587 - INFO: server disconnect a-api.anthropic.com:443 (160.79.104.10:443)
+2025-04-01 16:50:24,659 - INFO: client connect
+2025-04-01 16:50:24,837 - INFO: server connect s-cdn.anthropic.com:443 (34.102.213.72:443)
+2025-04-01 16:50:24,908 - INFO: client connect
+2025-04-01 16:50:24,972 - INFO: server connect s-cdn.anthropic.com:443 (34.102.213.72:443)
+2025-04-01 16:50:25,628 - INFO: client connect
+2025-04-01 16:50:25,769 - INFO: server connect widget.intercom.io:443 (99.86.47.110:443)
+2025-04-01 16:50:25,893 - INFO: client connect
+2025-04-01 16:50:25,933 - INFO: server disconnect github.com:443 (20.207.73.82:443)
+2025-04-01 16:50:25,981 - INFO: server connect widget.intercom.io:443 (99.86.47.110:443)
+2025-04-01 16:50:26,494 - INFO: client connect
+2025-04-01 16:50:26,756 - INFO: client connect
+2025-04-01 16:50:27,099 - INFO: server connect api-iam.intercom.io:443 (44.194.233.247:443)
+2025-04-01 16:50:27,133 - INFO: server connect api-iam.intercom.io:443 (44.194.233.247:443)
+2025-04-01 16:50:29,644 - INFO: client connect
+2025-04-01 16:50:29,906 - INFO: client connect
+2025-04-01 16:50:29,993 - INFO: server connect m.stripe.network:443 (18.164.188.123:443)
+2025-04-01 16:50:29,999 - INFO: server connect m.stripe.network:443 (18.164.188.123:443)
+2025-04-01 16:50:31,411 - INFO: client connect
+2025-04-01 16:50:31,664 - INFO: client connect
+2025-04-01 16:50:31,903 - INFO: server connect m.stripe.com:443 (35.164.124.102:443)
+2025-04-01 16:50:32,012 - INFO: server connect m.stripe.com:443 (35.164.124.102:443)
+2025-04-01 16:50:43,303 - INFO: server disconnect r.stripe.com:443 (54.187.159.182:443)
+2025-04-01 16:50:56,393 - INFO: Received WebSocket ping from server (payload: b'1')
+2025-04-01 16:50:56,397 - INFO: Received WebSocket pong from client (payload: b'1')
+2025-04-01 16:50:56,441 - INFO: server disconnect r.stripe.com:443 (54.187.159.182:443)
+2025-04-01 16:51:30,787 - INFO: server disconnect r.stripe.com:443 (54.187.159.182:443)
+2025-04-01 16:51:31,570 - INFO: server disconnect r.stripe.com:443 (54.187.159.182:443)
+2025-04-01 16:51:32,434 - INFO: server disconnect m.stripe.com:443 (35.164.124.102:443)
+2025-04-01 16:51:48,442 - INFO: server disconnect m.stripe.com:443 (35.164.124.102:443)
+2025-04-01 16:51:53,032 - INFO: client disconnect
+2025-04-01 16:51:53,035 - INFO: client disconnect
+2025-04-01 16:51:53,039 - INFO: server disconnect a-api.anthropic.com:443 (160.79.104.10:443)
+2025-04-01 16:51:53,042 - INFO: server disconnect api-iam.intercom.io:443 (44.194.233.247:443)
+2025-04-01 16:51:53,044 - INFO: client disconnect
+2025-04-01 16:51:53,048 - INFO: server disconnect claude.ai:443 (160.79.104.10:443)
+2025-04-01 16:51:53,049 - INFO: client disconnect
+2025-04-01 16:51:53,049 - INFO: client disconnect
+2025-04-01 16:51:53,050 - INFO: client disconnect
+2025-04-01 16:51:53,051 - INFO: client disconnect
+2025-04-01 16:51:53,052 - INFO: client disconnect
+2025-04-01 16:51:53,052 - INFO: client disconnect
+2025-04-01 16:51:53,052 - INFO: client disconnect
+2025-04-01 16:51:53,053 - INFO: client disconnect
+2025-04-01 16:51:53,054 - INFO: server disconnect dash.cloudflare.com:443 (104.17.110.184:443)
+2025-04-01 16:51:53,054 - INFO: server disconnect github.com:443 (20.207.73.82:443)
+2025-04-01 16:51:53,055 - INFO: server disconnect js.stripe.com:443 (52.84.206.61:443)
+2025-04-01 16:51:53,055 - INFO: server disconnect m.stripe.network:443 (18.164.188.123:443)
+2025-04-01 16:51:53,056 - INFO: server disconnect s-cdn.anthropic.com:443 (34.102.213.72:443)
+2025-04-01 16:51:53,057 - INFO: client disconnect
+2025-04-01 16:51:53,058 - INFO: server disconnect widget.intercom.io:443 (99.86.47.110:443)
+2025-04-01 16:51:53,334 - INFO: client connect
+2025-04-01 16:51:53,606 - INFO: client connect
+2025-04-01 16:51:54,657 - INFO: client connect
+2025-04-01 16:51:56,409 - INFO: Received WebSocket ping from server (payload: b'2')
+2025-04-01 16:51:56,413 - INFO: Received WebSocket pong from client (payload: b'2')
+2025-04-01 16:52:02,952 - INFO: server disconnect mobile.events.data.microsoft.com:443 (20.42.73.25:443)
+2025-04-01 16:52:06,517 - INFO: server disconnect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 16:52:08,853 - INFO: server disconnect mobile.events.data.microsoft.com:443 (20.42.73.25:443)
+2025-04-01 16:52:14,490 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 16:52:14,495 - INFO: client disconnect
+2025-04-01 16:52:14,625 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 16:52:14,630 - INFO: client disconnect
+2025-04-01 16:52:15,691 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 16:52:15,696 - INFO: client disconnect
+2025-04-01 16:52:28,593 - INFO: Received WebSocket ping from server (payload: b'')
+2025-04-01 16:52:28,597 - INFO: Received WebSocket pong from client (payload: b'')
+2025-04-01 16:52:56,386 - INFO: Received WebSocket ping from server (payload: b'3')
+2025-04-01 16:52:56,389 - INFO: Received WebSocket pong from client (payload: b'3')
+2025-04-01 16:53:55,663 - INFO: client disconnect
+2025-04-01 16:53:55,666 - INFO: server disconnect main.vscode-cdn.net:443 (13.107.246.58:443)
+2025-04-01 16:53:55,669 - INFO: client disconnect
+2025-04-01 16:53:55,672 - INFO: server disconnect main.vscode-cdn.net:443 (13.107.246.58:443)
+2025-04-01 16:53:55,674 - INFO: client disconnect
+2025-04-01 16:53:55,676 - INFO: client disconnect
+2025-04-01 16:53:55,678 - INFO: server disconnect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 16:53:55,975 - INFO: client connect
+2025-04-01 16:53:56,102 - INFO: server connect main.vscode-cdn.net:443 (13.107.246.68:443)
+2025-04-01 16:53:56,225 - INFO: client connect
+2025-04-01 16:53:56,345 - INFO: server connect main.vscode-cdn.net:443 (13.107.246.68:443)
+2025-04-01 16:53:56,385 - INFO: Received WebSocket ping from server (payload: b'4')
+2025-04-01 16:53:56,388 - INFO: Received WebSocket pong from client (payload: b'4')
+2025-04-01 16:53:57,676 - INFO: server connect main.vscode-cdn.net:443 (13.107.246.68:443)
+2025-04-01 16:54:01,559 - INFO: server disconnect main.vscode-cdn.net:443 (13.107.246.68:443)
+2025-04-01 16:54:21,310 - INFO: client connect
+2025-04-01 16:54:21,507 - INFO: server connect doodles.google:443 (142.250.192.177:443)
+2025-04-01 16:54:21,574 - INFO: client connect
+2025-04-01 16:54:21,632 - INFO: server connect doodles.google:443 (142.250.192.177:443)
+2025-04-01 16:54:25,326 - INFO: client connect
+2025-04-01 16:54:25,591 - INFO: client connect
+2025-04-01 16:54:28,706 - INFO: Received WebSocket ping from server (payload: b'')
+2025-04-01 16:54:28,710 - INFO: Received WebSocket pong from client (payload: b'')
+2025-04-01 16:54:46,358 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 16:54:46,364 - INFO: client disconnect
+2025-04-01 16:54:46,609 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 16:54:46,614 - INFO: client disconnect
+2025-04-01 16:54:55,479 - INFO: client disconnect
+2025-04-01 16:54:55,793 - INFO: client connect
+2025-04-01 16:54:56,052 - INFO: server connect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 16:54:56,061 - INFO: client connect
+2025-04-01 16:54:56,315 - INFO: server connect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 16:54:56,385 - INFO: Received WebSocket ping from server (payload: b'5')
+2025-04-01 16:54:56,388 - INFO: Received WebSocket pong from client (payload: b'5')
+2025-04-01 16:54:59,315 - INFO: server connect mobile.events.data.microsoft.com:443 (52.182.143.210:443)
+2025-04-01 16:55:26,776 - INFO: server disconnect main.vscode-cdn.net:443 (13.107.246.68:443)
+2025-04-01 16:55:28,244 - INFO: server disconnect main.vscode-cdn.net:443 (13.107.246.68:443)
+2025-04-01 16:55:56,400 - INFO: Received WebSocket ping from server (payload: b'6')
+2025-04-01 16:55:56,404 - INFO: Received WebSocket pong from client (payload: b'6')
+2025-04-01 16:55:58,598 - INFO: client disconnect
+2025-04-01 16:55:58,601 - INFO: server disconnect doodles.google:443 (142.250.192.177:443)
+2025-04-01 16:55:58,909 - INFO: client connect
+2025-04-01 16:55:59,161 - INFO: client connect
+2025-04-01 16:56:19,992 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 16:56:19,998 - INFO: client disconnect
+2025-04-01 16:56:20,189 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 16:56:20,194 - INFO: client disconnect
+2025-04-01 16:56:28,591 - INFO: Received WebSocket ping from server (payload: b'')
+2025-04-01 16:56:28,594 - INFO: Received WebSocket pong from client (payload: b'')
+2025-04-01 16:56:45,260 - INFO: client connect
+2025-04-01 16:56:45,476 - INFO: client connect
+2025-04-01 16:56:45,522 - INFO: client connect
+2025-04-01 16:56:45,620 - INFO: server connect chatgpt.com:443 (104.18.32.47:443)
+2025-04-01 16:56:45,736 - INFO: client connect
+2025-04-01 16:56:45,761 - INFO: server connect patterns.wdp.brave.com:443 (18.245.86.69:443)
+2025-04-01 16:56:45,768 - INFO: server connect patterns.wdp.brave.com:443 (18.245.86.69:443)
+2025-04-01 16:56:45,812 - INFO: server connect chatgpt.com:443 (104.18.32.47:443)
+2025-04-01 16:56:56,385 - INFO: Received WebSocket ping from server (payload: b'7')
+2025-04-01 16:56:56,389 - INFO: Received WebSocket pong from client (payload: b'7')
+2025-04-01 16:57:02,376 - INFO: client connect
+2025-04-01 16:57:02,626 - INFO: client connect
+2025-04-01 16:57:05,042 - INFO: server disconnect mobile.events.data.microsoft.com:443 (52.182.143.210:443)
+2025-04-01 16:57:07,818 - INFO: server disconnect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 16:57:23,408 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 16:57:23,413 - INFO: client disconnect
+2025-04-01 16:57:23,642 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 16:57:23,647 - INFO: client disconnect
+2025-04-01 16:57:31,649 - INFO: client disconnect
+2025-04-01 16:57:31,651 - INFO: client disconnect
+2025-04-01 16:57:31,655 - INFO: server disconnect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 16:57:31,902 - INFO: server connect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 16:57:34,854 - INFO: server connect mobile.events.data.microsoft.com:443 (20.42.65.94:443)
+2025-04-01 16:57:56,383 - INFO: Received WebSocket ping from server (payload: b'8')
+2025-04-01 16:57:56,385 - INFO: Received WebSocket pong from client (payload: b'8')
+2025-04-01 16:58:22,473 - INFO: 142.250.192.177:443: HTTP/2 protocol error: Invalid input ConnectionInputs.RECV_PING in state ConnectionState.CLOSED
+2025-04-01 16:58:22,477 - INFO: server disconnect doodles.google:443 (142.250.192.177:443)
+2025-04-01 16:58:28,603 - INFO: Received WebSocket ping from server (payload: b'')
+2025-04-01 16:58:28,607 - INFO: Received WebSocket pong from client (payload: b'')
+2025-04-01 16:58:53,207 - INFO: client disconnect
+2025-04-01 16:58:53,514 - INFO: client connect
+2025-04-01 16:58:53,782 - INFO: client connect
+2025-04-01 16:58:56,392 - INFO: Received WebSocket ping from server (payload: b'9')
+2025-04-01 16:58:56,396 - INFO: Received WebSocket pong from client (payload: b'9')
+2025-04-01 16:58:57,512 - INFO: server connect main.vscode-cdn.net:443 (13.107.246.48:443)
+2025-04-01 16:58:57,624 - INFO: Closing connection due to inactivity: Client(127.0.0.1:50282, state=open, alpn=h2)
+2025-04-01 16:58:57,628 - INFO: client disconnect
+2025-04-01 16:58:57,630 - INFO: server disconnect main.vscode-cdn.net:443 (13.107.246.58:443)
+2025-04-01 16:59:23,525 - INFO: client disconnect
+2025-04-01 16:59:23,528 - INFO: error establishing server connection: client disconnected
+2025-04-01 16:59:23,790 - INFO: client disconnect
+2025-04-01 16:59:23,792 - INFO: error establishing server connection: client disconnected
+2025-04-01 16:59:24,071 - INFO: server connect go-updater.brave.com:443 (54.148.9.45:443)
+2025-04-01 16:59:25,059 - INFO: client connect
+2025-04-01 16:59:25,326 - INFO: client connect
+2025-04-01 16:59:25,380 - INFO: server connect redirector.brave.com:443 (13.32.121.18:443)
+2025-04-01 16:59:25,510 - INFO: server connect redirector.brave.com:443 (13.32.121.18:443)
+2025-04-01 16:59:28,760 - INFO: client connect
+2025-04-01 16:59:29,026 - INFO: client connect
+2025-04-01 16:59:29,152 - INFO: server connect componentupdater.brave.com:443 (34.215.223.45:443)
+2025-04-01 16:59:29,363 - INFO: server connect componentupdater.brave.com:443 (34.215.223.45:443)
+2025-04-01 16:59:31,850 - INFO: client disconnect
+2025-04-01 16:59:31,851 - INFO: server disconnect componentupdater.brave.com:443 (34.215.223.45:443)
+2025-04-01 16:59:31,852 - INFO: client disconnect
+2025-04-01 16:59:31,852 - INFO: client disconnect
+2025-04-01 16:59:31,853 - INFO: server disconnect redirector.brave.com:443 (13.32.121.18:443)
+2025-04-01 16:59:31,854 - INFO: server disconnect redirector.brave.com:443 (13.32.121.18:443)
+2025-04-01 16:59:31,854 - INFO: client disconnect
+2025-04-01 16:59:31,855 - INFO: server disconnect componentupdater.brave.com:443 (34.215.223.45:443)
+2025-04-01 16:59:31,856 - INFO: client disconnect
+2025-04-01 16:59:31,857 - INFO: client disconnect
+2025-04-01 16:59:31,857 - INFO: client disconnect
+2025-04-01 16:59:31,858 - INFO: client disconnect
+2025-04-01 16:59:31,858 - INFO: client disconnect
+2025-04-01 16:59:31,858 - INFO: client disconnect
+2025-04-01 16:59:31,859 - INFO: client disconnect
+2025-04-01 16:59:31,859 - INFO: client disconnect
+2025-04-01 16:59:31,859 - INFO: client disconnect
+2025-04-01 16:59:31,860 - INFO: client disconnect
+2025-04-01 16:59:31,861 - INFO: server disconnect chatgpt.com:443 (104.18.32.47:443)
+2025-04-01 16:59:31,861 - INFO: server disconnect patterns.wdp.brave.com:443 (18.245.86.69:443)
+2025-04-01 16:59:31,862 - INFO: server disconnect api-iam.intercom.io:443 (44.194.233.247:443)
+2025-04-01 16:59:31,862 - INFO: server disconnect widget.intercom.io:443 (99.86.47.110:443)
+2025-04-01 16:59:31,863 - INFO: server disconnect m.stripe.network:443 (18.164.188.123:443)
+2025-04-01 16:59:31,863 - INFO: server disconnect patterns.wdp.brave.com:443 (18.245.86.69:443)
+2025-04-01 16:59:31,864 - INFO: server disconnect s-cdn.anthropic.com:443 (34.102.213.72:443)
+2025-04-01 16:59:31,864 - INFO: server disconnect js.stripe.com:443 (52.84.206.61:443)
+2025-04-01 16:59:31,864 - INFO: client disconnect
+2025-04-01 16:59:31,865 - INFO: client disconnect
+2025-04-01 16:59:31,865 - INFO: client disconnect
+2025-04-01 16:59:31,865 - INFO: client disconnect
+2025-04-01 16:59:31,866 - INFO: client disconnect
+2025-04-01 16:59:31,866 - INFO: client disconnect
+2025-04-01 16:59:31,866 - INFO: client disconnect
+2025-04-01 16:59:31,868 - INFO: server disconnect a-api.anthropic.com:443 (160.79.104.10:443)
+2025-04-01 16:59:31,868 - INFO: server disconnect chatgpt.com:443 (104.18.32.47:443)
+2025-04-01 16:59:31,869 - INFO: server disconnect dash.cloudflare.com:443 (104.17.110.184:443)
+2025-04-01 16:59:31,869 - INFO: server disconnect claude.ai:443 (160.79.104.10:443)
+2025-04-01 16:59:32,210 - INFO: client disconnect
+2025-04-01 16:59:32,211 - INFO: server disconnect go-updater.brave.com:443 (54.148.9.45:443)
+2025-04-01 16:59:32,526 - INFO: client connect
+2025-04-01 16:59:32,777 - INFO: client connect
+2025-04-01 16:59:32,873 - INFO: server connect componentupdater.brave.com:443 (34.215.223.45:443)
+2025-04-01 16:59:33,113 - INFO: server connect componentupdater.brave.com:443 (34.215.223.45:443)
+2025-04-01 16:59:33,926 - INFO: client connect
+2025-04-01 16:59:34,146 - INFO: server connect redirector.brave.com:443 (13.32.121.18:443)
+2025-04-01 16:59:34,188 - INFO: client connect
+2025-04-01 16:59:34,390 - INFO: server connect redirector.brave.com:443 (13.32.121.18:443)
+2025-04-01 16:59:35,392 - INFO: client connect
+2025-04-01 16:59:35,658 - INFO: client connect
+2025-04-01 16:59:35,913 - INFO: server connect go-updater.brave.com:443 (54.148.9.45:443)
+2025-04-01 16:59:35,967 - INFO: server connect go-updater.brave.com:443 (54.148.9.45:443)
+2025-04-01 16:59:39,595 - INFO: server disconnect mobile.events.data.microsoft.com:443 (20.42.65.94:443)
+2025-04-01 16:59:43,623 - INFO: server disconnect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 16:59:43,909 - INFO: client connect
+2025-04-01 16:59:44,160 - INFO: client connect
+2025-04-01 16:59:47,496 - INFO: server disconnect go-updater.brave.com:443 (54.148.9.45:443)
+2025-04-01 16:59:50,469 - INFO: server disconnect go-updater.brave.com:443 (54.148.9.45:443)
+2025-04-01 16:59:56,387 - INFO: Received WebSocket ping from server (payload: b'10')
+2025-04-01 16:59:56,391 - INFO: Received WebSocket pong from client (payload: b'10')
+2025-04-01 17:00:04,940 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 17:00:04,944 - INFO: client disconnect
+2025-04-01 17:00:05,018 - INFO: client connect
+2025-04-01 17:00:05,147 - INFO: server connect chatgpt.com:443 (172.64.155.209:443)
+2025-04-01 17:00:05,205 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 17:00:05,209 - INFO: client disconnect
+2025-04-01 17:00:05,284 - INFO: client connect
+2025-04-01 17:00:05,384 - INFO: server connect chatgpt.com:443 (172.64.155.209:443)
+2025-04-01 17:00:21,741 - INFO: client connect
+2025-04-01 17:00:21,865 - INFO: server connect cdn.onenote.net:443 (23.1.13.241:443)
+2025-04-01 17:00:28,136 - INFO: server disconnect main.vscode-cdn.net:443 (13.107.246.48:443)
+2025-04-01 17:00:28,592 - INFO: Received WebSocket ping from server (payload: b'')
+2025-04-01 17:00:28,595 - INFO: Received WebSocket pong from client (payload: b'')
+2025-04-01 17:00:56,411 - INFO: Received WebSocket ping from server (payload: b'11')
+2025-04-01 17:00:56,415 - INFO: Received WebSocket pong from client (payload: b'11')
+2025-04-01 17:00:59,570 - INFO: client connect
+2025-04-01 17:00:59,919 - INFO: server connect v10.events.data.microsoft.com:443 (104.208.16.92:443)
+2025-04-01 17:01:06,194 - INFO: client disconnect
+2025-04-01 17:01:06,197 - INFO: server disconnect chatgpt.com:443 (172.64.155.209:443)
+2025-04-01 17:01:06,509 - INFO: client connect
+2025-04-01 17:01:06,759 - INFO: client connect
+2025-04-01 17:01:22,132 - INFO: client disconnect
+2025-04-01 17:01:22,135 - INFO: server disconnect cdn.onenote.net:443 (23.1.13.241:443)
+2025-04-01 17:01:27,657 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 17:01:27,663 - INFO: client disconnect
+2025-04-01 17:01:27,790 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 17:01:27,796 - INFO: client disconnect
+2025-04-01 17:01:41,990 - INFO: server connect go-updater.brave.com:443 (54.244.25.122:443)
+2025-04-01 17:01:42,644 - INFO: client disconnect
+2025-04-01 17:01:42,646 - INFO: server disconnect componentupdater.brave.com:443 (34.215.223.45:443)
+2025-04-01 17:01:42,648 - INFO: client disconnect
+2025-04-01 17:01:42,650 - INFO: client disconnect
+2025-04-01 17:01:42,652 - INFO: server disconnect redirector.brave.com:443 (13.32.121.18:443)
+2025-04-01 17:01:42,959 - INFO: client connect
+2025-04-01 17:01:43,209 - INFO: client connect
+2025-04-01 17:01:53,032 - INFO: server disconnect go-updater.brave.com:443 (54.244.25.122:443)
+2025-04-01 17:01:56,394 - INFO: Received WebSocket ping from server (payload: b'12')
+2025-04-01 17:01:56,397 - INFO: Received WebSocket pong from client (payload: b'12')
+2025-04-01 17:02:12,973 - INFO: client disconnect
+2025-04-01 17:02:12,975 - INFO: error establishing server connection: client disconnected
+2025-04-01 17:02:13,224 - INFO: client disconnect
+2025-04-01 17:02:13,227 - INFO: error establishing server connection: client disconnected
+2025-04-01 17:02:13,354 - INFO: server connect go-updater.brave.com:443 (34.213.149.83:443)
+2025-04-01 17:02:24,391 - INFO: server disconnect go-updater.brave.com:443 (34.213.149.83:443)
+2025-04-01 17:02:28,591 - INFO: Received WebSocket ping from server (payload: b'')
+2025-04-01 17:02:28,594 - INFO: Received WebSocket pong from client (payload: b'')
+2025-04-01 17:02:31,126 - INFO: client connect
+2025-04-01 17:02:31,393 - INFO: client connect
+2025-04-01 17:02:32,496 - INFO: client disconnect
+2025-04-01 17:02:32,809 - INFO: client connect
+2025-04-01 17:02:33,076 - INFO: client connect
+2025-04-01 17:02:33,143 - INFO: server connect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 17:02:33,197 - INFO: server connect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 17:02:36,199 - INFO: server connect mobile.events.data.microsoft.com:443 (20.189.173.28:443)
+2025-04-01 17:02:49,569 - INFO: client disconnect
+2025-04-01 17:02:49,572 - INFO: server disconnect v10.events.data.microsoft.com:443 (104.208.16.92:443)
+2025-04-01 17:02:50,782 - INFO: client connect
+2025-04-01 17:02:51,271 - INFO: server connect v10.events.data.microsoft.com:443 (20.44.10.122:443)
+2025-04-01 17:02:52,165 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 17:02:52,170 - INFO: client disconnect
+2025-04-01 17:02:52,431 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 17:02:52,436 - INFO: client disconnect
+2025-04-01 17:02:56,391 - INFO: Received WebSocket ping from server (payload: b'13')
+2025-04-01 17:02:56,394 - INFO: Received WebSocket pong from client (payload: b'13')
+2025-04-01 17:03:56,391 - INFO: Received WebSocket ping from server (payload: b'14')
+2025-04-01 17:03:56,394 - INFO: Received WebSocket pong from client (payload: b'14')
+2025-04-01 17:03:58,545 - INFO: server connect main.vscode-cdn.net:443 (13.107.253.58:443)
+2025-04-01 17:04:28,657 - INFO: Received WebSocket ping from server (payload: b'')
+2025-04-01 17:04:28,660 - INFO: Received WebSocket pong from client (payload: b'')
+2025-04-01 17:04:39,573 - INFO: client disconnect
+2025-04-01 17:04:39,574 - INFO: server disconnect v10.events.data.microsoft.com:443 (20.44.10.122:443)
+2025-04-01 17:04:56,387 - INFO: Received WebSocket ping from server (payload: b'15')
+2025-04-01 17:04:56,389 - INFO: Received WebSocket pong from client (payload: b'15')
+2025-04-01 17:05:13,047 - INFO: client disconnect
+2025-04-01 17:05:13,050 - INFO: server disconnect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 17:05:22,509 - INFO: client connect
+2025-04-01 17:05:22,775 - INFO: client connect
+2025-04-01 17:05:23,823 - INFO: client connect
+2025-04-01 17:05:28,937 - INFO: server disconnect main.vscode-cdn.net:443 (13.107.253.58:443)
+2025-04-01 17:05:43,671 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 17:05:43,676 - INFO: client disconnect
+2025-04-01 17:05:43,823 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 17:05:43,829 - INFO: client disconnect
+2025-04-01 17:05:44,857 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 17:05:44,862 - INFO: client disconnect
+2025-04-01 17:05:53,947 - INFO: Closing connection due to inactivity: Client(127.0.0.1:50284, state=open, alpn=h2)
+2025-04-01 17:05:53,951 - INFO: client disconnect
+2025-04-01 17:05:56,376 - INFO: Received WebSocket ping from server (payload: b'16')
+2025-04-01 17:05:56,377 - INFO: Received WebSocket pong from client (payload: b'16')
+2025-04-01 17:06:28,587 - INFO: Received WebSocket ping from server (payload: b'')
+2025-04-01 17:06:28,591 - INFO: Received WebSocket pong from client (payload: b'')
+2025-04-01 17:06:56,375 - INFO: Received WebSocket ping from server (payload: b'17')
+2025-04-01 17:06:56,378 - INFO: Received WebSocket pong from client (payload: b'17')
+2025-04-01 17:07:07,091 - INFO: client connect
+2025-04-01 17:07:07,541 - INFO: server connect v10.events.data.microsoft.com:443 (20.189.173.2:443)
+2025-04-01 17:07:08,501 - INFO: client disconnect
+2025-04-01 17:07:08,502 - INFO: server disconnect v10.events.data.microsoft.com:443 (20.189.173.2:443)
+2025-04-01 17:07:56,371 - INFO: Received WebSocket ping from server (payload: b'18')
+2025-04-01 17:07:56,375 - INFO: Received WebSocket pong from client (payload: b'18')
+2025-04-01 17:08:19,845 - INFO: client connect
+2025-04-01 17:08:20,115 - INFO: client connect
+2025-04-01 17:08:28,601 - INFO: Received WebSocket ping from server (payload: b'')
+2025-04-01 17:08:28,604 - INFO: Received WebSocket pong from client (payload: b'')
+2025-04-01 17:08:32,238 - INFO: server disconnect mobile.events.data.microsoft.com:443 (20.189.173.28:443)
+2025-04-01 17:08:33,915 - INFO: server disconnect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 17:08:40,891 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 17:08:40,894 - ERROR: Unhandled error in task.
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-04-01 17:08:40,910 - INFO: client disconnect
+2025-04-01 17:08:41,149 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 17:08:41,155 - INFO: client disconnect
+2025-04-01 17:08:56,372 - INFO: Received WebSocket ping from server (payload: b'19')
+2025-04-01 17:08:56,376 - INFO: Received WebSocket pong from client (payload: b'19')
+2025-04-01 17:09:02,496 - INFO: server connect main.vscode-cdn.net:443 (13.107.253.48:443)
+2025-04-01 17:09:07,860 - INFO: server disconnect main.vscode-cdn.net:443 (13.107.253.48:443)
+2025-04-01 17:09:56,372 - INFO: Received WebSocket ping from server (payload: b'20')
+2025-04-01 17:09:56,376 - INFO: Received WebSocket pong from client (payload: b'20')
+2025-04-01 17:09:56,508 - INFO: client connect
+2025-04-01 17:09:56,775 - INFO: client connect
+2025-04-01 17:10:17,547 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 17:10:17,552 - INFO: client disconnect
+2025-04-01 17:10:17,815 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 17:10:17,820 - INFO: client disconnect
+2025-04-01 17:10:18,875 - INFO: client connect
+2025-04-01 17:10:19,155 - INFO: server connect checkappexec.microsoft.com:443 (4.241.155.66:443)
+2025-04-01 17:10:28,587 - INFO: Received WebSocket ping from server (payload: b'')
+2025-04-01 17:10:28,591 - INFO: Received WebSocket pong from client (payload: b'')
+2025-04-01 17:10:56,438 - INFO: server disconnect alive.github.com:443 (140.82.112.26:443)
+2025-04-01 17:10:56,441 - INFO: client disconnect
+2025-04-01 17:10:56,871 - INFO: client connect
+2025-04-01 17:10:57,130 - INFO: client connect
+2025-04-01 17:10:57,930 - INFO: server connect alive.github.com:443 (140.82.113.26:443)
+2025-04-01 17:10:57,935 - INFO: server connect alive.github.com:443 (140.82.113.26:443)
+2025-04-01 17:10:58,421 - INFO: Request: {
+  "method": "GET",
+  "url": "https://alive.github.com/_sockets/u/118096135/ws?session=eyJ2IjoiVjMiLCJ1IjoxMTgwOTYxMzUsInMiOjE2MjkwMzEyODgsImMiOjM3ODI2NjMzMTMsInQiOjE3NDM1MDYzOTV9--fe1010151ae08ca565ffe4b226e507fc457ea9a5f407ddfde921a5cf97e0097c&shared=true&p=1261793593_1743504416.4",
+  "headers": {
+    "Host": "alive.github.com",
+    "Connection": "Upgrade",
+    "Pragma": "no-cache",
+    "Cache-Control": "no-cache",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "Upgrade": "websocket",
+    "Origin": "https://github.com",
+    "Sec-WebSocket-Version": "13",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "_octo=GH1.1.53029652.1742896787; logged_in=yes; dotcom_user=SoumitraRai; GHCC=Required:1-Analytics:0-SocialMedia:0-Advertising:0; cpu_bucket=xlg; preferred_color_mode=dark; color_mode=%7B%22color_mode%22%3A%22auto%22%2C%22light_theme%22%3A%7B%22name%22%3A%22light%22%2C%22color_mode%22%3A%22light%22%7D%2C%22dark_theme%22%3A%7B%22name%22%3A%22dark%22%2C%22color_mode%22%3A%22dark%22%7D%7D; tz=Asia%2FCalcutta",
+    "Sec-WebSocket-Key": "NGUodfS5w0d2IHIrIpHAZQ==",
+    "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+  },
+  "body": ""
+}
+2025-04-01 17:10:59,393 - INFO: Response: {
+  "status_code": 101,
+  "url": "https://alive.github.com/_sockets/u/118096135/ws?session=eyJ2IjoiVjMiLCJ1IjoxMTgwOTYxMzUsInMiOjE2MjkwMzEyODgsImMiOjM3ODI2NjMzMTMsInQiOjE3NDM1MDYzOTV9--fe1010151ae08ca565ffe4b226e507fc457ea9a5f407ddfde921a5cf97e0097c&shared=true&p=1261793593_1743504416.4",
+  "headers": {
+    "connection": "Upgrade",
+    "Content-Security-Policy": "default-src 'none'; form-action 'none'; frame-ancestors 'none'; sandbox",
+    "Referrer-Policy": "no-referrer",
+    "sec-websocket-accept": "aHgP5uzWYRbKJeHAx3CSBbPtfoU=",
+    "Strict-Transport-Security": "max-age=31536000",
+    "upgrade": "websocket",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "deny",
+    "x-github-alive": "GitHub Alive (140e16d8) @ frontend-77684c99c9-gw77b",
+    "Date": "Tue, 01 Apr 2025 11:40:58 GMT",
+    "X-GitHub-Request-Id": "0839:166A67:6CA7F:8BE13:67EBD0C9",
+    "Server": "github.com"
+  },
+  "body": ""
+}
+2025-04-01 17:10:59,409 - ERROR: Error saving file: [Errno 22] Invalid argument: 'proxy_logs\\files\\alive.github.com___sockets_u_118096135_ws?session=eyJ2IjoiVjMiLCJ1IjoxMTgwOTYxMzUsInMiOjE2MjkwMzEyODgsImMiOjM3ODI2NjMzMTMsInQiOjE3NDM1MDYzOTV9--fe1010151ae08ca565ffe4b226e507fc457ea9a5f407ddfde921a5cf97e0097c&shared=true&p=1261793593_1743504416.4_request.txt'
+2025-04-01 17:11:21,236 - INFO: client connect
+2025-04-01 17:11:21,504 - INFO: client connect
+2025-04-01 17:11:22,966 - INFO: client disconnect
+2025-04-01 17:11:23,268 - INFO: client connect
+2025-04-01 17:11:23,558 - INFO: server connect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 17:11:23,561 - INFO: client connect
+2025-04-01 17:11:23,677 - INFO: server connect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 17:11:26,809 - INFO: server connect mobile.events.data.microsoft.com:443 (20.189.173.14:443)
+2025-04-01 17:11:42,391 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 17:11:42,395 - INFO: client disconnect
+2025-04-01 17:11:42,557 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 17:11:42,562 - INFO: client disconnect
+2025-04-01 17:11:59,347 - INFO: Received WebSocket ping from server (payload: b'1')
+2025-04-01 17:11:59,350 - INFO: Received WebSocket pong from client (payload: b'1')
+2025-04-01 17:12:06,852 - INFO: client disconnect
+2025-04-01 17:12:06,855 - INFO: server disconnect checkappexec.microsoft.com:443 (4.241.155.66:443)
+2025-04-01 17:12:28,592 - INFO: Received WebSocket ping from server (payload: b'')
+2025-04-01 17:12:28,596 - INFO: Received WebSocket pong from client (payload: b'')
+2025-04-01 17:12:29,740 - INFO: client connect
+2025-04-01 17:12:29,860 - INFO: server connect developers.cloudflare.com:443 (104.16.6.189:443)
+2025-04-01 17:12:30,006 - INFO: client connect
+2025-04-01 17:12:30,053 - INFO: server connect developers.cloudflare.com:443 (104.16.6.189:443)
+2025-04-01 17:12:30,543 - INFO: client connect
+2025-04-01 17:12:30,594 - INFO: server connect www.google.com:443 (142.250.194.132:443)
+2025-04-01 17:12:30,802 - INFO: client connect
+2025-04-01 17:12:30,865 - INFO: server connect www.google.com:443 (142.250.194.132:443)
+2025-04-01 17:12:32,088 - INFO: client disconnect
+2025-04-01 17:12:32,089 - INFO: server disconnect www.google.com:443 (142.250.194.132:443)
+2025-04-01 17:12:32,090 - INFO: client disconnect
+2025-04-01 17:12:32,091 - INFO: server disconnect www.google.com:443 (142.250.194.132:443)
+2025-04-01 17:12:59,348 - INFO: Received WebSocket ping from server (payload: b'2')
+2025-04-01 17:12:59,352 - INFO: Received WebSocket pong from client (payload: b'2')
+2025-04-01 17:13:11,695 - INFO: Closing connection due to inactivity: Client(127.0.0.1:50525, state=open, alpn=h2)
+2025-04-01 17:13:11,698 - INFO: client disconnect
+2025-04-01 17:13:14,066 - INFO: client connect
+2025-04-01 17:13:14,183 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:14,506 - INFO: client connect
+2025-04-01 17:13:14,623 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:15,113 - INFO: client connect
+2025-04-01 17:13:15,253 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:15,631 - INFO: client connect
+2025-04-01 17:13:15,843 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:16,240 - INFO: client connect
+2025-04-01 17:13:16,344 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:16,806 - INFO: client connect
+2025-04-01 17:13:16,922 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:17,354 - INFO: client connect
+2025-04-01 17:13:17,476 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:18,010 - INFO: client connect
+2025-04-01 17:13:18,141 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:18,433 - INFO: client connect
+2025-04-01 17:13:18,630 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:19,116 - INFO: client connect
+2025-04-01 17:13:19,241 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:19,621 - INFO: client connect
+2025-04-01 17:13:19,739 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:20,074 - INFO: client connect
+2025-04-01 17:13:20,219 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:20,542 - INFO: client connect
+2025-04-01 17:13:20,663 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:21,093 - INFO: client connect
+2025-04-01 17:13:21,211 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:21,540 - INFO: client connect
+2025-04-01 17:13:21,763 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:21,830 - INFO: client disconnect
+2025-04-01 17:13:21,835 - INFO: server disconnect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 17:13:22,276 - INFO: client connect
+2025-04-01 17:13:22,570 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:23,023 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:23,027 - INFO: client disconnect
+2025-04-01 17:13:49,755 - INFO: client connect
+2025-04-01 17:13:49,802 - INFO: client connect
+2025-04-01 17:13:49,883 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:49,932 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:49,947 - INFO: client connect
+2025-04-01 17:13:50,066 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:50,202 - INFO: client connect
+2025-04-01 17:13:50,254 - INFO: client connect
+2025-04-01 17:13:50,322 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:50,363 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:50,678 - INFO: client connect
+2025-04-01 17:13:50,683 - INFO: client connect
+2025-04-01 17:13:50,943 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:50,946 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:51,107 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:51,111 - INFO: client disconnect
+2025-04-01 17:13:51,590 - INFO: client connect
+2025-04-01 17:13:51,740 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:53,355 - INFO: client connect
+2025-04-01 17:13:54,543 - INFO: server connect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:55,371 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:13:55,375 - INFO: client disconnect
+2025-04-01 17:13:59,346 - INFO: Received WebSocket ping from server (payload: b'3')
+2025-04-01 17:13:59,347 - INFO: Received WebSocket pong from client (payload: b'3')
+2025-04-01 17:14:08,150 - INFO: server connect main.vscode-cdn.net:443 (13.107.253.48:443)
+2025-04-01 17:14:28,410 - INFO: client disconnect
+2025-04-01 17:14:28,412 - INFO: server disconnect developers.cloudflare.com:443 (104.16.6.189:443)
+2025-04-01 17:14:28,586 - INFO: Received WebSocket ping from server (payload: b'')
+2025-04-01 17:14:28,589 - INFO: Received WebSocket pong from client (payload: b'')
+2025-04-01 17:14:28,722 - INFO: client connect
+2025-04-01 17:14:28,989 - INFO: client connect
+2025-04-01 17:14:29,737 - INFO: client connect
+2025-04-01 17:14:29,874 - INFO: server connect www.msftconnecttest.com:80 (23.48.245.178:80)
+2025-04-01 17:14:29,940 - INFO: server disconnect www.msftconnecttest.com:80 (23.48.245.178:80)
+2025-04-01 17:14:29,943 - INFO: client disconnect
+2025-04-01 17:14:32,900 - INFO: client disconnect
+2025-04-01 17:14:32,901 - INFO: server disconnect alive.github.com:443 (140.82.113.26:443)
+2025-04-01 17:14:32,902 - INFO: client disconnect
+2025-04-01 17:14:32,903 - INFO: client disconnect
+2025-04-01 17:14:32,904 - INFO: client disconnect
+2025-04-01 17:14:32,904 - INFO: client disconnect
+2025-04-01 17:14:32,905 - INFO: error establishing server connection: client disconnected
+2025-04-01 17:14:32,906 - INFO: error establishing server connection: client disconnected
+2025-04-01 17:14:32,908 - INFO: server disconnect redirector.brave.com:443 (13.32.121.18:443)
+2025-04-01 17:14:32,909 - INFO: server disconnect componentupdater.brave.com:443 (34.215.223.45:443)
+2025-04-01 17:14:32,910 - INFO: client disconnect
+2025-04-01 17:14:32,911 - INFO: server disconnect developers.cloudflare.com:443 (104.16.6.189:443)
+2025-04-01 17:14:32,912 - INFO: client disconnect
+2025-04-01 17:14:32,912 - INFO: client disconnect
+2025-04-01 17:14:32,913 - INFO: client disconnect
+2025-04-01 17:14:32,913 - INFO: server disconnect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 17:14:32,914 - INFO: server disconnect main.vscode-cdn.net:443 (13.107.253.48:443)
+2025-04-01 17:14:32,914 - INFO: server disconnect mobile.events.data.microsoft.com:443 (20.189.173.14:443)
+2025-04-01 17:14:41,596 - INFO: client disconnect
+2025-04-01 17:14:41,597 - INFO: server disconnect chatgpt.com:443 (172.64.155.209:443)
+2025-04-01 17:14:41,957 - INFO: client connect
+2025-04-01 17:14:42,091 - INFO: server connect chatgpt.com:443 (104.18.32.47:443)
+2025-04-01 17:14:42,207 - INFO: client connect
+2025-04-01 17:14:42,305 - INFO: server connect chatgpt.com:443 (104.18.32.47:443)
+2025-04-01 17:14:59,344 - INFO: Received WebSocket ping from server (payload: b'4')
+2025-04-01 17:14:59,348 - INFO: Received WebSocket pong from client (payload: b'4')
+2025-04-01 17:15:09,589 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:09,589 - INFO: client disconnect
+2025-04-01 17:15:09,782 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:09,783 - INFO: client disconnect
+2025-04-01 17:15:09,939 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:09,941 - INFO: client disconnect
+2025-04-01 17:15:10,060 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:10,061 - INFO: client disconnect
+2025-04-01 17:15:10,256 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:10,259 - INFO: client disconnect
+2025-04-01 17:15:10,377 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:10,379 - INFO: client disconnect
+2025-04-01 17:15:11,431 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:11,435 - INFO: client disconnect
+2025-04-01 17:15:19,776 - INFO: client connect
+2025-04-01 17:15:20,019 - INFO: server connect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 17:15:20,040 - INFO: client connect
+2025-04-01 17:15:20,153 - INFO: server connect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-01 17:15:22,975 - INFO: client connect
+2025-04-01 17:15:23,230 - INFO: client connect
+2025-04-01 17:15:23,346 - INFO: server connect mobile.events.data.microsoft.com:443 (20.189.173.14:443)
+2025-04-01 17:15:23,360 - INFO: client disconnect
+2025-04-01 17:15:23,362 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:23,551 - INFO: server connect mobile.events.data.microsoft.com:443 (20.189.173.14:443)
+2025-04-01 17:15:23,559 - INFO: client disconnect
+2025-04-01 17:15:23,562 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:23,837 - INFO: client disconnect
+2025-04-01 17:15:23,840 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:24,067 - INFO: client disconnect
+2025-04-01 17:15:24,070 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:25,118 - INFO: client connect
+2025-04-01 17:15:25,375 - INFO: client connect
+2025-04-01 17:15:25,607 - INFO: client disconnect
+2025-04-01 17:15:25,610 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:25,803 - INFO: client disconnect
+2025-04-01 17:15:25,806 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:46,249 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 17:15:46,254 - ERROR: Unhandled error in task.
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-04-01 17:15:46,265 - INFO: client disconnect
+2025-04-01 17:15:46,438 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-01 17:15:46,443 - INFO: client disconnect
+2025-04-01 17:15:56,839 - INFO: client disconnect
+2025-04-01 17:15:56,840 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:56,842 - INFO: client disconnect
+2025-04-01 17:15:56,842 - INFO: client disconnect
+2025-04-01 17:15:56,843 - INFO: client disconnect
+2025-04-01 17:15:56,844 - INFO: client disconnect
+2025-04-01 17:15:56,844 - INFO: client disconnect
+2025-04-01 17:15:56,845 - INFO: client disconnect
+2025-04-01 17:15:56,845 - INFO: client disconnect
+2025-04-01 17:15:56,846 - INFO: client disconnect
+2025-04-01 17:15:56,846 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:56,847 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:56,847 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:56,848 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:56,848 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:56,849 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:56,849 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:56,850 - INFO: server disconnect bifrost.nullcybersec-smvdu.org:80 (172.67.156.97:80)
+2025-04-01 17:15:59,349 - INFO: Received WebSocket ping from server (payload: b'5')
+2025-04-01 17:15:59,353 - INFO: Received WebSocket pong from client (payload: b'5')
+2025-04-01 17:16:00,057 - INFO: client disconnect
