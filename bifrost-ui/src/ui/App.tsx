@@ -30,13 +30,13 @@ function App() {
     return () => clearInterval(interval);
   }, []);
 
-  const handleApprove = (id) => {
+  const handleApprove = (id: number) => {
     console.log(`Approved payment ID: ${id}`);
     setPendingPayments(pendingPayments.filter(item => item.id !== id));
     // You can send approval to backend here
   };
 
-  const handleDeny = (id) => {
+  const handleDeny = (id: number) => {
     console.log(`Denied payment ID: ${id}`);
     setPendingPayments(pendingPayments.filter(item => item.id !== id));
     // You can send denial to backend here
