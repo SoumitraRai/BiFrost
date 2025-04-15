@@ -6,13 +6,18 @@ function App() {
   const [pendingPayments, setPendingPayments] = useState([
     { id: 1, message: "Device 1 tried to pay ₹500 on xyz.com" },
     { id: 2, message: "Device 2 attempted ₹1200 transaction at abc.com" },
+    { id: 3, message: "Device 3 attempted ₹1200 transaction at abc.com" },
+    { id: 4, message: "Device 4 attempted ₹1200 transaction at abc.com" },
+    { id: 5, message: "Device 5 attempted ₹1200 transaction at abc.com" },
+    { id: 6, message: "Device 6 attempted ₹1200 transaction at abc.com" },
+    { id: 7, message: "Device 7 attempted ₹1200 transaction at abc.com" },
   ]);
 
   useEffect(() => {
     // Replace with your real proxy server endpoint
     const fetchLogs = async () => {
       try {
-        const response = await fetch("http://localhost:5000/logs");
+        const response = await fetch("/proxy_logs/proxy.log");
         const data = await response.text();
         setLogs(data);
       } catch (error) {
