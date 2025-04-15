@@ -13,7 +13,7 @@ class AdvancedHTTPSProxy:
     def __init__(self, 
                  host: str = '0.0.0.0', 
                  port: int = 8080, 
-                 log_dir: str = 'proxy_logs',
+                 log_dir: str = '../bifrost-ui/public/proxy_logs',  # Changed log directory
                  cert_dir: str = 'certs',
                  config: Optional[Dict[str, Any]] = None):
         """
@@ -196,6 +196,7 @@ class AdvancedHTTPSProxy:
             self.logger.info(f"HTTPS Proxy started on {self.host}:{self.port}")
             self.logger.info(f"Certificate authority files will be stored in {self.cert_dir}")
             self.logger.info(f"Install the CA certificate from {os.path.join(self.cert_dir, 'mitmproxy-ca-cert.pem')} on your clients")
+            self.logger.info(f"Logs will be stored in {os.path.join(self.log_dir, 'proxy.log')}")
             
             await self.master.run()
             
@@ -243,7 +244,9 @@ def main():
         'whitelist_domains': ['github.com', 'example.com'],
         'log_requests': True,
         'log_responses': True,
-        'save_files': True
+        'save_files': True,
+        # You can override the file save directory if needed
+        'file_save_dir': 'bifrost_ui/public/proxy_logs/files'
     }
     
     proxy = AdvancedHTTPSProxy(config=proxy_config)
