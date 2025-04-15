@@ -4,13 +4,11 @@ import "./App.css";
 function App() {
   const [logs, setLogs] = useState("");
   const [pendingPayments, setPendingPayments] = useState([
-    { id: 1, message: "Device 1 tried to pay ₹500 on xyz.com" },
-    { id: 2, message: "Device 2 attempted ₹1200 transaction at abc.com" },
-    { id: 3, message: "Device 3 attempted ₹1200 transaction at abc.com" },
-    { id: 4, message: "Device 4 attempted ₹1200 transaction at abc.com" },
-    { id: 5, message: "Device 5 attempted ₹1200 transaction at abc.com" },
-    { id: 6, message: "Device 6 attempted ₹1200 transaction at abc.com" },
-    { id: 7, message: "Device 7 attempted ₹1200 transaction at abc.com" },
+    { id: 1, message: "Payment request from url - https://paytm.com/recharge-bill-payment" },
+    { id: 2, message: "Payment request from url - https://paytm.com/recharge-bill-payment" },
+    { id: 3, message: "Payment request from url - https://paytm.com/recharge-bill-payment" },
+    { id: 4, message: "Payment request from url - https://paytm.com/recharge-bill-payment" },
+    { id: 5, message: "Payment request from url - https://paytm.com/recharge-bill-payment" },
   ]);
 
   useEffect(() => {
