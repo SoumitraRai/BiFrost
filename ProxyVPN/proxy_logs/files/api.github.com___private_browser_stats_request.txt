@@ -1,0 +1,1 @@
+{"stats": [{"webVitalTimings":[{"name":"https://github.com/SoumitraRai/BiFrost/blob/master/ProxyVPN/certs/mitmproxy-ca-cert.cer","cpu":"lg","inp":0,"networkConnType":"N/A","ssr":true,"lazy":false,"alternate":false,"app":"react-code-view"}],"timestamp":1744718536673,"loggedIn":true,"staff":false,"bundler":"webpack"}] }
