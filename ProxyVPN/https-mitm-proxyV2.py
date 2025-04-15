@@ -14,6 +14,7 @@ class AdvancedHTTPSProxy:
                  host: str = '0.0.0.0', 
                  port: int = 8080, 
                  log_dir: str = 'proxy_logs',
+                 cert_dir: str = 'certs',
                  config: Optional[Dict[str, Any]] = None):
         """
         Initialize the advanced HTTPS proxy with configurable options
@@ -22,14 +23,17 @@ class AdvancedHTTPSProxy:
             host (str): Proxy listening host
             port (int): Proxy listening port
             log_dir (str): Directory to store logs and intercepted traffic
+            cert_dir (str): Directory to store generated certificates
             config (dict): Configuration dictionary for advanced settings
         """
         self.host = host
         self.port = port
         self.log_dir = log_dir
+        self.cert_dir = cert_dir
         
-        # Create log directory if it doesn't exist
+        # Create log and cert directories if they don't exist
         os.makedirs(log_dir, exist_ok=True)
+        os.makedirs(cert_dir, exist_ok=True)
         
         # Default configuration
         self.config = {
@@ -174,39 +178,49 @@ class AdvancedHTTPSProxy:
         Async method to run the proxy server
         """
         try:
-            # Configure mitmproxy options
+            # Configure mitmproxy options with basic certificate generation
             opts = options.Options(
                 listen_host=self.host,
                 listen_port=self.port,
-                mode=['regular'],
-                ssl_insecure=True
+                confdir=self.cert_dir,         # Directory for mitmproxy configuration and certs
+                ssl_insecure=True,             # Allow invalid certificates
+                # Basic certificate options
+                ssl_verify_upstream_trusted_ca=os.path.join(self.cert_dir, 'mitmproxy-ca.pem'),
+                add_upstream_certs_to_client_chain=True
             )
             
             # Create the proxy master
             self.master = DumpMaster(opts)
             self.master.addons.add(self)
             
-            self.logger.info(f"🔒 HTTPS Proxy started on {self.host}:{self.port}")
+            self.logger.info(f"HTTPS Proxy started on {self.host}:{self.port}")
+            self.logger.info(f"Certificate authority files will be stored in {self.cert_dir}")
+            self.logger.info(f"Install the CA certificate from {os.path.join(self.cert_dir, 'mitmproxy-ca-cert.pem')} on your clients")
+            
             await self.master.run()
             
-        # except KeyboardInterrupt:
-        #     self.logger.info("Proxy server stopped.")
         except Exception as e:
             self.logger.error(f"Proxy server error: {e}")
             raise
         finally:
             if self.master:
                 self.master.shutdown()
-                self.logger.info("🛑 Proxy server shutting down.")
+                self.logger.info("Proxy server shutting down.")
     
     def run(self):
-    # Run the proxy server using asyncio
+        """
+        Run the proxy server using asyncio
+        """
         try:
-        # Use ProactorEventLoop for better async handling on Windows
+            # Use ProactorEventLoop for better async handling on Windows
             if sys.platform == "win32":
-                asyncio.set_event_loop(asyncio.ProactorEventLoop())
+                try:
+                    asyncio.set_event_loop(asyncio.ProactorEventLoop())
+                except AttributeError:
+                    # For newer Python versions
+                    asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
             else:
-                asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+                asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 
             loop = asyncio.get_event_loop()
             loop.run_until_complete(self.run_proxy())
@@ -225,7 +239,7 @@ class AdvancedHTTPSProxy:
 def main():
     # Example configuration
     proxy_config = {
-        'intercept_all': False,
+        'intercept_all': True,
         'whitelist_domains': ['github.com', 'example.com'],
         'log_requests': True,
         'log_responses': True,
