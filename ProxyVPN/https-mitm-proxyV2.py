@@ -246,7 +246,7 @@ def main():
         'log_responses': True,
         'save_files': True,
         # You can override the file save directory if needed
-        'file_save_dir': 'bifrost_ui/public/proxy_logs/files'
+        'file_save_dir': 'bifrost-ui/public/proxy_logs/'
     }
     
     proxy = AdvancedHTTPSProxy(config=proxy_config)
