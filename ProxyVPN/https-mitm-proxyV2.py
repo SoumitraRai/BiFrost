@@ -13,45 +13,44 @@ class AdvancedHTTPSProxy:
     def __init__(self, 
                  host: str = '0.0.0.0', 
                  port: int = 8080, 
-                 log_dir: str = '../bifrost-ui/public/proxy_logs',  # Changed log directory
+                 log_dir: str = '../bifrost-ui/public/proxy_logs',  # Changed this for our project
                  cert_dir: str = 'certs',
                  config: Optional[Dict[str, Any]] = None):
         """
-        Initialize the advanced HTTPS proxy with configurable options
+        Starting the HTTPS proxy with options we can change
         
-        Args:
-            host (str): Proxy listening host
-            port (int): Proxy listening port
-            log_dir (str): Directory to store logs and intercepted traffic
-            cert_dir (str): Directory to store generated certificates
-            config (dict): Configuration dictionary for advanced settings
+        host - where to listen (default is everywhere)
+        port - which port to use
+        log_dir - where to save our logs
+        cert_dir - where to keep our certificates
+        config - other settings we might want to change
         """
         self.host = host
         self.port = port
         self.log_dir = log_dir
         self.cert_dir = cert_dir
         
-        # Create log and cert directories if they don't exist
+        # Making folders if they don't exist yet
         os.makedirs(log_dir, exist_ok=True)
         os.makedirs(cert_dir, exist_ok=True)
         
-        # Default configuration
+        # Default settings
         self.config = {
-            'intercept_all': False,  # Intercept all traffic
-            'whitelist_domains': [],  # Domains to specifically intercept
-            'blacklist_domains': [],  # Domains to ignore
+            'intercept_all': False,  # Grab everything
+            'whitelist_domains': [],  # Only intercept these websites
+            'blacklist_domains': [],  # Ignore these websites
             'log_requests': True,
             'log_responses': True,
-            'max_log_size': 1024 * 1024,  # 1MB max log size per file
-            'save_files': False,  # Save intercepted files
+            'max_log_size': 1024 * 1024,  # 1MB per file should be enough
+            'save_files': False,  # Save stuff we intercept
             'file_save_dir': os.path.join(log_dir, 'files')
         }
         
-        # Update with provided configuration
+        # Use custom config if provided
         if config:
             self.config.update(config)
         
-        # Setup logging
+        # Setting up logs
         logging.basicConfig(
             level=logging.INFO,
             format='%(asctime)s - %(levelname)s: %(message)s',
@@ -62,33 +61,26 @@ class AdvancedHTTPSProxy:
         )
         self.logger = logging.getLogger(__name__)
         
-        # Proxy master 
         self.master = None
     
     def should_intercept(self, flow: mitmproxy.http.HTTPFlow) -> bool:
         """
-        Determine whether a request should be intercepted based on configuration
-        
-        Args:
-            flow (HTTPFlow): The HTTP flow to check
-        
-        Returns:
-            bool: Whether the flow should be intercepted
+        Decides if we should capture this request
         """
-        # Check if the domain is in whitelist
+        # Check if in whitelist
         if self.config['whitelist_domains']:
             return any(domain in flow.request.host for domain in self.config['whitelist_domains'])
         
-        # Check if the domain is in blacklist
+        # Check if in blacklist
         if self.config['blacklist_domains']:
             return not any(domain in flow.request.host for domain in self.config['blacklist_domains'])
         
-        # Default to intercept_all setting
+        # Default to whatever we set
         return self.config['intercept_all']
     
     def log_request(self, flow: mitmproxy.http.HTTPFlow):
         """
-        Log details of an HTTP request flow (HTTPFlow): The HTTP flow containing request details
+        Save request details to our log
         """
         if not self.config['log_requests']:
             return
@@ -99,7 +91,7 @@ class AdvancedHTTPSProxy:
             'headers': dict(flow.request.headers),
         }
         
-        # Try to decode and log body if possible
+        # Try to get the body text
         try:
             request_log['body'] = flow.request.text
         except:
@@ -109,9 +101,7 @@ class AdvancedHTTPSProxy:
     
     def log_response(self, flow: mitmproxy.http.HTTPFlow):
         """
-        Log details of an HTTP response
-        
-        flow (HTTPFlow): The HTTP flow containing response details
+        Save response details from server
         """
         if not self.config['log_responses']:
             return
@@ -122,9 +112,9 @@ class AdvancedHTTPSProxy:
             'headers': dict(flow.response.headers),
         }
         
-        # Try to decode and log body if possible
+        # Try to get the body text
         try:
-            # Limit response body logging to prevent massive logs
+            # Not saving huge responses
             response_log['body'] = flow.response.text[:1024]
         except:
             response_log['body_length'] = len(flow.response.content)
@@ -133,15 +123,14 @@ class AdvancedHTTPSProxy:
     
     def save_intercepted_file(self, flow: mitmproxy.http.HTTPFlow):
         """
-        Save files from intercepted requests/responses
-        flow (HTTPFlow): The HTTP flow to save
+        Save files we intercept
         """
         if not self.config['save_files']:
             return
         
         os.makedirs(self.config['file_save_dir'], exist_ok=True)
         
-        # Generate a safe filename
+        # Make a filename that won't break things
         filename = f"{flow.request.host}_{flow.request.path.replace('/', '_')}"
         filepath = os.path.join(self.config['file_save_dir'], filename)
         
@@ -158,16 +147,14 @@ class AdvancedHTTPSProxy:
     
     def request(self, flow: mitmproxy.http.HTTPFlow):
         """
-        Intercept and process requests
-        flow (HTTPFlow): The HTTP flow to process
+        Handle incoming requests
         """
         if self.should_intercept(flow):
             self.log_request(flow)
     
     def response(self, flow: mitmproxy.http.HTTPFlow):
         """
-        Intercept and process responses
-        flow (HTTPFlow): The HTTP flow to process
+        Handle server responses
         """
         if self.should_intercept(flow):
             self.log_response(flow)
@@ -175,21 +162,20 @@ class AdvancedHTTPSProxy:
     
     async def run_proxy(self):
         """
-        Async method to run the proxy server
+        Start the proxy server
         """
         try:
-            # Configure mitmproxy options with basic certificate generation
+            # Set up mitmproxy options
             opts = options.Options(
                 listen_host=self.host,
                 listen_port=self.port,
-                confdir=self.cert_dir,         # Directory for mitmproxy configuration and certs
-                ssl_insecure=True,             # Allow invalid certificates
-                # Basic certificate options
+                confdir=self.cert_dir,         # Where to store config and certs
+                ssl_insecure=True,             # Don't be picky about certificates
                 ssl_verify_upstream_trusted_ca=os.path.join(self.cert_dir, 'mitmproxy-ca.pem'),
                 add_upstream_certs_to_client_chain=True
             )
             
-            # Create the proxy master
+            # Create the proxy
             self.master = DumpMaster(opts)
             self.master.addons.add(self)
             
@@ -210,15 +196,15 @@ class AdvancedHTTPSProxy:
     
     def run(self):
         """
-        Run the proxy server using asyncio
+        Run the proxy using asyncio
         """
         try:
-            # Use ProactorEventLoop for better async handling on Windows
+            # Windows needs ProactorEventLoop
             if sys.platform == "win32":
                 try:
                     asyncio.set_event_loop(asyncio.ProactorEventLoop())
                 except AttributeError:
-                    # For newer Python versions
+                    # For newer Python
                     asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
             else:
                 asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
@@ -238,15 +224,14 @@ class AdvancedHTTPSProxy:
 
 
 def main():
-    # Example configuration
+    # My example settings
     proxy_config = {
         'intercept_all': True,
         'whitelist_domains': ['github.com', 'example.com'],
         'log_requests': True,
         'log_responses': True,
         'save_files': True,
-        # You can override the file save directory if needed
-        'file_save_dir': 'bifrost-ui/public/proxy_logs/'
+        'file_save_dir': 'bifrost-ui/public/proxy_logs/'  # Changed this path for our project
     }
     
     proxy = AdvancedHTTPSProxy(config=proxy_config)
