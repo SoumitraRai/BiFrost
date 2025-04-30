@@ -1,1 +1,0 @@
-authorize=1&authenticity_token=D_5jfT4DdC2TfGVgprDgcX9Ee4uMECq6QZDyyrs5HdM9XyBKtwDcLFrPn6ietWQWjg892HM5dQAfqhD9GLjocQ&redirect_uri_specified=true&client_id=e37ffdec11c0245cb2e0&redirect_uri=https%3A%2F%2Flogin.live.com%2FHandleGithubResponse.srf&state=4E68B8C1C1B7B93A&scope=read%3Auser%2Cuser%3Aemail&authorize=1
