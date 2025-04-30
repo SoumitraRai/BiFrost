@@ -1,0 +1,5 @@
+Payment links captured:
+https://www.phonepe.com/webstatic/9273/page-data/business-solutions/merchant-advertisement/page-data.json",
+https://www.phonepe.com/webstatic/9273/page-data/business-solutions/merchant-advertisement/page-data.json",
+https://www.phonepe.com/webstatic/9273/page-data/business-solutions/payment-link/page-data.json",
+https://www.phonepe.com/webstatic/9273/page-data/business-solutions/payment-link/page-data.json",

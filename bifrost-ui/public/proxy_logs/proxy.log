@@ -1,418 +1,580 @@
-2025-04-16 13:04:04,783 - INFO: HTTPS Proxy started on 0.0.0.0:8080
-2025-04-16 13:04:04,783 - INFO: Certificate authority files will be stored in certs
-2025-04-16 13:04:04,784 - INFO: Install the CA certificate from certs\mitmproxy-ca-cert.pem on your clients
-2025-04-16 13:04:04,784 - INFO: Logs will be stored in ../bifrost-ui/public/proxy_logs\proxy.log
-2025-04-16 13:04:04,785 - INFO: HTTP(S) proxy listening at *:8080.
-2025-04-16 13:04:38,795 - INFO: client connect
-2025-04-16 13:04:38,839 - INFO: server connect chatgpt.com:443 (172.64.155.209:443)
-2025-04-16 13:04:39,104 - INFO: client connect
-2025-04-16 13:04:39,130 - INFO: server connect chatgpt.com:443 (172.64.155.209:443)
-2025-04-16 13:04:41,548 - INFO: client connect
-2025-04-16 13:04:41,573 - INFO: server connect www.google.com:443 (142.250.182.164:443)
-2025-04-16 13:04:41,810 - INFO: client connect
-2025-04-16 13:04:41,837 - INFO: server connect www.google.com:443 (142.250.182.164:443)
-2025-04-16 13:04:42,491 - INFO: client connect
-2025-04-16 13:04:42,492 - INFO: client connect
-2025-04-16 13:04:42,530 - INFO: server connect waa-pa.clients6.google.com:443 (142.250.206.106:443)
-2025-04-16 13:04:42,544 - INFO: server connect ogads-pa.clients6.google.com:443 (142.251.42.74:443)
-2025-04-16 13:04:42,736 - INFO: client connect
-2025-04-16 13:04:42,756 - INFO: client connect
-2025-04-16 13:04:42,757 - INFO: client connect
-2025-04-16 13:04:42,777 - INFO: server connect waa-pa.clients6.google.com:443 (142.250.206.106:443)
-2025-04-16 13:04:42,780 - INFO: server connect ogads-pa.clients6.google.com:443 (142.251.42.74:443)
-2025-04-16 13:04:42,845 - INFO: server connect accounts.google.com:443 (142.250.4.84:443)
-2025-04-16 13:04:43,021 - INFO: client connect
-2025-04-16 13:04:43,109 - INFO: server connect accounts.google.com:443 (142.250.4.84:443)
-2025-04-16 13:04:44,790 - INFO: client connect
-2025-04-16 13:04:44,884 - INFO: server connect paytm.com:443 (172.65.64.51:443)
-2025-04-16 13:04:45,039 - INFO: client connect
-2025-04-16 13:04:45,080 - INFO: server connect paytm.com:443 (172.65.64.51:443)
-2025-04-16 13:04:45,442 - INFO: client connect
-2025-04-16 13:04:45,454 - INFO: client connect
-2025-04-16 13:04:45,551 - INFO: client connect
-2025-04-16 13:04:45,556 - INFO: server connect pwebassets.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:04:45,574 - INFO: server connect assetscdn1.paytm.com:443 (104.120.87.2:443)
-2025-04-16 13:04:45,664 - INFO: server connect webappsstatic.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:04:45,716 - INFO: client connect
-2025-04-16 13:04:45,738 - INFO: server connect pwebassets.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:04:45,754 - INFO: client connect
-2025-04-16 13:04:45,772 - INFO: client connect
-2025-04-16 13:04:45,784 - INFO: client connect
-2025-04-16 13:04:45,806 - INFO: client connect
-2025-04-16 13:04:45,829 - INFO: server connect webappsstatic.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:04:45,844 - INFO: server connect storefront.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:04:45,847 - INFO: server connect sig.paytm.com:443 (3.110.250.32:443)
-2025-04-16 13:04:45,925 - INFO: server connect travel.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:04:46,017 - INFO: client connect
-2025-04-16 13:04:46,038 - INFO: client connect
-2025-04-16 13:04:46,043 - INFO: server connect storefront.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:04:46,068 - INFO: server connect travel.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:04:46,124 - INFO: client connect
-2025-04-16 13:04:46,253 - INFO: server connect hawkeye-api.paytm.com:443 (18.60.32.239:443)
-2025-04-16 13:04:46,358 - INFO: client connect
-2025-04-16 13:04:46,362 - INFO: client connect
-2025-04-16 13:04:46,384 - INFO: server connect travel.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:04:46,421 - INFO: server connect hawkeye-api.paytm.com:443 (18.60.32.239:443)
-2025-04-16 13:04:46,615 - INFO: client connect
-2025-04-16 13:04:46,646 - INFO: server connect travel.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:04:50,543 - INFO: client connect
-2025-04-16 13:04:50,637 - INFO: server connect encrypted-tbn0.gstatic.com:443 (142.250.192.46:443)
-2025-04-16 13:04:50,790 - INFO: client connect
-2025-04-16 13:04:50,836 - INFO: server connect encrypted-tbn0.gstatic.com:443 (142.250.192.46:443)
-2025-04-16 13:04:53,840 - INFO: client connect
-2025-04-16 13:04:53,842 - INFO: client disconnect
-2025-04-16 13:04:53,843 - INFO: server disconnect accounts.google.com:443 (142.250.4.84:443)
-2025-04-16 13:04:53,873 - INFO: server connect www.gstatic.com:443 (142.250.207.227:443)
-2025-04-16 13:04:54,149 - INFO: client connect
-2025-04-16 13:04:54,172 - INFO: server connect www.gstatic.com:443 (142.250.207.227:443)
-2025-04-16 13:04:54,462 - INFO: client connect
-2025-04-16 13:04:54,512 - INFO: server connect encrypted-tbn0.gstatic.com:443 (142.250.192.46:443)
-2025-04-16 13:04:54,721 - INFO: client connect
-2025-04-16 13:04:54,766 - INFO: server connect encrypted-tbn0.gstatic.com:443 (142.250.192.46:443)
-2025-04-16 13:04:54,970 - INFO: client connect
-2025-04-16 13:04:54,993 - INFO: server connect www.gstatic.com:443 (142.250.207.227:443)
-2025-04-16 13:04:55,805 - INFO: server disconnect pwebassets.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:04:55,879 - INFO: server disconnect webappsstatic.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:04:56,100 - INFO: server disconnect storefront.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:04:56,141 - INFO: server disconnect travel.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:04:56,211 - INFO: client connect
-2025-04-16 13:04:56,355 - INFO: server connect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
-2025-04-16 13:04:56,477 - INFO: client connect
-2025-04-16 13:04:56,581 - INFO: server connect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
-2025-04-16 13:04:56,699 - INFO: server disconnect travel.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:04:57,679 - INFO: client disconnect
-2025-04-16 13:04:57,680 - INFO: server disconnect chatgpt.com:443 (172.64.155.209:443)
-2025-04-16 13:04:57,993 - INFO: client connect
-2025-04-16 13:04:58,025 - INFO: server connect ogs.google.com:443 (142.250.206.174:443)
-2025-04-16 13:04:59,174 - INFO: client connect
-2025-04-16 13:04:59,436 - INFO: client connect
-2025-04-16 13:04:59,488 - INFO: server connect mobile.events.data.microsoft.com:443 (20.189.173.7:443)
-2025-04-16 13:04:59,697 - INFO: server connect mobile.events.data.microsoft.com:443 (20.189.173.7:443)
-2025-04-16 13:05:18,939 - INFO: client connect
-2025-04-16 13:05:19,032 - INFO: server connect github.com:443 (20.207.73.82:443)
-2025-04-16 13:05:19,795 - INFO: client disconnect
-2025-04-16 13:05:19,796 - INFO: server disconnect github.com:443 (20.207.73.82:443)
-2025-04-16 13:05:20,069 - INFO: client connect
-2025-04-16 13:05:20,119 - INFO: server connect github.com:443 (20.207.73.82:443)
-2025-04-16 13:05:20,782 - INFO: client disconnect
-2025-04-16 13:05:20,783 - INFO: server disconnect github.com:443 (20.207.73.82:443)
-2025-04-16 13:05:21,171 - INFO: client connect
-2025-04-16 13:05:21,288 - INFO: server connect api.github.com:443 (20.207.73.85:443)
-2025-04-16 13:05:21,431 - INFO: client connect
-2025-04-16 13:05:21,441 - INFO: Request: {}
-2025-04-16 13:05:21,477 - INFO: server connect api.github.com:443 (20.207.73.85:443)
-2025-04-16 13:05:40,874 - INFO: client connect
-2025-04-16 13:05:40,902 - INFO: server connect chat.google.com:443 (142.250.194.142:443)
-2025-04-16 13:05:41,756 - INFO: client connect
-2025-04-16 13:05:41,830 - INFO: server connect waa-pa.googleapis.com:443 (142.250.192.234:443)
-2025-04-16 13:05:43,052 - INFO: client connect
-2025-04-16 13:05:43,080 - INFO: server connect www.google.com:443 (142.250.182.164:443)
-2025-04-16 13:05:43,765 - INFO: client connect
-2025-04-16 13:05:43,794 - INFO: server connect ssl.gstatic.com:443 (142.250.206.131:443)
-2025-04-16 13:05:43,812 - INFO: client connect
-2025-04-16 13:05:43,838 - INFO: client connect
-2025-04-16 13:05:43,861 - INFO: server connect signaler-pa.clients6.google.com:443 (142.250.194.234:443)
-2025-04-16 13:05:43,879 - INFO: server connect lh3.google.com:443 (142.250.206.142:443)
-2025-04-16 13:05:43,958 - INFO: client connect
-2025-04-16 13:05:44,016 - INFO: server connect ogads-pa.clients6.google.com:443 (142.250.194.42:443)
-2025-04-16 13:05:44,061 - INFO: client connect
-2025-04-16 13:05:44,097 - INFO: server connect lh3.googleusercontent.com:443 (142.250.193.225:443)
-2025-04-16 13:05:44,259 - INFO: client connect
-2025-04-16 13:05:44,282 - INFO: server connect signaler-pa.clients6.google.com:443 (142.250.194.234:443)
-2025-04-16 13:05:44,486 - INFO: client connect
-2025-04-16 13:05:44,553 - INFO: client connect
-2025-04-16 13:05:44,581 - INFO: server connect accounts.google.com:443 (142.250.4.84:443)
-2025-04-16 13:05:44,598 - INFO: server connect encrypted-tbn0.gstatic.com:443 (142.250.192.46:443)
-2025-04-16 13:05:45,222 - INFO: client connect
-2025-04-16 13:05:45,301 - INFO: server connect www.phonepe.com:443 (104.17.75.195:443)
-2025-04-16 13:05:45,614 - INFO: client connect
-2025-04-16 13:05:45,734 - INFO: server connect csp.phonepe.com:443 (104.17.76.195:443)
-2025-04-16 13:05:45,845 - INFO: client connect
-2025-04-16 13:05:45,926 - INFO: server connect api.phonepe.com:443 (172.64.147.159:443)
-2025-04-16 13:05:46,008 - INFO: client connect
-2025-04-16 13:05:46,042 - INFO: client connect
-2025-04-16 13:05:46,066 - INFO: server connect www.phonepe.com:443 (104.17.75.195:443)
-2025-04-16 13:05:46,143 - INFO: client connect
-2025-04-16 13:05:46,164 - INFO: server connect api.phonepe.com:443 (172.64.147.159:443)
-2025-04-16 13:05:46,258 - INFO: server connect css.page-source.com:443 (51.89.234.134:443)
-2025-04-16 13:05:47,767 - INFO: client connect
-2025-04-16 13:05:47,793 - INFO: server connect ssl.gstatic.com:443 (142.250.206.131:443)
-2025-04-16 13:05:48,056 - INFO: client connect
-2025-04-16 13:05:48,082 - INFO: server connect docs.google.com:443 (142.250.206.110:443)
-2025-04-16 13:05:48,147 - INFO: client connect
-2025-04-16 13:05:48,175 - INFO: server connect www.msftconnecttest.com:80 (96.17.168.107:80)
-2025-04-16 13:05:48,205 - INFO: server disconnect www.msftconnecttest.com:80 (96.17.168.107:80)
-2025-04-16 13:05:48,207 - INFO: client disconnect
-2025-04-16 13:05:52,998 - INFO: server disconnect api.github.com:443 (20.207.73.85:443)
-2025-04-16 13:05:53,519 - INFO: client disconnect
-2025-04-16 13:05:53,523 - INFO: server disconnect encrypted-tbn0.gstatic.com:443 (142.250.192.46:443)
-2025-04-16 13:05:53,525 - INFO: client disconnect
-2025-04-16 13:05:53,530 - INFO: server disconnect hawkeye-api.paytm.com:443 (18.60.32.239:443)
-2025-04-16 13:05:53,532 - INFO: client disconnect
-2025-04-16 13:05:53,533 - INFO: client disconnect
-2025-04-16 13:05:53,534 - INFO: client disconnect
-2025-04-16 13:05:53,535 - INFO: client disconnect
-2025-04-16 13:05:53,536 - INFO: client disconnect
-2025-04-16 13:05:53,538 - INFO: client disconnect
-2025-04-16 13:05:53,539 - INFO: client disconnect
-2025-04-16 13:05:53,540 - INFO: server disconnect ogads-pa.clients6.google.com:443 (142.251.42.74:443)
-2025-04-16 13:05:53,541 - INFO: server disconnect paytm.com:443 (172.65.64.51:443)
-2025-04-16 13:05:53,542 - INFO: server disconnect waa-pa.clients6.google.com:443 (142.250.206.106:443)
-2025-04-16 13:05:53,542 - INFO: client disconnect
-2025-04-16 13:05:53,542 - INFO: client disconnect
-2025-04-16 13:05:53,543 - INFO: server disconnect www.google.com:443 (142.250.182.164:443)
-2025-04-16 13:05:53,544 - ERROR: Unhandled error in task.
-Traceback (most recent call last):
-  File "C:\Program Files\Python313\Lib\asyncio\events.py", line 89, in _run
-    self._context.run(self._callback, *self._args)
-    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python313\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
-    self._sock.shutdown(socket.SHUT_RDWR)
-    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2025-04-16 13:05:53,823 - INFO: client connect
-2025-04-16 13:05:53,852 - INFO: server connect docs.google.com:443 (142.250.206.110:443)
-2025-04-16 13:05:54,086 - INFO: client connect
-2025-04-16 13:05:54,116 - INFO: server connect docs.google.com:443 (142.250.206.110:443)
-2025-04-16 13:06:10,942 - INFO: client disconnect
-2025-04-16 13:06:10,947 - INFO: server disconnect mobile.events.data.microsoft.com:443 (20.189.173.7:443)
-2025-04-16 13:06:10,949 - INFO: client disconnect
-2025-04-16 13:06:10,953 - INFO: server disconnect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
-2025-04-16 13:06:18,250 - INFO: client connect
-2025-04-16 13:06:18,285 - INFO: server connect www.msftconnecttest.com:80 (96.17.168.107:80)
-2025-04-16 13:06:18,322 - INFO: server disconnect www.msftconnecttest.com:80 (96.17.168.107:80)
-2025-04-16 13:06:18,323 - INFO: client disconnect
-2025-04-16 13:06:37,637 - INFO: client connect
-2025-04-16 13:06:37,889 - INFO: server connect array813.prod.do.dsp.mp.microsoft.com:443 (20.191.74.161:443)
-2025-04-16 13:06:38,683 - INFO: client disconnect
-2025-04-16 13:06:38,684 - INFO: client disconnect
-2025-04-16 13:06:38,686 - INFO: server disconnect encrypted-tbn0.gstatic.com:443 (142.250.192.46:443)
-2025-04-16 13:06:38,687 - INFO: server disconnect www.gstatic.com:443 (142.250.207.227:443)
-2025-04-16 13:06:38,919 - INFO: client connect
-2025-04-16 13:06:38,953 - INFO: server connect disc801.prod.do.dsp.mp.microsoft.com:443 (23.32.176.80:443)
-2025-04-16 13:06:38,989 - INFO: client connect
-2025-04-16 13:06:39,010 - INFO: server connect ssl.gstatic.com:443 (142.250.206.131:443)
-2025-04-16 13:06:39,254 - INFO: client connect
-2025-04-16 13:06:39,279 - INFO: server connect ssl.gstatic.com:443 (142.250.206.131:443)
-2025-04-16 13:06:45,601 - INFO: client connect
-2025-04-16 13:06:45,645 - INFO: server connect prod-dynamite-prod-00-us-signaler-pa.clients6.google.com:443 (142.250.182.234:443)
-2025-04-16 13:06:45,646 - INFO: server disconnect pwebassets.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:06:45,812 - INFO: server disconnect assetscdn1.paytm.com:443 (104.120.87.2:443)
-2025-04-16 13:06:45,819 - INFO: server disconnect webappsstatic.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:06:46,119 - INFO: server disconnect travel.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:06:46,214 - INFO: server disconnect storefront.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:06:46,356 - INFO: client connect
-2025-04-16 13:06:46,411 - INFO: server connect prod-dynamite-prod-00-us-signaler-pa.clients6.google.com:443 (142.250.182.234:443)
-2025-04-16 13:06:46,565 - INFO: server disconnect travel.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:06:48,382 - INFO: client connect
-2025-04-16 13:06:48,419 - INFO: server connect www.msftconnecttest.com:80 (96.17.168.98:80)
-2025-04-16 13:06:48,461 - INFO: server disconnect www.msftconnecttest.com:80 (96.17.168.98:80)
-2025-04-16 13:06:48,462 - INFO: client disconnect
-2025-04-16 13:07:12,095 - INFO: server connect storefront.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:07:12,295 - INFO: server connect travel.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:07:12,448 - INFO: server connect travel.paytm.com:443 (23.35.242.82:443)
-2025-04-16 13:07:18,503 - INFO: client connect
-2025-04-16 13:07:18,544 - INFO: server connect www.msftconnecttest.com:80 (96.17.168.98:80)
-2025-04-16 13:07:18,579 - INFO: server disconnect www.msftconnecttest.com:80 (96.17.168.98:80)
-2025-04-16 13:07:18,580 - INFO: client disconnect
-2025-04-16 13:07:30,492 - INFO: client connect
-2025-04-16 13:07:30,514 - INFO: server connect waa-pa.clients6.google.com:443 (142.250.206.106:443)
-2025-04-16 13:07:31,042 - INFO: client connect
-2025-04-16 13:07:31,086 - INFO: server connect encrypted-tbn0.gstatic.com:443 (142.250.192.46:443)
-2025-04-16 13:07:34,511 - INFO: client connect
-2025-04-16 13:07:34,538 - INFO: server connect ogs.google.com:443 (142.250.206.174:443)
-2025-04-16 13:07:41,529 - INFO: client connect
-2025-04-16 13:07:41,631 - INFO: server connect razorpay.com:443 (52.84.206.75:443)
-2025-04-16 13:07:41,876 - INFO: client connect
-2025-04-16 13:07:41,877 - INFO: client connect
-2025-04-16 13:07:41,878 - INFO: client connect
-2025-04-16 13:07:41,879 - INFO: client connect
-2025-04-16 13:07:41,881 - INFO: client connect
-2025-04-16 13:07:41,883 - INFO: client connect
-2025-04-16 13:07:41,940 - INFO: client disconnect
-2025-04-16 13:07:41,941 - INFO: client disconnect
-2025-04-16 13:07:41,942 - INFO: client disconnect
-2025-04-16 13:07:41,942 - INFO: client disconnect
-2025-04-16 13:07:41,943 - INFO: server disconnect razorpay.com:443 (52.84.206.75:443)
-2025-04-16 13:07:41,944 - INFO: server disconnect ssl.gstatic.com:443 (142.250.206.131:443)
-2025-04-16 13:07:41,944 - INFO: server disconnect prod-dynamite-prod-00-us-signaler-pa.clients6.google.com:443 (142.250.182.234:443)
-2025-04-16 13:07:41,945 - INFO: server disconnect lh3.googleusercontent.com:443 (142.250.193.225:443)
-2025-04-16 13:07:41,946 - INFO: client disconnect
-2025-04-16 13:07:41,947 - INFO: server disconnect ogads-pa.clients6.google.com:443 (142.250.194.42:443)
-2025-04-16 13:07:41,948 - INFO: client disconnect
-2025-04-16 13:07:41,948 - INFO: client disconnect
-2025-04-16 13:07:41,949 - INFO: client disconnect
-2025-04-16 13:07:41,949 - INFO: client disconnect
-2025-04-16 13:07:41,950 - INFO: client disconnect
-2025-04-16 13:07:41,951 - INFO: server disconnect waa-pa.googleapis.com:443 (142.250.192.234:443)
-2025-04-16 13:07:41,951 - INFO: server disconnect encrypted-tbn0.gstatic.com:443 (142.250.192.46:443)
-2025-04-16 13:07:41,952 - INFO: server disconnect www.phonepe.com:443 (104.17.75.195:443)
-2025-04-16 13:07:41,952 - INFO: server disconnect encrypted-tbn0.gstatic.com:443 (142.250.192.46:443)
-2025-04-16 13:07:41,953 - INFO: server disconnect waa-pa.clients6.google.com:443 (142.250.206.106:443)
-2025-04-16 13:07:41,953 - INFO: client disconnect
-2025-04-16 13:07:41,954 - INFO: client disconnect
-2025-04-16 13:07:41,954 - INFO: client disconnect
-2025-04-16 13:07:41,954 - INFO: client disconnect
-2025-04-16 13:07:41,955 - INFO: client disconnect
-2025-04-16 13:07:41,955 - INFO: client disconnect
-2025-04-16 13:07:41,956 - INFO: client disconnect
-2025-04-16 13:07:41,956 - INFO: client disconnect
-2025-04-16 13:07:41,957 - INFO: client connect
-2025-04-16 13:07:41,958 - INFO: server disconnect css.page-source.com:443 (51.89.234.134:443)
-2025-04-16 13:07:41,958 - INFO: server disconnect signaler-pa.clients6.google.com:443 (142.250.194.234:443)
-2025-04-16 13:07:41,959 - INFO: server disconnect lh3.google.com:443 (142.250.206.142:443)
-2025-04-16 13:07:41,959 - INFO: server disconnect csp.phonepe.com:443 (104.17.76.195:443)
-2025-04-16 13:07:41,960 - INFO: server disconnect www.phonepe.com:443 (104.17.75.195:443)
-2025-04-16 13:07:41,960 - INFO: server disconnect accounts.google.com:443 (142.250.4.84:443)
-2025-04-16 13:07:41,961 - INFO: server disconnect ogs.google.com:443 (142.250.206.174:443)
-2025-04-16 13:07:41,961 - INFO: server disconnect ssl.gstatic.com:443 (142.250.206.131:443)
-2025-04-16 13:07:41,962 - INFO: client disconnect
-2025-04-16 13:07:41,962 - INFO: client disconnect
-2025-04-16 13:07:41,963 - INFO: client connect
-2025-04-16 13:07:41,964 - INFO: server disconnect api.phonepe.com:443 (172.64.147.159:443)
-2025-04-16 13:07:41,965 - INFO: server disconnect api.phonepe.com:443 (172.64.147.159:443)
-2025-04-16 13:07:41,965 - INFO: client connect
-2025-04-16 13:07:41,967 - INFO: server connect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:41,968 - INFO: server connect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:41,968 - INFO: server connect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:41,969 - INFO: server connect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:41,970 - INFO: server connect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:41,970 - INFO: server connect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:41,971 - INFO: client connect
-2025-04-16 13:07:41,973 - INFO: client connect
-2025-04-16 13:07:41,975 - INFO: client connect
-2025-04-16 13:07:41,996 - INFO: server connect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:41,997 - INFO: server connect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:41,998 - INFO: server connect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:41,999 - INFO: server connect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:42,000 - INFO: server connect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:42,047 - INFO: client connect
-2025-04-16 13:07:42,049 - INFO: client connect
-2025-04-16 13:07:42,050 - INFO: client connect
-2025-04-16 13:07:42,072 - INFO: server connect lumberjack.razorpay.com:443 (52.66.36.147:443)
-2025-04-16 13:07:42,073 - INFO: server connect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:42,079 - INFO: server connect fonts.gstatic.com:443 (142.250.182.163:443)
-2025-04-16 13:07:42,080 - INFO: server connect fonts.gstatic.com:443 (142.250.182.163:443)
-2025-04-16 13:07:42,081 - INFO: client connect
-2025-04-16 13:07:42,103 - INFO: client connect
-2025-04-16 13:07:42,109 - INFO: client connect
-2025-04-16 13:07:42,112 - INFO: Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for framerusercontent.com, this may indicate that the client does not trust the proxy's certificate.
-2025-04-16 13:07:42,113 - INFO: client connect
-2025-04-16 13:07:42,116 - INFO: Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for framerusercontent.com, this may indicate that the client does not trust the proxy's certificate.
-2025-04-16 13:07:42,117 - INFO: Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for framerusercontent.com, this may indicate that the client does not trust the proxy's certificate.
-2025-04-16 13:07:42,118 - INFO: Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for framerusercontent.com, this may indicate that the client does not trust the proxy's certificate.
-2025-04-16 13:07:42,119 - INFO: client connect
-2025-04-16 13:07:42,140 - INFO: client disconnect
-2025-04-16 13:07:42,144 - INFO: client disconnect
-2025-04-16 13:07:42,146 - INFO: server disconnect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:42,150 - INFO: server disconnect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:42,151 - INFO: client disconnect
-2025-04-16 13:07:42,152 - INFO: client disconnect
-2025-04-16 13:07:42,152 - INFO: client disconnect
-2025-04-16 13:07:42,154 - INFO: server connect lumberjack.razorpay.com:443 (52.66.36.147:443)
-2025-04-16 13:07:42,156 - INFO: client disconnect
-2025-04-16 13:07:42,157 - INFO: server disconnect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:42,158 - INFO: server disconnect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:42,158 - INFO: server disconnect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:42,161 - INFO: server disconnect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:42,162 - INFO: client disconnect
-2025-04-16 13:07:42,162 - INFO: client disconnect
-2025-04-16 13:07:42,163 - INFO: client disconnect
-2025-04-16 13:07:42,166 - INFO: server disconnect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:42,167 - INFO: server disconnect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:42,168 - INFO: server disconnect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:42,168 - INFO: client disconnect
-2025-04-16 13:07:42,169 - INFO: server disconnect framerusercontent.com:443 (18.66.63.118:443)
-2025-04-16 13:07:42,174 - INFO: client disconnect
-2025-04-16 13:07:42,176 - INFO: server disconnect fonts.gstatic.com:443 (142.250.182.163:443)
-2025-04-16 13:07:42,187 - INFO: server connect lumberjack.razorpay.com:443 (52.66.36.147:443)
-2025-04-16 13:07:42,197 - INFO: server connect lumberjack.razorpay.com:443 (52.66.36.147:443)
-2025-04-16 13:07:42,209 - INFO: server connect lumberjack.razorpay.com:443 (52.66.36.147:443)
-2025-04-16 13:07:42,225 - INFO: server connect lumberjack.razorpay.com:443 (52.66.36.147:443)
-2025-04-16 13:07:43,494 - INFO: client connect
-2025-04-16 13:07:43,594 - INFO: server connect edit.framer.com:443 (18.164.246.27:443)
-2025-04-16 13:07:43,794 - INFO: client connect
-2025-04-16 13:07:43,816 - INFO: server connect edit.framer.com:443 (18.164.246.27:443)
-2025-04-16 13:07:43,921 - INFO: client connect
-2025-04-16 13:07:43,922 - INFO: client connect
-2025-04-16 13:07:43,923 - INFO: client connect
-2025-04-16 13:07:43,925 - INFO: client connect
-2025-04-16 13:07:44,023 - INFO: server connect app.framerstatic.com:443 (18.164.237.114:443)
-2025-04-16 13:07:44,024 - INFO: server connect app.framerstatic.com:443 (18.164.237.114:443)
-2025-04-16 13:07:44,025 - INFO: server connect app.framerstatic.com:443 (18.164.237.114:443)
-2025-04-16 13:07:44,026 - INFO: server connect app.framerstatic.com:443 (18.164.237.114:443)
-2025-04-16 13:07:44,452 - INFO: Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for app.framerstatic.com, this may indicate that the client does not trust the proxy's certificate.
-2025-04-16 13:07:44,453 - INFO: Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for app.framerstatic.com, this may indicate that the client does not trust the proxy's certificate.
-2025-04-16 13:07:44,457 - INFO: client disconnect
-2025-04-16 13:07:44,458 - INFO: client disconnect
-2025-04-16 13:07:44,458 - INFO: client disconnect
-2025-04-16 13:07:44,459 - INFO: server disconnect app.framerstatic.com:443 (18.164.237.114:443)
-2025-04-16 13:07:44,459 - INFO: server disconnect app.framerstatic.com:443 (18.164.237.114:443)
-2025-04-16 13:07:44,460 - INFO: server disconnect app.framerstatic.com:443 (18.164.237.114:443)
-2025-04-16 13:07:44,539 - INFO: client connect
-2025-04-16 13:07:44,619 - INFO: server connect api.framer.com:443 (13.225.103.26:443)
-2025-04-16 13:07:47,506 - INFO: client connect
-2025-04-16 13:07:47,610 - INFO: server connect main.vscode-cdn.net:443 (13.107.246.48:443)
-2025-04-16 13:07:47,756 - INFO: client connect
-2025-04-16 13:07:47,778 - INFO: server connect ssl.gstatic.com:443 (142.250.206.131:443)
-2025-04-16 13:07:48,606 - INFO: client connect
-2025-04-16 13:07:48,637 - INFO: server connect www.msftconnecttest.com:80 (96.17.168.107:80)
-2025-04-16 13:07:48,664 - INFO: server disconnect www.msftconnecttest.com:80 (96.17.168.107:80)
-2025-04-16 13:07:48,665 - INFO: client disconnect
-2025-04-16 13:07:52,759 - INFO: client connect
-2025-04-16 13:07:52,780 - INFO: server connect ssl.gstatic.com:443 (142.250.206.131:443)
-2025-04-16 13:08:02,401 - INFO: client connect
-2025-04-16 13:08:02,423 - INFO: server connect razorpay.com:443 (52.84.206.75:443)
-2025-04-16 13:08:11,280 - INFO: client connect
-2025-04-16 13:08:11,329 - INFO: server connect main.vscode-cdn.net:443 (13.107.246.48:443)
-2025-04-16 13:08:11,543 - INFO: client connect
-2025-04-16 13:08:11,588 - INFO: server connect main.vscode-cdn.net:443 (13.107.246.48:443)
-2025-04-16 13:08:16,626 - INFO: server disconnect main.vscode-cdn.net:443 (13.107.246.48:443)
-2025-04-16 13:08:16,804 - INFO: client disconnect
-2025-04-16 13:08:16,807 - INFO: server disconnect array813.prod.do.dsp.mp.microsoft.com:443 (20.191.74.161:443)
-2025-04-16 13:08:18,694 - INFO: client connect
-2025-04-16 13:08:18,723 - INFO: server connect www.msftconnecttest.com:80 (96.17.168.98:80)
-2025-04-16 13:08:18,746 - INFO: server disconnect www.msftconnecttest.com:80 (96.17.168.98:80)
-2025-04-16 13:08:18,747 - INFO: client disconnect
-2025-04-16 13:08:26,113 - INFO: client connect
-2025-04-16 13:08:26,379 - INFO: client connect
-2025-04-16 13:08:26,465 - INFO: server connect go-updater.brave.com:443 (54.149.192.28:443)
-2025-04-16 13:08:26,678 - INFO: server connect go-updater.brave.com:443 (54.149.192.28:443)
-2025-04-16 13:08:30,406 - INFO: client connect
-2025-04-16 13:08:30,451 - INFO: server connect encrypted-tbn0.gstatic.com:443 (142.250.192.46:443)
-2025-04-16 13:08:30,827 - INFO: client connect
-2025-04-16 13:08:30,828 - INFO: client connect
-2025-04-16 13:08:30,829 - INFO: client connect
-2025-04-16 13:08:30,855 - INFO: server connect encrypted-tbn1.gstatic.com:443 (142.250.206.110:443)
-2025-04-16 13:08:30,857 - INFO: server connect encrypted-tbn3.gstatic.com:443 (142.250.193.46:443)
-2025-04-16 13:08:30,891 - INFO: server connect encrypted-tbn2.gstatic.com:443 (142.250.194.46:443)
-2025-04-16 13:08:31,142 - INFO: client connect
-2025-04-16 13:08:31,155 - INFO: client disconnect
-2025-04-16 13:08:31,156 - INFO: error establishing server connection: client disconnected
-2025-04-16 13:08:32,753 - INFO: client connect
-2025-04-16 13:08:32,806 - INFO: server connect prod-dynamite-prod-00-us-signaler-pa.clients6.google.com:443 (142.250.182.234:443)
-2025-04-16 13:08:37,360 - INFO: server disconnect go-updater.brave.com:443 (54.149.192.28:443)
-2025-04-16 13:08:37,851 - INFO: server disconnect go-updater.brave.com:443 (54.149.192.28:443)
-2025-04-16 13:08:48,769 - INFO: client connect
-2025-04-16 13:08:48,798 - INFO: server connect www.msftconnecttest.com:80 (96.17.168.98:80)
-2025-04-16 13:08:48,824 - INFO: server disconnect www.msftconnecttest.com:80 (96.17.168.98:80)
-2025-04-16 13:08:48,825 - INFO: client disconnect
-2025-04-16 13:08:51,050 - INFO: 142.250.192.46:443: HTTP/2 protocol error: Invalid input ConnectionInputs.RECV_PING in state ConnectionState.CLOSED
-2025-04-16 13:08:51,054 - INFO: server disconnect encrypted-tbn0.gstatic.com:443 (142.250.192.46:443)
-2025-04-16 13:08:52,950 - INFO: 142.251.42.74:443: HTTP/2 protocol error: Invalid input ConnectionInputs.RECV_PING in state ConnectionState.CLOSED
-2025-04-16 13:08:52,953 - INFO: server disconnect ogads-pa.clients6.google.com:443 (142.251.42.74:443)
-2025-04-16 13:08:53,076 - INFO: client connect
-2025-04-16 13:08:53,416 - INFO: server connect go-updater.brave.com:443 (52.13.210.106:443)
-2025-04-16 13:08:54,084 - INFO: 142.250.4.84:443: HTTP/2 protocol error: Invalid input ConnectionInputs.RECV_PING in state ConnectionState.CLOSED
-2025-04-16 13:08:54,087 - INFO: server disconnect accounts.google.com:443 (142.250.4.84:443)
-2025-04-16 13:08:54,702 - INFO: 142.250.192.46:443: HTTP/2 protocol error: Invalid input ConnectionInputs.RECV_PING in state ConnectionState.CLOSED
-2025-04-16 13:08:54,705 - INFO: server disconnect encrypted-tbn0.gstatic.com:443 (142.250.192.46:443)
-2025-04-16 13:08:55,582 - INFO: 142.250.207.227:443: HTTP/2 protocol error: Invalid input ConnectionInputs.RECV_PING in state ConnectionState.CLOSED
-2025-04-16 13:08:55,586 - INFO: server disconnect www.gstatic.com:443 (142.250.207.227:443)
-2025-04-16 13:08:58,343 - INFO: 142.250.206.174:443: HTTP/2 protocol error: Invalid input ConnectionInputs.RECV_PING in state ConnectionState.CLOSED
-2025-04-16 13:08:58,347 - INFO: server disconnect ogs.google.com:443 (142.250.206.174:443)
-2025-04-16 13:08:58,462 - INFO: 142.250.207.227:443: HTTP/2 protocol error: Invalid input ConnectionInputs.RECV_PING in state ConnectionState.CLOSED
-2025-04-16 13:08:58,466 - INFO: server disconnect www.gstatic.com:443 (142.250.207.227:443)
-2025-04-16 13:09:04,285 - INFO: server disconnect go-updater.brave.com:443 (52.13.210.106:443)
-2025-04-16 13:09:08,245 - INFO: Proxy server manually stopped.
-2025-04-16 13:09:08,246 - INFO: Proxy server stopped.
+2025-04-30 16:44:43,273 - INFO: server disconnect api.github.com:443 (20.207.73.85:443)
+2025-04-30 16:44:43,816 - INFO: Proxy server manually stopped.
+2025-04-30 16:44:43,817 - INFO: Proxy server stopped.
+2025-04-30 16:44:46,777 - INFO: HTTPS Proxy started on 0.0.0.0:8080
+2025-04-30 16:44:46,778 - INFO: Certificate authority files will be stored in ./certs
+2025-04-30 16:44:46,778 - INFO: Install the CA certificate from ./certs\mitmproxy-ca-cert.pem on your clients
+2025-04-30 16:44:46,779 - INFO: Logs will be stored in ../bifrost-ui/public/proxy_logs\proxy.log
+2025-04-30 16:44:46,780 - INFO: HTTP(S) proxy listening at *:8080.
+2025-04-30 16:44:46,918 - INFO: client connect
+2025-04-30 16:44:46,957 - INFO: client connect
+2025-04-30 16:44:46,958 - INFO: client connect
+2025-04-30 16:44:46,959 - INFO: client connect
+2025-04-30 16:44:47,005 - INFO: server connect prod-dynamite-prod-00-us-signaler-pa.clients6.google.com:443 (142.250.194.42:443)
+2025-04-30 16:44:47,005 - INFO: server connect signaler-pa.clients6.google.com:443 (142.250.194.138:443)
+2025-04-30 16:44:47,006 - INFO: server connect chat.google.com:443 (142.250.194.206:443)
+2025-04-30 16:44:47,174 - INFO: client connect
+2025-04-30 16:44:47,324 - INFO: server connect alive.github.com:443 (140.82.114.25:443)
+2025-04-30 16:44:47,524 - INFO: server connect alive.github.com:443 (140.82.114.25:443)
+2025-04-30 16:44:48,504 - INFO: client connect
+2025-04-30 16:44:48,551 - INFO: server connect ssl.gstatic.com:443 (142.250.194.35:443)
+2025-04-30 16:44:48,988 - INFO: client connect
+2025-04-30 16:44:49,030 - INFO: server connect www.phonepe.com:443 (104.17.76.195:443)
+2025-04-30 16:44:49,241 - INFO: client connect
+2025-04-30 16:44:49,280 - INFO: server connect www.phonepe.com:443 (104.17.76.195:443)
+2025-04-30 16:44:51,639 - INFO: client connect
+2025-04-30 16:44:51,685 - INFO: server connect prod-dynamite-prod-00-us-signaler-pa.clients6.google.com:443 (142.250.194.42:443)
+2025-04-30 16:44:52,628 - INFO: client connect
+2025-04-30 16:44:52,892 - INFO: client connect
+2025-04-30 16:44:52,941 - INFO: server connect nexus-websocket-a.intercom.io:443 (35.174.127.31:443)
+2025-04-30 16:44:53,151 - INFO: server connect nexus-websocket-a.intercom.io:443 (35.174.127.31:443)
+2025-04-30 16:44:53,638 - INFO: client connect
+2025-04-30 16:44:53,672 - INFO: client connect
+2025-04-30 16:44:53,680 - INFO: server connect ssl.gstatic.com:443 (142.250.194.35:443)
+2025-04-30 16:44:53,895 - INFO: client connect
+2025-04-30 16:44:53,949 - INFO: server connect ssl.gstatic.com:443 (142.250.194.35:443)
+2025-04-30 16:44:54,002 - INFO: server connect alive.github.com:443 (140.82.114.25:443)
+2025-04-30 16:44:54,640 - INFO: client connect
+2025-04-30 16:44:54,687 - INFO: server connect signaler-pa.clients6.google.com:443 (142.250.194.138:443)
+2025-04-30 16:44:56,636 - INFO: client connect
+2025-04-30 16:44:56,683 - INFO: server connect ssl.gstatic.com:443 (142.250.194.35:443)
+2025-04-30 16:44:58,638 - INFO: client connect
+2025-04-30 16:44:58,688 - INFO: server connect signaler-pa.clients6.google.com:443 (142.250.194.138:443)
+2025-04-30 16:44:58,902 - INFO: client connect
+2025-04-30 16:44:58,948 - INFO: server connect signaler-pa.clients6.google.com:443 (142.250.194.138:443)
+2025-04-30 16:44:59,338 - INFO: client connect
+2025-04-30 16:44:59,387 - INFO: server connect signaler-pa.clients6.google.com:443 (142.250.194.138:443)
+2025-04-30 16:44:59,586 - INFO: client connect
+2025-04-30 16:44:59,625 - INFO: server connect signaler-pa.clients6.google.com:443 (142.250.194.138:443)
+2025-04-30 16:45:03,853 - INFO: client connect
+2025-04-30 16:45:04,105 - INFO: client connect
+2025-04-30 16:45:04,126 - INFO: server connect mobile.events.data.microsoft.com:443 (13.89.179.14:443)
+2025-04-30 16:45:04,386 - INFO: server connect mobile.events.data.microsoft.com:443 (13.89.179.14:443)
+2025-04-30 16:45:10,258 - INFO: client connect
+2025-04-30 16:45:10,346 - INFO: server connect main.vscode-cdn.net:443 (13.107.246.68:443)
+2025-04-30 16:45:25,319 - INFO: client connect
+2025-04-30 16:45:25,407 - INFO: server connect collector.wdp.brave.com:443 (172.65.55.248:443)
+2025-04-30 16:45:25,583 - INFO: client connect
+2025-04-30 16:45:25,628 - INFO: server connect collector.wdp.brave.com:443 (172.65.55.248:443)
+2025-04-30 16:45:34,706 - INFO: client connect
+2025-04-30 16:45:34,725 - INFO: client connect
+2025-04-30 16:45:34,755 - INFO: client connect
+2025-04-30 16:45:34,810 - INFO: server connect api.phonepe.com:443 (104.18.40.97:443)
+2025-04-30 16:45:34,816 - INFO: server connect csp.phonepe.com:443 (104.17.76.195:443)
+2025-04-30 16:45:34,945 - INFO: server connect css.page-source.com:443 (51.89.234.134:443)
+2025-04-30 16:45:34,971 - INFO: client connect
+2025-04-30 16:45:34,982 - INFO: client connect
+2025-04-30 16:45:35,015 - INFO: client connect
+2025-04-30 16:45:35,018 - INFO: server connect csp.phonepe.com:443 (104.17.76.195:443)
+2025-04-30 16:45:35,036 - INFO: server connect api.phonepe.com:443 (104.18.40.97:443)
+2025-04-30 16:45:35,197 - INFO: server connect css.page-source.com:443 (51.89.234.134:443)
+2025-04-30 16:45:40,617 - INFO: client connect
+2025-04-30 16:45:40,652 - INFO: server connect www.google.com:443 (142.250.194.4:443)
+2025-04-30 16:45:43,585 - INFO: client connect
+2025-04-30 16:45:43,765 - INFO: server connect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-30 16:45:43,838 - INFO: client connect
+2025-04-30 16:45:43,947 - INFO: server connect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-30 16:45:44,621 - INFO: client connect
+2025-04-30 16:45:44,663 - INFO: server connect www.google.com:443 (142.250.194.4:443)
+2025-04-30 16:45:44,877 - INFO: client connect
+2025-04-30 16:45:44,903 - INFO: server connect www.google.com:443 (142.250.194.4:443)
+2025-04-30 16:45:47,790 - INFO: client connect
+2025-04-30 16:45:48,076 - INFO: server connect v10.events.data.microsoft.com:443 (20.189.173.15:443)
+2025-04-30 16:45:48,356 - INFO: Received WebSocket ping from server (payload: b'1')
+2025-04-30 16:45:48,359 - INFO: Received WebSocket pong from client (payload: b'1')
+2025-04-30 16:45:48,644 - INFO: client disconnect
+2025-04-30 16:45:48,645 - INFO: server disconnect v10.events.data.microsoft.com:443 (20.189.173.15:443)
+2025-04-30 16:45:54,991 - INFO: Received WebSocket ping from server (payload: b'1')
+2025-04-30 16:45:55,030 - INFO: Received WebSocket pong from client (payload: b'1')
+2025-04-30 16:45:59,321 - INFO: client disconnect
+2025-04-30 16:45:59,321 - INFO: client disconnect
+2025-04-30 16:45:59,322 - INFO: client disconnect
+2025-04-30 16:45:59,322 - INFO: server disconnect signaler-pa.clients6.google.com:443 (142.250.194.138:443)
+2025-04-30 16:45:59,323 - INFO: server disconnect ssl.gstatic.com:443 (142.250.194.35:443)
+2025-04-30 16:45:59,324 - INFO: server disconnect www.phonepe.com:443 (104.17.76.195:443)
+2025-04-30 16:45:59,623 - INFO: client connect
+2025-04-30 16:45:59,670 - INFO: server connect mail.google.com:443 (142.250.77.229:443)
+2025-04-30 16:45:59,883 - INFO: client connect
+2025-04-30 16:45:59,930 - INFO: server connect mail.google.com:443 (142.250.77.229:443)
+2025-04-30 16:46:05,728 - INFO: client connect
+2025-04-30 16:46:05,896 - INFO: server connect g.live.com:443 (52.231.186.36:443)
+2025-04-30 16:46:06,587 - INFO: client connect
+2025-04-30 16:46:06,724 - INFO: server connect oneclient.sfx.ms:443 (23.48.245.168:443)
+2025-04-30 16:46:07,235 - INFO: client connect
+2025-04-30 16:46:07,283 - INFO: server connect ecs.office.com:443 (52.123.128.14:443)
+2025-04-30 16:46:19,198 - INFO: client disconnect
+2025-04-30 16:51:12,913 - INFO: HTTPS Proxy started on 0.0.0.0:8080
+2025-04-30 16:51:12,914 - INFO: Certificate authority files will be stored in ./certs
+2025-04-30 16:51:12,914 - INFO: Install the CA certificate from ./certs\mitmproxy-ca-cert.pem on your clients
+2025-04-30 16:51:12,914 - INFO: Logs will be stored in ../bifrost-ui/public/proxy_logs\proxy.log
+2025-04-30 16:51:12,915 - INFO: HTTP(S) proxy listening at *:8080.
+2025-04-30 16:51:14,687 - INFO: client connect
+2025-04-30 16:51:14,735 - INFO: server connect ssl.gstatic.com:443 (142.250.194.35:443)
+2025-04-30 16:51:14,998 - INFO: client connect
+2025-04-30 16:51:15,046 - INFO: server connect ssl.gstatic.com:443 (142.250.194.35:443)
+2025-04-30 16:51:15,066 - INFO: client connect
+2025-04-30 16:51:15,114 - INFO: server connect chat.google.com:443 (142.250.194.206:443)
+2025-04-30 16:51:16,193 - INFO: client connect
+2025-04-30 16:51:16,227 - INFO: server connect peoplestack-pa.clients6.google.com:443 (142.251.43.106:443)
+2025-04-30 16:51:16,638 - INFO: client connect
+2025-04-30 16:51:16,669 - INFO: server connect mail.google.com:443 (142.250.77.229:443)
+2025-04-30 16:51:18,638 - INFO: client connect
+2025-04-30 16:51:18,642 - INFO: client connect
+2025-04-30 16:51:18,686 - INFO: server connect ssl.gstatic.com:443 (142.250.194.35:443)
+2025-04-30 16:51:18,687 - INFO: server connect prod-dynamite-prod-00-us-signaler-pa.clients6.google.com:443 (142.250.193.202:443)
+2025-04-30 16:51:19,189 - INFO: client connect
+2025-04-30 16:51:19,235 - INFO: server connect prod-dynamite-prod-00-us-signaler-pa.clients6.google.com:443 (142.250.193.202:443)
+2025-04-30 16:51:31,618 - INFO: client connect
+2025-04-30 16:51:31,655 - INFO: server connect signaler-pa.clients6.google.com:443 (142.250.194.10:443)
+2025-04-30 16:51:32,168 - INFO: client connect
+2025-04-30 16:51:32,215 - INFO: server connect signaler-pa.clients6.google.com:443 (142.250.194.10:443)
+2025-04-30 16:52:01,968 - INFO: client connect
+2025-04-30 16:52:02,213 - INFO: server connect mobile.events.data.microsoft.com:443 (40.79.189.59:443)
+2025-04-30 16:52:02,230 - INFO: client connect
+2025-04-30 16:52:02,416 - INFO: server connect mobile.events.data.microsoft.com:443 (40.79.189.59:443)
+2025-04-30 16:52:37,631 - INFO: client disconnect
+2025-04-30 16:52:37,633 - INFO: server disconnect ssl.gstatic.com:443 (142.250.194.35:443)
+2025-04-30 16:52:37,662 - INFO: client connect
+2025-04-30 16:52:37,663 - INFO: client connect
+2025-04-30 16:52:37,707 - INFO: server connect waa-pa.clients6.google.com:443 (142.250.77.202:443)
+2025-04-30 16:52:38,066 - INFO: server connect alive.github.com:443 (140.82.112.25:443)
+2025-04-30 16:52:56,425 - INFO: client connect
+2025-04-30 16:52:56,693 - INFO: server connect array817.prod.do.dsp.mp.microsoft.com:443 (52.148.179.131:443)
+2025-04-30 16:52:57,755 - INFO: client connect
+2025-04-30 16:52:57,801 - INFO: server connect disc801.prod.do.dsp.mp.microsoft.com:443 (23.32.176.80:443)
+2025-04-30 16:52:58,342 - INFO: client connect
+2025-04-30 16:52:58,509 - INFO: server connect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-30 16:52:58,600 - INFO: client connect
+2025-04-30 16:52:58,709 - INFO: server connect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-30 16:53:03,769 - INFO: client connect
+2025-04-30 16:53:03,813 - INFO: server connect variations.brave.com:443 (54.192.142.111:443)
+2025-04-30 16:53:03,895 - INFO: client connect
+2025-04-30 16:53:03,896 - INFO: client connect
+2025-04-30 16:53:03,897 - INFO: client connect
+2025-04-30 16:53:03,904 - INFO: client connect
+2025-04-30 16:53:03,905 - INFO: client connect
+2025-04-30 16:53:03,906 - INFO: client connect
+2025-04-30 16:53:03,909 - INFO: client disconnect
+2025-04-30 16:53:03,910 - INFO: client disconnect
+2025-04-30 16:53:03,910 - INFO: client disconnect
+2025-04-30 16:53:03,911 - INFO: error establishing server connection: client disconnected
+2025-04-30 16:53:03,913 - INFO: error establishing server connection: client disconnected
+2025-04-30 16:53:03,914 - INFO: error establishing server connection: client disconnected
+2025-04-30 16:53:03,914 - INFO: client disconnect
+2025-04-30 16:53:03,915 - INFO: client disconnect
+2025-04-30 16:53:03,917 - INFO: server disconnect variations.brave.com:443 (54.192.142.111:443)
+2025-04-30 16:53:03,918 - INFO: error establishing server connection: client disconnected
+2025-04-30 16:53:03,919 - INFO: client disconnect
+2025-04-30 16:53:03,920 - INFO: error establishing server connection: client disconnected
+2025-04-30 16:53:03,921 - INFO: client disconnect
+2025-04-30 16:53:03,922 - INFO: error establishing server connection: client disconnected
+2025-04-30 16:53:04,211 - INFO: client connect
+2025-04-30 16:53:04,212 - INFO: client connect
+2025-04-30 16:53:04,213 - INFO: client connect
+2025-04-30 16:53:04,215 - INFO: client connect
+2025-04-30 16:53:04,217 - INFO: client connect
+2025-04-30 16:53:04,219 - INFO: client connect
+2025-04-30 16:53:04,222 - INFO: client connect
+2025-04-30 16:53:04,224 - INFO: client connect
+2025-04-30 16:53:04,253 - INFO: client connect
+2025-04-30 16:53:04,283 - INFO: client connect
+2025-04-30 16:53:04,314 - INFO: server connect collector.wdp.brave.com:443 (172.65.55.248:443)
+2025-04-30 16:53:04,406 - INFO: server connect www.phonepe.com:443 (104.17.75.195:443)
+2025-04-30 16:53:04,407 - INFO: server connect csp.phonepe.com:443 (104.17.76.195:443)
+2025-04-30 16:53:04,436 - INFO: client connect
+2025-04-30 16:53:04,505 - INFO: server connect go-updater.brave.com:443 (34.209.9.29:443)
+2025-04-30 16:53:04,508 - INFO: client connect
+2025-04-30 16:53:04,521 - INFO: server connect go-updater.brave.com:443 (34.209.9.29:443)
+2025-04-30 16:53:04,522 - INFO: server connect api.phonepe.com:443 (172.64.147.159:443)
+2025-04-30 16:53:04,523 - INFO: server connect go-updater.brave.com:443 (34.209.9.29:443)
+2025-04-30 16:53:04,523 - INFO: server connect go-updater.brave.com:443 (34.209.9.29:443)
+2025-04-30 16:53:04,526 - INFO: server connect go-updater.brave.com:443 (34.209.9.29:443)
+2025-04-30 16:53:04,528 - INFO: server connect go-updater.brave.com:443 (34.209.9.29:443)
+2025-04-30 16:53:04,559 - INFO: server connect csp.phonepe.com:443 (104.17.76.195:443)
+2025-04-30 16:53:04,595 - INFO: server connect quorum.wdp.brave.com:443 (35.160.152.164:443)
+2025-04-30 16:53:04,685 - INFO: client connect
+2025-04-30 16:53:04,729 - INFO: server connect api.phonepe.com:443 (172.64.147.159:443)
+2025-04-30 16:53:04,828 - INFO: client disconnect
+2025-04-30 16:53:04,829 - INFO: server disconnect go-updater.brave.com:443 (34.209.9.29:443)
+2025-04-30 16:53:04,831 - INFO: client disconnect
+2025-04-30 16:53:04,832 - INFO: server disconnect go-updater.brave.com:443 (34.209.9.29:443)
+2025-04-30 16:53:04,837 - INFO: client disconnect
+2025-04-30 16:53:04,838 - INFO: server disconnect go-updater.brave.com:443 (34.209.9.29:443)
+2025-04-30 16:53:04,838 - INFO: client disconnect
+2025-04-30 16:53:04,839 - INFO: server disconnect go-updater.brave.com:443 (34.209.9.29:443)
+2025-04-30 16:53:04,839 - INFO: client disconnect
+2025-04-30 16:53:04,840 - INFO: server disconnect go-updater.brave.com:443 (34.209.9.29:443)
+2025-04-30 16:53:04,935 - INFO: client connect
+2025-04-30 16:53:04,982 - INFO: server connect www.phonepe.com:443 (104.17.75.195:443)
+2025-04-30 16:53:05,015 - INFO: client connect
+2025-04-30 16:53:05,065 - INFO: server connect api.phonepe.com:443 (172.64.147.159:443)
+2025-04-30 16:53:05,183 - INFO: client connect
+2025-04-30 16:53:05,210 - INFO: server connect www.phonepe.com:443 (104.17.75.195:443)
+2025-04-30 16:53:05,257 - INFO: client connect
+2025-04-30 16:53:05,296 - INFO: server connect api.phonepe.com:443 (172.64.147.159:443)
+2025-04-30 16:53:05,492 - INFO: client connect
+2025-04-30 16:53:05,530 - INFO: client disconnect
+2025-04-30 16:53:05,531 - INFO: server disconnect go-updater.brave.com:443 (34.209.9.29:443)
+2025-04-30 16:53:05,533 - INFO: client disconnect
+2025-04-30 16:53:05,533 - INFO: client disconnect
+2025-04-30 16:53:05,534 - INFO: client disconnect
+2025-04-30 16:53:05,535 - INFO: client disconnect
+2025-04-30 16:53:05,535 - INFO: client disconnect
+2025-04-30 16:53:05,536 - INFO: client disconnect
+2025-04-30 16:53:05,536 - INFO: client disconnect
+2025-04-30 16:53:05,537 - INFO: server disconnect api.phonepe.com:443 (172.64.147.159:443)
+2025-04-30 16:53:05,538 - INFO: server disconnect api.phonepe.com:443 (172.64.147.159:443)
+2025-04-30 16:53:05,539 - INFO: server disconnect csp.phonepe.com:443 (104.17.76.195:443)
+2025-04-30 16:53:05,539 - INFO: error establishing server connection: client disconnected
+2025-04-30 16:53:05,540 - INFO: server disconnect www.phonepe.com:443 (104.17.75.195:443)
+2025-04-30 16:53:05,541 - INFO: server disconnect api.phonepe.com:443 (172.64.147.159:443)
+2025-04-30 16:53:05,542 - INFO: server disconnect api.phonepe.com:443 (172.64.147.159:443)
+2025-04-30 16:53:05,542 - INFO: client disconnect
+2025-04-30 16:53:05,542 - INFO: client disconnect
+2025-04-30 16:53:05,543 - INFO: client disconnect
+2025-04-30 16:53:05,543 - INFO: client disconnect
+2025-04-30 16:53:05,545 - INFO: server disconnect www.phonepe.com:443 (104.17.75.195:443)
+2025-04-30 16:53:05,546 - INFO: server disconnect csp.phonepe.com:443 (104.17.76.195:443)
+2025-04-30 16:53:05,546 - INFO: server disconnect collector.wdp.brave.com:443 (172.65.55.248:443)
+2025-04-30 16:53:05,547 - INFO: server disconnect www.phonepe.com:443 (104.17.75.195:443)
+2025-04-30 16:53:05,845 - INFO: client disconnect
+2025-04-30 16:53:05,846 - INFO: server disconnect quorum.wdp.brave.com:443 (35.160.152.164:443)
+2025-04-30 16:53:05,851 - INFO: client connect
+2025-04-30 16:53:05,898 - INFO: server connect www.google.com:443 (142.250.182.164:443)
+2025-04-30 16:53:06,848 - INFO: client connect
+2025-04-30 16:53:06,852 - INFO: client connect
+2025-04-30 16:53:06,917 - INFO: server connect waa-pa.clients6.google.com:443 (142.250.77.202:443)
+2025-04-30 16:53:06,943 - INFO: server connect ogads-pa.clients6.google.com:443 (142.250.195.10:443)
+2025-04-30 16:53:07,009 - INFO: client connect
+2025-04-30 16:53:07,058 - INFO: server connect mail.google.com:443 (142.250.77.229:443)
+2025-04-30 16:53:07,102 - INFO: client connect
+2025-04-30 16:53:07,110 - INFO: client connect
+2025-04-30 16:53:07,161 - INFO: server connect ogads-pa.clients6.google.com:443 (142.250.195.10:443)
+2025-04-30 16:53:07,162 - INFO: server connect waa-pa.clients6.google.com:443 (142.250.77.202:443)
+2025-04-30 16:53:07,166 - INFO: client connect
+2025-04-30 16:53:07,229 - INFO: client connect
+2025-04-30 16:53:07,239 - INFO: client connect
+2025-04-30 16:53:07,256 - INFO: server connect chatgpt.com:443 (104.18.32.47:443)
+2025-04-30 16:53:07,277 - INFO: client connect
+2025-04-30 16:53:07,286 - INFO: server connect paytm.com:443 (172.65.64.51:443)
+2025-04-30 16:53:07,309 - INFO: client connect
+2025-04-30 16:53:07,312 - INFO: client connect
+2025-04-30 16:53:07,369 - INFO: server connect storefront.paytm.com:443 (23.33.246.27:443)
+2025-04-30 16:53:07,377 - INFO: server connect travel.paytm.com:443 (23.33.246.27:443)
+2025-04-30 16:53:07,380 - INFO: server connect mail.google.com:443 (142.250.77.229:443)
+2025-04-30 16:53:07,404 - INFO: client connect
+2025-04-30 16:53:07,404 - INFO: server connect pwebassets.paytm.com:443 (23.33.246.27:443)
+2025-04-30 16:53:07,431 - INFO: client connect
+2025-04-30 16:53:07,456 - INFO: client connect
+2025-04-30 16:53:07,469 - INFO: client connect
+2025-04-30 16:53:07,470 - INFO: server connect waa-pa.clients6.google.com:443 (142.250.77.202:443)
+2025-04-30 16:53:07,481 - INFO: client connect
+2025-04-30 16:53:07,482 - INFO: client connect
+2025-04-30 16:53:07,513 - INFO: client connect
+2025-04-30 16:53:07,518 - INFO: server connect chatgpt.com:443 (104.18.32.47:443)
+2025-04-30 16:53:07,519 - INFO: server connect accounts.google.com:443 (172.217.194.84:443)
+2025-04-30 16:53:07,520 - INFO: server connect ogads-pa.clients6.google.com:443 (142.250.195.10:443)
+2025-04-30 16:53:07,529 - INFO: client connect
+2025-04-30 16:53:07,530 - INFO: server connect storefront.paytm.com:443 (23.33.246.27:443)
+2025-04-30 16:53:07,531 - INFO: server connect paytm.com:443 (172.65.64.51:443)
+2025-04-30 16:53:07,544 - INFO: server connect chatgpt.com:443 (104.18.32.47:443)
+2025-04-30 16:53:07,584 - INFO: server connect travel.paytm.com:443 (23.33.246.27:443)
+2025-04-30 16:53:07,614 - INFO: client connect
+2025-04-30 16:53:07,658 - INFO: server connect pwebassets.paytm.com:443 (23.33.246.27:443)
+2025-04-30 16:53:07,661 - INFO: client connect
+2025-04-30 16:53:07,684 - INFO: client connect
+2025-04-30 16:53:07,685 - INFO: client connect
+2025-04-30 16:53:07,728 - INFO: client connect
+2025-04-30 16:53:07,731 - INFO: server connect www.phonepe.com:443 (104.17.75.195:443)
+2025-04-30 16:53:07,731 - INFO: server connect waa-pa.clients6.google.com:443 (142.250.77.202:443)
+2025-04-30 16:53:07,772 - INFO: server connect accounts.google.com:443 (172.217.194.84:443)
+2025-04-30 16:53:07,773 - INFO: server connect ogads-pa.clients6.google.com:443 (142.250.195.10:443)
+2025-04-30 16:53:07,846 - INFO: client connect
+2025-04-30 16:53:07,873 - INFO: server connect travel.paytm.com:443 (23.33.246.27:443)
+2025-04-30 16:53:07,897 - INFO: client connect
+2025-04-30 16:53:07,977 - INFO: server connect encrypted-tbn0.gstatic.com:443 (142.250.192.174:443)
+2025-04-30 16:53:08,000 - INFO: client connect
+2025-04-30 16:53:08,040 - INFO: server connect www.phonepe.com:443 (104.17.75.195:443)
+2025-04-30 16:53:08,113 - INFO: client connect
+2025-04-30 16:53:08,155 - INFO: client connect
+2025-04-30 16:53:08,156 - INFO: server connect travel.paytm.com:443 (23.33.246.27:443)
+2025-04-30 16:53:08,197 - INFO: server connect encrypted-tbn0.gstatic.com:443 (142.250.192.174:443)
+2025-04-30 16:53:08,213 - INFO: client connect
+2025-04-30 16:53:08,218 - INFO: client disconnect
+2025-04-30 16:53:08,219 - INFO: server disconnect accounts.google.com:443 (172.217.194.84:443)
+2025-04-30 16:53:08,220 - INFO: client disconnect
+2025-04-30 16:53:08,221 - INFO: server disconnect chatgpt.com:443 (104.18.32.47:443)
+2025-04-30 16:53:08,222 - INFO: client disconnect
+2025-04-30 16:53:08,223 - INFO: client disconnect
+2025-04-30 16:53:08,223 - INFO: client disconnect
+2025-04-30 16:53:08,224 - INFO: server disconnect chatgpt.com:443 (104.18.32.47:443)
+2025-04-30 16:53:08,225 - INFO: server disconnect mail.google.com:443 (142.250.77.229:443)
+2025-04-30 16:53:08,226 - INFO: server disconnect ogads-pa.clients6.google.com:443 (142.250.195.10:443)
+2025-04-30 16:53:08,306 - INFO: server connect sig.paytm.com:443 (13.126.72.9:443)
+2025-04-30 16:53:08,463 - INFO: client connect
+2025-04-30 16:53:08,557 - INFO: server connect claude.ai:443 (160.79.104.10:443)
+2025-04-30 16:53:08,663 - INFO: Swallowing HTTP/2 informational response: 103 Early Hints
+2025-04-30 16:53:08,724 - INFO: client connect
+2025-04-30 16:53:08,788 - INFO: server connect claude.ai:443 (160.79.104.10:443)
+2025-04-30 16:53:08,938 - INFO: client connect
+2025-04-30 16:53:09,065 - INFO: server connect hawkeye-api.paytm.com:443 (18.60.79.169:443)
+2025-04-30 16:53:09,281 - INFO: client connect
+2025-04-30 16:53:09,349 - INFO: server connect hawkeye-api.paytm.com:443 (18.60.79.169:443)
+2025-04-30 16:53:09,527 - INFO: client connect
+2025-04-30 16:53:09,615 - INFO: server connect www.gstatic.com:443 (172.217.166.3:443)
+2025-04-30 16:53:09,773 - INFO: client disconnect
+2025-04-30 16:53:09,773 - INFO: server disconnect claude.ai:443 (160.79.104.10:443)
+2025-04-30 16:53:09,782 - INFO: client connect
+2025-04-30 16:53:09,816 - INFO: server connect www.gstatic.com:443 (172.217.166.3:443)
+2025-04-30 16:53:09,929 - INFO: client disconnect
+2025-04-30 16:53:09,930 - INFO: server disconnect encrypted-tbn0.gstatic.com:443 (142.250.192.174:443)
+2025-04-30 16:53:10,074 - INFO: client connect
+2025-04-30 16:53:10,127 - INFO: server connect ssl.gstatic.com:443 (142.250.194.35:443)
+2025-04-30 16:53:10,230 - INFO: client connect
+2025-04-30 16:53:10,340 - INFO: client disconnect
+2025-04-30 16:53:10,345 - INFO: server disconnect hawkeye-api.paytm.com:443 (18.60.79.169:443)
+2025-04-30 16:53:10,347 - INFO: server connect appsgrowthpromo-pa.clients6.google.com:443 (142.250.193.202:443)
+2025-04-30 16:53:10,482 - INFO: client disconnect
+2025-04-30 16:53:10,484 - INFO: server disconnect ogads-pa.clients6.google.com:443 (142.250.195.10:443)
+2025-04-30 16:53:10,515 - INFO: client disconnect
+2025-04-30 16:53:10,516 - INFO: server disconnect paytm.com:443 (172.65.64.51:443)
+2025-04-30 16:53:10,654 - INFO: client connect
+2025-04-30 16:53:10,659 - INFO: client disconnect
+2025-04-30 16:53:10,660 - INFO: server disconnect pwebassets.paytm.com:443 (23.33.246.27:443)
+2025-04-30 16:53:10,722 - INFO: server connect addons-pa.clients6.google.com:443 (142.250.194.202:443)
+2025-04-30 16:53:10,784 - INFO: client connect
+2025-04-30 16:53:10,786 - INFO: client disconnect
+2025-04-30 16:53:10,787 - INFO: server disconnect storefront.paytm.com:443 (23.33.246.27:443)
+2025-04-30 16:53:10,833 - INFO: client connect
+2025-04-30 16:53:10,907 - INFO: server connect a-api.anthropic.com:443 (160.79.104.10:443)
+2025-04-30 16:53:10,954 - INFO: server connect s-cdn.anthropic.com:443 (34.102.213.72:443)
+2025-04-30 16:53:10,960 - INFO: client connect
+2025-04-30 16:53:10,993 - INFO: server connect appsgrowthpromo-pa.clients6.google.com:443 (142.250.193.202:443)
+2025-04-30 16:53:11,407 - INFO: client connect
+2025-04-30 16:53:11,487 - INFO: server connect addons-pa.clients6.google.com:443 (142.250.194.202:443)
+2025-04-30 16:53:12,105 - INFO: client disconnect
+2025-04-30 16:53:12,106 - INFO: server disconnect travel.paytm.com:443 (23.33.246.27:443)
+2025-04-30 16:53:12,300 - INFO: client disconnect
+2025-04-30 16:53:12,300 - INFO: server disconnect travel.paytm.com:443 (23.33.246.27:443)
+2025-04-30 16:53:12,322 - INFO: client disconnect
+2025-04-30 16:53:12,323 - INFO: server disconnect waa-pa.clients6.google.com:443 (142.250.77.202:443)
+2025-04-30 16:53:12,354 - INFO: client disconnect
+2025-04-30 16:53:12,355 - INFO: server disconnect waa-pa.clients6.google.com:443 (142.250.77.202:443)
+2025-04-30 16:53:12,410 - INFO: client connect
+2025-04-30 16:53:12,450 - INFO: server connect signaler-pa.clients6.google.com:443 (142.250.194.10:443)
+2025-04-30 16:53:12,615 - INFO: client connect
+2025-04-30 16:53:12,626 - INFO: client connect
+2025-04-30 16:53:12,662 - INFO: client connect
+2025-04-30 16:53:12,682 - INFO: server connect peoplestack-pa.clients6.google.com:443 (142.251.43.106:443)
+2025-04-30 16:53:12,754 - INFO: server connect widget.intercom.io:443 (18.164.217.63:443)
+2025-04-30 16:53:12,758 - INFO: server connect contacts.google.com:443 (142.250.192.238:443)
+2025-04-30 16:53:12,788 - INFO: client disconnect
+2025-04-30 16:53:12,789 - INFO: server disconnect www.gstatic.com:443 (172.217.166.3:443)
+2025-04-30 16:53:12,915 - INFO: client disconnect
+2025-04-30 16:53:12,917 - INFO: server disconnect www.phonepe.com:443 (104.17.75.195:443)
+2025-04-30 16:53:13,090 - INFO: client connect
+2025-04-30 16:53:13,094 - INFO: client disconnect
+2025-04-30 16:53:13,095 - INFO: server disconnect www.google.com:443 (142.250.182.164:443)
+2025-04-30 16:53:13,097 - INFO: client disconnect
+2025-04-30 16:53:13,099 - INFO: server disconnect claude.ai:443 (160.79.104.10:443)
+2025-04-30 16:53:13,099 - INFO: client disconnect
+2025-04-30 16:53:13,100 - INFO: client disconnect
+2025-04-30 16:53:13,100 - INFO: client disconnect
+2025-04-30 16:53:13,101 - INFO: client disconnect
+2025-04-30 16:53:13,102 - INFO: client disconnect
+2025-04-30 16:53:13,102 - INFO: client disconnect
+2025-04-30 16:53:13,102 - INFO: client disconnect
+2025-04-30 16:53:13,103 - INFO: client disconnect
+2025-04-30 16:53:13,103 - INFO: client disconnect
+2025-04-30 16:53:13,103 - INFO: client disconnect
+2025-04-30 16:53:13,104 - INFO: client disconnect
+2025-04-30 16:53:13,104 - INFO: client disconnect
+2025-04-30 16:53:13,104 - INFO: client disconnect
+2025-04-30 16:53:13,104 - INFO: client disconnect
+2025-04-30 16:53:13,105 - INFO: client disconnect
+2025-04-30 16:53:13,105 - INFO: client disconnect
+2025-04-30 16:53:13,105 - INFO: client disconnect
+2025-04-30 16:53:13,106 - INFO: server disconnect chatgpt.com:443 (104.18.32.47:443)
+2025-04-30 16:53:13,107 - INFO: server disconnect sig.paytm.com:443 (13.126.72.9:443)
+2025-04-30 16:53:13,107 - INFO: server disconnect encrypted-tbn0.gstatic.com:443 (142.250.192.174:443)
+2025-04-30 16:53:13,108 - INFO: server disconnect www.phonepe.com:443 (104.17.75.195:443)
+2025-04-30 16:53:13,108 - INFO: server disconnect peoplestack-pa.clients6.google.com:443 (142.251.43.106:443)
+2025-04-30 16:53:13,109 - INFO: server disconnect signaler-pa.clients6.google.com:443 (142.250.194.10:443)
+2025-04-30 16:53:13,109 - INFO: server disconnect addons-pa.clients6.google.com:443 (142.250.194.202:443)
+2025-04-30 16:53:13,110 - INFO: server disconnect pwebassets.paytm.com:443 (23.33.246.27:443)
+2025-04-30 16:53:13,110 - INFO: server disconnect accounts.google.com:443 (172.217.194.84:443)
+2025-04-30 16:53:13,111 - INFO: server disconnect waa-pa.clients6.google.com:443 (142.250.77.202:443)
+2025-04-30 16:53:13,111 - INFO: server disconnect ogads-pa.clients6.google.com:443 (142.250.195.10:443)
+2025-04-30 16:53:13,111 - INFO: server disconnect appsgrowthpromo-pa.clients6.google.com:443 (142.250.193.202:443)
+2025-04-30 16:53:13,112 - INFO: server disconnect a-api.anthropic.com:443 (160.79.104.10:443)
+2025-04-30 16:53:13,112 - INFO: server disconnect addons-pa.clients6.google.com:443 (142.250.194.202:443)
+2025-04-30 16:53:13,113 - INFO: server disconnect s-cdn.anthropic.com:443 (34.102.213.72:443)
+2025-04-30 16:53:13,113 - INFO: server disconnect www.gstatic.com:443 (172.217.166.3:443)
+2025-04-30 16:53:13,114 - INFO: server disconnect paytm.com:443 (172.65.64.51:443)
+2025-04-30 16:53:13,114 - INFO: client disconnect
+2025-04-30 16:53:13,114 - INFO: client disconnect
+2025-04-30 16:53:13,114 - INFO: client disconnect
+2025-04-30 16:53:13,115 - INFO: client disconnect
+2025-04-30 16:53:13,115 - INFO: client disconnect
+2025-04-30 16:53:13,115 - INFO: client disconnect
+2025-04-30 16:53:13,116 - INFO: client disconnect
+2025-04-30 16:53:13,116 - INFO: client disconnect
+2025-04-30 16:53:13,116 - INFO: client disconnect
+2025-04-30 16:53:13,117 - INFO: client disconnect
+2025-04-30 16:53:13,119 - INFO: server disconnect hawkeye-api.paytm.com:443 (18.60.79.169:443)
+2025-04-30 16:53:13,120 - INFO: server disconnect storefront.paytm.com:443 (23.33.246.27:443)
+2025-04-30 16:53:13,121 - INFO: server disconnect travel.paytm.com:443 (23.33.246.27:443)
+2025-04-30 16:53:13,122 - INFO: server disconnect appsgrowthpromo-pa.clients6.google.com:443 (142.250.193.202:443)
+2025-04-30 16:53:13,123 - INFO: server disconnect ogads-pa.clients6.google.com:443 (142.250.195.10:443)
+2025-04-30 16:53:13,124 - INFO: server disconnect travel.paytm.com:443 (23.33.246.27:443)
+2025-04-30 16:53:13,124 - INFO: server disconnect widget.intercom.io:443 (18.164.217.63:443)
+2025-04-30 16:53:13,125 - INFO: server disconnect waa-pa.clients6.google.com:443 (142.250.77.202:443)
+2025-04-30 16:53:13,125 - INFO: server disconnect ssl.gstatic.com:443 (142.250.194.35:443)
+2025-04-30 16:53:13,126 - INFO: server disconnect contacts.google.com:443 (142.250.192.238:443)
+2025-04-30 16:53:13,131 - INFO: server connect signaler-pa.clients6.google.com:443 (142.250.194.10:443)
+2025-04-30 16:53:13,218 - INFO: client connect
+2025-04-30 16:53:13,259 - INFO: server connect peoplestack-pa.clients6.google.com:443 (142.251.43.106:443)
+2025-04-30 16:53:13,398 - INFO: client connect
+2025-04-30 16:53:13,466 - INFO: client connect
+2025-04-30 16:53:13,494 - INFO: server connect peoplestack-pa.clients6.google.com:443 (142.251.43.106:443)
+2025-04-30 16:53:13,705 - INFO: server connect api-iam.intercom.io:443 (18.214.112.191:443)
+2025-04-30 16:53:13,815 - INFO: client connect
+2025-04-30 16:53:13,863 - INFO: server connect signaler-pa.clients6.google.com:443 (142.250.194.10:443)
+2025-04-30 16:53:14,084 - INFO: client connect
+2025-04-30 16:53:14,133 - INFO: server connect signaler-pa.clients6.google.com:443 (142.250.194.10:443)
+2025-04-30 16:53:14,636 - INFO: client connect
+2025-04-30 16:53:14,776 - INFO: server connect ogs.google.com:443 (142.250.194.78:443)
+2025-04-30 16:53:14,815 - INFO: client connect
+2025-04-30 16:53:14,902 - INFO: client connect
+2025-04-30 16:53:14,945 - INFO: server connect ogs.google.com:443 (142.250.194.78:443)
+2025-04-30 16:53:15,067 - INFO: client connect
+2025-04-30 16:53:15,163 - INFO: server connect nexus-websocket-a.intercom.io:443 (35.174.127.31:443)
+2025-04-30 16:53:15,348 - INFO: server connect nexus-websocket-a.intercom.io:443 (35.174.127.31:443)
+2025-04-30 16:53:15,418 - INFO: client connect
+2025-04-30 16:53:15,470 - INFO: server connect www.gstatic.com:443 (172.217.166.3:443)
+2025-04-30 16:53:15,722 - INFO: client connect
+2025-04-30 16:53:15,796 - INFO: server connect www.gstatic.com:443 (172.217.166.3:443)
+2025-04-30 16:53:17,168 - INFO: client disconnect
+2025-04-30 16:53:17,171 - INFO: server disconnect mobile.events.data.microsoft.com:443 (40.79.189.59:443)
+2025-04-30 16:53:23,751 - INFO: client connect
+2025-04-30 16:53:23,866 - INFO: server connect clients6.google.com:443 (142.250.195.14:443)
+2025-04-30 16:53:23,991 - INFO: client connect
+2025-04-30 16:53:24,041 - INFO: server connect clients6.google.com:443 (142.250.195.14:443)
+2025-04-30 16:53:24,573 - INFO: client connect
+2025-04-30 16:53:24,671 - INFO: server connect clients6.google.com:443 (142.250.195.14:443)
+2025-04-30 16:53:24,824 - INFO: client connect
+2025-04-30 16:53:24,905 - INFO: server connect clients6.google.com:443 (142.250.195.14:443)
+2025-04-30 16:53:38,636 - INFO: client connect
+2025-04-30 16:53:38,677 - INFO: server connect ssl.gstatic.com:443 (142.250.194.35:443)
+2025-04-30 16:53:38,890 - INFO: client connect
+2025-04-30 16:53:38,919 - INFO: server connect ssl.gstatic.com:443 (142.250.194.35:443)
+2025-04-30 16:53:39,545 - INFO: Received WebSocket ping from server (payload: b'1')
+2025-04-30 16:53:39,588 - INFO: Received WebSocket pong from client (payload: b'1')
+2025-04-30 16:53:42,626 - INFO: client connect
+2025-04-30 16:53:42,678 - INFO: server connect chatgpt.com:443 (104.18.32.47:443)
+2025-04-30 16:53:42,883 - INFO: client connect
+2025-04-30 16:53:42,928 - INFO: server connect chatgpt.com:443 (104.18.32.47:443)
+2025-04-30 16:53:54,515 - INFO: client connect
+2025-04-30 16:53:54,782 - INFO: server connect array801.prod.do.dsp.mp.microsoft.com:443 (20.191.127.184:443)
+2025-04-30 16:54:01,999 - INFO: client disconnect
+2025-04-30 16:54:02,002 - INFO: server disconnect vscode-sync.trafficmanager.net:443 (13.67.9.5:443)
+2025-04-30 16:54:02,308 - INFO: client connect
+2025-04-30 16:54:02,397 - INFO: server connect main.vscode-cdn.net:443 (13.107.246.48:443)
+2025-04-30 16:54:02,570 - INFO: client connect
+2025-04-30 16:54:02,614 - INFO: server connect main.vscode-cdn.net:443 (13.107.246.48:443)
+2025-04-30 16:54:03,785 - INFO: client connect
+2025-04-30 16:54:04,040 - INFO: client connect
+2025-04-30 16:54:04,142 - INFO: server connect go-updater.brave.com:443 (54.213.78.65:443)
+2025-04-30 16:54:04,359 - INFO: server connect go-updater.brave.com:443 (54.213.78.65:443)
+2025-04-30 16:54:05,691 - INFO: client connect
+2025-04-30 16:54:05,937 - INFO: client connect
+2025-04-30 16:54:06,045 - INFO: server connect componentupdater.brave.com:443 (35.83.149.158:443)
+2025-04-30 16:54:06,246 - INFO: server connect componentupdater.brave.com:443 (35.83.149.158:443)
+2025-04-30 16:54:06,607 - INFO: client connect
+2025-04-30 16:54:06,645 - INFO: server connect www.google.com:443 (142.250.182.164:443)
+2025-04-30 16:54:06,869 - INFO: client connect
+2025-04-30 16:54:06,914 - INFO: server connect www.google.com:443 (142.250.182.164:443)
+2025-04-30 16:54:07,622 - INFO: client connect
+2025-04-30 16:54:07,637 - INFO: server disconnect main.vscode-cdn.net:443 (13.107.246.48:443)
+2025-04-30 16:54:07,658 - INFO: server connect update.googleapis.com:443 (142.250.194.99:443)
+2025-04-30 16:54:07,764 - INFO: client disconnect
+2025-04-30 16:54:07,765 - INFO: server disconnect www.google.com:443 (142.250.182.164:443)
+2025-04-30 16:54:07,766 - INFO: client disconnect
+2025-04-30 16:54:07,767 - INFO: server disconnect www.google.com:443 (142.250.182.164:443)
+2025-04-30 16:54:07,884 - INFO: client connect
+2025-04-30 16:54:07,922 - INFO: server connect update.googleapis.com:443 (142.250.194.99:443)
+2025-04-30 16:54:09,620 - INFO: client connect
+2025-04-30 16:54:09,687 - INFO: server connect collector.wdp.brave.com:443 (172.65.55.248:443)
+2025-04-30 16:54:09,870 - INFO: client connect
+2025-04-30 16:54:09,906 - INFO: server connect collector.wdp.brave.com:443 (172.65.55.248:443)
+2025-04-30 16:54:13,641 - INFO: client connect
+2025-04-30 16:54:13,770 - INFO: server connect accounts.google.com:443 (172.217.194.84:443)
+2025-04-30 16:54:13,880 - INFO: client connect
+2025-04-30 16:54:13,987 - INFO: server connect accounts.google.com:443 (172.217.194.84:443)
+2025-04-30 16:54:15,575 - INFO: server disconnect go-updater.brave.com:443 (54.213.78.65:443)
+2025-04-30 16:54:18,909 - INFO: client connect
+2025-04-30 16:54:19,123 - INFO: server connect safebrowsing.brave.com:443 (52.222.144.43:443)
+2025-04-30 16:54:19,165 - INFO: client connect
+2025-04-30 16:54:19,325 - INFO: server connect safebrowsing.brave.com:443 (52.222.144.43:443)
+2025-04-30 16:54:31,729 - INFO: server disconnect go-updater.brave.com:443 (54.213.78.65:443)
+2025-04-30 16:54:39,550 - INFO: Received WebSocket ping from server (payload: b'2')
+2025-04-30 16:54:39,590 - INFO: Received WebSocket pong from client (payload: b'2')
+2025-04-30 16:54:48,611 - INFO: client connect
+2025-04-30 16:54:48,934 - INFO: client connect
+2025-04-30 16:54:48,992 - INFO: server connect edge.microsoft.com:80 (150.171.28.11:80)
+2025-04-30 16:54:49,012 - INFO: server disconnect edge.microsoft.com:80 (150.171.28.11:80)
+2025-04-30 16:54:49,015 - INFO: client disconnect
+2025-04-30 16:54:49,194 - INFO: client connect
+2025-04-30 16:55:04,594 - INFO: server disconnect array817.prod.do.dsp.mp.microsoft.com:443 (52.148.179.131:443)
+2025-04-30 16:55:08,017 - INFO: client disconnect
+2025-04-30 16:55:08,020 - INFO: server disconnect disc801.prod.do.dsp.mp.microsoft.com:443 (23.32.176.80:443)
+2025-04-30 16:55:09,369 - INFO: client connect
+2025-04-30 16:55:09,704 - INFO: client connect
+2025-04-30 16:55:11,319 - INFO: client connect
+2025-04-30 16:55:11,637 - INFO: server connect array803.prod.do.dsp.mp.microsoft.com:443 (52.229.52.30:443)
+2025-04-30 16:55:12,693 - INFO: client connect
+2025-04-30 16:55:12,745 - INFO: server connect disc801.prod.do.dsp.mp.microsoft.com:443 (23.32.176.80:443)
+2025-04-30 16:55:16,090 - INFO: Received WebSocket ping from server (payload: b'')
+2025-04-30 16:55:16,093 - INFO: Received WebSocket pong from client (payload: b'')
+2025-04-30 16:55:17,093 - INFO: 142.251.43.106:443: HTTP/2 protocol error: Invalid input ConnectionInputs.RECV_PING in state ConnectionState.CLOSED
+2025-04-30 16:55:17,096 - INFO: server disconnect peoplestack-pa.clients6.google.com:443 (142.251.43.106:443)
+2025-04-30 16:55:17,573 - INFO: client disconnect
+2025-04-30 16:55:18,694 - INFO: client connect
+2025-04-30 16:55:18,761 - INFO: server connect main.vscode-cdn.net:443 (13.107.246.68:443)
+2025-04-30 16:55:20,726 - INFO: client disconnect
+2025-04-30 16:55:20,729 - INFO: error establishing server connection: client disconnected
+2025-04-30 16:55:28,651 - INFO: client connect
+2025-04-30 16:55:28,698 - INFO: server connect addons-pa.clients6.google.com:443 (142.250.194.202:443)
+2025-04-30 16:55:30,417 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-30 16:55:30,420 - INFO: client disconnect
+2025-04-30 16:55:30,741 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-30 16:55:30,744 - INFO: client disconnect
+2025-04-30 16:55:31,076 - INFO: client connect
+2025-04-30 16:55:32,513 - INFO: client connect
+2025-04-30 16:55:32,679 - INFO: server connect mobile.events.data.microsoft.com:443 (40.79.197.35:443)
+2025-04-30 16:55:32,791 - INFO: client connect
+2025-04-30 16:55:32,882 - INFO: server disconnect main.vscode-cdn.net:443 (13.107.246.48:443)
+2025-04-30 16:55:32,967 - INFO: server connect mobile.events.data.microsoft.com:443 (40.79.197.35:443)
+2025-04-30 16:55:33,346 - INFO: server disconnect mobile.events.data.microsoft.com:443 (40.79.197.35:443)
+2025-04-30 16:55:33,348 - INFO: client disconnect
+2025-04-30 16:55:33,560 - INFO: server disconnect mobile.events.data.microsoft.com:443 (40.79.197.35:443)
+2025-04-30 16:55:33,563 - INFO: client disconnect
+2025-04-30 16:55:39,544 - INFO: Received WebSocket ping from server (payload: b'3')
+2025-04-30 16:55:39,583 - INFO: Received WebSocket pong from client (payload: b'3')
+2025-04-30 16:55:52,116 - INFO: error establishing server connection: [WinError 121] The semaphore timeout period has expired
+2025-04-30 16:55:52,121 - INFO: client disconnect
+2025-04-30 16:55:53,682 - INFO: client connect
+2025-04-30 16:55:53,721 - INFO: server connect avatars.githubusercontent.com:443 (185.199.111.133:443)
+2025-04-30 16:55:53,941 - INFO: client connect
+2025-04-30 16:55:53,980 - INFO: server connect avatars.githubusercontent.com:443 (185.199.111.133:443)
+2025-04-30 16:55:54,194 - INFO: client connect
+2025-04-30 16:55:54,509 - INFO: server connect mobile.events.data.microsoft.com:443 (20.189.173.12:443)
+2025-04-30 16:55:55,367 - INFO: server disconnect mobile.events.data.microsoft.com:443 (20.189.173.12:443)
+2025-04-30 16:55:55,370 - INFO: client disconnect
+2025-04-30 16:55:57,514 - INFO: client connect
+2025-04-30 16:55:57,563 - INFO: server connect www.google.com:443 (142.250.182.164:443)
+2025-04-30 16:55:59,200 - INFO: server disconnect array801.prod.do.dsp.mp.microsoft.com:443 (20.191.127.184:443)
+2025-04-30 16:56:08,700 - INFO: client connect
+2025-04-30 16:56:09,007 - INFO: server connect v10.events.data.microsoft.com:443 (52.168.117.171:443)
+2025-04-30 16:56:09,095 - INFO: Proxy server manually stopped.
+2025-04-30 16:56:09,096 - INFO: Proxy server stopped.
