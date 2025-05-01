@@ -14,7 +14,7 @@ class AdvancedHTTPSProxy:
                  host: str = '0.0.0.0', 
                  port: int = 8080, 
                  log_dir: str = '../bifrost-ui/public/proxy_logs',  # Changed log directory
-                 cert_dir: str = './ProxyVPN/certs',
+                 cert_dir: str = './certs',
                  config: Optional[Dict[str, Any]] = None):
         """
         Initialize the advanced HTTPS proxy with configurable options
@@ -39,7 +39,7 @@ class AdvancedHTTPSProxy:
         self.config = {
             'intercept_all': False,  # Intercept all traffic
             'whitelist_domains': [],  # Domains to specifically intercept
-            'blacklist_domains': [],  # Domains to ignore
+            'blacklist_domains': ['github.com'],  # Domains to ignore
             'log_requests': True,
             'log_responses': True,
             'max_log_size': 1024 * 1024,  # 1MB max log size per file
@@ -241,12 +241,12 @@ def main():
     # Example configuration
     proxy_config = {
         'intercept_all': True,
-        'whitelist_domains': ['github.com', 'example.com'],
+        'whitelist_domains': ['example.com'],
         'log_requests': True,
         'log_responses': True,
         'save_files': True,
         # You can override the file save directory if needed
-        'file_save_dir': 'bifrost-ui/public/proxy_logs/'
+        # 'file_save_dir': '../bifrost-ui/public/proxy_logs'
     }
     
     proxy = AdvancedHTTPSProxy(config=proxy_config)
