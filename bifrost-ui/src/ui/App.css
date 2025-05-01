@@ -80,6 +80,7 @@ body {
 .pending-item span {
   flex: 1;
   margin-right: 15px;
+  max-width: 60%;
 }
 
 .button-group button {
