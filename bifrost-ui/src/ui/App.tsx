@@ -3,16 +3,11 @@ import "./App.css";
 
 function App() {
   const [logs, setLogs] = useState("");
-  const [pendingPayments, setPendingPayments] = useState([
-    { id: 1, message: "Payment request from url - https://paytm.com/recharge-bill-payment" },
-    { id: 2, message: "Payment request from url - https://paytm.com/recharge-bill-payment" },
-    { id: 3, message: "Payment request from url - https://paytm.com/recharge-bill-payment" },
-    { id: 4, message: "Payment request from url - https://paytm.com/recharge-bill-payment" },
-    { id: 5, message: "Payment request from url - https://paytm.com/recharge-bill-payment" },
-  ]);
+  const [pendingPayments, setPendingPayments] = useState<
+    { id: number; message: string }[]
+  >([]);
 
   useEffect(() => {
-    // Replace with your real proxy server endpoint
     const fetchLogs = async () => {
       try {
         const response = await fetch("/proxy_logs/proxy.log");
@@ -24,7 +19,25 @@ function App() {
       }
     };
 
+    const fetchPaymentRequests = async () => {
+      try {
+        const response = await fetch("/proxy_logs/payment_links.txt");
+        const text = await response.text();
+        const lines = text.split("\n").filter(Boolean);
+
+        const formattedRequests = lines.map((url, index) => ({
+          id: index + 1,
+          message: `Payment request from url - ${url}`,
+        }));
+
+        setPendingPayments(formattedRequests);
+      } catch (error) {
+        console.error("Error loading payment requests:", error);
+      }
+    };
+
     fetchLogs();
+    fetchPaymentRequests();
 
     const interval = setInterval(fetchLogs, 5000);
     return () => clearInterval(interval);
@@ -32,14 +45,14 @@ function App() {
 
   const handleApprove = (id: number) => {
     console.log(`Approved payment ID: ${id}`);
-    setPendingPayments(pendingPayments.filter(item => item.id !== id));
-    // You can send approval to backend here
+    setPendingPayments((prev) => prev.filter((item) => item.id !== id));
+    // Optional: Send approval to backend
   };
 
   const handleDeny = (id: number) => {
     console.log(`Denied payment ID: ${id}`);
-    setPendingPayments(pendingPayments.filter(item => item.id !== id));
-    // You can send denial to backend here
+    setPendingPayments((prev) => prev.filter((item) => item.id !== id));
+    // Optional: Send denial to backend
   };
 
   return (
