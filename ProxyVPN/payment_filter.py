@@ -87,7 +87,7 @@ def request(flow: http.HTTPFlow):
                     return
 
                 # Wait for decision
-                max_retries = 30  # 30 seconds timeout
+                max_retries = 120  # 120 seconds timeout
                 while max_retries > 0:
                     try:
                         decision_response = requests.get(
