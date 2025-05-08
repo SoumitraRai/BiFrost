@@ -21,7 +21,7 @@ function App() {
 
     const fetchPaymentRequests = async () => {
       try {
-        const response = await fetch("/proxy_logs/payment_links.txt");
+        const response = await fetch("/proxy_logs/payment_traffic.log");
         const text = await response.text();
         const lines = text.split("\n").filter(Boolean);
 
