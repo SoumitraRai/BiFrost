@@ -10,6 +10,8 @@ import time
 from typing import Optional, Dict, Any
 from mitmproxy import options
 from mitmproxy.tools.dump import DumpMaster
+import payment_filter
+
 
 class AdvancedHTTPSProxy:
     def __init__(self, 
@@ -66,7 +68,10 @@ class AdvancedHTTPSProxy:
         
         # Proxy master 
         self.master = None
-    
+
+        # Initialize the payment filter
+        self.payment_filter = payment_filter
+
     def should_intercept(self, flow: mitmproxy.http.HTTPFlow) -> bool:
         """
         Determine whether a request should be intercepted based on configuration
@@ -190,31 +195,33 @@ class AdvancedHTTPSProxy:
         Async method to run the proxy server
         """
         try:
-            # Configure mitmproxy options with basic certificate generation
+            # Configure mitmproxy options
             opts = options.Options(
                 listen_host=self.host,
                 listen_port=self.port,
-                confdir=self.cert_dir,         # Directory for mitmproxy configuration and certs
-                ssl_insecure=True,             # Allow invalid certificates
-                # Basic certificate options
-                ssl_verify_upstream_trusted_ca=os.path.join(self.cert_dir, 'mitmproxy-ca.pem'),
-                add_upstream_certs_to_client_chain=True
+                confdir=self.cert_dir,
+                ssl_insecure=True
             )
             
             # Create the proxy master
             self.master = DumpMaster(opts)
+            
+            # Add payment filter addon
+            self.master.addons.add(self.payment_filter)
+            
+            # Add self as addon for other proxy functionalities
             self.master.addons.add(self)
             
             self.logger.info(f"HTTPS Proxy started on {self.host}:{self.port}")
-            self.logger.info(f"Certificate authority files will be stored in {self.cert_dir}")
-            self.logger.info(f"Install the CA certificate from {os.path.join(self.cert_dir, 'mitmproxy-ca-cert.pem')} on your clients")
-            self.logger.info(f"Logs will be stored in {os.path.join(self.log_dir, 'proxy.log')}")
+            self.logger.info("Payment filter activated")
             
             await self.master.run()
             
         except Exception as e:
             self.logger.error(f"Proxy server error: {e}")
             raise
+
+        
         finally:
             if self.master:
                 self.master.shutdown()

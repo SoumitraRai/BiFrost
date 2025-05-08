@@ -578,3 +578,8 @@
 2025-04-30 16:56:09,007 - INFO: server connect v10.events.data.microsoft.com:443 (52.168.117.171:443)
 2025-04-30 16:56:09,095 - INFO: Proxy server manually stopped.
 2025-04-30 16:56:09,096 - INFO: Proxy server stopped.
+2025-05-08 16:34:35,413 - INFO: HTTPS Proxy started on 0.0.0.0:8080
+2025-05-08 16:34:35,414 - INFO: Payment filter activated
+2025-05-08 16:34:35,416 - INFO: HTTP(S) proxy listening at *:8080.
+2025-05-08 16:35:05,132 - INFO: Proxy server manually stopped.
+2025-05-08 16:35:05,132 - INFO: Proxy server stopped.

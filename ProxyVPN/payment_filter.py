@@ -64,7 +64,7 @@ def is_payment_request(flow: http.HTTPFlow) -> bool:
 def request(flow: http.HTTPFlow):
     """
     This function is called for every HTTP request.
-    It checks if the request is a payment request and logs relevant information.
+    It checks if the request is a payment request, logs it, and handles approval flow.
     """
     if is_payment_request(flow):
         try:
@@ -75,23 +75,58 @@ def request(flow: http.HTTPFlow):
                 "headers": dict(flow.request.headers),
                 "content": flow.request.get_text() if flow.request.content else ""
             }
-            payment_logger.info("[PAYMENT REQUEST]\n" + json.dumps(req, indent=2))
+            payment_logger.info("[PAYMENT REQUEST INTERCEPTED]\n" + json.dumps(req, indent=2))
 
-            # Try to send the request details to an approval server
+            # Send to approval mechanism and wait for decision
             try:
+                # Submit for approval
                 r = requests.post("http://localhost:5000/intercepted", json=req, timeout=5)
-                if r.status_code == 200:
-                    payment_logger.info(f"[SENT TO APPROVAL SERVER] ID: {flow.id}")
-                else:
-                    payment_logger.warning(f"[FAILED TO SEND TO APPROVAL SERVER] ID: {flow.id}, Status: {r.status_code}, Response: {r.text[:200]}")
-            except requests.exceptions.RequestException as e: # More specific exception for network errors
+                if r.status_code != 200:
+                    payment_logger.error(f"[APPROVAL SERVER ERROR] ID: {flow.id}, Status: {r.status_code}")
+                    flow.kill()
+                    return
+
+                # Wait for decision
+                max_retries = 30  # 30 seconds timeout
+                while max_retries > 0:
+                    try:
+                        decision_response = requests.get(
+                            f"http://localhost:5000/decision/{flow.id}",
+                            timeout=5
+                        )
+                        if decision_response.status_code == 200:
+                            decision = decision_response.json().get("decision")
+                            if decision == "approve":
+                                payment_logger.info(f"[PAYMENT APPROVED] ID: {flow.id}")
+                                return  # Let request continue
+                            elif decision == "deny":
+                                payment_logger.info(f"[PAYMENT DENIED] ID: {flow.id}")
+                                flow.kill()  # Block request
+                                return
+                    except requests.exceptions.RequestException as e:
+                        payment_logger.error(f"[DECISION CHECK ERROR] ID: {flow.id}, Error: {e}")
+                    
+                    time.sleep(1)
+                    max_retries -= 1
+
+                # Timeout reached
+                payment_logger.warning(f"[DECISION TIMEOUT] ID: {flow.id}")
+                flow.kill()
+                return
+
+            except requests.exceptions.RequestException as e:
                 payment_logger.error(f"[ERROR SENDING TO APPROVAL SERVER] ID: {flow.id}, Error: {e}")
-            except Exception as e: # Catch other potential exceptions
-                payment_logger.error(f"[UNEXPECTED ERROR SENDING TO APPROVAL SERVER] ID: {flow.id}, Error: {e}")
+                flow.kill()
+                return
+            except Exception as e:
+                payment_logger.error(f"[UNEXPECTED ERROR] ID: {flow.id}, Error: {e}")
+                flow.kill()
+                return
 
         except Exception as e:
-            payment_logger.error(f"[Request Logging Error] ID: {flow.id}, Error: {e}")
-
+            payment_logger.error(f"[Request Processing Error] ID: {flow.id}, Error: {e}")
+            flow.kill()
+            return
 def response(flow: http.HTTPFlow):
     """
     This function is called for every HTTP response.

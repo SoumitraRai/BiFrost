@@ -1,6 +1,11 @@
-mitmproxy>=9.0.1  # Handles HTTP/HTTPS interception
+mitmproxy==10.3.0
+requests==2.31.0
+Flask==3.0.2
 asyncio  # Python's async networking
 logging  # Built-in logging module
 json  # JSON handling (built-in, but explicitly mentioned)
 os  # Built-in module for file handling
 sys  # System-specific parameters
+Flask-CORS==4.0.0
+python-dotenv==1.0.1
+gunicorn==21.2.0
