@@ -36,10 +36,16 @@ function App() {
       }
     };
 
+    // Initial fetch
     fetchLogs();
     fetchPaymentRequests();
 
-    const interval = setInterval(fetchLogs, 5000);
+    // Loop both functions every 5 seconds
+    const interval = setInterval(() => {
+      fetchLogs();
+      fetchPaymentRequests();
+    }, 1000);
+
     return () => clearInterval(interval);
   }, []);
 
