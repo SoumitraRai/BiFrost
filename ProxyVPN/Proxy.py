@@ -5,6 +5,8 @@ import logging
 import json
 import os
 import sys
+import requests
+import time
 from typing import Optional, Dict, Any
 from mitmproxy import options
 from mitmproxy.tools.dump import DumpMaster
@@ -163,6 +165,16 @@ class AdvancedHTTPSProxy:
         """
         if self.should_intercept(flow):
             self.log_request(flow)
+
+        # Check with backend: is this flow flagged for approval?
+        try:
+            res = requests.get(f"http://localhost:5000/decision/{flow.id}")
+            if res.status_code == 200 and res.json().get("decision") is None:
+                self.logger.info(f"[⏸] Flow {flow.id} flagged for parent approval")
+                flow.intercept()
+                self.wait_for_decision(flow)
+        except Exception as e:
+            self.logger.error(f"[!] Error checking approval status for {flow.id}: {e}")
     
     def response(self, flow: mitmproxy.http.HTTPFlow):
         """
