@@ -72,6 +72,13 @@ class AdvancedHTTPSProxy:
         # Initialize the payment filter
         self.payment_filter = payment_filter
 
+        # Initialize metrics
+        self.metrics = {
+            'requests_total': 0,
+            'payments_intercepted': 0,
+            'errors': 0
+        }
+
     def should_intercept(self, flow: mitmproxy.http.HTTPFlow) -> bool:
         """
         Determine whether a request should be intercepted based on configuration
@@ -254,6 +261,35 @@ class AdvancedHTTPSProxy:
             if self.master:
                 self.master.shutdown()
                 self.logger.info("Proxy server stopped.")
+
+    async def health_check(self):
+        """Health check endpoint"""
+        return {
+            'status': 'healthy',
+            'metrics': self.metrics,
+            'uptime': time.time() - self.start_time
+        }
+    
+    def wait_for_decision(self, flow_id: str) -> bool:
+        """
+        Wait for a decision from the approval mechanism
+        Returns True if approved, False if denied or timeout
+        """
+        try:
+            response = requests.get(
+                f"http://localhost:5000/wait_decision/{flow_id}",
+                timeout=35  # Slightly longer than approval mechanism timeout
+            )
+            
+            if response.status_code == 200:
+                decision = response.json().get("decision")
+                return decision == "approve"
+            
+            return False  # Any other response means deny
+            
+        except Exception as e:
+            self.logger.error(f"Error waiting for decision: {e}")
+            return False  # Fail closed (deny on error)
 
 
 def main():

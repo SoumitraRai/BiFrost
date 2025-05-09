@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from threading import Lock
+import time
 
 app = Flask(__name__)
 
@@ -13,7 +14,7 @@ def intercepted():
     flow_id = data["id"]
     with decision_lock:
         pending_requests[flow_id] = {"data": data, "decision": None}
-    return jsonify({"status": "waiting"})
+    return jsonify({"status": "waiting", "id": flow_id})
 
 @app.route("/requests", methods=["GET"])
 def get_pending():
@@ -36,5 +37,25 @@ def make_decision():
 @app.route("/decision/<flow_id>", methods=["GET"])
 def get_decision(flow_id):
     with decision_lock:
-        decision = pending_requests.get(flow_id, {}).get("decision")
-    return jsonify({"decision": decision})
+        if flow_id in pending_requests:
+            decision = pending_requests[flow_id].get("decision")
+            return jsonify({"decision": decision})
+    return jsonify({"error": "flow not found"}), 404
+
+@app.route("/wait_decision/<flow_id>", methods=["GET"])
+def wait_for_decision(flow_id):
+    """
+    Block until a decision is made or timeout occurs
+    """
+    start_time = time.time()
+    timeout = 30  # 30 seconds timeout
+
+    while time.time() - start_time < timeout:
+        with decision_lock:
+            if flow_id in pending_requests:
+                decision = pending_requests[flow_id].get("decision")
+                if decision:
+                    return jsonify({"decision": decision})
+        time.sleep(1)  # Wait 1 second between checks
+    
+    return jsonify({"error": "timeout", "decision": "deny"}), 408

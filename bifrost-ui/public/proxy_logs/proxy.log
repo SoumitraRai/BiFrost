@@ -583,3 +583,779 @@
 2025-05-08 16:34:35,416 - INFO: HTTP(S) proxy listening at *:8080.
 2025-05-08 16:35:05,132 - INFO: Proxy server manually stopped.
 2025-05-08 16:35:05,132 - INFO: Proxy server stopped.
+2025-05-09 19:22:08,273 - INFO: HTTPS Proxy started on 0.0.0.0:8080
+2025-05-09 19:22:08,273 - INFO: Payment filter activated
+2025-05-09 19:22:08,275 - INFO: HTTP(S) proxy listening at *:8080.
+2025-05-09 19:22:52,547 - INFO: client connect
+2025-05-09 19:22:52,785 - INFO: server connect www.gstatic.com:443 (142.250.195.3:443)
+2025-05-09 19:22:53,004 - INFO: [⏸] Flow 081397b9-8793-48ee-8f37-320b9501b878 flagged for parent approval
+2025-05-09 19:22:53,004 - ERROR: [!] Error checking approval status for 081397b9-8793-48ee-8f37-320b9501b878: 'AdvancedHTTPSProxy' object has no attribute 'wait_for_decision'
+2025-05-09 19:22:57,669 - INFO: client connect
+2025-05-09 19:22:58,572 - INFO: server connect sync-v2.brave.com:443 (52.42.129.170:443)
+2025-05-09 19:22:59,102 - INFO: [⏸] Flow 00b34c9b-67e6-4fd7-a45f-74b5fc0bc6f9 flagged for parent approval
+2025-05-09 19:22:59,102 - ERROR: [!] Error checking approval status for 00b34c9b-67e6-4fd7-a45f-74b5fc0bc6f9: 'AdvancedHTTPSProxy' object has no attribute 'wait_for_decision'
+2025-05-09 19:23:08,122 - INFO: client connect
+2025-05-09 19:23:09,103 - INFO: server connect api.ipify.org:443 (104.26.12.205:443)
+2025-05-09 19:23:09,488 - INFO: Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for api.ipify.org, this may indicate that the client does not trust the proxy's certificate.
+2025-05-09 19:23:09,489 - INFO: client disconnect
+2025-05-09 19:23:09,490 - INFO: server disconnect api.ipify.org:443 (104.26.12.205:443)
+2025-05-09 19:23:09,491 - INFO: client connect
+2025-05-09 19:23:09,635 - INFO: client connect
+2025-05-09 19:23:09,917 - INFO: error establishing server connection: [Errno 101] Network is unreachable
+2025-05-09 19:23:09,919 - INFO: client disconnect
+2025-05-09 19:23:10,432 - INFO: server connect mobile.events.data.microsoft.com:443 (13.69.239.72:443)
+2025-05-09 19:23:12,447 - INFO: [⏸] Flow 0916c68c-a9ff-4056-bc11-7f63be327cad flagged for parent approval
+2025-05-09 19:23:12,447 - ERROR: [!] Error checking approval status for 0916c68c-a9ff-4056-bc11-7f63be327cad: 'AdvancedHTTPSProxy' object has no attribute 'wait_for_decision'
+2025-05-09 19:23:16,137 - INFO: client connect
+2025-05-09 19:23:16,714 - INFO: [⏸] Flow 9f5231a1-f76c-4fd7-b588-418a5bf6c259 flagged for parent approval
+2025-05-09 19:23:16,714 - ERROR: [!] Error checking approval status for 9f5231a1-f76c-4fd7-b588-418a5bf6c259: 'AdvancedHTTPSProxy' object has no attribute 'wait_for_decision'
+2025-05-09 19:23:18,660 - INFO: server connect api.individual.githubcopilot.com:443 (140.82.114.21:443)
+2025-05-09 19:23:19,301 - INFO: [PAYMENT REQUEST INTERCEPTED]
+{
+  "id": "0da86692-b755-4b5d-bb44-7cd0db0e629a",
+  "method": "POST",
+  "url": "https://api.individual.githubcopilot.com/chat/completions",
+  "headers": {
+    "content-length": "59066",
+    "authorization": "Bearer tid=9e6e6cfb8f3988881275e7c2993cd22d;exp=1746800162;sku=free_limited_copilot;proxy-ep=proxy.individual.githubcopilot.com;st=dotcom;chat=1;cit=1;malfil=1;editor_preview_features=1;ccr=1;rt=1;8kp=1;ip=110.224.249.104;asn=AS45609;cq=3972;rd=1749340800:ac4a2c48f7a996a8c0283fb06bcfdc77248e0ff909392d0617eae19cce4c92fc",
+    "content-type": "application/json",
+    "copilot-integration-id": "vscode-chat",
+    "editor-plugin-version": "copilot-chat/0.27.2025050603",
+    "editor-version": "vscode/1.100.0-insider",
+    "openai-intent": "conversation-panel",
+    "user-agent": "GitHubCopilotChat/0.27.2025050603",
+    "vscode-machineid": "ab02365a8c77853cc1078e44f1a23ea5fe4bc82d869bddcb1dd659670eba732a",
+    "vscode-sessionid": "0727f868-def4-452c-8aad-dcc4d61127721746793717162",
+    "x-github-api-version": "2025-05-01",
+    "x-initiator": "agent",
+    "x-interaction-id": "467f8809-8c36-4acf-a2b0-32f777a005fb",
+    "x-interaction-type": "conversation-panel",
+    "x-request-id": "4aca6d28-20df-4264-ab5f-741e3902eeb4",
+    "x-vscode-user-agent-library-version": "electron-fetch",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "no-cors",
+    "sec-fetch-dest": "empty",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "priority": "u=4, i"
+  },
+  "content": "{\"messages\":[{\"role\":\"system\",\"content\":\"You are a helpful AI programming assistant to a user who is a software engineer, acting on behalf of the Visual Studio Code editor. Your task is to choose one category from the Markdown table of categories below that matches the user's question. Carefully review the user's question, any previous messages, and any provided context such as code snippets. Respond with just the category name. Your chosen category will help Visual Studio Code provide the user with a higher-quality response, and choosing incorrectly will degrade the user's experience of using Visual Studio Code, so you must choose wisely. If you cannot choose just one category, or if none of the categories seem like they would provide the user with a better result, you must always respond with \\\"unknown\\\".\\n\\n| Category name | Category description | Example of matching question |\\n| -- | -- | -- |\\n| generate_code_sample | The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects. | \\\"Write an example of computing a SHA256 hash.\\\" |\\n| add_feature_to_file | The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects. | \\\"Add a refresh button to the table widget.\\\" |\\n| question_about_specific_files | The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer. | \\\"What does this file do?\\\" |\\n| workspace_project_questions | The user wants to learn about or update the code or files in their current workspace. Questions in this category may be about understanding what the whole workspace does or locating the implementation of some code. This does not include generating or updating tests. | \\\"What does this project do?\\\" |\\n| find_code_in_workspace | The user wants to locate the implementation of some functionality in their current workspace. | \\\"Where is the tree widget implemented?\\\" |\\n| generate_with_workspace_context | The user wants to generate code based on multiple files in the workspace and did not specify which files to reference. | \\\"Create a README for this project.\\\" |\\n| create_tests | The user wants to generate unit tests. | \\\"Generate tests for my selection using pytest.\\\" |\\n| create_new_workspace_or_extension | The user wants to create a complete Visual Studio Code workspace from scratch, such as a new application or a Visual Studio Code extension. Use this category only if the question relates to generating or creating new workspaces in Visual Studio Code. Do not use this category for updating existing code or generating sample code snippets | \\\"Scaffold a Node server.\\\", \\\"Create a sample project which uses the fileSystemProvider API.\\\", \\\"react application\\\" |\\n| create_jupyter_notebook | The user wants to create a new Jupyter notebook in Visual Studio Code. | \\\"Create a notebook to analyze this CSV file.\\\" |\\n| set_up_tests | The user wants to configure project test setup, framework, or test runner. The user does not want to fix their existing tests. | \\\"Set up tests for this project.\\\" |\\n| vscode_configuration_questions | The user wants to learn about, use, or configure the Visual Studio Code. Use this category if the users question is specifically about commands, settings, keybindings, extensions and other features available in Visual Studio Code. Do not use this category to answer questions about generating code or creating new projects including Visual Studio Code extensions. | \\\"Switch to light mode.\\\", \\\"Keyboard shortcut to toggle terminal visibility.\\\", \\\"Settings to enable minimap.\\\", \\\"Whats new in the latest release?\\\" |\\n| configure_python_environment | The user wants to set up their Python environment. | \\\"Create a virtual environment for my project.\\\" |\\n| terminal_state_questions | The user wants to learn about specific state such as the selection, command, or failed command in the integrated terminal in Visual Studio Code. | \\\"Why did the latest terminal command fail?\\\" |\\n| github_questions | The user is asking about an issue, pull request, branch, commit hash, diff, discussion, repository, or published release on GitHub.com.  This category does not include performing local Git operations using the CLI. | \\\"What has been changed in the pull request 1361 in browserify/browserify repo?\\\" |\\n| web_questions | The user is asking a question that requires current knowledge from a web search engine. Such questions often reference time periods that exceed your knowledge cutoff. | \\\"What is the latest LTS version of Node.js?\\\" |\\n| unknown | The user's question does not fit exactly one of the categories above, is about a product other than Visual Studio Code or GitHub, or is a general question about code, code errors, or software engineering. | \\\"How do I center a div in CSS?\\\" |\"},{\"role\":\"user\",\"content\":\"<attachment>\\n</attachment>\"},{\"role\":\"user\",\"content\":\"<attachment id=\\\"Proxy.py\\\">\\n```python\\n# filepath: /home/hecker_01/Projects/BiFrost/ProxyVPN/Proxy.py\\nfrom typing import Optional, Dict, Any\\nfrom mitmproxy import options\\nfrom mitmproxy.tools.dump import DumpMaster\\n\\n\\nclass AdvancedHTTPSProxy:\\n```\\n</attachment>\"},{\"role\":\"user\",\"content\":\"i have attached the proxy.py please check if this would work\"},{\"role\":\"assistant\",\"content\":\"Let me explain how these two files work together and what needs to be fixed:\\n\\n### Current Flow Issue \ud83d\udd04\\nThe main issue is in the proxy's request handling. Here's what's currently happening:\\n\\n1. The proxy checks for decisions but doesn't submit new requests for approval\\n2. There's no proper waiting mechanism for decisions\\n\\n### Required Changes \ud83d\udcdd\\n\\nHere's how to fix the [`ProxyVPN/Proxy.py`](ProxyVPN/Proxy.py ):\\n\\n````python\\ndef request(self, flow: mitmproxy.http.HTTPFlow):\\n    \\\"\\\"\\\"\\n    Intercept and process requests\\n    \\\"\\\"\\\"\\n    if self.should_intercept(flow):\\n        self.log_request(flow)\\n        \\n        # Submit request for approval\\n        try:\\n            approval_data = {\\n                \\\"id\\\": flow.id,\\n                \\\"data\\\": {\\n                    \\\"url\\\": flow.request.url,\\n                    \\\"method\\\": flow.request.method,\\n                    \\\"headers\\\": dict(flow.request.headers)\\n                }\\n            }\\n            \\n            # Submit for approval\\n            requests.post(\\\"http://localhost:5000/intercepted\\\", \\n                         json=approval_data)\\n            \\n            # Wait for decision\\n            decision = None\\n            max_retries = 30  # 30 seconds timeout\\n            while max_retries > 0:\\n                res = requests.get(f\\\"http://localhost:5000/decision/{flow.id}\\\")\\n                if res.status_code == 200:\\n                    decision = res.json().get(\\\"decision\\\")\\n                    if decision:\\n                        break\\n                time.sleep(1)  # Wait 1 second between checks\\n                max_retries -= 1\\n            \\n            # Handle the decision\\n            if decision == \\\"approve\\\":\\n                flow.resume()\\n                self.logger.info(f\\\"[\u2713] Flow {flow.id} approved\\\")\\n            else:\\n                flow.kill()  # Block the request\\n                self.logger.info(f\\\"[\u2717] Flow {flow.id} denied or timed out\\\")\\n                \\n        except Exception as e:\\n            self.logger.error(f\\\"[!] Approval mechanism error: {e}\\\")\\n            flow.resume()  # Fail open\\n````\\n\\n### How It Works Now \ud83c\udfaf\\n\\n1. **Request Interception**:\\n   - When a request comes in, it's sent to the approval mechanism\\n   - Contains URL, method, and headers\\n\\n2. **Waiting for Decision**:\\n   - Proxy polls the approval mechanism for 30 seconds max\\n   - Checks every second for a decision\\n\\n3. **Decision Handling**:\\n   - `approve` \u2192 Request continues\\n   - `deny` or timeout \u2192 Request is blocked\\n\\n### Testing the System \ud83e\uddea\\n\\n1. Start the approval mechanism:\\n```bash\\npython approval_mechanism.py\\n```\\n\\n2. Start the proxy:\\n```bash\\npython Proxy.py\\n```\\n\\n3. Configure your browser to use the proxy (localhost:8080)\\n\\n4. Try accessing any website - you should see:\\n   - Request appears in approval mechanism\\n   - Browser waits for decision\\n   - Request proceeds or fails based on decision\\n\\n### Important Notes \u26a0\ufe0f\\n\\n1. The 30-second timeout is configurable\\n2. Add error handling as needed\\n3. Consider adding a request queue for better management\\n4. Add proper SSL certificate handling\\n5. Consider adding WebSocket support for real-time decisions\\n\\nThis implementation provides a basic but functional approval system. Let me know if you need any clarification or have questions about specific parts! \ud83d\ude80\",\"name\":\"unknown\"},{\"role\":\"user\",\"content\":\"<attachment id=\\\"payment_filter.py\\\">\\n```python\\n# filepath: /home/hecker_01/Projects/BiFrost/ProxyVPN/payment_filter.py\\nfrom mitmproxy import http\\n\\nclass PaymentFilterConfig:\\n    def __init__(self):\\n        \\n\\nclass PaymentFilter:\\n    def __init__(self, config: PaymentFilterConfig):\\n        \\n\\n    def setup_logging(self):\\n```\\n</attachment>\"},{\"role\":\"user\",\"content\":\"the payment filter is the one which is supposed to be filtering the payment urls and sending it to approval_mechanism while the proxy stops that specific request\"},{\"role\":\"assistant\",\"content\":\"Let me help explain and fix the interaction between these components.\\n\\n### 1. Updating Payment Filter \ud83d\udd04\\n\\nThe payment filter needs to pause the request until approval is received. Here's how to modify the [`ProxyVPN/payment_filter.py`](ProxyVPN/payment_filter.py ):\\n\\n````python\\ndef request(flow: http.HTTPFlow):\\n    \\\"\\\"\\\"\\n    Intercepts payment requests and waits for approval\\n    \\\"\\\"\\\"\\n    if is_payment_request(flow):\\n        try:\\n            # Prepare request data\\n            req = {\\n                \\\"id\\\": flow.id,\\n                \\\"method\\\": flow.request.method,\\n                \\\"url\\\": flow.request.pretty_url,\\n                \\\"headers\\\": dict(flow.request.headers),\\n                \\\"content\\\": flow.request.get_text() if flow.request.content else \\\"\\\"\\n            }\\n            \\n            payment_logger.info(\\\"[PAYMENT REQUEST INTERCEPTED]\\\\n\\\" + json.dumps(req, indent=2))\\n\\n            # Send to approval mechanism\\n            r = requests.post(\\\"http://localhost:5000/intercepted\\\", json=req, timeout=5)\\n            if r.status_code != 200:\\n                payment_logger.error(f\\\"[APPROVAL SERVER ERROR] Status: {r.status_code}\\\")\\n                flow.kill()  # Block request on error\\n                return\\n\\n            # Wait for decision\\n            max_retries = 30  # 30 seconds timeout\\n            while max_retries > 0:\\n                try:\\n                    decision_response = requests.get(\\n                        f\\\"http://localhost:5000/decision/{flow.id}\\\",\\n                        timeout=5\\n                    )\\n                    if decision_response.status_code == 200:\\n                        decision = decision_response.json().get(\\\"decision\\\")\\n                        if decision == \\\"approve\\\":\\n                            payment_logger.info(f\\\"[PAYMENT APPROVED] ID: {flow.id}\\\")\\n                            return  # Allow request to continue\\n                        elif decision == \\\"deny\\\":\\n                            payment_logger.info(f\\\"[PAYMENT DENIED] ID: {flow.id}\\\")\\n                            flow.kill()  # Block request\\n                            return\\n                except requests.exceptions.RequestException as e:\\n                    payment_logger.error(f\\\"[DECISION CHECK ERROR] {e}\\\")\\n                \\n                time.sleep(1)\\n                max_retries -= 1\\n\\n            # If we reach here, it means timeout\\n            payment_logger.warning(f\\\"[DECISION TIMEOUT] ID: {flow.id}\\\")\\n            flow.kill()  # Block request on timeout\\n\\n        except Exception as e:\\n            payment_logger.error(f\\\"[PROCESSING ERROR] {e}\\\")\\n            flow.kill()  # Block request on error\\n````\\n\\n### 2. Usage Flow \ud83d\udccb\\n\\n1. **Request Comes In**:\\n   - Payment filter detects payment-related URLs\\n   - Sends request details to approval mechanism\\n   - Pauses the request\\n\\n2. **Approval Process**:\\n   - Admin sees request in `/requests` endpoint\\n   - Makes decision via `/decision` endpoint\\n   - Decision is stored in [`ProxyVPN/approval_mechanism.py`](ProxyVPN/approval_mechanism.py )\\n\\n3. **Request Resolution**:\\n   - If approved: Request continues\\n   - If denied/timeout: Request is blocked\\n\\n### 3. Testing \ud83e\uddea\\n\\n1. Start the approval mechanism:\\n```bash\\npython approval_mechanism.py\\n```\\n\\n2. Configure mitmproxy to use the payment filter:\\n```bash\\nmitmdump -s payment_filter.py\\n```\\n\\n3. Test with curl:\\n```bash\\n# Set proxy\\nexport https_proxy=\\\"http://localhost:8080\\\"\\n\\n# Try a payment URL\\ncurl https://example.com/payment\\n```\\n\\n4. Check approval UI endpoint:\\n```bash\\ncurl http://localhost:5000/requests\\n```\\n\\n### 4. Important Notes \u26a0\ufe0f\\n\\n- The payment filter now actively blocks requests until approved\\n- 30-second timeout is configurable\\n- All payment requests are logged in `payment_traffic.log`\\n- If approval server is down, requests are blocked by default\\n- Error handling is in place for various failure scenarios\\n\\nLet me know if you need any clarification or have questions about specific parts! \ud83d\ude80\",\"name\":\"unknown\"},{\"role\":\"user\",\"content\":\"i want to configure proxy.py to take intercept from payment_filter.py\"},{\"role\":\"assistant\",\"content\":\"I'll help you modify the `Proxy.py` to work with `payment_filter.py`. Here's how to update it:\\n\\n```mermaid\\ngraph LR\\n    A[Client Request] --> B[Proxy.py]\\n    B --> C[payment_filter.py]\\n    C --> D[approval_mechanism.py]\\n    D --> C\\n    C --> B\\n    B --> E[Allow/Block Request]\\n```\\n\\nHere's the updated `Proxy.py`:\\n\\n````python\\nfrom mitmproxy import ctx, options\\nfrom mitmproxy.tools.dump import DumpMaster\\nimport os\\nimport logging\\nimport asyncio\\nimport payment_filter  # Import the payment filter\\n\\nclass AdvancedHTTPSProxy:\\n    def __init__(self, \\n                 host: str = '0.0.0.0', \\n                 port: int = 8080, \\n                 log_dir: str = '../bifrost-ui/public/proxy_logs',\\n                 cert_dir: str = './certs',\\n                 config: Optional[Dict[str, Any]] = None):\\n        \\n        # ...existing initialization code...\\n\\n        # Configure mitmproxy options\\n        self.opts = options.Options(\\n            listen_host=host,\\n            listen_port=port,\\n            confdir=cert_dir,\\n            ssl_insecure=True  # For testing, remove in production\\n        )\\n        \\n        # Initialize master\\n        self.master = DumpMaster(self.opts)\\n        \\n        # Add payment filter to addons\\n        self.master.addons.add(payment_filter)\\n\\n    async def run_proxy(self):\\n        \\\"\\\"\\\"\\n        Run the proxy server asynchronously\\n        \\\"\\\"\\\"\\n        self.logger.info(f\\\"Starting proxy on {self.host}:{self.port}\\\")\\n        try:\\n            await self.master.run()\\n        except Exception as e:\\n            self.logger.error(f\\\"Proxy error: {e}\\\")\\n            raise\\n\\n    def run(self):\\n        \\\"\\\"\\\"\\n        Run the proxy server\\n        \\\"\\\"\\\"\\n        loop = asyncio.get_event_loop()\\n        try:\\n            loop.run_until_complete(self.run_proxy())\\n        except KeyboardInterrupt:\\n            self.logger.info(\\\"Shutting down proxy...\\\")\\n        finally:\\n            self.master.shutdown()\\n\\ndef main():\\n    # Example configuration\\n    proxy_config = {\\n        'intercept_all': False,  # Let payment_filter handle interception\\n        'whitelist_domains': [],\\n        'log_requests': True,\\n        'log_responses': True,\\n        'save_files': True,\\n    }\\n    \\n    proxy = AdvancedHTTPSProxy(config=proxy_config)\\n    proxy.run()\\n\\nif __name__ == \\\"__main__\\\":\\n    main()\\n````\\n\\nNow let's create a script to run everything together:\\n\\n````python\\nimport subprocess\\nimport time\\nimport sys\\n\\ndef run_system():\\n    try:\\n        # Start approval mechanism\\n        approval_process = subprocess.Popen(\\n            [sys.executable, 'approval_mechanism.py'],\\n            stdout=subprocess.PIPE,\\n            stderr=subprocess.PIPE\\n        )\\n        \\n        # Give approval mechanism time to start\\n        time.sleep(2)\\n        \\n        # Start proxy with payment filter\\n        proxy_process = subprocess.Popen(\\n            [sys.executable, 'Proxy.py'],\\n            stdout=subprocess.PIPE,\\n            stderr=subprocess.PIPE\\n        )\\n        \\n        print(\\\"System started successfully!\\\")\\n        print(\\\"Proxy running on localhost:8080\\\")\\n        print(\\\"Approval mechanism running on localhost:5000\\\")\\n        \\n        # Keep running until interrupted\\n        approval_process.wait()\\n        proxy_process.wait()\\n        \\n    except KeyboardInterrupt:\\n        print(\\\"\\\\nShutting down...\\\")\\n        approval_process.terminate()\\n        proxy_process.terminate()\\n        \\n    except Exception as e:\\n        print(f\\\"Error: {e}\\\")\\n        sys.exit(1)\\n\\nif __name__ == \\\"__main__\\\":\\n    run_system()\\n````\\n\\nTo run the system:\\n\\n1. Make sure all components are in place:\\n```bash\\nls -l /home/hecker_01/Projects/BiFrost/ProxyVPN/\\n```\\n\\n2. Start the system:\\n```bash\\npython run_system.py\\n```\\n\\n3. Configure your browser to use the proxy:\\n   - Proxy Address: `localhost`\\n   - Port: `8080`\\n\\nThe system will now:\\n1. Intercept all requests through the proxy\\n2. Use `payment_filter.py` to detect payment-related requests\\n3. Send detected requests to [`ProxyVPN/approval_mechanism.py`](ProxyVPN/approval_mechanism.py ) for approval\\n4. Block or allow requests based on the approval decision\\n\\nTo test:\\n1. Try accessing a payment-related URL\\n2. Check `localhost:5000/requests` for pending approvals\\n3. Approve/deny requests via `localhost:5000/decision`\\n4. Monitor logs in `../bifrost-ui/public/proxy_logs/`\",\"name\":\"unknown\"},{\"role\":\"user\",\"content\":\"<attachment id=\\\"file:approval_mechanism.py\\\">\\nUser's current visible code, this should be the main focus:\\nExcerpt from approval_mechanism.py, lines 19 to 41:\\n```python\\n# filepath: /home/hecker_01/Projects/BiFrost/ProxyVPN/approval_mechanism.py\\ndef get_pending():\\n    return jsonify([\\n        {\\\"id\\\": k, \\\"details\\\": v[\\\"data\\\"]}\\n        for k, v in pending_requests.items() if v[\\\"decision\\\"] is None\\n    ])\\n\\n@app.route(\\\"/decision\\\", methods=[\\\"POST\\\"])\\ndef make_decision():\\n    data = request.json\\n    flow_id = data[\\\"id\\\"]\\n    action = data[\\\"action\\\"]\\n    with decision_lock:\\n        if flow_id in pending_requests:\\n            pending_requests[flow_id][\\\"decision\\\"] = action\\n            return jsonify({\\\"status\\\": \\\"received\\\"})\\n    return jsonify({\\\"error\\\": \\\"not found\\\"}), 404\\n\\n@app.route(\\\"/decision/<flow_id>\\\", methods=[\\\"GET\\\"])\\ndef get_decision(flow_id):\\n    with decision_lock:\\n        decision = pending_requests.get(flow_id, {}).get(\\\"decision\\\")\\n    return jsonify({\\\"decision\\\": decision})\\n```\\n</attachment>\\n<attachment>\\nUser's active file for additional context:\\n```python\\n# filepath: /home/hecker_01/Projects/BiFrost/ProxyVPN/approval_mechanism.py\\n@app.route(\\\"/requests\\\", methods=[\\\"GET\\\"])\\ndef get_pending():\\n    return jsonify([\\n        {\\\"id\\\": k, \\\"details\\\": v[\\\"data\\\"]}\\n        for k, v in pending_requests.items() if v[\\\"decision\\\"] is None\\n    ])\\n\\n@app.route(\\\"/decision\\\", methods=[\\\"POST\\\"])\\ndef make_decision():\\n    data = request.json\\n    flow_id = data[\\\"id\\\"]\\n    action = data[\\\"action\\\"]\\n    with decision_lock:\\n        if flow_id in pending_requests:\\n            pending_requests[flow_id][\\\"decision\\\"] = action\\n            return jsonify({\\\"status\\\": \\\"received\\\"})\\n    return jsonify({\\\"error\\\": \\\"not found\\\"}), 404\\n\\n@app.route(\\\"/decision/<flow_id>\\\", methods=[\\\"GET\\\"])\\ndef get_decision(flow_id):\\n    with decision_lock:\\n        decision = pending_requests.get(flow_id, {}).get(\\\"decision\\\")\\n    return jsonify({\\\"decision\\\": decision})\\n```\\n</attachment>\"},{\"role\":\"user\",\"content\":\"so like how is the proxy pausing the filtered request\"},{\"role\":\"assistant\",\"content\":\"Let me explain how the request pausing works in the system:\\n\\n### Flow Control in mitmproxy \ud83d\udd04\\n\\nThe key is in how `payment_filter.py` interacts with mitmproxy's flow control. Here's how it works:\\n\\n1. When `flow.kill()` is called, the request is blocked completely\\n2. If we don't call either `flow.kill()` or `flow.resume()`, the request naturally pauses\\n\\n### Here's the improved `payment_filter.py` that clearly shows the pausing mechanism:\\n\\n````python\\nfrom mitmproxy import ctx, http\\nimport requests\\nimport time\\nimport logging\\n\\ndef request(flow: http.HTTPFlow):\\n    if is_payment_request(flow):\\n        # 1. The request naturally pauses here as we process it\\n        payment_logger.info(f\\\"[PAYMENT DETECTED] Pausing request: {flow.request.url}\\\")\\n        \\n        try:\\n            # 2. Send to approval mechanism\\n            approval_data = {\\n                \\\"id\\\": flow.id,\\n                \\\"url\\\": flow.request.url,\\n                \\\"method\\\": flow.request.method\\n            }\\n            \\n            requests.post(\\\"http://localhost:5000/intercepted\\\", json=approval_data)\\n            \\n            # 3. Wait for decision (request remains paused during this time)\\n            for _ in range(30):  # 30 second timeout\\n                response = requests.get(f\\\"http://localhost:5000/decision/{flow.id}\\\")\\n                decision = response.json().get(\\\"decision\\\")\\n                \\n                if decision == \\\"approve\\\":\\n                    payment_logger.info(f\\\"[APPROVED] Resuming request: {flow.id}\\\")\\n                    # 4a. Resume the flow - request continues\\n                    return\\n                    \\n                elif decision == \\\"deny\\\":\\n                    payment_logger.info(f\\\"[DENIED] Blocking request: {flow.id}\\\")\\n                    # 4b. Kill the flow - request is blocked\\n                    flow.kill()\\n                    return\\n                    \\n                time.sleep(1)\\n            \\n            # 5. Timeout - block the request\\n            payment_logger.warning(f\\\"[TIMEOUT] Blocking request: {flow.id}\\\")\\n            flow.kill()\\n            \\n        except Exception as e:\\n            payment_logger.error(f\\\"[ERROR] {e}\\\")\\n            flow.kill()  # Block on error\\n````\\n\\n### Request States Explained \ud83d\udea6\\n\\n1. **Natural Pause** \u23f8\ufe0f\\n   - When mitmproxy executes our filter code, the request waits\\n   - No special command needed - it's automatic\\n\\n2. **Decision States** \ud83d\udd04\\n   - `return`: Lets request continue (implicit resume)\\n   - `flow.kill()`: Blocks request permanently\\n   - Neither called: Request stays paused\\n\\n### Real World Example \ud83d\udcdd\\n\\n```mermaid\\nsequenceDiagram\\n    participant Browser\\n    participant Proxy\\n    participant Filter\\n    participant Approval\\n    \\n    Browser->>Proxy: Payment Request\\n    Proxy->>Filter: Process Request\\n    Filter->>Approval: Send for Review\\n    Note over Filter: Request Paused\\n    loop Every Second\\n        Filter->>Approval: Check Decision\\n        Approval-->>Filter: No Decision Yet\\n    end\\n    Approval-->>Filter: Approved/Denied\\n    Filter-->>Proxy: Resume/Kill\\n    Proxy-->>Browser: Response/Error\\n```\\n\\n### Testing the Pause \u2705\\n\\n1. Start the system:\\n```bash\\npython run_system.py\\n```\\n\\n2. Make a payment request\\n3. Watch the request pause in your browser (spinning/loading)\\n4. Check approval mechanism:\\n```bash\\ncurl http://localhost:5000/requests\\n```\\n\\n5. Approve or deny:\\n```bash\\ncurl -X POST http://localhost:5000/decision -d '{\\\"id\\\":\\\"flow_id\\\",\\\"action\\\":\\\"approve\\\"}'\\n```\\n\\nThe request will either complete or fail based on your decision! \ud83c\udfaf\",\"name\":\"unknown\"},{\"role\":\"user\",\"content\":\"<attachment id=\\\"file:payment_filter.py\\\">\\nUser's current visible code, this should be the main focus:\\nExcerpt from payment_filter.py, lines 1 to 25:\\n```python\\n# filepath: /home/hecker_01/Projects/BiFrost/ProxyVPN/payment_filter.py\\nimport os\\nimport json\\nimport logging\\nimport requests\\nimport time\\nfrom mitmproxy import http\\n\\nclass PaymentFilterConfig:\\n    def __init__(self):\\n        self.payment_domains = [\\n            \\\"paypal.com\\\", \\\"stripe.com\\\", \\\"razorpay.com\\\",\\n            \\\"paytm.com\\\", \\\"phonepe.com\\\", \\\"gpay.com\\\",\\n            \\\"apple.com/payment\\\", \\\"google.com/pay\\\", \\\"checkout\\\", \\\"secure.pay\\\"\\n        ]\\n        self.payment_keywords = [\\n            \\\"payment\\\", \\\"transaction\\\", \\\"card\\\", \\\"wallet\\\", \\\"upi\\\", \\\"purchase\\\",\\n            \\\"order\\\", \\\"billing\\\", \\\"credit\\\", \\\"debit\\\", \\\"checkout\\\", \\\"pay\\\"\\n        ]\\n        self.timeout = 30  # seconds\\n        self.log_dir = \\\"../logs\\\"\\n        self.approval_url = \\\"http://localhost:5000\\\"\\n\\nclass PaymentFilter:\\n    def __init__(self, config: PaymentFilterConfig):\\n        self.config = config\\n```\\n</attachment>\\n<attachment>\\nUser's active file for additional context:\\n```python\\n# filepath: /home/hecker_01/Projects/BiFrost/ProxyVPN/payment_filter.py\\nimport os\\nimport json\\nimport logging\\nimport requests\\nimport time\\nfrom mitmproxy import http\\n\\nclass PaymentFilterConfig:\\n    def __init__(self):\\n        self.payment_domains = [\\n            \\\"paypal.com\\\", \\\"stripe.com\\\", \\\"razorpay.com\\\",\\n            \\\"paytm.com\\\", \\\"phonepe.com\\\", \\\"gpay.com\\\",\\n            \\\"apple.com/payment\\\", \\\"google.com/pay\\\", \\\"checkout\\\", \\\"secure.pay\\\"\\n        ]\\n        self.payment_keywords = [\\n            \\\"payment\\\", \\\"transaction\\\", \\\"card\\\", \\\"wallet\\\", \\\"upi\\\", \\\"purchase\\\",\\n            \\\"order\\\", \\\"billing\\\", \\\"credit\\\", \\\"debit\\\", \\\"checkout\\\", \\\"pay\\\"\\n        ]\\n        self.timeout = 30  # seconds\\n        self.log_dir = \\\"../logs\\\"\\n        self.approval_url = \\\"http://localhost:5000\\\"\\n\\nclass PaymentFilter:\\n    def __init__(self, config: PaymentFilterConfig):\\n        self.config = config\\n```\\n</attachment>\"},{\"role\":\"user\",\"content\":\"can you help me integrate it into the current payment_filter.py\"},{\"role\":\"assistant\",\"content\":\"I'll help you modify the existing [`ProxyVPN/payment_filter.py`](ProxyVPN/payment_filter.py ) to include the request pausing mechanism. Here's how to update it:\\n\\n````python\\n# ...existing logging setup code...\\n\\ndef request(flow: http.HTTPFlow):\\n    \\\"\\\"\\\"\\n    This function is called for every HTTP request.\\n    It checks if the request is a payment request, logs it, and handles approval flow.\\n    \\\"\\\"\\\"\\n    if is_payment_request(flow):\\n        try:\\n            req = {\\n                \\\"id\\\": flow.id,\\n                \\\"method\\\": flow.request.method,\\n                \\\"url\\\": flow.request.pretty_url,\\n                \\\"headers\\\": dict(flow.request.headers),\\n                \\\"content\\\": flow.request.get_text() if flow.request.content else \\\"\\\"\\n            }\\n            payment_logger.info(\\\"[PAYMENT REQUEST INTERCEPTED]\\\\n\\\" + json.dumps(req, indent=2))\\n\\n            # Send to approval mechanism and wait for decision\\n            try:\\n                # Submit for approval\\n                r = requests.post(\\\"http://localhost:5000/intercepted\\\", json=req, timeout=5)\\n                if r.status_code != 200:\\n                    payment_logger.error(f\\\"[APPROVAL SERVER ERROR] ID: {flow.id}, Status: {r.status_code}\\\")\\n                    flow.kill()\\n                    return\\n\\n                # Wait for decision\\n                max_retries = 30  # 30 seconds timeout\\n                while max_retries > 0:\\n                    try:\\n                        decision_response = requests.get(\\n                            f\\\"http://localhost:5000/decision/{flow.id}\\\",\\n                            timeout=5\\n                        )\\n                        if decision_response.status_code == 200:\\n                            decision = decision_response.json().get(\\\"decision\\\")\\n                            if decision == \\\"approve\\\":\\n                                payment_logger.info(f\\\"[PAYMENT APPROVED] ID: {flow.id}\\\")\\n                                return  # Let request continue\\n                            elif decision == \\\"deny\\\":\\n                                payment_logger.info(f\\\"[PAYMENT DENIED] ID: {flow.id}\\\")\\n                                flow.kill()  # Block request\\n                                return\\n                    except requests.exceptions.RequestException as e:\\n                        payment_logger.error(f\\\"[DECISION CHECK ERROR] ID: {flow.id}, Error: {e}\\\")\\n                    \\n                    time.sleep(1)\\n                    max_retries -= 1\\n\\n                # Timeout reached\\n                payment_logger.warning(f\\\"[DECISION TIMEOUT] ID: {flow.id}\\\")\\n                flow.kill()\\n                return\\n\\n            except requests.exceptions.RequestException as e:\\n                payment_logger.error(f\\\"[ERROR SENDING TO APPROVAL SERVER] ID: {flow.id}, Error: {e}\\\")\\n                flow.kill()\\n                return\\n            except Exception as e:\\n                payment_logger.error(f\\\"[UNEXPECTED ERROR] ID: {flow.id}, Error: {e}\\\")\\n                flow.kill()\\n                return\\n\\n        except Exception as e:\\n            payment_logger.error(f\\\"[Request Processing Error] ID: {flow.id}, Error: {e}\\\")\\n            flow.kill()\\n            return\\n\\n# ...existing response function remains unchanged...\\n````\\n\\n### Key Changes Made:\\n\\n1. **Request Pausing**: \\n   - The request naturally pauses while we wait for the approval decision\\n   - No explicit pause command needed - mitmproxy handles this automatically\\n\\n2. **Decision Flow**:\\n   - Waits up to 30 seconds for a decision\\n   - Checks decision every second\\n   - Either lets request continue (implicit resume) or kills it\\n\\n3. **Error Handling**:\\n   - Added comprehensive error handling\\n   - All error cases result in blocking the request ([`flow.kill()`](ProxyVPN/payment_filter.py ))\\n   - Detailed logging for troubleshooting\\n\\n### Testing the Integration:\\n\\n1. Start the approval mechanism:\\n```bash\\npython approval_mechanism.py\\n```\\n\\n2. Start mitmproxy with the filter:\\n```bash\\nmitmdump -s payment_filter.py\\n```\\n\\n3. Test with a payment URL:\\n```bash\\ncurl -x http://localhost:8080 https://example.com/payment\\n```\\n\\n4. Check the logs in `../bifrost-ui/public/proxy_logs/payment_traffic.log`\\n\\nThe request will pause until you make an approval decision via the approval mechanism's endpoints.\",\"name\":\"unknown\"},{\"role\":\"user\",\"content\":\"<attachment id=\\\"file:Proxy.py\\\">\\nUser's current visible code, this should be the main focus:\\nExcerpt from Proxy.py, lines 1 to 25:\\n```python\\n# filepath: /home/hecker_01/Projects/BiFrost/ProxyVPN/Proxy.py\\nimport asyncio\\nimport mitmproxy.http\\nimport mitmproxy.ctx\\nimport logging\\nimport json\\nimport os\\nimport sys\\nimport requests\\nimport time\\nfrom typing import Optional, Dict, Any\\nfrom mitmproxy import options\\nfrom mitmproxy.tools.dump import DumpMaster\\nimport payment_filter\\n\\n\\nclass AdvancedHTTPSProxy:\\n    def __init__(self, \\n                 host: str = '0.0.0.0', \\n                 port: int = 8080, \\n                 log_dir: str = '../bifrost-ui/public/proxy_logs',  # Changed log directory\\n                 cert_dir: str = './certs',\\n                 config: Optional[Dict[str, Any]] = None):\\n        \\\"\\\"\\\"\\n        Initialize the advanced HTTPS proxy with configurable options\\n```\\n</attachment>\\n<attachment>\\nUser's active file for additional context:\\n```python\\n# filepath: /home/hecker_01/Projects/BiFrost/ProxyVPN/Proxy.py\\nimport asyncio\\nimport mitmproxy.http\\nimport mitmproxy.ctx\\nimport logging\\nimport json\\nimport os\\nimport sys\\nimport requests\\nimport time\\nfrom typing import Optional, Dict, Any\\nfrom mitmproxy import options\\nfrom mitmproxy.tools.dump import DumpMaster\\nimport payment_filter\\n\\n\\nclass AdvancedHTTPSProxy:\\n    def __init__(self, \\n                 host: str = '0.0.0.0', \\n                 port: int = 8080, \\n                 log_dir: str = '../bifrost-ui/public/proxy_logs',  # Changed log directory\\n                 cert_dir: str = './certs',\\n                 config: Optional[Dict[str, Any]] = None):\\n        \\\"\\\"\\\"\\n        Initialize the advanced HTTPS proxy with configurable options\\n        \\n        Args:\\n            host (str): Proxy listening host\\n            port (int): Proxy listening port\\n            log_dir (str): Directory to store logs and intercepted traffic\\n            cert_dir (str): Directory to store generated certificates\\n            config (dict): Configuration dictionary for advanced settings\\n        \\\"\\\"\\\"\\n```\\n</attachment>\"},{\"role\":\"user\",\"content\":\"is payment_filter.py connected to proxy.py so that when proxy.py runs the payment uls start getting filtered\"},{\"role\":\"assistant\",\"content\":\"Looking at your [`ProxyVPN/Proxy.py`](ProxyVPN/Proxy.py ), I notice that while it's set up to work with addons, it's not currently importing or using the payment filter. Let's connect them properly.\\n\\nFirst, let's modify [`ProxyVPN/Proxy.py`](ProxyVPN/Proxy.py ) to import and use the payment filter:\\n\\n````python\\nimport asyncio\\nimport mitmproxy.http\\nimport mitmproxy.ctx\\nimport logging\\nimport json\\nimport os\\nimport sys\\nimport requests\\nimport time\\nfrom typing import Optional, Dict, Any\\nfrom mitmproxy import options\\nfrom mitmproxy.tools.dump import DumpMaster\\nimport payment_filter  # Add this import\\n\\nclass AdvancedHTTPSProxy:\\n    def __init__(self, \\n                 host: str = '0.0.0.0', \\n                 port: int = 8080, \\n                 log_dir: str = '../bifrost-ui/public/proxy_logs',\\n                 cert_dir: str = './certs',\\n                 config: Optional[Dict[str, Any]] = None):\\n        # ...existing initialization code...\\n\\n        # Initialize master\\n        self.master = None\\n        \\n        # Initialize payment filter\\n        self.payment_filter = payment_filter\\n````\\n\\nThen modify the [`run_proxy`](ProxyVPN/Proxy.py ) method to add the payment filter addon:\\n\\n````python\\n    async def run_proxy(self):\\n        \\\"\\\"\\\"\\n        Async method to run the proxy server\\n        \\\"\\\"\\\"\\n        try:\\n            # Configure mitmproxy options\\n            opts = options.Options(\\n                listen_host=self.host,\\n                listen_port=self.port,\\n                confdir=self.cert_dir,\\n                ssl_insecure=True\\n            )\\n            \\n            # Create the proxy master\\n            self.master = DumpMaster(opts)\\n            \\n            # Add payment filter addon\\n            self.master.addons.add(self.payment_filter)\\n            \\n            # Add self as addon for other proxy functionalities\\n            self.master.addons.add(self)\\n            \\n            self.logger.info(f\\\"HTTPS Proxy started on {self.host}:{self.port}\\\")\\n            self.logger.info(\\\"Payment filter activated\\\")\\n            \\n            await self.master.run()\\n            \\n        except Exception as e:\\n            self.logger.error(f\\\"Proxy server error: {e}\\\")\\n            raise\\n````\\n\\nAlso, update the main function to include payment filter configuration:\\n\\n````python\\ndef main():\\n    # Example configuration\\n    proxy_config = {\\n        'intercept_all': False,  # Set to False so payment filter handles interception\\n        'whitelist_domains': [],\\n        'log_requests': True,\\n        'log_responses': True,\\n        'save_files': True,\\n    }\\n    \\n    proxy = AdvancedHTTPSProxy(config=proxy_config)\\n    proxy.run()\\n````\\n\\nNow you can test if everything is working:\\n\\n1. Run the approval mechanism:\\n```bash\\npython approval_mechanism.py\\n```\\n\\n2. Run the proxy:\\n```bash\\npython Proxy.py\\n```\\n\\n3. Test with a payment URL:\\n```bash\\ncurl -x http://localhost:8080 https://example.com/payment\\n```\\n\\nYou should see:\\n- Payment URLs being detected by payment_filter.py\\n- Requests being paused for approval\\n- Logs in both proxy.log and payment_traffic.log\\n\\nThe flow should be:\\n```mermaid\\ngraph TD\\n    A[Client Request] --> B[Proxy.py]\\n    B --> C[payment_filter.py]\\n    C --> D{Is Payment URL?}\\n    D -->|Yes| E[Send to Approval]\\n    D -->|No| F[Continue Request]\\n    E --> G[Wait for Decision]\\n    G -->|Approved| F\\n    G -->|Denied| H[Block Request]\\n```\",\"name\":\"unknown\"},{\"role\":\"user\",\"content\":\"<attachment id=\\\"file:bifrost_controller.py\\\">\\nUser's current visible code, this should be the main focus:\\nExcerpt from bifrost_controller.py, lines 14 to 38:\\n```python\\n# filepath: /home/hecker_01/Projects/BiFrost/ProxyVPN/bifrost_controller.py\\nprint(\\\"\ud83d\udd75\ufe0f\u200d\u2642\ufe0f Starting HTTPS Proxy Server with Payment Filter...\\\")\\n    return subprocess.Popen([sys.executable, \\\"Proxy.py\\\"])\\n\\n# === Controller Main Function ===\\ndef main():\\n    processes = {}\\n    try:\\n        # Start Flask server in background\\n        flask_thread = threading.Thread(target=start_flask_server, daemon=True)\\n        flask_thread.start()\\n        processes['flask'] = flask_thread\\n        \\n        print(\\\"\u2705 Flask approval server running at http://localhost:5000\\\")\\n        \\n        # Start Proxy\\n        proxy_process = start_proxy_server()\\n        processes['proxy'] = proxy_process\\n        \\n        print(\\\"\u2705 Proxy server running at localhost:8080\\\")\\n        \\n        # Wait for the proxy process\\n        proxy_process.wait()\\n        \\n    except KeyboardInterrupt:\\n```\\n</attachment>\\n<attachment>\\nUser's active file for additional context:\\n```python\\n# filepath: /home/hecker_01/Projects/BiFrost/ProxyVPN/bifrost_controller.py\\ndef start_proxy_server():\\n    print(\\\"\ud83d\udd75\ufe0f\u200d\u2642\ufe0f Starting HTTPS Proxy Server with Payment Filter...\\\")\\n    return subprocess.Popen([sys.executable, \\\"Proxy.py\\\"])\\n\\n# === Controller Main Function ===\\ndef main():\\n    processes = {}\\n    try:\\n        # Start Flask server in background\\n        flask_thread = threading.Thread(target=start_flask_server, daemon=True)\\n        flask_thread.start()\\n        processes['flask'] = flask_thread\\n        \\n        print(\\\"\u2705 Flask approval server running at http://localhost:5000\\\")\\n        \\n        # Start Proxy\\n        proxy_process = start_proxy_server()\\n        processes['proxy'] = proxy_process\\n        \\n        print(\\\"\u2705 Proxy server running at localhost:8080\\\")\\n        \\n        # Wait for the proxy process\\n        proxy_process.wait()\\n        \\n    except KeyboardInterrupt:\\n        \\n    except Exception as e:\\n```\\n</attachment>\"},{\"role\":\"user\",\"content\":\"before i test this i would like to modify bifrost_controller according to the context up  till now\"},{\"role\":\"assistant\",\"content\":\"Looking at your [`ProxyVPN/bifrost_controller.py`](ProxyVPN/bifrost_controller.py ), we need to modify it since we've integrated the payment filter directly into the proxy. Here's the updated version:\\n\\n````python\\nimport subprocess\\nimport threading\\nimport time\\nimport sys\\nimport os\\nfrom approval_mechanism import app as flask_app\\n\\n# === Step 1: Start the Flask Approval Server ===\\ndef start_flask_server():\\n    flask_app.run(host=\\\"0.0.0.0\\\", port=5000, debug=False, use_reloader=False)\\n\\n# === Step 2: Start Proxy with Integrated Payment Filter ===\\ndef start_proxy_server():\\n    print(\\\"\ud83d\udd75\ufe0f\u200d\u2642\ufe0f Starting HTTPS Proxy Server with Payment Filter...\\\")\\n    return subprocess.Popen([sys.executable, \\\"Proxy.py\\\"])\\n\\n# === Controller Main Function ===\\ndef main():\\n    try:\\n        # Start Flask server in background\\n        flask_thread = threading.Thread(target=start_flask_server, daemon=True)\\n        flask_thread.start()\\n        print(\\\"\u2705 Flask approval server running at http://localhost:5000\\\")\\n\\n        # Give Flask time to start\\n        time.sleep(2)\\n\\n        # Start Proxy (now includes payment filter)\\n        proxy_process = start_proxy_server()\\n        print(\\\"\u2705 Proxy server with payment filter running at localhost:8080\\\")\\n\\n        # Wait for the proxy process\\n        proxy_process.wait()\\n\\n    except KeyboardInterrupt:\\n        print(\\\"\\\\n\ud83d\uded1 Shutting down Bifrost components...\\\")\\n        if 'proxy_process' in locals():\\n            proxy_process.terminate()\\n        sys.exit(0)\\n    except Exception as e:\\n        print(f\\\"\u274c Error: {e}\\\")\\n        sys.exit(1)\\n\\nif __name__ == \\\"__main__\\\":\\n    # Check if required files exist\\n    required_files = [\\\"Proxy.py\\\", \\\"payment_filter.py\\\", \\\"approval_mechanism.py\\\"]\\n    for file in required_files:\\n        if not os.path.exists(file):\\n            print(f\\\"\u274c Error: Required file '{file}' not found!\\\")\\n            sys.exit(1)\\n    \\n    print(\\\"\ud83c\udf08 Starting Bifrost System...\\\")\\n    main()\\n````\\n\\nKey changes made:\\n\\n1. **Removed separate payment filter process**\\n   - Removed [`start_payment_filter()`](ProxyVPN/bifrost_controller.py ) function\\n   - Payment filter is now loaded as an addon in Proxy.py\\n\\n2. **Updated startup messages**\\n   - More descriptive console output\\n   - Added emojis for better visibility\\n\\n3. **Added file checks**\\n   - Verifies all required files exist before starting\\n   - Prevents cryptic errors if files are missing\\n\\n4. **Improved error handling**\\n   - Better exception handling\\n   - Cleaner shutdown process\\n\\nTo test the system:\\n\\n```bash\\n# Make sure you're in the correct directory\\ncd /home/hecker_01/Projects/BiFrost/ProxyVPN\\n\\n# Start the system\\npython bifrost_controller.py\\n```\\n\\nYou should see:\\n```\\n\ud83c\udf08 Starting Bifrost System...\\n\u2705 Flask approval server running at http://localhost:5000\\n\ud83d\udd75\ufe0f\u200d\u2642\ufe0f Starting HTTPS Proxy Server with Payment Filter...\\n\u2705 Proxy server with payment filter running at localhost:8080\\n```\\n\\nThe system will now:\\n1. Start the approval mechanism on port 5000\\n2. Start the proxy with integrated payment filter on port 8080\\n3. Handle payment URL interception automatically\",\"name\":\"unknown\"},{\"role\":\"user\",\"content\":\"<attachment id=\\\"file:bifrost_controller.py\\\">\\nUser's current visible code, this should be the main focus:\\nExcerpt from bifrost_controller.py, lines 33 to 54:\\n```python\\n# filepath: /home/hecker_01/Projects/BiFrost/ProxyVPN/bifrost_controller.py\\n# Wait for the proxy process\\n        proxy_process.wait()\\n        \\n    except KeyboardInterrupt:\\n        shutdown_system(processes)\\n    except Exception as e:\\n        print(f\\\"\u274c Error: {e}\\\")\\n        shutdown_system(processes)\\n        sys.exit(1)\\n\\ndef shutdown_system(processes):\\n    print(\\\"\\\\n\ud83d\uded1 Shutting down Bifrost components...\\\")\\n    if 'proxy' in processes:\\n        processes['proxy'].terminate()\\n        processes['proxy'].wait()\\n        print(\\\"\u2705 System shutdown complete\\\")\\n    if 'flask' in processes:\\n        processes['flask'].join()\\n        print(\\\"\u2705 Flask server shutdown complete\\\")\\n```\\n</attachment>\\n<attachment>\\nUser's active file for additional context:\\n```python\\n# filepath: /home/hecker_01/Projects/BiFrost/ProxyVPN/bifrost_controller.py\\ndef main():\\n        try:\\n                \\n        print(\\\"\u2705 Proxy server running at localhost:8080\\\")\\n        \\n        # Wait for the proxy process\\n        proxy_process.wait()\\n        \\n    except KeyboardInterrupt:\\n        shutdown_system(processes)\\n    except Exception as e:\\n        print(f\\\"\u274c Error: {e}\\\")\\n        shutdown_system(processes)\\n        sys.exit(1)\\n\\ndef shutdown_system(processes):\\n    print(\\\"\\\\n\ud83d\uded1 Shutting down Bifrost components...\\\")\\n    if 'proxy' in processes:\\n        processes['proxy'].terminate()\\n        processes['proxy'].wait()\\n        print(\\\"\u2705 System shutdown complete\\\")\\n    if 'flask' in processes:\\n        processes['flask'].join()\\n        print(\\\"\u2705 Flask server shutdown complete\\\")\\n\\nif __name__ == \\\"__main__\\\":\\n```\\n</attachment>\"},{\"role\":\"user\",\"content\":\"look at my files analyze my project and check what improvements are required\"},{\"role\":\"assistant\",\"content\":\"I'll analyze your BiFrost project and suggest improvements organized by components:\\n\\n### 1. Project Structure \ud83d\udcc2\\n\\nCurrent structure is flat - recommend organizing into:\\n\\n```\\nBiFrost/ProxyVPN/\\n\u251c\u2500\u2500 src/\\n\u2502   \u251c\u2500\u2500 proxy/\\n\u2502   \u2502   \u251c\u2500\u2500 __init__.py\\n\u2502   \u2502   \u251c\u2500\u2500 proxy.py\\n\u2502   \u2502   \u2514\u2500\u2500 payment_filter.py\\n\u2502   \u251c\u2500\u2500 approval/\\n\u2502   \u2502   \u251c\u2500\u2500 __init__.py\\n\u2502   \u2502   \u2514\u2500\u2500 approval_mechanism.py\\n\u2502   \u2514\u2500\u2500 controller/\\n\u2502       \u251c\u2500\u2500 __init__.py\\n\u2502       \u2514\u2500\u2500 bifrost_controller.py\\n\u251c\u2500\u2500 logs/\\n\u251c\u2500\u2500 certs/\\n\u251c\u2500\u2500 tests/\\n\u2514\u2500\u2500 requirements.txt\\n```\\n\\n### 2. Code Improvements \ud83d\udd27\\n\\n#### Bifrost Controller\\n\\nAdd proper shutdown handling:\\n\\n````python\\n# filepath: /home/hecker_01/Projects/BiFrost/ProxyVPN/bifrost_controller.py\\ndef main():\\n    processes = {}\\n    try:\\n        # Start Flask server in background\\n        flask_thread = threading.Thread(target=start_flask_server, daemon=True)\\n        flask_thread.start()\\n        processes['flask'] = flask_thread\\n        \\n        print(\\\"\u2705 Flask approval server running at http://localhost:5000\\\")\\n        \\n        # Start Proxy\\n        proxy_process = start_proxy_server()\\n        processes['proxy'] = proxy_process\\n        \\n        print(\\\"\u2705 Proxy server running at localhost:8080\\\")\\n        \\n        # Wait for the proxy process\\n        proxy_process.wait()\\n        \\n    except KeyboardInterrupt:\\n        shutdown_system(processes)\\n    except Exception as e:\\n        print(f\\\"\u274c Error: {e}\\\")\\n        shutdown_system(processes)\\n        sys.exit(1)\\n\\ndef shutdown_system(processes):\\n    print(\\\"\\\\n\ud83d\uded1 Shutting down Bifrost components...\\\")\\n    if 'proxy' in processes:\\n        processes['proxy'].terminate()\\n        processes['proxy'].wait()\\n    print(\\\"\u2705 System shutdown complete\\\")\\n````\\n\\n#### Payment Filter\\n\\nAdd configuration and improve logging:\\n\\n````python\\n# filepath: /home/hecker_01/Projects/BiFrost/ProxyVPN/payment_filter.py\\nclass PaymentFilterConfig:\\n    def __init__(self):\\n        self.payment_domains = [\\n            \\\"paypal.com\\\", \\\"stripe.com\\\", \\\"razorpay.com\\\",\\n            # ...more domains\\n        ]\\n        self.payment_keywords = [\\n            \\\"payment\\\", \\\"checkout\\\", \\\"billing\\\",\\n            # ...more keywords\\n        ]\\n        self.timeout = 30  # seconds\\n        self.log_dir = \\\"../logs\\\"\\n        self.approval_url = \\\"http://localhost:5000\\\"\\n\\nclass PaymentFilter:\\n    def __init__(self, config: PaymentFilterConfig):\\n        self.config = config\\n        self.setup_logging()\\n````\\n\\n#### Proxy\\n\\nAdd health checks and metrics:\\n\\n````python\\n# filepath: /home/hecker_01/Projects/BiFrost/ProxyVPN/Proxy.py\\nclass AdvancedHTTPSProxy:\\n    def __init__(self, host: str = '0.0.0.0', port: int = 8080, **kwargs):\\n        # ...existing code...\\n        self.metrics = {\\n            'requests_total': 0,\\n            'payments_intercepted': 0,\\n            'errors': 0\\n        }\\n\\n    async def health_check(self):\\n        \\\"\\\"\\\"Health check endpoint\\\"\\\"\\\"\\n        return {\\n            'status': 'healthy',\\n            'metrics': self.metrics,\\n            'uptime': time.time() - self.start_time\\n        }\\n````\\n\\n### 3. Additional Features Needed \ud83d\ude80\\n\\n1. **Configuration Management**\\n   - Add a `config.yml` file for all configurations\\n   - Support different environments (dev/prod)\\n\\n2. **Error Handling & Recovery**\\n   - Add retry mechanisms for approval server\\n   - Implement circuit breakers for external services\\n\\n3. **Monitoring & Logging**\\n   - Add structured logging\\n   - Implement metrics collection\\n   - Add monitoring dashboard\\n\\n4. **Security Improvements**\\n   - Add TLS for approval mechanism\\n   - Implement request validation\\n   - Add rate limiting\\n\\n5. **Testing**\\n   - Add unit tests\\n   - Add integration tests\\n   - Add load tests\\n\\n### 4. Documentation \ud83d\udcda\\n\\nCreate:\\n1. README.md with setup instructions\\n2. API documentation\\n3. Architecture diagram\\n4. Deployment guide\\n\\n### 5. Sample Documentation Template\\n\\n````markdown\\n# BiFrost Proxy System\\n\\nA secure proxy system with payment URL filtering and approval mechanism.\\n\\n## Features\\n- Payment URL detection and filtering\\n- Real-time approval mechanism\\n- Secure HTTPS proxy\\n- Logging and monitoring\\n\\n## Setup\\n```bash\\n# Install dependencies\\npip install -r requirements.txt\\n\\n# Generate certificates\\n./setup_certs.sh\\n\\n# Start the system\\npython src/controller/bifrost_controller.py\\n```\\n````\\n\\n### 6. Next Steps \ud83d\udcdd\\n\\n1. Implement the suggested structure\\n2. Add comprehensive error handling\\n3. Add monitoring and metrics\\n4. Write tests\\n5. Add documentation\\n\\nWould you like me to provide detailed implementation for any of these improvements?\"},{\"role\":\"user\",\"content\":\"<attachment id=\\\"file:payment_filter.py\\\">\\nUser's current visible code, this should be the main focus:\\nExcerpt from payment_filter.py, lines 121 to 145:\\n```python\\n# filepath: /home/hecker_01/Projects/BiFrost/ProxyVPN/payment_filter.py\\ntime.sleep(1)\\n                        max_retries -= 1\\n\\n                    # Timeout reached\\n                    self.payment_logger.warning(f\\\"[DECISION TIMEOUT] ID: {flow.id}\\\")\\n                    flow.kill()\\n                    return\\n\\n                except requests.exceptions.RequestException as e:\\n                    self.payment_logger.error(f\\\"[ERROR SENDING TO APPROVAL SERVER] ID: {flow.id}, Error: {e}\\\")\\n                    flow.kill()\\n                    return\\n                except Exception as e:\\n                    self.payment_logger.error(f\\\"[UNEXPECTED ERROR] ID: {flow.id}, Error: {e}\\\")\\n                    flow.kill()\\n                    return\\n\\n            except Exception as e:\\n                self.payment_logger.error(f\\\"[Request Processing Error] ID: {flow.id}, Error: {e}\\\")\\n                flow.kill()\\n                return\\n    def response(flow: http.HTTPFlow):\\n        \\\"\\\"\\\"\\n        This function is called for every HTTP response.\\n```\\n</attachment>\\n<attachment>\\nUser's active file for additional context:\\n```python\\n# filepath: /home/hecker_01/Projects/BiFrost/ProxyVPN/payment_filter.py\\nimport os\\nimport json\\nimport logging\\nimport requests\\nimport time\\nfrom mitmproxy import http\\n\\nclass PaymentFilterConfig:\\n    def __init__(self):\\n        self.payment_domains = [\\n            \\\"paypal.com\\\", \\\"stripe.com\\\", \\\"razorpay.com\\\",\\n            \\\"paytm.com\\\", \\\"phonepe.com\\\", \\\"gpay.com\\\",\\n            \\\"apple.com/payment\\\", \\\"google.com/pay\\\", \\\"checkout\\\", \\\"secure.pay\\\"\\n        ]\\n        self.payment_keywords = [\\n            \\\"payment\\\", \\\"transaction\\\", \\\"card\\\", \\\"wallet\\\", \\\"upi\\\", \\\"purchase\\\",\\n            \\\"order\\\", \\\"billing\\\", \\\"credit\\\", \\\"debit\\\", \\\"checkout\\\", \\\"pay\\\"\\n        ]\\n        self.timeout = 30  # seconds\\n        self.log_dir = \\\"../logs\\\"\\n        self.approval_url = \\\"http://localhost:5000\\\"\\n\\nclass PaymentFilter:\\n    def __init__(self, config: PaymentFilterConfig):\\n        self.config = config\\n        self.setup_logging()\\n\\n    def setup_logging(self):\\n        LOG_DIR = self.config.log_dir\\n        PAYMENT_LOG_FILE = os.path.join(LOG_DIR, 'payment_traffic.log')\\n\\n        # Create the directory if it doesn't exist\\n        os.makedirs(LOG_DIR, exist_ok=True)\\n\\n        # Setup logger for payment filter\\n        self.payment_logger = logging.getLogger(\\\"payment_filter\\\")\\n        self.payment_logger.setLevel(logging.INFO)\\n\\n        # Configure handlers only if they haven't been added already\\n        if not self.payment_logger.handlers:\\n            # File handler to log to a file\\n            file_handler = logging.FileHandler(PAYMENT_LOG_FILE)\\n            file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s: %(message)s'))\\n\\n            # Stream handler to log to the console\\n            stream_handler = logging.StreamHandler()\\n            stream_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s: %(message)s'))\\n\\n            # Add handlers to the logger\\n            self.payment_logger.addHandler(file_handler)\\n            self.payment_logger.addHandler(stream_handler)\\n\\n    def is_payment_request(self, flow: http.HTTPFlow) -> bool:\\n        \\\"\\\"\\\"\\n        Determines if an HTTP flow is related to a payment transaction.\\n        \\\"\\\"\\\"\\n        try:\\n            url = flow.request.pretty_url.lower()\\n            headers = flow.request.headers\\n            content = flow.request.get_text().lower() if flow.request.content else \\\"\\\"\\n\\n            # Check if the URL matches any payment domains\\n            if any(domain in url for domain in self.config.payment_domains):\\n                return True\\n\\n            # Combine content and headers for keyword searching\\n            combined_text = content + \\\" \\\" + \\\" \\\".join(f\\\"{k.lower()}:{v.lower()}\\\" for k, v in headers.items())\\n            if any(keyword in combined_text for keyword in self.config.payment_keywords):\\n                return True\\n\\n        except Exception as e:\\n            self.payment_logger.error(f\\\"[Detection Error in is_payment_request] {e}\\\")\\n            return False  # Return False if an error occurs during detection\\n\\n        return False # Return False if no payment indicators are found\\n\\n    def request(self, flow: http.HTTPFlow):\\n        \\\"\\\"\\\"\\n        This function is called for every HTTP request.\\n        It checks if the request is a payment request, logs it, and handles approval flow.\\n        \\\"\\\"\\\"\\n        if self.is_payment_request(flow):\\n            try:\\n                req = {\\n                    \\\"id\\\": flow.id,\\n                    \\\"method\\\": flow.request.method,\\n                    \\\"url\\\": flow.request.pretty_url,\\n                    \\\"headers\\\": dict(flow.request.headers),\\n                    \\\"content\\\": flow.request.get_text() if flow.request.content else \\\"\\\"\\n                }\\n                self.payment_logger.info(\\\"[PAYMENT REQUEST INTERCEPTED]\\\\n\\\" + json.dumps(req, indent=2))\\n\\n                # Send to approval mechanism and wait for decision\\n                try:\\n                    # Submit for approval\\n                    r = requests.post(f\\\"{self.config.approval_url}/intercepted\\\", json=req, timeout=5)\\n                    if r.status_code != 200:\\n                        self.payment_logger.error(f\\\"[APPROVAL SERVER ERROR] ID: {flow.id}, Status: {r.status_code}\\\")\\n                        flow.kill()\\n                        return\\n\\n                    # Wait for decision\\n                    max_retries = self.config.timeout  # Use configured timeout\\n                    while max_retries > 0:\\n                        try:\\n                            decision_response = requests.get(\\n                                f\\\"{self.config.approval_url}/decision/{flow.id}\\\",\\n                                timeout=5\\n                            )\\n                            if decision_response.status_code == 200:\\n                                decision = decision_response.json().get(\\\"decision\\\")\\n                                if decision == \\\"approve\\\":\\n                                    self.payment_logger.info(f\\\"[PAYMENT APPROVED] ID: {flow.id}\\\")\\n                                    return  # Let request continue\\n                                elif decision == \\\"deny\\\":\\n                                    self.payment_logger.info(f\\\"[PAYMENT DENIED] ID: {flow.id}\\\")\\n                                    flow.kill()  # Block request\\n                                    return\\n                        except requests.exceptions.RequestException as e:\\n                            self.payment_logger.error(f\\\"[DECISION CHECK ERROR] ID: {flow.id}, Error: {e}\\\")\\n                        \\n                        time.sleep(1)\\n                        max_retries -= 1\\n\\n                    # Timeout reached\\n                    self.payment_logger.warning(f\\\"[DECISION TIMEOUT] ID: {flow.id}\\\")\\n                    flow.kill()\\n                    return\\n\\n                except requests.exceptions.RequestException as e:\\n                    self.payment_logger.error(f\\\"[ERROR SENDING TO APPROVAL SERVER] ID: {flow.id}, Error: {e}\\\")\\n                    flow.kill()\\n                    return\\n                except Exception as e:\\n                    self.payment_logger.error(f\\\"[UNEXPECTED ERROR] ID: {flow.id}, Error: {e}\\\")\\n                    flow.kill()\\n                    return\\n\\n            except Exception as e:\\n                self.payment_logger.error(f\\\"[Request Processing Error] ID: {flow.id}, Error: {e}\\\")\\n                flow.kill()\\n                return\\n    def response(flow: http.HTTPFlow):\\n        \\\"\\\"\\\"\\n        This function is called for every HTTP response.\\n        It checks if the corresponding request was a payment request and logs response details.\\n        \\\"\\\"\\\"\\n        # Check if the original request was flagged as a payment request\\n        # This ensures we only log responses for requests we've already identified.\\n        # For a more robust check, one might store flow IDs of payment requests.\\n        # However, re-evaluating is_payment_request is also common.\\n        if self.is_payment_request(flow): # Assuming the flow object is the same and contains request details\\n            try:\\n                # Ensure response exists and has attributes before accessing them\\n                if flow.response and flow.response.status_code:\\n                    res = {\\n                        \\\"id\\\": flow.id, # Including flow ID for correlation\\n                        \\\"status_code\\\": flow.response.status_code,\\n                        \\\"url\\\": flow.request.pretty_url, # URL from the request for context\\n                        \\\"headers\\\": dict(flow.response.headers),\\n                        \\\"body_snippet\\\": flow.response.text[:1024] if flow.response.text else \\\"\\\" # Truncate body\\n                    }\\n                    self.payment_logger.info(\\\"[PAYMENT RESPONSE]\\\\n\\\" + json.dumps(res, indent=2))\\n                else:\\n                    self.payment_logger.warning(f\\\"[PAYMENT RESPONSE SKIPPED] No response object or status code for flow ID: {flow.id}\\\")\\n\\n            except Exception as e:\\n                self.payment_logger.error(f\\\"[Response Logging Error] ID: {flow.id}, Error: {e}\\\")\\n```\\n</attachment>\"},{\"role\":\"user\",\"content\":\"[!] Error checking approval status for 00b34c9b-67e6-4fd7-a45f-74b5fc0bc6f9: 'AdvancedHTTPSProxy' object has no attribute 'wait_for_decision'\"}],\"model\":\"gpt-4o-mini\",\"temperature\":0.1,\"top_p\":1,\"max_tokens\":4096,\"stop\":[\";\"],\"n\":1,\"stream\":true}"
+}
+2025-05-09 19:23:19,382 - ERROR: [UNEXPECTED ERROR] ID: 0da86692-b755-4b5d-bb44-7cd0db0e629a, Error: name 'time' is not defined
+2025-05-09 19:23:19,385 - INFO: [⏸] Flow 0da86692-b755-4b5d-bb44-7cd0db0e629a flagged for parent approval
+2025-05-09 19:23:19,386 - ERROR: [!] Error checking approval status for 0da86692-b755-4b5d-bb44-7cd0db0e629a: 'AdvancedHTTPSProxy' object has no attribute 'wait_for_decision'
+2025-05-09 19:23:35,137 - INFO: server disconnect api.individual.githubcopilot.com:443 (140.82.114.21:443)
+2025-05-09 19:23:49,183 - INFO: client connect
+2025-05-09 19:23:49,417 - INFO: server connect accounts.google.com:443 (74.125.130.84:443)
+2025-05-09 19:23:49,552 - INFO: [⏸] Flow 2b4d716b-2bff-4106-b102-192e15f96e01 flagged for parent approval
+2025-05-09 19:23:49,552 - ERROR: [!] Error checking approval status for 2b4d716b-2bff-4106-b102-192e15f96e01: 'AdvancedHTTPSProxy' object has no attribute 'wait_for_decision'
+2025-05-09 19:24:36,551 - INFO: client connect
+2025-05-09 19:24:45,891 - INFO: Proxy server manually stopped.
+2025-05-09 19:24:45,892 - INFO: Proxy server stopped.
+2025-05-09 19:40:30,384 - INFO: HTTPS Proxy started on 0.0.0.0:8080
+2025-05-09 19:40:30,385 - INFO: Payment filter activated
+2025-05-09 19:40:30,386 - INFO: HTTP(S) proxy listening at *:8080.
+2025-05-09 19:41:03,454 - INFO: client connect
+2025-05-09 19:41:03,767 - INFO: client connect
+2025-05-09 19:41:03,878 - INFO: server connect sync-v2.brave.com:443 (44.228.88.39:443)
+2025-05-09 19:41:03,920 - INFO: server connect accounts.google.com:443 (172.217.194.84:443)
+2025-05-09 19:41:16,143 - INFO: client connect
+2025-05-09 19:41:16,277 - INFO: server connect api.github.com:443 (20.207.73.85:443)
+2025-05-09 19:41:23,582 - INFO: client connect
+2025-05-09 19:41:23,699 - INFO: client connect
+2025-05-09 19:41:23,729 - INFO: server connect search.brave.com:443 (13.225.103.96:443)
+2025-05-09 19:41:23,748 - INFO: server connect search.brave.com:443 (13.225.103.3:443)
+2025-05-09 19:41:24,557 - INFO: client connect
+2025-05-09 19:41:24,698 - INFO: server connect imgs.search.brave.com:443 (18.164.188.39:443)
+2025-05-09 19:41:25,443 - INFO: [PAYMENT REQUEST INTERCEPTED]
+{
+  "id": "7b2e2640-13f1-4262-a2ba-57696fc65909",
+  "method": "GET",
+  "url": "https://search.brave.com/api/suggest?q=paytm&rich=true&source=desktop",
+  "headers": {
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "no-cors",
+    "sec-fetch-dest": "empty",
+    "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "en-US,en;q=0.9",
+    "priority": "u=4, i"
+  },
+  "content": ""
+}
+2025-05-09 19:41:25,450 - ERROR: [UNEXPECTED ERROR] ID: 7b2e2640-13f1-4262-a2ba-57696fc65909, Error: name 'time' is not defined
+2025-05-09 19:41:25,453 - INFO: [⏸] Flow 7b2e2640-13f1-4262-a2ba-57696fc65909 flagged for parent approval
+2025-05-09 19:41:25,454 - ERROR: [!] Error checking approval status for 7b2e2640-13f1-4262-a2ba-57696fc65909: 'AdvancedHTTPSProxy' object has no attribute 'wait_for_decision'
+2025-05-09 19:41:25,716 - INFO: [PAYMENT REQUEST INTERCEPTED]
+{
+  "id": "7a10b4eb-b12d-450e-bcfb-b563b62bf107",
+  "method": "GET",
+  "url": "https://search.brave.com/search?q=paytm&source=desktop",
+  "headers": {
+    "sec-ch-ua": "\"Chromium\";v=\"136\", \"Brave\";v=\"136\", \"Not.A/Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+    "sec-gpc": "1",
+    "accept-language": "en-US,en;q=0.6",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "priority": "u=0, i"
+  },
+  "content": ""
+}
+2025-05-09 19:41:25,725 - ERROR: [UNEXPECTED ERROR] ID: 7a10b4eb-b12d-450e-bcfb-b563b62bf107, Error: name 'time' is not defined
+2025-05-09 19:41:25,728 - INFO: [⏸] Flow 7a10b4eb-b12d-450e-bcfb-b563b62bf107 flagged for parent approval
+2025-05-09 19:41:25,728 - ERROR: [!] Error checking approval status for 7a10b4eb-b12d-450e-bcfb-b563b62bf107: 'AdvancedHTTPSProxy' object has no attribute 'wait_for_decision'
+2025-05-09 19:41:30,371 - INFO: [PAYMENT REQUEST INTERCEPTED]
+{
+  "id": "9f90c53f-3054-4bee-b678-5da9750a2a5f",
+  "method": "GET",
+  "url": "https://search.brave.com/api/suggest?q=paypal&rich=true&source=desktop",
+  "headers": {
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "no-cors",
+    "sec-fetch-dest": "empty",
+    "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "en-US,en;q=0.9",
+    "priority": "u=4, i"
+  },
+  "content": ""
+}
+2025-05-09 19:41:30,378 - ERROR: [UNEXPECTED ERROR] ID: 9f90c53f-3054-4bee-b678-5da9750a2a5f, Error: name 'time' is not defined
+2025-05-09 19:41:30,381 - INFO: [⏸] Flow 9f90c53f-3054-4bee-b678-5da9750a2a5f flagged for parent approval
+2025-05-09 19:41:30,381 - ERROR: [!] Error checking approval status for 9f90c53f-3054-4bee-b678-5da9750a2a5f: 'AdvancedHTTPSProxy' object has no attribute 'wait_for_decision'
+2025-05-09 19:41:30,562 - INFO: [PAYMENT REQUEST INTERCEPTED]
+{
+  "id": "67cb6717-64e5-4135-b56a-ebee27813362",
+  "method": "GET",
+  "url": "https://search.brave.com/search?q=paypal&source=desktop",
+  "headers": {
+    "sec-ch-ua": "\"Chromium\";v=\"136\", \"Brave\";v=\"136\", \"Not.A/Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+    "sec-gpc": "1",
+    "accept-language": "en-US,en;q=0.6",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "priority": "u=0, i"
+  },
+  "content": ""
+}
+2025-05-09 19:41:30,569 - ERROR: [UNEXPECTED ERROR] ID: 67cb6717-64e5-4135-b56a-ebee27813362, Error: name 'time' is not defined
+2025-05-09 19:41:30,573 - INFO: [⏸] Flow 67cb6717-64e5-4135-b56a-ebee27813362 flagged for parent approval
+2025-05-09 19:41:30,573 - ERROR: [!] Error checking approval status for 67cb6717-64e5-4135-b56a-ebee27813362: 'AdvancedHTTPSProxy' object has no attribute 'wait_for_decision'
+2025-05-09 19:41:46,171 - INFO: client disconnect
+2025-05-09 19:41:46,172 - INFO: server disconnect sync-v2.brave.com:443 (44.228.88.39:443)
+2025-05-09 19:41:46,190 - INFO: client disconnect
+2025-05-09 19:41:46,192 - INFO: server disconnect search.brave.com:443 (13.225.103.96:443)
+2025-05-09 19:41:46,192 - INFO: client disconnect
+2025-05-09 19:41:46,193 - INFO: server disconnect accounts.google.com:443 (172.217.194.84:443)
+2025-05-09 19:41:46,194 - INFO: client disconnect
+2025-05-09 19:41:46,194 - INFO: client disconnect
+2025-05-09 19:41:46,196 - INFO: server disconnect imgs.search.brave.com:443 (18.164.188.39:443)
+2025-05-09 19:41:46,196 - INFO: server disconnect search.brave.com:443 (13.225.103.3:443)
+2025-05-09 19:41:46,985 - INFO: server disconnect api.github.com:443 (20.207.73.85:443)
+2025-05-09 19:41:47,944 - INFO: Proxy server manually stopped.
+2025-05-09 19:41:47,944 - INFO: Proxy server stopped.
+2025-05-09 19:41:47,988 - ERROR: Unhandled asyncio error: {'message': 'Task was destroyed but it is pending!', 'task': <Task pending name='handle_hook(request)' coro=<ConnectionHandler.hook_task() running at /home/hecker_01/Projects/BiFrost/ProxyVPN/proxyenv/lib/python3.12/site-packages/mitmproxy/proxy/server.py:356> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[set.remove()]>}
+2025-05-09 19:41:47,988 - ERROR: Unhandled asyncio error: {'message': 'Task was destroyed but it is pending!', 'task': <Task pending name='handle_hook(request)' coro=<ConnectionHandler.hook_task() running at /home/hecker_01/Projects/BiFrost/ProxyVPN/proxyenv/lib/python3.12/site-packages/mitmproxy/proxy/server.py:356> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[set.remove()]>}
+2025-05-09 19:41:47,989 - ERROR: Unhandled asyncio error: {'message': 'Task was destroyed but it is pending!', 'task': <Task pending name='handle_hook(request)' coro=<ConnectionHandler.hook_task() running at /home/hecker_01/Projects/BiFrost/ProxyVPN/proxyenv/lib/python3.12/site-packages/mitmproxy/proxy/server.py:356> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[set.remove()]>}
+2025-05-09 19:41:47,989 - ERROR: Unhandled asyncio error: {'message': 'Task was destroyed but it is pending!', 'task': <Task pending name='handle_hook(request)' coro=<ConnectionHandler.hook_task() done, defined at /home/hecker_01/Projects/BiFrost/ProxyVPN/proxyenv/lib/python3.12/site-packages/mitmproxy/proxy/server.py:355> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[set.remove()]>}
+2025-05-09 19:47:51,957 - INFO: HTTPS Proxy started on 0.0.0.0:8080
+2025-05-09 19:47:51,958 - INFO: Payment filter activated
+2025-05-09 19:47:51,959 - INFO: HTTP(S) proxy listening at *:8080.
+2025-05-09 19:48:06,548 - INFO: client connect
+2025-05-09 19:48:06,719 - INFO: server connect paypal.com:443 (151.101.3.1:443)
+2025-05-09 19:48:06,924 - WARNING: Client TLS handshake failed. The client does not trust the proxy's certificate for paypal.com (tlsv1 alert unknown ca)
+2025-05-09 19:48:06,926 - INFO: client disconnect
+2025-05-09 19:48:06,926 - INFO: server disconnect paypal.com:443 (151.101.3.1:443)
+2025-05-09 19:48:31,899 - INFO: client connect
+2025-05-09 19:48:31,964 - INFO: server connect paypal.com:443 (162.159.141.96:443)
+2025-05-09 19:48:32,056 - WARNING: Client TLS handshake failed. The client does not trust the proxy's certificate for paypal.com (tlsv1 alert unknown ca)
+2025-05-09 19:48:32,057 - INFO: client disconnect
+2025-05-09 19:48:32,058 - INFO: server disconnect paypal.com:443 (162.159.141.96:443)
+2025-05-09 19:48:34,073 - INFO: client connect
+2025-05-09 19:48:34,431 - INFO: server connect mobile.events.data.microsoft.com:443 (20.44.10.122:443)
+2025-05-09 19:48:34,865 - INFO: client connect
+2025-05-09 19:48:34,914 - INFO: server connect paypal.com:443 (162.159.141.96:443)
+2025-05-09 19:48:35,026 - WARNING: Client TLS handshake failed. The client does not trust the proxy's certificate for paypal.com (tlsv1 alert unknown ca)
+2025-05-09 19:48:35,026 - INFO: client disconnect
+2025-05-09 19:48:35,027 - INFO: server disconnect paypal.com:443 (162.159.141.96:443)
+2025-05-09 19:49:22,029 - INFO: client connect
+2025-05-09 19:49:22,498 - INFO: server connect api.individual.githubcopilot.com:443 (140.82.114.22:443)
+2025-05-09 19:51:12,927 - INFO: client connect
+2025-05-09 19:51:13,498 - INFO: server connect main.vscode-cdn.net:443 (13.107.246.48:443)
+2025-05-09 19:51:35,036 - INFO: client connect
+2025-05-09 19:51:35,229 - INFO: server connect marketplace.visualstudio.com:443 (13.107.42.18:443)
+2025-05-09 19:52:43,779 - INFO: server disconnect main.vscode-cdn.net:443 (13.107.246.48:443)
+2025-05-09 19:53:06,475 - INFO: client connect
+2025-05-09 19:53:06,590 - INFO: server connect api.ipify.org:443 (104.26.13.205:443)
+2025-05-09 19:53:06,655 - INFO: Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for api.ipify.org, this may indicate that the client does not trust the proxy's certificate.
+2025-05-09 19:53:06,656 - INFO: client disconnect
+2025-05-09 19:53:06,656 - INFO: server disconnect api.ipify.org:443 (104.26.13.205:443)
+2025-05-09 19:53:06,658 - INFO: client connect
+2025-05-09 19:53:06,665 - INFO: error establishing server connection: [Errno 101] Network is unreachable
+2025-05-09 19:53:06,667 - INFO: client disconnect
+2025-05-09 19:53:19,253 - INFO: client connect
+2025-05-09 19:53:19,747 - INFO: server connect proxy.individual.githubcopilot.com:443 (20.250.119.64:443)
+2025-05-09 19:53:43,213 - INFO: server disconnect marketplace.visualstudio.com:443 (13.107.42.18:443)
+2025-05-09 19:54:20,126 - INFO: client connect
+2025-05-09 19:54:20,283 - INFO: server connect api.github.com:443 (20.207.73.85:443)
+2025-05-09 19:54:50,949 - INFO: server disconnect api.github.com:443 (20.207.73.85:443)
+2025-05-09 19:55:11,078 - INFO: server disconnect api.individual.githubcopilot.com:443 (140.82.114.22:443)
+2025-05-09 19:55:40,426 - INFO: server connect api.github.com:443 (20.207.73.85:443)
+2025-05-09 19:55:42,906 - INFO: server connect main.vscode-cdn.net:443 (13.107.246.48:443)
+2025-05-09 19:56:12,251 - INFO: server disconnect api.github.com:443 (20.207.73.85:443)
+2025-05-09 19:56:18,091 - INFO: server disconnect proxy.individual.githubcopilot.com:443 (20.250.119.64:443)
+2025-05-09 19:57:12,066 - INFO: server connect api.individual.githubcopilot.com:443 (140.82.113.21:443)
+2025-05-09 19:57:44,098 - INFO: server disconnect main.vscode-cdn.net:443 (13.107.246.48:443)
+2025-05-09 19:58:06,476 - INFO: client connect
+2025-05-09 19:58:06,571 - INFO: server connect api.ipify.org:443 (104.26.13.205:443)
+2025-05-09 19:58:06,641 - INFO: Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for api.ipify.org, this may indicate that the client does not trust the proxy's certificate.
+2025-05-09 19:58:06,641 - INFO: client disconnect
+2025-05-09 19:58:06,642 - INFO: server disconnect api.ipify.org:443 (104.26.13.205:443)
+2025-05-09 19:58:06,680 - INFO: client connect
+2025-05-09 19:58:06,687 - INFO: error establishing server connection: [Errno 101] Network is unreachable
+2025-05-09 19:58:06,689 - INFO: client disconnect
+2025-05-09 19:58:33,984 - INFO: server connect proxy.individual.githubcopilot.com:443 (4.225.11.192:443)
+2025-05-09 19:59:50,333 - INFO: server connect api.github.com:443 (20.207.73.85:443)
+2025-05-09 20:00:21,033 - INFO: server disconnect api.github.com:443 (20.207.73.85:443)
+2025-05-09 20:00:36,012 - INFO: server disconnect api.individual.githubcopilot.com:443 (140.82.113.21:443)
+2025-05-09 20:00:40,494 - INFO: server disconnect proxy.individual.githubcopilot.com:443 (4.225.11.192:443)
+2025-05-09 20:01:14,183 - INFO: server connect main.vscode-cdn.net:443 (13.107.246.48:443)
+2025-05-09 20:01:22,172 - INFO: client connect
+2025-05-09 20:01:22,228 - INFO: client connect
+2025-05-09 20:01:22,230 - INFO: client connect
+2025-05-09 20:01:22,238 - INFO: client connect
+2025-05-09 20:01:22,239 - INFO: client connect
+2025-05-09 20:01:22,240 - INFO: client connect
+2025-05-09 20:01:22,240 - INFO: client connect
+2025-05-09 20:01:22,367 - INFO: server connect variations.brave.com:443 (54.192.142.123:443)
+2025-05-09 20:01:22,529 - INFO: client disconnect
+2025-05-09 20:01:22,531 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:22,532 - INFO: client disconnect
+2025-05-09 20:01:22,533 - INFO: client disconnect
+2025-05-09 20:01:22,533 - INFO: client disconnect
+2025-05-09 20:01:22,534 - INFO: client connect
+2025-05-09 20:01:22,534 - INFO: client connect
+2025-05-09 20:01:22,535 - INFO: client connect
+2025-05-09 20:01:22,535 - INFO: client connect
+2025-05-09 20:01:22,537 - INFO: client connect
+2025-05-09 20:01:22,538 - INFO: client connect
+2025-05-09 20:01:22,539 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:22,540 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:22,541 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:22,543 - INFO: client disconnect
+2025-05-09 20:01:22,543 - INFO: client disconnect
+2025-05-09 20:01:22,544 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:22,546 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:22,554 - INFO: client disconnect
+2025-05-09 20:01:22,555 - INFO: server disconnect variations.brave.com:443 (54.192.142.123:443)
+2025-05-09 20:01:22,976 - INFO: server connect go-updater.brave.com:443 (44.237.47.80:443)
+2025-05-09 20:01:22,977 - INFO: server connect go-updater.brave.com:443 (44.237.47.80:443)
+2025-05-09 20:01:22,978 - INFO: server connect go-updater.brave.com:443 (35.82.164.67:443)
+2025-05-09 20:01:22,978 - INFO: server connect go-updater.brave.com:443 (44.237.47.80:443)
+2025-05-09 20:01:22,979 - INFO: server connect go-updater.brave.com:443 (52.33.193.122:443)
+2025-05-09 20:01:22,980 - INFO: server connect go-updater.brave.com:443 (34.209.9.29:443)
+2025-05-09 20:01:23,444 - INFO: Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for go-updater.brave.com, this may indicate that the client does not trust the proxy's certificate.
+2025-05-09 20:01:23,445 - INFO: Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for go-updater.brave.com, this may indicate that the client does not trust the proxy's certificate.
+2025-05-09 20:01:23,445 - INFO: Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for go-updater.brave.com, this may indicate that the client does not trust the proxy's certificate.
+2025-05-09 20:01:23,445 - INFO: Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for go-updater.brave.com, this may indicate that the client does not trust the proxy's certificate.
+2025-05-09 20:01:23,446 - INFO: Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for go-updater.brave.com, this may indicate that the client does not trust the proxy's certificate.
+2025-05-09 20:01:23,447 - INFO: client disconnect
+2025-05-09 20:01:23,447 - INFO: client disconnect
+2025-05-09 20:01:23,448 - INFO: client disconnect
+2025-05-09 20:01:23,448 - INFO: client disconnect
+2025-05-09 20:01:23,448 - INFO: client disconnect
+2025-05-09 20:01:23,449 - INFO: server disconnect go-updater.brave.com:443 (44.237.47.80:443)
+2025-05-09 20:01:23,449 - INFO: server disconnect go-updater.brave.com:443 (52.33.193.122:443)
+2025-05-09 20:01:23,450 - INFO: server disconnect go-updater.brave.com:443 (35.82.164.67:443)
+2025-05-09 20:01:23,450 - INFO: server disconnect go-updater.brave.com:443 (34.209.9.29:443)
+2025-05-09 20:01:23,451 - INFO: server disconnect go-updater.brave.com:443 (44.237.47.80:443)
+2025-05-09 20:01:23,791 - INFO: client connect
+2025-05-09 20:01:24,023 - INFO: client connect
+2025-05-09 20:01:24,025 - INFO: client connect
+2025-05-09 20:01:24,026 - INFO: client connect
+2025-05-09 20:01:26,184 - INFO: client connect
+2025-05-09 20:01:26,320 - INFO: client connect
+2025-05-09 20:01:26,404 - INFO: server connect www.google.com:443 (142.251.223.100:443)
+2025-05-09 20:01:26,417 - INFO: client connect
+2025-05-09 20:01:26,534 - INFO: client connect
+2025-05-09 20:01:26,611 - INFO: server connect collector.wdp.brave.com:443 (172.65.55.248:443)
+2025-05-09 20:01:26,832 - INFO: server connect quorum.wdp.brave.com:443 (35.165.134.8:443)
+2025-05-09 20:01:27,200 - INFO: client connect
+2025-05-09 20:01:27,406 - INFO: server connect lh3.googleusercontent.com:443 (142.250.194.129:443)
+2025-05-09 20:01:27,683 - INFO: client connect
+2025-05-09 20:01:27,690 - INFO: client connect
+2025-05-09 20:01:27,760 - INFO: server connect ogads-pa.clients6.google.com:443 (142.250.77.234:443)
+2025-05-09 20:01:27,785 - INFO: server connect waa-pa.clients6.google.com:443 (142.250.194.74:443)
+2025-05-09 20:01:27,949 - INFO: client connect
+2025-05-09 20:01:27,994 - INFO: client connect
+2025-05-09 20:01:27,997 - INFO: server connect ogads-pa.clients6.google.com:443 (142.250.77.234:443)
+2025-05-09 20:01:28,041 - INFO: server connect waa-pa.clients6.google.com:443 (142.250.194.74:443)
+2025-05-09 20:01:28,151 - INFO: client disconnect
+2025-05-09 20:01:28,152 - INFO: client connect
+2025-05-09 20:01:28,153 - INFO: client connect
+2025-05-09 20:01:28,154 - INFO: client connect
+2025-05-09 20:01:28,154 - INFO: client connect
+2025-05-09 20:01:28,155 - INFO: client connect
+2025-05-09 20:01:28,155 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:28,156 - INFO: client disconnect
+2025-05-09 20:01:28,157 - INFO: client disconnect
+2025-05-09 20:01:28,157 - INFO: client disconnect
+2025-05-09 20:01:28,157 - INFO: client disconnect
+2025-05-09 20:01:28,159 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:28,161 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:28,162 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:28,163 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:28,167 - INFO: client connect
+2025-05-09 20:01:28,167 - INFO: client connect
+2025-05-09 20:01:28,168 - INFO: client connect
+2025-05-09 20:01:28,169 - INFO: client connect
+2025-05-09 20:01:28,169 - INFO: client connect
+2025-05-09 20:01:28,176 - INFO: client disconnect
+2025-05-09 20:01:28,179 - INFO: server disconnect go-updater.brave.com:443 (44.237.47.80:443)
+2025-05-09 20:01:28,179 - INFO: client disconnect
+2025-05-09 20:01:28,180 - INFO: client disconnect
+2025-05-09 20:01:28,180 - INFO: client disconnect
+2025-05-09 20:01:28,181 - INFO: client disconnect
+2025-05-09 20:01:28,181 - INFO: client disconnect
+2025-05-09 20:01:28,182 - INFO: client connect
+2025-05-09 20:01:28,183 - INFO: client connect
+2025-05-09 20:01:28,183 - INFO: client connect
+2025-05-09 20:01:28,184 - INFO: client connect
+2025-05-09 20:01:28,184 - INFO: client connect
+2025-05-09 20:01:28,185 - INFO: client connect
+2025-05-09 20:01:28,185 - INFO: client connect
+2025-05-09 20:01:28,186 - INFO: client connect
+2025-05-09 20:01:28,186 - INFO: client connect
+2025-05-09 20:01:28,188 - INFO: client connect
+2025-05-09 20:01:28,189 - INFO: client connect
+2025-05-09 20:01:28,196 - INFO: server disconnect lh3.googleusercontent.com:443 (142.250.194.129:443)
+2025-05-09 20:01:28,197 - INFO: server disconnect collector.wdp.brave.com:443 (172.65.55.248:443)
+2025-05-09 20:01:28,197 - INFO: server disconnect waa-pa.clients6.google.com:443 (142.250.194.74:443)
+2025-05-09 20:01:28,198 - INFO: server disconnect ogads-pa.clients6.google.com:443 (142.250.77.234:443)
+2025-05-09 20:01:28,198 - INFO: server disconnect quorum.wdp.brave.com:443 (35.165.134.8:443)
+2025-05-09 20:01:28,199 - INFO: client disconnect
+2025-05-09 20:01:28,199 - INFO: client disconnect
+2025-05-09 20:01:28,200 - INFO: client disconnect
+2025-05-09 20:01:28,200 - INFO: client disconnect
+2025-05-09 20:01:28,200 - INFO: client disconnect
+2025-05-09 20:01:28,201 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:28,203 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:28,205 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:28,207 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:28,209 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:28,229 - INFO: client disconnect
+2025-05-09 20:01:28,229 - INFO: client disconnect
+2025-05-09 20:01:28,230 - INFO: client disconnect
+2025-05-09 20:01:28,230 - INFO: client disconnect
+2025-05-09 20:01:28,231 - INFO: client disconnect
+2025-05-09 20:01:28,231 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:28,233 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:28,234 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:28,235 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:28,236 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:28,241 - INFO: client disconnect
+2025-05-09 20:01:28,241 - INFO: client disconnect
+2025-05-09 20:01:28,242 - INFO: client disconnect
+2025-05-09 20:01:28,242 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:28,244 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:28,245 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:28,250 - INFO: client disconnect
+2025-05-09 20:01:28,250 - INFO: server disconnect ogads-pa.clients6.google.com:443 (142.250.77.234:443)
+2025-05-09 20:01:28,290 - INFO: server connect www.google.com:443 (142.251.223.100:443)
+2025-05-09 20:01:28,304 - INFO: server connect clients2.google.com:443 (142.251.223.110:443)
+2025-05-09 20:01:28,310 - INFO: client disconnect
+2025-05-09 20:01:28,311 - INFO: server disconnect waa-pa.clients6.google.com:443 (142.250.194.74:443)
+2025-05-09 20:01:28,441 - INFO: client disconnect
+2025-05-09 20:01:28,441 - INFO: server disconnect www.google.com:443 (142.251.223.100:443)
+2025-05-09 20:01:28,578 - INFO: server connect go-updater.brave.com:443 (35.82.164.67:443)
+2025-05-09 20:01:28,941 - INFO: client connect
+2025-05-09 20:01:28,977 - INFO: server connect waa-pa.clients6.google.com:443 (142.250.194.74:443)
+2025-05-09 20:01:29,179 - INFO: client connect
+2025-05-09 20:01:29,228 - INFO: server connect waa-pa.clients6.google.com:443 (142.250.194.74:443)
+2025-05-09 20:01:29,252 - INFO: client connect
+2025-05-09 20:01:29,306 - INFO: client connect
+2025-05-09 20:01:29,490 - INFO: server connect accounts.google.com:443 (172.217.194.84:443)
+2025-05-09 20:01:29,738 - INFO: server connect componentupdater.brave.com:443 (18.246.128.111:443)
+2025-05-09 20:01:29,921 - INFO: client connect
+2025-05-09 20:01:30,099 - INFO: server connect www.gstatic.com:443 (142.250.207.227:443)
+2025-05-09 20:01:30,440 - INFO: client connect
+2025-05-09 20:01:31,129 - INFO: server connect sync-v2.brave.com:443 (35.164.159.216:443)
+2025-05-09 20:01:31,681 - INFO: client connect
+2025-05-09 20:01:31,795 - INFO: server connect ogs.google.com:443 (142.250.182.174:443)
+2025-05-09 20:01:32,126 - INFO: client connect
+2025-05-09 20:01:32,223 - INFO: server connect lh3.googleusercontent.com:443 (142.250.194.129:443)
+2025-05-09 20:01:36,995 - INFO: client connect
+2025-05-09 20:01:37,286 - INFO: server connect www.youtube.com:443 (142.250.194.142:443)
+2025-05-09 20:01:37,749 - INFO: client connect
+2025-05-09 20:01:37,752 - INFO: client connect
+2025-05-09 20:01:39,545 - INFO: client connect
+2025-05-09 20:01:39,865 - INFO: server connect api.github.com:443 (20.207.73.85:443)
+2025-05-09 20:01:41,653 - INFO: client disconnect
+2025-05-09 20:01:41,653 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:42,622 - INFO: client connect
+2025-05-09 20:01:42,747 - INFO: server connect vscode.dev:443 (13.107.246.59:443)
+2025-05-09 20:01:45,084 - INFO: server connect ogads-pa.clients6.google.com:443 (142.250.77.234:443)
+2025-05-09 20:01:45,325 - INFO: client connect
+2025-05-09 20:01:45,489 - INFO: server connect i.ytimg.com:443 (142.251.43.118:443)
+2025-05-09 20:01:45,887 - INFO: client connect
+2025-05-09 20:01:46,249 - INFO: server connect airtable.com:443 (54.145.196.255:443)
+2025-05-09 20:01:46,627 - INFO: server disconnect go-updater.brave.com:443 (35.82.164.67:443)
+2025-05-09 20:01:46,810 - INFO: client connect
+2025-05-09 20:01:47,087 - INFO: server connect www.linkedin.com:443 (150.171.22.12:443)
+2025-05-09 20:01:47,699 - INFO: client connect
+2025-05-09 20:01:47,721 - INFO: client connect
+2025-05-09 20:01:48,361 - INFO: server connect static.airtable.com:443 (18.66.63.12:443)
+2025-05-09 20:01:48,362 - INFO: server connect static.airtable.com:443 (18.66.63.12:443)
+2025-05-09 20:01:48,525 - INFO: client connect
+2025-05-09 20:01:48,646 - INFO: server connect static.licdn.com:443 (199.232.23.42:443)
+2025-05-09 20:01:49,209 - INFO: client connect
+2025-05-09 20:01:49,282 - INFO: server connect static.licdn.com:443 (199.232.23.42:443)
+2025-05-09 20:01:49,395 - INFO: client connect
+2025-05-09 20:01:49,396 - INFO: client connect
+2025-05-09 20:01:49,493 - INFO: server connect rr5---sn-ci5gup-pmjs.googlevideo.com:443 (182.79.173.48:443)
+2025-05-09 20:01:49,494 - INFO: server connect rr5---sn-ci5gup-pmjs.googlevideo.com:443 (182.79.173.48:443)
+2025-05-09 20:01:58,177 - INFO: client disconnect
+2025-05-09 20:01:58,179 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:58,181 - INFO: client disconnect
+2025-05-09 20:01:58,181 - INFO: client disconnect
+2025-05-09 20:01:58,182 - INFO: client disconnect
+2025-05-09 20:01:58,183 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:58,185 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:58,186 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:58,187 - INFO: client disconnect
+2025-05-09 20:01:58,197 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:01:58,199 - INFO: client connect
+2025-05-09 20:01:58,480 - INFO: client connect
+2025-05-09 20:01:58,482 - INFO: client connect
+2025-05-09 20:01:58,483 - INFO: client connect
+2025-05-09 20:01:58,483 - INFO: client connect
+2025-05-09 20:01:58,779 - INFO: server connect go-updater.brave.com:443 (54.149.144.219:443)
+2025-05-09 20:01:58,806 - INFO: server connect go-updater.brave.com:443 (52.39.98.168:443)
+2025-05-09 20:01:58,810 - INFO: server connect go-updater.brave.com:443 (52.39.98.168:443)
+2025-05-09 20:01:58,814 - INFO: server connect go-updater.brave.com:443 (35.162.203.235:443)
+2025-05-09 20:01:58,819 - INFO: server connect go-updater.brave.com:443 (54.149.144.219:443)
+2025-05-09 20:01:59,193 - INFO: client disconnect
+2025-05-09 20:01:59,194 - INFO: client disconnect
+2025-05-09 20:01:59,195 - INFO: client disconnect
+2025-05-09 20:01:59,195 - INFO: client disconnect
+2025-05-09 20:01:59,196 - INFO: server disconnect go-updater.brave.com:443 (52.39.98.168:443)
+2025-05-09 20:01:59,197 - INFO: server disconnect go-updater.brave.com:443 (54.149.144.219:443)
+2025-05-09 20:01:59,197 - INFO: server disconnect go-updater.brave.com:443 (35.162.203.235:443)
+2025-05-09 20:01:59,198 - INFO: server disconnect go-updater.brave.com:443 (54.149.144.219:443)
+2025-05-09 20:01:59,487 - INFO: client connect
+2025-05-09 20:01:59,644 - INFO: server connect media.licdn.com:443 (199.232.23.42:443)
+2025-05-09 20:02:01,868 - INFO: client connect
+2025-05-09 20:02:01,961 - INFO: server connect px.ads.linkedin.com:443 (150.171.22.12:443)
+2025-05-09 20:02:07,005 - INFO: client connect
+2025-05-09 20:02:07,375 - INFO: client connect
+2025-05-09 20:02:07,417 - INFO: server connect v5.airtableusercontent.com:443 (18.66.78.20:443)
+2025-05-09 20:02:07,425 - INFO: server connect v5.airtableusercontent.com:443 (18.66.78.20:443)
+2025-05-09 20:02:07,507 - INFO: client disconnect
+2025-05-09 20:02:07,508 - INFO: server disconnect v5.airtableusercontent.com:443 (18.66.78.20:443)
+2025-05-09 20:02:08,822 - INFO: client connect
+2025-05-09 20:02:09,488 - INFO: server disconnect go-updater.brave.com:443 (52.39.98.168:443)
+2025-05-09 20:02:10,311 - INFO: server connect radar.cedexis.com:443 (45.54.49.5:443)
+2025-05-09 20:02:11,614 - INFO: client connect
+2025-05-09 20:02:12,180 - INFO: server connect platform.linkedin.com:443 (199.232.23.42:443)
+2025-05-09 20:02:16,704 - INFO: server disconnect radar.cedexis.com:443 (45.54.49.5:443)
+2025-05-09 20:02:18,581 - INFO: client connect
+2025-05-09 20:02:18,785 - INFO: server connect m.stripe.network:443 (199.232.20.176:443)
+2025-05-09 20:02:19,363 - INFO: client connect
+2025-05-09 20:02:19,393 - INFO: client connect
+2025-05-09 20:02:19,585 - INFO: server connect mail.google.com:443 (142.250.194.69:443)
+2025-05-09 20:02:19,699 - INFO: client disconnect
+2025-05-09 20:02:19,700 - INFO: client connect
+2025-05-09 20:02:19,757 - INFO: server connect m.stripe.com:443 (44.238.238.229:443)
+2025-05-09 20:02:19,782 - INFO: client disconnect
+2025-05-09 20:02:19,783 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:02:22,541 - INFO: server connect go-updater.brave.com:443 (52.33.193.122:443)
+2025-05-09 20:02:22,600 - INFO: client connect
+2025-05-09 20:02:22,835 - INFO: server connect ogads-pa.clients6.google.com:443 (142.250.193.74:443)
+2025-05-09 20:02:23,021 - INFO: client disconnect
+2025-05-09 20:02:23,022 - INFO: client connect
+2025-05-09 20:02:23,023 - INFO: server disconnect rr5---sn-ci5gup-pmjs.googlevideo.com:443 (182.79.173.48:443)
+2025-05-09 20:02:23,235 - INFO: server connect appsgrowthpromo-pa.clients6.google.com:443 (142.250.206.138:443)
+2025-05-09 20:02:23,348 - INFO: client connect
+2025-05-09 20:02:23,570 - INFO: client connect
+2025-05-09 20:02:23,573 - INFO: client disconnect
+2025-05-09 20:02:23,575 - INFO: server disconnect rr5---sn-ci5gup-pmjs.googlevideo.com:443 (182.79.173.48:443)
+2025-05-09 20:02:23,576 - INFO: client connect
+2025-05-09 20:02:23,645 - INFO: server connect appsgrowthpromo-pa.clients6.google.com:443 (142.250.206.138:443)
+2025-05-09 20:02:23,755 - INFO: server connect update.googleapis.com:443 (142.250.207.195:443)
+2025-05-09 20:02:23,767 - INFO: server connect alive.github.com:443 (140.82.112.25:443)
+2025-05-09 20:02:24,151 - INFO: client connect
+2025-05-09 20:02:24,153 - INFO: client disconnect
+2025-05-09 20:02:24,157 - INFO: server disconnect waa-pa.clients6.google.com:443 (142.250.194.74:443)
+2025-05-09 20:02:24,157 - INFO: client disconnect
+2025-05-09 20:02:24,158 - INFO: client disconnect
+2025-05-09 20:02:24,158 - INFO: client disconnect
+2025-05-09 20:02:24,159 - INFO: client disconnect
+2025-05-09 20:02:24,159 - INFO: client disconnect
+2025-05-09 20:02:24,161 - INFO: server disconnect accounts.google.com:443 (172.217.194.84:443)
+2025-05-09 20:02:24,162 - INFO: server disconnect appsgrowthpromo-pa.clients6.google.com:443 (142.250.206.138:443)
+2025-05-09 20:02:24,163 - INFO: server disconnect www.google.com:443 (142.251.223.100:443)
+2025-05-09 20:02:24,164 - INFO: server disconnect lh3.googleusercontent.com:443 (142.250.194.129:443)
+2025-05-09 20:02:24,164 - INFO: server disconnect ogs.google.com:443 (142.250.182.174:443)
+2025-05-09 20:02:24,169 - INFO: client disconnect
+2025-05-09 20:02:24,170 - INFO: client disconnect
+2025-05-09 20:02:24,171 - INFO: client disconnect
+2025-05-09 20:02:24,171 - INFO: client disconnect
+2025-05-09 20:02:24,172 - INFO: client disconnect
+2025-05-09 20:02:24,172 - INFO: client disconnect
+2025-05-09 20:02:24,180 - INFO: server disconnect static.airtable.com:443 (18.66.63.12:443)
+2025-05-09 20:02:24,181 - INFO: server disconnect api.github.com:443 (20.207.73.85:443)
+2025-05-09 20:02:24,181 - INFO: server disconnect www.gstatic.com:443 (142.250.207.227:443)
+2025-05-09 20:02:24,182 - INFO: server disconnect waa-pa.clients6.google.com:443 (142.250.194.74:443)
+2025-05-09 20:02:24,183 - INFO: server disconnect componentupdater.brave.com:443 (18.246.128.111:443)
+2025-05-09 20:02:24,183 - INFO: server disconnect clients2.google.com:443 (142.251.223.110:443)
+2025-05-09 20:02:24,184 - INFO: client disconnect
+2025-05-09 20:02:24,184 - INFO: client disconnect
+2025-05-09 20:02:24,185 - INFO: client disconnect
+2025-05-09 20:02:24,185 - INFO: client disconnect
+2025-05-09 20:02:24,185 - INFO: client disconnect
+2025-05-09 20:02:24,186 - INFO: client disconnect
+2025-05-09 20:02:24,186 - INFO: client disconnect
+2025-05-09 20:02:24,187 - INFO: client disconnect
+2025-05-09 20:02:24,187 - INFO: client disconnect
+2025-05-09 20:02:24,187 - INFO: client disconnect
+2025-05-09 20:02:24,188 - INFO: client disconnect
+2025-05-09 20:02:24,188 - INFO: client disconnect
+2025-05-09 20:02:24,189 - INFO: client disconnect
+2025-05-09 20:02:24,189 - INFO: client disconnect
+2025-05-09 20:02:24,189 - INFO: client disconnect
+2025-05-09 20:02:24,190 - INFO: client disconnect
+2025-05-09 20:02:24,190 - INFO: client disconnect
+2025-05-09 20:02:24,192 - INFO: server disconnect sync-v2.brave.com:443 (35.164.159.216:443)
+2025-05-09 20:02:24,192 - INFO: server disconnect ogads-pa.clients6.google.com:443 (142.250.77.234:443)
+2025-05-09 20:02:24,193 - INFO: server disconnect www.youtube.com:443 (142.250.194.142:443)
+2025-05-09 20:02:24,193 - INFO: server disconnect v5.airtableusercontent.com:443 (18.66.78.20:443)
+2025-05-09 20:02:24,194 - INFO: server disconnect static.licdn.com:443 (199.232.23.42:443)
+2025-05-09 20:02:24,194 - INFO: server disconnect i.ytimg.com:443 (142.251.43.118:443)
+2025-05-09 20:02:24,195 - INFO: server disconnect px.ads.linkedin.com:443 (150.171.22.12:443)
+2025-05-09 20:02:24,196 - INFO: server disconnect vscode.dev:443 (13.107.246.59:443)
+2025-05-09 20:02:24,196 - INFO: server disconnect static.airtable.com:443 (18.66.63.12:443)
+2025-05-09 20:02:24,197 - INFO: server disconnect airtable.com:443 (54.145.196.255:443)
+2025-05-09 20:02:24,198 - INFO: server disconnect static.licdn.com:443 (199.232.23.42:443)
+2025-05-09 20:02:24,199 - INFO: server disconnect m.stripe.com:443 (44.238.238.229:443)
+2025-05-09 20:02:24,199 - INFO: server disconnect media.licdn.com:443 (199.232.23.42:443)
+2025-05-09 20:02:24,200 - INFO: server disconnect m.stripe.network:443 (199.232.20.176:443)
+2025-05-09 20:02:24,201 - INFO: server disconnect ogads-pa.clients6.google.com:443 (142.250.193.74:443)
+2025-05-09 20:02:24,201 - INFO: server disconnect platform.linkedin.com:443 (199.232.23.42:443)
+2025-05-09 20:02:24,206 - INFO: client connect
+2025-05-09 20:02:24,207 - INFO: client connect
+2025-05-09 20:02:24,406 - INFO: server connect ssl.gstatic.com:443 (142.250.192.195:443)
+2025-05-09 20:02:24,432 - INFO: server disconnect alive.github.com:443 (140.82.112.25:443)
+2025-05-09 20:02:24,433 - INFO: client disconnect
+2025-05-09 20:02:24,434 - INFO: server connect api.github.com:443 (20.207.73.85:443)
+2025-05-09 20:02:24,437 - INFO: client connect
+2025-05-09 20:02:24,494 - INFO: client connect
+2025-05-09 20:02:24,507 - INFO: client connect
+2025-05-09 20:02:24,576 - INFO: server connect github.com:443 (20.207.73.82:443)
+2025-05-09 20:02:24,582 - INFO: server connect collector.github.com:443 (140.82.114.22:443)
+2025-05-09 20:02:24,649 - INFO: client connect
+2025-05-09 20:02:24,705 - INFO: server connect www.google.com:443 (142.251.223.100:443)
+2025-05-09 20:02:24,758 - INFO: client connect
+2025-05-09 20:02:24,759 - INFO: client connect
+2025-05-09 20:02:24,925 - INFO: server connect componentupdater.brave.com:443 (18.246.128.111:443)
+2025-05-09 20:02:24,950 - INFO: client disconnect
+2025-05-09 20:02:24,952 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:02:24,954 - INFO: server connect peoplestackwebexperiments-pa.clients6.google.com:443 (142.250.206.106:443)
+2025-05-09 20:02:24,955 - INFO: server connect peoplestack-pa.clients6.google.com:443 (142.250.77.234:443)
+2025-05-09 20:02:25,068 - INFO: client connect
+2025-05-09 20:02:25,191 - INFO: client disconnect
+2025-05-09 20:02:25,211 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:02:25,415 - INFO: client connect
+2025-05-09 20:02:25,416 - INFO: client connect
+2025-05-09 20:02:25,431 - INFO: client connect
+2025-05-09 20:02:25,475 - INFO: server connect peoplestackwebexperiments-pa.clients6.google.com:443 (142.250.206.106:443)
+2025-05-09 20:02:25,637 - INFO: server connect peoplestack-pa.clients6.google.com:443 (142.250.77.234:443)
+2025-05-09 20:02:25,873 - INFO: server connect alive.github.com:443 (140.82.112.25:443)
+2025-05-09 20:02:25,925 - INFO: client connect
+2025-05-09 20:02:26,122 - INFO: server connect lh3.googleusercontent.com:443 (142.250.194.129:443)
+2025-05-09 20:02:27,553 - INFO: client connect
+2025-05-09 20:02:27,866 - INFO: server connect ogs.google.com:443 (142.250.182.174:443)
+2025-05-09 20:02:28,438 - INFO: client connect
+2025-05-09 20:02:28,538 - INFO: client connect
+2025-05-09 20:02:28,733 - INFO: server connect www.gstatic.com:443 (142.250.207.227:443)
+2025-05-09 20:02:29,387 - INFO: server connect airtable.com:443 (52.2.52.56:443)
+2025-05-09 20:02:29,595 - INFO: client connect
+2025-05-09 20:02:29,816 - INFO: server connect www.youtube.com:443 (142.250.207.206:443)
+2025-05-09 20:02:30,454 - INFO: client connect
+2025-05-09 20:02:30,727 - INFO: server connect addons-pa.clients6.google.com:443 (142.250.192.170:443)
+2025-05-09 20:02:31,257 - INFO: client connect
+2025-05-09 20:02:31,332 - INFO: server connect addons-pa.clients6.google.com:443 (142.250.192.170:443)
+2025-05-09 20:02:31,526 - INFO: client connect
+2025-05-09 20:02:31,553 - INFO: client connect
+2025-05-09 20:02:31,767 - INFO: server connect contacts.google.com:443 (142.250.194.238:443)
+2025-05-09 20:02:31,770 - INFO: server connect signaler-pa.clients6.google.com:443 (216.58.200.170:443)
+2025-05-09 20:02:32,074 - INFO: client connect
+2025-05-09 20:02:32,169 - INFO: client connect
+2025-05-09 20:02:32,348 - INFO: server connect fonts.googleapis.com:443 (216.58.196.106:443)
+2025-05-09 20:02:32,352 - INFO: server connect signaler-pa.clients6.google.com:443 (216.58.200.170:443)
+2025-05-09 20:02:32,714 - INFO: client connect
+2025-05-09 20:02:32,842 - INFO: server connect chatgpt.com:443 (104.18.32.47:443)
+2025-05-09 20:02:33,137 - INFO: client connect
+2025-05-09 20:02:33,280 - INFO: server connect apis.google.com:443 (142.250.194.238:443)
+2025-05-09 20:02:34,102 - INFO: client connect
+2025-05-09 20:02:34,624 - INFO: server connect px.ads.linkedin.com:443 (150.171.22.12:443)
+2025-05-09 20:02:34,910 - INFO: client connect
+2025-05-09 20:02:35,025 - INFO: server connect lh3.googleusercontent.com:443 (142.250.194.129:443)
+2025-05-09 20:02:35,599 - INFO: client connect
+2025-05-09 20:02:35,727 - INFO: server connect platform.linkedin.com:443 (199.232.23.42:443)
+2025-05-09 20:02:35,732 - INFO: client connect
+2025-05-09 20:02:35,750 - INFO: client connect
+2025-05-09 20:02:35,957 - INFO: server connect fonts.gstatic.com:443 (142.250.207.227:443)
+2025-05-09 20:02:37,198 - INFO: client connect
+2025-05-09 20:02:37,640 - INFO: server connect sync-v2.brave.com:443 (35.160.216.16:443)
+2025-05-09 20:02:39,618 - INFO: client connect
+2025-05-09 20:02:39,821 - INFO: server connect music.youtube.com:443 (142.250.194.142:443)
+2025-05-09 20:02:41,576 - INFO: client connect
+2025-05-09 20:02:41,581 - INFO: client disconnect
+2025-05-09 20:02:41,582 - INFO: client connect
+2025-05-09 20:02:41,583 - INFO: server disconnect fonts.gstatic.com:443 (142.250.207.227:443)
+2025-05-09 20:02:41,585 - INFO: client disconnect
+2025-05-09 20:02:41,590 - INFO: server disconnect apis.google.com:443 (142.250.194.238:443)
+2025-05-09 20:02:41,592 - INFO: client disconnect
+2025-05-09 20:02:41,593 - INFO: client disconnect
+2025-05-09 20:02:41,593 - INFO: client disconnect
+2025-05-09 20:02:41,594 - INFO: client disconnect
+2025-05-09 20:02:41,594 - INFO: client disconnect
+2025-05-09 20:02:41,594 - INFO: client disconnect
+2025-05-09 20:02:41,595 - INFO: client disconnect
+2025-05-09 20:02:41,595 - INFO: client disconnect
+2025-05-09 20:02:41,595 - INFO: client disconnect
+2025-05-09 20:02:41,596 - INFO: client disconnect
+2025-05-09 20:02:41,596 - INFO: client disconnect
+2025-05-09 20:02:41,596 - INFO: client disconnect
+2025-05-09 20:02:41,597 - INFO: client disconnect
+2025-05-09 20:02:41,597 - INFO: client disconnect
+2025-05-09 20:02:41,598 - INFO: client disconnect
+2025-05-09 20:02:41,598 - INFO: client disconnect
+2025-05-09 20:02:41,598 - INFO: client disconnect
+2025-05-09 20:02:41,599 - INFO: client disconnect
+2025-05-09 20:02:41,599 - INFO: client disconnect
+2025-05-09 20:02:41,600 - INFO: client disconnect
+2025-05-09 20:02:41,600 - INFO: client disconnect
+2025-05-09 20:02:41,601 - INFO: client disconnect
+2025-05-09 20:02:41,601 - INFO: client disconnect
+2025-05-09 20:02:41,601 - INFO: client disconnect
+2025-05-09 20:02:41,602 - INFO: server disconnect lh3.googleusercontent.com:443 (142.250.194.129:443)
+2025-05-09 20:02:41,603 - INFO: server disconnect www.google.com:443 (142.251.223.100:443)
+2025-05-09 20:02:41,603 - INFO: server disconnect signaler-pa.clients6.google.com:443 (216.58.200.170:443)
+2025-05-09 20:02:41,604 - INFO: server disconnect peoplestackwebexperiments-pa.clients6.google.com:443 (142.250.206.106:443)
+2025-05-09 20:02:41,605 - INFO: server disconnect peoplestack-pa.clients6.google.com:443 (142.250.77.234:443)
+2025-05-09 20:02:41,606 - INFO: server disconnect peoplestackwebexperiments-pa.clients6.google.com:443 (142.250.206.106:443)
+2025-05-09 20:02:41,606 - INFO: server disconnect www.gstatic.com:443 (142.250.207.227:443)
+2025-05-09 20:02:41,607 - INFO: server disconnect api.github.com:443 (20.207.73.85:443)
+2025-05-09 20:02:41,607 - INFO: server disconnect ssl.gstatic.com:443 (142.250.192.195:443)
+2025-05-09 20:02:41,608 - INFO: server disconnect collector.github.com:443 (140.82.114.22:443)
+2025-05-09 20:02:41,608 - INFO: server disconnect lh3.googleusercontent.com:443 (142.250.194.129:443)
+2025-05-09 20:02:41,609 - INFO: server disconnect addons-pa.clients6.google.com:443 (142.250.192.170:443)
+2025-05-09 20:02:41,609 - INFO: server disconnect addons-pa.clients6.google.com:443 (142.250.192.170:443)
+2025-05-09 20:02:41,610 - INFO: server disconnect appsgrowthpromo-pa.clients6.google.com:443 (142.250.206.138:443)
+2025-05-09 20:02:41,610 - INFO: server disconnect www.youtube.com:443 (142.250.207.206:443)
+2025-05-09 20:02:41,611 - INFO: server disconnect airtable.com:443 (52.2.52.56:443)
+2025-05-09 20:02:41,611 - INFO: server disconnect contacts.google.com:443 (142.250.194.238:443)
+2025-05-09 20:02:41,612 - INFO: server disconnect fonts.googleapis.com:443 (216.58.196.106:443)
+2025-05-09 20:02:41,613 - INFO: server disconnect sync-v2.brave.com:443 (35.160.216.16:443)
+2025-05-09 20:02:41,613 - INFO: server disconnect ogs.google.com:443 (142.250.182.174:443)
+2025-05-09 20:02:41,614 - INFO: server disconnect platform.linkedin.com:443 (199.232.23.42:443)
+2025-05-09 20:02:41,614 - INFO: server disconnect peoplestack-pa.clients6.google.com:443 (142.250.77.234:443)
+2025-05-09 20:02:41,614 - INFO: server disconnect mail.google.com:443 (142.250.194.69:443)
+2025-05-09 20:02:41,615 - INFO: server disconnect github.com:443 (20.207.73.82:443)
+2025-05-09 20:02:41,615 - INFO: client disconnect
+2025-05-09 20:02:41,620 - INFO: server disconnect px.ads.linkedin.com:443 (150.171.22.12:443)
+2025-05-09 20:02:41,621 - INFO: client connect
+2025-05-09 20:02:41,672 - INFO: server connect fonts.googleapis.com:443 (216.58.196.106:443)
+2025-05-09 20:02:41,676 - INFO: server connect mail.google.com:443 (142.250.194.69:443)
+2025-05-09 20:02:41,698 - INFO: server connect youtube.com:443 (172.217.167.238:443)
+2025-05-09 20:02:44,422 - INFO: server disconnect main.vscode-cdn.net:443 (13.107.246.48:443)
+2025-05-09 20:02:45,265 - INFO: server disconnect go-updater.brave.com:443 (52.33.193.122:443)
+2025-05-09 20:02:45,543 - INFO: client connect
+2025-05-09 20:02:45,594 - INFO: server connect music.youtube.com:443 (172.217.27.174:443)
+2025-05-09 20:02:45,859 - INFO: client connect
+2025-05-09 20:02:45,924 - INFO: server connect www.gstatic.com:443 (142.250.207.227:443)
+2025-05-09 20:02:45,960 - INFO: client connect
+2025-05-09 20:02:45,961 - INFO: client connect
+2025-05-09 20:02:46,116 - INFO: server connect rr2---sn-ci5gup-pmje7.googlevideo.com:443 (116.119.208.13:443)
+2025-05-09 20:02:46,117 - INFO: server connect rr2---sn-ci5gup-pmje7.googlevideo.com:443 (116.119.208.13:443)
+2025-05-09 20:02:46,144 - INFO: client connect
+2025-05-09 20:02:46,193 - INFO: server connect rr2---sn-ci5gup-pmje7.googlevideo.com:443 (116.119.208.13:443)
+2025-05-09 20:02:46,194 - INFO: client connect
+2025-05-09 20:02:46,361 - INFO: server connect i.ytimg.com:443 (142.251.43.118:443)
+2025-05-09 20:02:50,652 - INFO: client connect
+2025-05-09 20:02:50,790 - INFO: server connect docs.google.com:443 (142.250.194.110:443)
+2025-05-09 20:02:53,542 - INFO: client connect
+2025-05-09 20:02:53,587 - INFO: server connect fonts.gstatic.com:443 (142.250.207.227:443)
+2025-05-09 20:02:54,171 - INFO: client connect
+2025-05-09 20:02:54,569 - INFO: server connect sync-v2.brave.com:443 (35.164.159.216:443)
+2025-05-09 20:02:57,569 - INFO: client connect
+2025-05-09 20:02:57,729 - INFO: server connect ssl.gstatic.com:443 (142.250.192.195:443)
+2025-05-09 20:02:58,064 - INFO: client connect
+2025-05-09 20:02:58,118 - INFO: server connect www.google.com:443 (142.251.223.100:443)
+2025-05-09 20:02:58,233 - INFO: client connect
+2025-05-09 20:02:58,234 - INFO: client connect
+2025-05-09 20:02:58,428 - INFO: server connect ogads-pa.clients6.google.com:443 (142.250.193.74:443)
+2025-05-09 20:02:58,536 - INFO: server connect waa-pa.clients6.google.com:443 (142.250.194.74:443)
+2025-05-09 20:02:58,726 - INFO: client connect
+2025-05-09 20:02:58,940 - INFO: server connect accounts.google.com:443 (172.217.194.84:443)
+2025-05-09 20:03:02,546 - INFO: client connect
+2025-05-09 20:03:02,649 - INFO: server connect ogs.google.com:443 (142.250.182.174:443)
+2025-05-09 20:03:05,732 - INFO: client disconnect
+2025-05-09 20:03:05,733 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:03:06,133 - INFO: server connect go-updater.brave.com:443 (35.82.164.67:443)
+2025-05-09 20:03:06,475 - INFO: client connect
+2025-05-09 20:03:06,590 - INFO: server connect api.ipify.org:443 (104.26.13.205:443)
+2025-05-09 20:03:06,646 - INFO: Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for api.ipify.org, this may indicate that the client does not trust the proxy's certificate.
+2025-05-09 20:03:06,646 - INFO: client disconnect
+2025-05-09 20:03:06,647 - INFO: server disconnect api.ipify.org:443 (104.26.13.205:443)
+2025-05-09 20:03:06,648 - INFO: client connect
+2025-05-09 20:03:06,710 - INFO: error establishing server connection: [Errno 101] Network is unreachable
+2025-05-09 20:03:06,712 - INFO: client disconnect
+2025-05-09 20:03:16,628 - INFO: client connect
+2025-05-09 20:03:16,630 - INFO: client connect
+2025-05-09 20:03:16,819 - INFO: server connect web.whatsapp.com:443 (163.70.146.60:443)
+2025-05-09 20:03:16,883 - INFO: server connect cdn.jsdelivr.net:443 (104.16.175.226:443)
+2025-05-09 20:03:16,991 - WARNING: Client TLS handshake failed. The client does not trust the proxy's certificate for web.whatsapp.com (OpenSSL Error([('SSL routines', '', 'ssl/tls alert certificate unknown')]))
+2025-05-09 20:03:16,992 - WARNING: Client TLS handshake failed. The client does not trust the proxy's certificate for cdn.jsdelivr.net (OpenSSL Error([('SSL routines', '', 'ssl/tls alert certificate unknown')]))
+2025-05-09 20:03:16,992 - INFO: client disconnect
+2025-05-09 20:03:16,993 - INFO: server disconnect web.whatsapp.com:443 (163.70.146.60:443)
+2025-05-09 20:03:16,994 - INFO: client disconnect
+2025-05-09 20:03:16,994 - INFO: server disconnect cdn.jsdelivr.net:443 (104.16.175.226:443)
+2025-05-09 20:03:17,114 - INFO: server disconnect go-updater.brave.com:443 (35.82.164.67:443)
+2025-05-09 20:03:18,538 - INFO: client connect
+2025-05-09 20:03:18,603 - INFO: server connect signaler-pa.clients6.google.com:443 (216.58.200.170:443)
+2025-05-09 20:03:27,020 - INFO: Received WebSocket ping from server (payload: b'1')
+2025-05-09 20:03:27,021 - INFO: Received WebSocket pong from client (payload: b'1')
+2025-05-09 20:03:36,814 - INFO: client connect
+2025-05-09 20:04:04,196 - INFO: server disconnect www.linkedin.com:443 (150.171.22.12:443)
+2025-05-09 20:04:04,323 - INFO: server connect www.linkedin.com:443 (150.171.22.12:443)
+2025-05-09 20:04:06,815 - INFO: client disconnect
+2025-05-09 20:04:06,816 - INFO: error establishing server connection: client disconnected
+2025-05-09 20:04:08,476 - INFO: server connect go-updater.brave.com:443 (54.68.220.115:443)
+2025-05-09 20:04:20,557 - INFO: server disconnect go-updater.brave.com:443 (54.68.220.115:443)
+2025-05-09 20:04:26,812 - INFO: Received WebSocket ping from server (payload: b'2')
+2025-05-09 20:04:26,813 - INFO: Received WebSocket pong from client (payload: b'2')
+2025-05-09 20:04:31,178 - INFO: Closing connection due to inactivity: Client(127.0.0.1:33640, state=open, alpn=h2)
+2025-05-09 20:04:31,179 - INFO: client disconnect
+2025-05-09 20:04:47,188 - INFO: server disconnect rr2---sn-ci5gup-pmje7.googlevideo.com:443 (116.119.208.13:443)
+2025-05-09 20:04:47,189 - INFO: server disconnect rr2---sn-ci5gup-pmje7.googlevideo.com:443 (116.119.208.13:443)
+2025-05-09 20:04:48,422 - INFO: server disconnect rr2---sn-ci5gup-pmje7.googlevideo.com:443 (116.119.208.13:443)
+2025-05-09 20:05:10,206 - INFO: client connect
+2025-05-09 20:05:20,567 - INFO: Proxy server manually stopped.
+2025-05-09 20:05:20,568 - INFO: Proxy server stopped.
