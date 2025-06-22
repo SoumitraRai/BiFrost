@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../styles/Admin.css";
 
 type PendingPayment = {
   id: number;
@@ -24,7 +25,7 @@ const Admin: React.FC<AdminProps> = ({
         const lines = text.split("\n").filter(Boolean);
         const formattedRequests = lines.map((url, index) => ({
           id: index + 1,
-          message: `Payment request from url - ${url}`,
+          message: `${url}`,
         }));
         setPendingPayments(formattedRequests);
       } catch (error) {
@@ -65,8 +66,8 @@ const Admin: React.FC<AdminProps> = ({
               <li key={item.id} className="pending-item">
                 <span>{item.message}</span>
                 <div className="button-group">
-                  <button onClick={() => handleApprove(item.id)}>Approve</button>
-                  <button onClick={() => handleDeny(item.id)}>Deny</button>
+                  <button onClick={() => handleApprove(item.id)}>✔</button>
+                  <button onClick={() => handleDeny(item.id)}>✘</button>
                 </div>
               </li>
             ))}

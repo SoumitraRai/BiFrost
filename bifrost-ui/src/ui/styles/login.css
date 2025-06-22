@@ -45,9 +45,10 @@
 
 .button-group {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
   gap: 0.7em;
 }
 
