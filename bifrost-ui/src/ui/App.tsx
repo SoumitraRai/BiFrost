@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./styles/App.css";
 import Login from "./components/login";
 import Register from "./components/register";
 import Start from "./components/start"; 
 import Client from "./components/Client";
 import Admin from "./components/Admin";
+import "./styles/App.css";
 
 function App() {
   const [logs, setLogs] = useState("");
