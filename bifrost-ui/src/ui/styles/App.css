@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap');
+
+/* --- Global Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #0f172a 0%, #1e293b 100%);
+  color: #e2e8f0;
+  min-height: 100vh;
+  letter-spacing: 0.01em;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Animated gradient background (subtle) */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 200%; height: 200%;
+  background: radial-gradient(#2563eb22 2%, transparent 2%) repeat;
+  background-size: 50px 50px;
+  animation: move 30s linear infinite;
+  opacity: 0.04;
+  z-index: -1;
+}
+
+@keyframes move {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-50px, -50px); }
+}
+
+.main-heading {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 0.1em;
+  letter-spacing: 1.5px;
+  text-shadow: 0 4px 24px #0ea5e933;
+  line-height: 1.1;
+  display: inline-block;
+}
+
+.tagline {
+  color: #38bdf8;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  margin-left: 10px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  text-shadow: 0 2px 8px #0ea5e922;
+  display: inline-block;
+}
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5em;
+  padding: 1.5em 2em 1em 2em;
+  background: transparent;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn.logout-btn {
+  margin: 0;
+  margin-left: auto;
+  float: none;
+  padding: 0.7em 2em;
+  font-size: 1.05rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px #0ea5e933, 0 1.5px 8px #2563eb22;
+  background: linear-gradient(90deg, #0ea5e9 0%, #2563eb 100%);
+  color: #fff;
+  font-weight: 700;
+  transition: background 0.3s, transform 0.15s;
+}
+
+.btn.logout-btn:hover {
+  background: linear-gradient(90deg, #2563eb 0%, #0ea5e9 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 32px #0ea5e955;
+}
+
+/* --- Dashboard Layout --- */
+.box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5em;
+  max-width: 1200px;
+  margin: 3em auto;
+  padding: 0 2em;
+}
+
+.container-box {
+  background: rgba(17, 24, 39, 0.85);
+  border: 1.5px solid #38bdf8;
+  border-radius: 20px;
+  box-shadow: 0 8px 40px #0ea5e933, 0 1.5px 8px #2563eb22;
+  padding: 2.2em 2em 1em 2em;
+  flex: 1 1 350px;
+  max-width: 500px;
+  min-width: 320px;
+  min-height: 60vh;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border 0.2s ease;
+}
+
+.container-box:hover {
+  box-shadow: 0 16px 48px #0ea5e966;
+  transform: translateY(-4px) scale(1.025);
+  border-color: #0ea5e9;
+}
+
+.container-box::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 6px;
+  background: linear-gradient(180deg, #38bdf8 0%, #2563eb 100%);
+  border-radius: 8px 0 0 8px;
+}
+
+/* Optional gradient overlay effect */
+.container-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #1e3a8a11, #2563eb11);
+  pointer-events: none;
+}
+
+/* --- Headings inside boxes --- */
+.container-box h2 {
+  color: #38bdf8;
+  margin-bottom: 1em;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding-left: 0.5em;
+}
+
+/* --- Pending Requests --- */
+.pending-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pending-item {
+  background: rgba(30, 41, 59, 0.97);
+  border: 1px solid #334155;
+  border-radius: 12px;
+  margin-bottom: 1em;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px #0ea5e922;
+  transition: all 0.2s ease;
+}
+
+.pending-item:hover {
+  box-shadow: 0 8px 32px #38bdf855;
+  border-color: #38bdf8;
+  transform: scale(1.03);
+}
+
+.pending-item span {
+  font-weight: 600;
+  color: #e0e7ef;
+  letter-spacing: 0.01em;
+}
+
+/* --- Traffic Log Box --- */
+.traffic-log-box {
+  width: 100%;
+  min-height: 300px;
+  background: rgba(24, 28, 36, 0.98);
+  border: 1.5px solid #334155;
+  border-radius: 12px;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 1rem;
+  color: #e5e7eb;
+  padding: 1em;
+  resize: vertical;
+  margin-top: 0.5em;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px #0ea5e922;
+  transition: all 0.2s ease;
+}
+
+.traffic-log-box:focus {
+  outline: 2px solid #38bdf8;
+  border-color: #38bdf8;
+  box-shadow: 0 4px 16px #0ea5e933;
+}
+
+/* --- Client View --- */
+.client-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* --- Buttons (other than .btn) --- */
+.logout-btn {
+  float: right;
+  margin-right: 2em;
+  margin-top: 2em;
+  background: linear-gradient(90deg, #0ea5e9 0%, #2563eb 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.08rem;
+  border: none;
+  border-radius: 12px;
+  padding: 0.85em 2.3em;
+  margin: 0.5em;
+  box-shadow: 0 4px 24px #0ea5e933, 0 1.5px 8px #2563eb22;
+  transition: background 0.3s ease, transform 0.15s ease;
+  cursor: pointer;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(90deg, #2563eb 0%, #0ea5e9 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 32px #0ea5e955;
+}
+
+.button-group button {
+  background: linear-gradient(90deg, #0ea5e9 0%, #2563eb 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5em 1.4em;
+  margin-left: 0.5em;
+  box-shadow: 0 2px 8px #38bdf833;
+  transition: background 0.3s ease, transform 0.15s ease;
+  cursor: pointer;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+}
+
+.button-group button:hover {
+  background: linear-gradient(90deg, #2563eb 0%, #0ea5e9 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 32px #0ea5e955;
+}
+
+.button-group button:last-child {
+  background: linear-gradient(90deg, #f87171 0%, #ef4444 100%);
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .box-wrapper {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  .logout-btn {
+    float: none;
+    margin: 1em auto;
+    display: block;
+  }
+}
+
+/* --- Extra Responsive for Short Screens --- */
+@media (max-width: 700px), (max-height: 600px) {
+  .header-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+    padding: 1em 0.7em 0.7em 0.7em;
+  }
+  .main-heading, .tagline {
+    text-align: left;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .btn.logout-btn {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0.7em;
+    font-size: 1rem;
+    padding: 0.7em 1em;
+  }
+  .container-box {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 1.2em 0.7em 1em 0.7em;
+  }
+  .box-wrapper {
+    padding: 0 0.5em;
+    gap: 1em;
+  }
+}
+
+@media (max-width: 400px), (max-height: 450px) {
+  .main-heading {
+    font-size: 1.1rem;
+  }
+  .tagline {
+    font-size: 0.9rem;
+  }
+  .container-box {
+    padding: 0.7em 0.2em 0.5em 0.2em;
+  }
+}

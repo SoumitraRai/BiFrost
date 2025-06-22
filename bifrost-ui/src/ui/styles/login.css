@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap');
+
+.auth-container {
+  background: rgba(17, 24, 39, 0.92);
+  border: 1.5px solid #38bdf8;
+  border-radius: 20px;
+  box-shadow: 0 8px 40px #0ea5e933, 0 1.5px 8px #2563eb22;
+  padding: 2.5em 2em 2em 2em;
+  max-width: 450px;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInDown 0.9s;
+}
+
+.auth-container h2 {
+  color: #38bdf8;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1.5em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 0.9em 1.1em;
+  margin-bottom: 1.2em;
+  border: 1.5px solid #334155;
+  border-radius: 10px;
+  background: rgba(30, 41, 59, 0.97);
+  color: #e2e8f0;
+  font-size: 1.08rem;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  transition: border 0.2s, box-shadow 0.2s;
+  outline: none;
+  box-shadow: 0 2px 8px #0ea5e922;
+}
+
+.auth-input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 4px 16px #0ea5e933;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1em;
+  gap: 0.7em;
+}
+
+.auth-button {
+  background: linear-gradient(90deg, #0ea5e9 0%, #2563eb 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.08rem;
+  border: none;
+  border-radius: 12px;
+  padding: 0.7em 2em;
+  box-shadow: 0 4px 24px #0ea5e933, 0 1.5px 8px #2563eb22;
+  transition: background 0.3s, transform 0.15s;
+  cursor: pointer;
+  outline: none;
+  letter-spacing: 0.03em;
+}
+
+.auth-button:hover {
+  background: linear-gradient(90deg, #2563eb 0%, #0ea5e9 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 32px #0ea5e955;
+}
+
+.error-message {
+  color: #f87171;
+  background: #1e293b;
+  border: 1px solid #f87171;
+  border-radius: 8px;
+  padding: 0.7em 1em;
+  margin-top: 1em;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px #f8717122;
+  animation: fadeIn 0.7s;
+}
+
+.auth-center {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .auth-container {
+    padding: 1.5em 0.7em 1.2em 0.7em;
+    max-width: 85vw;
+  }
+  .auth-button {
+    padding: 0.7em 1em;
+    font-size: 1rem;
+  }
+}

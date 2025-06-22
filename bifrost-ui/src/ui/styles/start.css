@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap');
+
+.start-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2em;
+  text-align: center;
+}
+
+.start-page h1,
+.main-heading {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0.2em;
+  text-shadow: 0 6px 32px #0ea5e933;
+  letter-spacing: 1.5px;
+}
+
+.headline-gradient {
+  font-size: 2.8rem;
+  font-weight: 900;
+  text-align: center;
+  background: linear-gradient(90deg, #38bdf8 10%, #2563eb 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 24px #2563eb44);
+  letter-spacing: 2px;
+  margin-bottom: 0.2em;
+  animation: fadeInDown 1s ease;
+  line-height: 1.2;
+  padding: 0.3em 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.tagline-glow {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 2em;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px #38bdf8cc, 0 0px 1px #2563eb;
+  animation: fadeIn 1.2s ease;
+}
+
+.subtitle-fancy {
+  color: #38bdf8;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.92;
+  animation: fadeIn 1.5s ease;
+}
+
+.btn {
+  background: linear-gradient(90deg, #0ea5e9 0%, #2563eb 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.08rem;
+  border: none;
+  border-radius: 12px;
+  padding: 0.85em 2.3em;
+  margin: 0.5em;
+  box-shadow: 0 4px 24px #0ea5e933, 0 1.5px 8px #2563eb22;
+  transition: background 0.3s ease, transform 0.15s ease;
+  cursor: pointer;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #2563eb 0%, #0ea5e9 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 32px #0ea5e955;
+}
+
+/* --- Animations --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
