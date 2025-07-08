@@ -1508,3 +1508,14 @@ ConnectionResetError: [WinError 10054] An existing connection was forcibly close
 2025-05-08 16:51:18,187 - ERROR: [!] Error checking approval status for 96454345-f02d-4c8c-96d1-4c9988465ff4: 'AdvancedHTTPSProxy' object has no attribute 'wait_for_decision'
 2025-05-08 16:51:20,239 - ERROR: [!] Error checking approval status for ee2c813f-bed4-4d0c-9893-d9f035125255: 'AdvancedHTTPSProxy' object has no attribute 'wait_for_decision'
 2025-05-08 16:51:22,292 - ERROR: [!] Error checking approval status for d73548cc-6bf1-4ed1-b998-a7ea9b0badd3: 'AdvancedHTTPSProxy' object has no attribute 'wait_for_decision'
+2025-06-23 02:13:55,385 - INFO: HTTPS Proxy started on 0.0.0.0:8080
+2025-06-23 02:13:55,385 - INFO: Payment filter activated
+2025-06-23 02:13:55,386 - INFO: HTTP(S) proxy listening at *:8080.
+2025-06-23 02:19:55,212 - INFO: client connect
+2025-06-23 02:19:55,264 - INFO: client connect
+2025-06-23 02:19:55,265 - INFO: client connect
+2025-06-23 02:23:40,213 - INFO: client disconnect
+2025-06-23 02:23:40,214 - INFO: client disconnect
+2025-06-23 02:23:40,214 - INFO: client disconnect
+2025-06-23 02:24:03,931 - INFO: Proxy server manually stopped.
+2025-06-23 02:24:03,931 - INFO: Proxy server stopped.

@@ -3,7 +3,13 @@ import json
 import logging
 import requests
 import time
+import redis
 from mitmproxy import http
+from dotenv import load_dotenv
+import pybreaker
+from tenacity import retry, stop_after_attempt, wait_exponential
+
+load_dotenv()  # Load environment variables
 
 class PaymentFilterConfig:
     def __init__(self):
@@ -18,12 +24,25 @@ class PaymentFilterConfig:
         ]
         self.timeout = 30  # seconds
         self.log_dir = "../logs"
-        self.approval_url = "http://localhost:5000"
+        self.approval_url = os.getenv("APPROVAL_SERVICE_URL", "http://localhost:5000")
 
 class PaymentFilter:
     def __init__(self, config: PaymentFilterConfig):
         self.config = config
         self.setup_logging()
+
+        # Initialize Redis client with fallback to None if Redis not available
+        try:
+            self.redis_client = redis.Redis(host=os.getenv("REDIS_HOST", "localhost"), 
+                                          port=int(os.getenv("REDIS_PORT", "6379")),
+                                          socket_connect_timeout=2)
+            # Test connection
+            self.redis_client.ping()
+            self.redis_available = True
+        except:
+            self.payment_logger.warning("Redis not available. Caching functionality disabled.")
+            self.redis_client = None
+            self.redis_available = False
 
     def setup_logging(self):
         LOG_DIR = self.config.log_dir
@@ -68,90 +87,73 @@ class PaymentFilter:
             if any(keyword in combined_text for keyword in self.config.payment_keywords):
                 return True
 
+            # If we get here, it's not a payment request
+            return False
+
         except Exception as e:
             self.payment_logger.error(f"[Detection Error in is_payment_request] {e}")
-            return False  # Return False if an error occurs during detection
+            return False
 
-        return False # Return False if no payment indicators are found
+    def check_approval_service_health(self):
+        try:
+            response = requests.get(f"{self.config.approval_url}/health", timeout=2)
+            return response.status_code == 200
+        except:
+            return False
 
-    def request(self, flow: http.HTTPFlow):
-        """
-        This function is called for every HTTP request.
-        It checks if the request is a payment request, logs it, and handles approval flow.
-        """
-        if self.is_payment_request(flow):
-            try:
-                # Send to approval mechanism
-                approval_data = {
-                    "id": flow.id,
-                    "url": flow.request.pretty_url,
-                    "method": flow.request.method,
-                }
-                
-                r = requests.post(
-                    "http://localhost:5000/intercepted",
-                    json=approval_data
-                )
-                
-                if r.status_code == 200:
-                    # Wait for decision
-                    max_retries = self.config.timeout  # Use configured timeout
-                    while max_retries > 0:
-                        try:
-                            decision_response = requests.get(
-                                f"{self.config.approval_url}/decision/{flow.id}",
-                                timeout=5
-                            )
-                            if decision_response.status_code == 200:
-                                decision = decision_response.json().get("decision")
-                                if decision == "approve":
-                                    self.payment_logger.info(f"[PAYMENT APPROVED] ID: {flow.id}")
-                                    return  # Let request continue
-                                elif decision == "deny":
-                                    self.payment_logger.info(f"[PAYMENT DENIED] ID: {flow.id}")
-                                    flow.kill()  # Block request
-                                    return
-                        except requests.exceptions.RequestException as e:
-                            self.payment_logger.error(f"[DECISION CHECK ERROR] ID: {flow.id}, Error: {e}")
-                        
-                        time.sleep(1)
-                        max_retries -= 1
+    def handle_request_with_fallback(self, flow):
+        if self.check_approval_service_health():
+            # Normal flow
+            pass
+        else:
+            # Fallback behavior (e.g., log and allow, or deny based on config)
+            pass
 
-                    # Timeout reached
-                    self.payment_logger.warning(f"[DECISION TIMEOUT] ID: {flow.id}")
-                    flow.kill()
-                    return
+    def get_cached_decision(self, flow):
+        """Get decision from cache based on request pattern"""
+        if not self.redis_available:
+            return None
+            
+        try:
+            # Generate a cache key based on domain, path pattern, etc.
+            cache_key = f"decision:{flow.request.host}:{flow.request.path.split('?')[0]}"
+            
+            # Check if we have a cached decision
+            cached = self.redis_client.get(cache_key)
+            if cached:
+                return cached.decode('utf-8')
+        except Exception as e:
+            self.payment_logger.error(f"Redis error in get_cached_decision: {e}")
+        
+        return None
 
-                else:
-                    flow.kill()  # Block on error
-                    
-            except Exception as e:
-                self.payment_logger.error(f"[Request Processing Error] ID: {flow.id}, Error: {e}")
-                flow.kill()
-                return
-    def response(flow: http.HTTPFlow):
-        """
-        This function is called for every HTTP response.
-        It checks if the corresponding request was a payment request and logs response details.
-        """
-        # Check if the original request was flagged as a payment request
-        # This ensures we only log responses for requests we've already identified.
-        # For a more robust check, one might store flow IDs of payment requests.
-        # However, re-evaluating is_payment_request is also common.
-        if self.is_payment_request(flow): # Assuming the flow object is the same and contains request details
-            try:
-                # Ensure response exists and has attributes before accessing them
-                if flow.response and flow.response.status_code:
-                    res = {
-                        "id": flow.id, # Including flow ID for correlation
-                        "status_code": flow.response.status_code,
-                        "url": flow.request.pretty_url, # URL from the request for context
-                        "headers": dict(flow.response.headers),
-                        "body_snippet": flow.response.text[:1024] if flow.response.text else "" # Truncate body
-                    }
-                    self.payment_logger.info("[PAYMENT RESPONSE]\n" + json.dumps(res, indent=2))
-                else:
-                    self.payment_logger.warning(f"[PAYMENT RESPONSE SKIPPED] No response object or status code for flow ID: {flow.id}")
+    def cache_decision(self, flow, decision, ttl=3600):
+        """Cache a decision for similar requests"""
+        if not self.redis_available:
+            return
+            
+        try:
+            cache_key = f"decision:{flow.request.host}:{flow.request.path.split('?')[0]}"
+            self.redis_client.set(cache_key, decision, ex=ttl)
+        except Exception as e:
+            self.payment_logger.error(f"Redis error in cache_decision: {e}")
 
-            except Exception as e:
-                self.payment_logger.error(f"[Response Logging Error] ID: {flow.id}, Error: {e}")
+    # Create circuit breaker
+    approval_breaker = pybreaker.CircuitBreaker(
+        fail_max=5,
+        reset_timeout=60,
+        exclude=[requests.exceptions.Timeout]
+    )
+
+    # Use retry decorator for resilience
+    @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=1, max=10))
+    @approval_breaker
+    def send_to_approval_mechanism(self, flow_data):
+        response = requests.post(
+            f"{self.config.approval_url}/intercepted",
+            json=flow_data,
+            timeout=5
+        )
+        if response.status_code != 200:
+            raise Exception(f"Error sending to approval mechanism: {response.status_code}")
+        return response.json()

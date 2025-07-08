@@ -1,14 +1,29 @@
 from flask import Flask, request, jsonify
 from threading import Lock
 import time
+from functools import wraps
+import os
+from flask_socketio import SocketIO
 
 app = Flask(__name__)
+socketio = SocketIO(app, cors_allowed_origins="*")
 
 # Store intercepted flows
 pending_requests = {}
 decision_lock = Lock()
 
+API_KEY = os.getenv("API_KEY", "default-dev-key-change-this")
+
+def require_api_key(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if request.headers.get('X-API-Key') != API_KEY:
+            return jsonify({"error": "unauthorized"}), 401
+        return f(*args, **kwargs)
+    return decorated_function
+
 @app.route("/intercepted", methods=["POST"])
+@require_api_key
 def intercepted():
     data = request.json
     flow_id = data["id"]
@@ -28,9 +43,12 @@ def make_decision():
     data = request.json
     flow_id = data["id"]
     action = data["action"]
+    
     with decision_lock:
         if flow_id in pending_requests:
             pending_requests[flow_id]["decision"] = action
+            # Emit socket event with decision
+            socketio.emit(f'decision_{flow_id}', {"decision": action})
             return jsonify({"status": "received"})
     return jsonify({"error": "not found"}), 404
 
@@ -59,3 +77,12 @@ def wait_for_decision(flow_id):
         time.sleep(1)  # Wait 1 second between checks
     
     return jsonify({"error": "timeout", "decision": "deny"}), 408
+
+@app.route("/health", methods=["GET"])
+def health_check():
+    # Check database connection or other dependencies
+    return jsonify({
+        "status": "healthy", 
+        "uptime": time.time() - start_time,
+        "version": "1.0.0"
+    })

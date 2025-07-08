@@ -207,7 +207,7 @@ class AdvancedHTTPSProxy:
                 listen_host=self.host,
                 listen_port=self.port,
                 confdir=self.cert_dir,
-                ssl_insecure=True
+                ssl_insecure=os.getenv('DEVELOPMENT_MODE', 'False').lower() == 'true'  # Only insecure in dev mode
             )
             
             # Create the proxy master
