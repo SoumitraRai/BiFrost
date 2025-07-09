@@ -1,1 +1,21 @@
-paytm.com
+paytm.com2025-07-09 12:06:06,996 - INFO: [PAYMENT FILTER] Initialized and ready
+2025-07-09 12:06:37,958 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/baseline/1/64405734-403e-4008-be62-1895e1dc62db
+2025-07-09 12:06:37,958 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/baseline/1/64405734-403e-4008-be62-1895e1dc62db
+2025-07-09 12:06:40,100 - INFO: [PAYMENT KEYWORD MATCH] https://www.paypalobjects.com/marketing/web/us/en/rebrand/pictograms/personal-how-it-works.svg
+2025-07-09 12:06:40,101 - INFO: [PAYMENT BLOCKED] https://www.paypalobjects.com/marketing/web/US/en/rebrand/pictograms/personal-how-it-works.svg
+2025-07-09 12:06:40,102 - INFO: [PAYMENT KEYWORD MATCH] https://www.paypalobjects.com/marketing/web/us/en/rebrand/pictograms/personal-app.svg
+2025-07-09 12:06:40,103 - INFO: [PAYMENT BLOCKED] https://www.paypalobjects.com/marketing/web/US/en/rebrand/pictograms/personal-app.svg
+2025-07-09 12:06:40,105 - INFO: [PAYMENT KEYWORD MATCH] https://www.paypalobjects.com/marketing/web/us/en/rebrand/pictograms/protection-blue.svg
+2025-07-09 12:06:40,106 - INFO: [PAYMENT BLOCKED] https://www.paypalobjects.com/marketing/web/US/en/rebrand/pictograms/protection-blue.svg
+2025-07-09 12:06:42,500 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/801e0606-4f23-45a8-b8eb-82062db82539
+2025-07-09 12:06:42,500 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/801e0606-4f23-45a8-b8eb-82062db82539
+2025-07-09 12:06:47,458 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/ac306aeb-3bef-4af2-a2be-bc9586426770
+2025-07-09 12:06:47,458 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/ac306aeb-3bef-4af2-a2be-bc9586426770
+2025-07-09 12:06:48,228 - INFO: [PAYMENT KEYWORD MATCH] https://csp.withgoogle.com/csp/gws/fff
+2025-07-09 12:06:48,229 - INFO: [PAYMENT BLOCKED] https://csp.withgoogle.com/csp/gws/fff
+2025-07-09 12:06:48,750 - INFO: [PAYMENT DOMAIN MATCH] https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://paytm.com/&ved=2ahukewipl7tolk-oaxvqxwwght3oi5kqfnoecaoqaq&usg=aovvaw1uq-tqboiogszauksqmm-e
+2025-07-09 12:06:48,751 - INFO: [PAYMENT BLOCKED] https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://paytm.com/&ved=2ahUKEwipl7TolK-OAxVqXWwGHT3oI5kQFnoECAoQAQ&usg=AOvVaw1uq-TQbOIOGSZAUksQMm-E
+2025-07-09 12:06:49,165 - INFO: [PAYMENT DOMAIN MATCH] https://paytm.com/
+2025-07-09 12:06:49,166 - INFO: [PAYMENT BLOCKED] https://paytm.com/
+2025-07-09 12:06:49,228 - INFO: [PAYMENT DOMAIN MATCH] https://paytm.com/favicon.ico
+2025-07-09 12:06:49,229 - INFO: [PAYMENT BLOCKED] https://paytm.com/favicon.ico

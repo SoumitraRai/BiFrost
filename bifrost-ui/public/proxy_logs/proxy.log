@@ -1519,3 +1519,632 @@ ConnectionResetError: [WinError 10054] An existing connection was forcibly close
 2025-06-23 02:23:40,214 - INFO: client disconnect
 2025-06-23 02:24:03,931 - INFO: Proxy server manually stopped.
 2025-06-23 02:24:03,931 - INFO: Proxy server stopped.
+2025-07-09 11:33:29,028 - INFO: HTTPS Proxy started on 0.0.0.0:8080
+2025-07-09 11:33:29,029 - INFO: Payment filter activated
+2025-07-09 11:33:29,029 - INFO: HTTP(S) proxy listening at *:8080.
+2025-07-09 11:35:00,488 - INFO: client connect
+2025-07-09 11:35:00,546 - INFO: client connect
+2025-07-09 11:35:00,550 - INFO: server connect content-signature-2.cdn.mozilla.net:443 ([2600:1901:0:92a9::]:443)
+2025-07-09 11:35:00,567 - INFO: server connect content-signature-2.cdn.mozilla.net:443 ([2600:1901:0:92a9::]:443)
+2025-07-09 11:35:00,644 - INFO: client disconnect
+2025-07-09 11:35:00,646 - INFO: server disconnect content-signature-2.cdn.mozilla.net:443 ([2600:1901:0:92a9::]:443)
+2025-07-09 11:35:01,157 - INFO: client connect
+2025-07-09 11:35:01,196 - INFO: server connect detectportal.firefox.com:80 ([2600:1901:0:38d7::]:80)
+2025-07-09 11:35:01,234 - INFO: client connect
+2025-07-09 11:35:01,242 - INFO: client connect
+2025-07-09 11:35:01,245 - INFO: client connect
+2025-07-09 11:35:01,250 - INFO: client connect
+2025-07-09 11:35:01,263 - INFO: server connect ads.mozilla.org:443 (34.36.137.203:443)
+2025-07-09 11:35:01,280 - INFO: server connect merino.services.mozilla.com:443 (34.110.138.217:443)
+2025-07-09 11:35:01,283 - INFO: server connect merino.services.mozilla.com:443 (34.110.138.217:443)
+2025-07-09 11:35:01,382 - INFO: client connect
+2025-07-09 11:35:01,400 - INFO: server connect firefox.settings.services.mozilla.com:443 ([2600:1901:0:c47c::]:443)
+2025-07-09 11:35:01,621 - INFO: client disconnect
+2025-07-09 11:35:01,624 - INFO: server disconnect merino.services.mozilla.com:443 (34.110.138.217:443)
+2025-07-09 11:35:01,695 - INFO: client connect
+2025-07-09 11:35:01,697 - INFO: client connect
+2025-07-09 11:35:01,712 - INFO: client connect
+2025-07-09 11:35:01,713 - INFO: client connect
+2025-07-09 11:35:01,715 - INFO: client connect
+2025-07-09 11:35:01,717 - INFO: client connect
+2025-07-09 11:35:01,718 - INFO: client connect
+2025-07-09 11:35:01,719 - INFO: client connect
+2025-07-09 11:35:01,720 - INFO: client connect
+2025-07-09 11:35:01,758 - INFO: server connect firefox-settings-attachments.cdn.mozilla.net:443 ([2600:1901:0:712f::]:443)
+2025-07-09 11:35:01,761 - INFO: server connect firefox-settings-attachments.cdn.mozilla.net:443 ([2600:1901:0:712f::]:443)
+2025-07-09 11:35:01,768 - INFO: server connect img-getpocket.cdn.mozilla.net:443 ([2600:1901:0:e988::]:443)
+2025-07-09 11:35:01,769 - INFO: server connect firefox-settings-attachments.cdn.mozilla.net:443 ([2600:1901:0:712f::]:443)
+2025-07-09 11:35:01,773 - INFO: server connect img-getpocket.cdn.mozilla.net:443 ([2600:1901:0:e988::]:443)
+2025-07-09 11:35:01,776 - INFO: server connect img-getpocket.cdn.mozilla.net:443 ([2600:1901:0:e988::]:443)
+2025-07-09 11:35:01,778 - INFO: server connect img-getpocket.cdn.mozilla.net:443 ([2600:1901:0:e988::]:443)
+2025-07-09 11:35:01,779 - INFO: server connect img-getpocket.cdn.mozilla.net:443 ([2600:1901:0:e988::]:443)
+2025-07-09 11:35:01,784 - INFO: server connect img-getpocket.cdn.mozilla.net:443 ([2600:1901:0:e988::]:443)
+2025-07-09 11:35:01,791 - INFO: client connect
+2025-07-09 11:35:01,958 - INFO: server connect safebrowsing.googleapis.com:443 ([2404:6800:4002:802::200a]:443)
+2025-07-09 11:35:02,071 - INFO: client disconnect
+2025-07-09 11:35:02,081 - INFO: server disconnect img-getpocket.cdn.mozilla.net:443 ([2600:1901:0:e988::]:443)
+2025-07-09 11:35:02,087 - INFO: client disconnect
+2025-07-09 11:35:02,091 - INFO: server disconnect firefox-settings-attachments.cdn.mozilla.net:443 ([2600:1901:0:712f::]:443)
+2025-07-09 11:35:02,095 - INFO: client disconnect
+2025-07-09 11:35:02,107 - INFO: server disconnect img-getpocket.cdn.mozilla.net:443 ([2600:1901:0:e988::]:443)
+2025-07-09 11:35:02,108 - INFO: client disconnect
+2025-07-09 11:35:02,117 - INFO: server disconnect img-getpocket.cdn.mozilla.net:443 ([2600:1901:0:e988::]:443)
+2025-07-09 11:35:02,131 - INFO: client disconnect
+2025-07-09 11:35:02,144 - INFO: server disconnect img-getpocket.cdn.mozilla.net:443 ([2600:1901:0:e988::]:443)
+2025-07-09 11:35:02,174 - INFO: client disconnect
+2025-07-09 11:35:02,179 - INFO: server disconnect img-getpocket.cdn.mozilla.net:443 ([2600:1901:0:e988::]:443)
+2025-07-09 11:35:02,195 - INFO: client disconnect
+2025-07-09 11:35:02,196 - INFO: server disconnect firefox-settings-attachments.cdn.mozilla.net:443 ([2600:1901:0:712f::]:443)
+2025-07-09 11:35:02,336 - INFO: server connect firefox.settings.services.mozilla.com:443 ([2600:1901:0:c47c::]:443)
+2025-07-09 11:35:02,457 - INFO: client disconnect
+2025-07-09 11:35:02,458 - INFO: server disconnect firefox.settings.services.mozilla.com:443 ([2600:1901:0:c47c::]:443)
+2025-07-09 11:35:02,583 - INFO: client connect
+2025-07-09 11:35:02,647 - INFO: server connect push.services.mozilla.com:443 (34.107.243.93:443)
+2025-07-09 11:35:02,683 - INFO: client connect
+2025-07-09 11:35:02,701 - INFO: client disconnect
+2025-07-09 11:35:02,702 - INFO: server disconnect safebrowsing.googleapis.com:443 ([2404:6800:4002:802::200a]:443)
+2025-07-09 11:35:02,704 - INFO: client connect
+2025-07-09 11:35:02,711 - INFO: server connect firefox.settings.services.mozilla.com:443 ([2600:1901:0:c47c::]:443)
+2025-07-09 11:35:02,726 - INFO: server connect push.services.mozilla.com:443 (34.107.243.93:443)
+2025-07-09 11:35:02,756 - INFO: client disconnect
+2025-07-09 11:35:02,758 - INFO: server disconnect push.services.mozilla.com:443 (34.107.243.93:443)
+2025-07-09 11:35:02,939 - INFO: client connect
+2025-07-09 11:35:02,967 - INFO: server connect incoming.telemetry.mozilla.org:443 (34.120.208.123:443)
+2025-07-09 11:35:03,320 - INFO: client connect
+2025-07-09 11:35:03,322 - INFO: client connect
+2025-07-09 11:35:03,352 - INFO: server connect detectportal.firefox.com:80 ([2600:1901:0:38d7::]:80)
+2025-07-09 11:35:03,354 - INFO: server connect detectportal.firefox.com:80 ([2600:1901:0:38d7::]:80)
+2025-07-09 11:35:07,756 - INFO: client connect
+2025-07-09 11:35:07,782 - INFO: server connect push.services.mozilla.com:443 (34.107.243.93:443)
+2025-07-09 11:35:09,766 - INFO: client connect
+2025-07-09 11:35:09,839 - INFO: client disconnect
+2025-07-09 11:35:09,840 - INFO: error establishing server connection: client disconnected
+2025-07-09 11:35:09,898 - INFO: client connect
+2025-07-09 11:35:10,048 - INFO: server connect www.google.com:443 ([2404:6800:4002:80e::2004]:443)
+2025-07-09 11:35:10,085 - INFO: client disconnect
+2025-07-09 11:35:10,086 - INFO: server disconnect www.google.com:443 ([2404:6800:4002:80e::2004]:443)
+2025-07-09 11:35:10,137 - INFO: client connect
+2025-07-09 11:35:10,300 - INFO: server connect www.google.com:443 ([2404:6800:4002:80e::2004]:443)
+2025-07-09 11:35:10,558 - INFO: client disconnect
+2025-07-09 11:35:10,560 - INFO: server disconnect www.google.com:443 ([2404:6800:4002:80e::2004]:443)
+2025-07-09 11:35:10,620 - INFO: client connect
+2025-07-09 11:35:10,775 - INFO: server connect www.google.com:443 ([2404:6800:4002:80e::2004]:443)
+2025-07-09 11:35:14,655 - INFO: client connect
+2025-07-09 11:35:14,660 - INFO: Request: {
+  "method": "GET",
+  "url": "http://example.com/",
+  "headers": {
+    "Host": "example.com",
+    "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate",
+    "Connection": "keep-alive",
+    "Upgrade-Insecure-Requests": "1",
+    "Priority": "u=0, i"
+  },
+  "body": ""
+}
+2025-07-09 11:35:14,958 - INFO: server connect example.com:80 ([2600:1408:ec00:36::1736:7f24]:80)
+2025-07-09 11:35:15,262 - INFO: Response: {
+  "status_code": 200,
+  "url": "http://example.com/",
+  "headers": {
+    "Accept-Ranges": "bytes",
+    "Content-Type": "text/html",
+    "ETag": "\"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134\"",
+    "Last-Modified": "Mon, 13 Jan 2025 20:11:20 GMT",
+    "Vary": "Accept-Encoding",
+    "Content-Encoding": "gzip",
+    "Content-Length": "648",
+    "Cache-Control": "max-age=1643",
+    "Date": "Wed, 09 Jul 2025 06:05:16 GMT",
+    "Connection": "keep-alive"
+  },
+  "body": "<!doctype html>\n<html>\n<head>\n    <title>Example Domain</title>\n\n    <meta charset=\"utf-8\" />\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <style type=\"text/css\">\n    body {\n        background-color: #f0f0f2;\n        margin: 0;\n        padding: 0;\n        font-family: -apple-system, system-ui, BlinkMacSystemFont, \"Segoe UI\", \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n        \n    }\n    div {\n        width: 600px;\n        margin: 5em auto;\n        padding: 2em;\n        background-color: #fdfdff;\n        border-radius: 0.5em;\n        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);\n    }\n    a:link, a:visited {\n        color: #38488f;\n        text-decoration: none;\n    }\n    @media (max-width: 700px) {\n        div {\n            margin: 0 auto;\n            width: auto;\n        }\n    }\n    </style>    \n</head>\n\n<body>\n<div>\n    <h1>Example Domain</h1>\n    <p>This domain is for use in illustra"
+}
+2025-07-09 11:35:15,390 - INFO: Request: {
+  "method": "GET",
+  "url": "http://example.com/favicon.ico",
+  "headers": {
+    "Host": "example.com",
+    "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0",
+    "Accept": "image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate",
+    "Connection": "keep-alive",
+    "Referer": "http://example.com/",
+    "Priority": "u=6"
+  },
+  "body": ""
+}
+2025-07-09 11:35:15,699 - INFO: Response: {
+  "status_code": 404,
+  "url": "http://example.com/favicon.ico",
+  "headers": {
+    "Accept-Ranges": "bytes",
+    "Content-Type": "text/html",
+    "ETag": "\"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134\"",
+    "Last-Modified": "Mon, 13 Jan 2025 20:11:20 GMT",
+    "Server": "AkamaiNetStorage",
+    "Content-Length": "1256",
+    "Expires": "Wed, 09 Jul 2025 06:05:16 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store",
+    "Pragma": "no-cache",
+    "Date": "Wed, 09 Jul 2025 06:05:16 GMT",
+    "Connection": "keep-alive"
+  },
+  "body": "<!doctype html>\n<html>\n<head>\n    <title>Example Domain</title>\n\n    <meta charset=\"utf-8\" />\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <style type=\"text/css\">\n    body {\n        background-color: #f0f0f2;\n        margin: 0;\n        padding: 0;\n        font-family: -apple-system, system-ui, BlinkMacSystemFont, \"Segoe UI\", \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n        \n    }\n    div {\n        width: 600px;\n        margin: 5em auto;\n        padding: 2em;\n        background-color: #fdfdff;\n        border-radius: 0.5em;\n        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);\n    }\n    a:link, a:visited {\n        color: #38488f;\n        text-decoration: none;\n    }\n    @media (max-width: 700px) {\n        div {\n            margin: 0 auto;\n            width: auto;\n        }\n    }\n    </style>    \n</head>\n\n<body>\n<div>\n    <h1>Example Domain</h1>\n    <p>This domain is for use in illustra"
+}
+2025-07-09 11:35:29,431 - INFO: client connect
+2025-07-09 11:35:29,744 - INFO: server connect example.com:443 ([2600:1406:bc00:53::b81e:94ce]:443)
+2025-07-09 11:35:29,775 - INFO: client connect
+2025-07-09 11:35:29,790 - INFO: client connect
+2025-07-09 11:35:29,792 - INFO: client connect
+2025-07-09 11:35:29,828 - INFO: server connect services.addons.mozilla.org:443 ([2a04:4e42:400::347]:443)
+2025-07-09 11:35:29,835 - INFO: server connect normandy.cdn.mozilla.net:443 (34.49.51.44:443)
+2025-07-09 11:35:29,837 - INFO: server connect location.services.mozilla.com:443 (35.190.72.216:443)
+2025-07-09 11:35:29,954 - INFO: client connect
+2025-07-09 11:35:29,962 - INFO: client connect
+2025-07-09 11:35:29,966 - INFO: client connect
+2025-07-09 11:35:29,992 - INFO: server connect aus5.mozilla.org:443 ([2600:1901:0:5133::]:443)
+2025-07-09 11:35:30,000 - INFO: server connect classify-client.services.mozilla.com:443 (35.190.72.216:443)
+2025-07-09 11:35:30,203 - INFO: Request: {
+  "method": "GET",
+  "url": "https://example.com/",
+  "headers": {
+    "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "accept-language": "en-US,en;q=0.5",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "upgrade-insecure-requests": "1",
+    "sec-fetch-dest": "document",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "none",
+    "sec-fetch-user": "?1",
+    "priority": "u=0, i",
+    "te": "trailers"
+  },
+  "body": ""
+}
+2025-07-09 11:35:30,216 - INFO: server connect versioncheck-bg.addons.mozilla.org:443 ([2600:1901:0:d29a::]:443)
+2025-07-09 11:35:30,292 - INFO: client connect
+2025-07-09 11:35:30,336 - INFO: server connect addons.mozilla.org:443 ([2a04:4e42:600::347]:443)
+2025-07-09 11:35:30,488 - INFO: Response: {
+  "status_code": 200,
+  "url": "https://example.com/",
+  "headers": {
+    "accept-ranges": "bytes",
+    "content-type": "text/html",
+    "etag": "\"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134\"",
+    "last-modified": "Mon, 13 Jan 2025 20:11:20 GMT",
+    "vary": "Accept-Encoding",
+    "content-encoding": "gzip",
+    "content-length": "648",
+    "cache-control": "max-age=2513",
+    "date": "Wed, 09 Jul 2025 06:05:31 GMT",
+    "alt-svc": "h3=\":443\"; ma=93600,h3-29=\":443\"; ma=93600"
+  },
+  "body": "<!doctype html>\n<html>\n<head>\n    <title>Example Domain</title>\n\n    <meta charset=\"utf-8\" />\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <style type=\"text/css\">\n    body {\n        background-color: #f0f0f2;\n        margin: 0;\n        padding: 0;\n        font-family: -apple-system, system-ui, BlinkMacSystemFont, \"Segoe UI\", \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n        \n    }\n    div {\n        width: 600px;\n        margin: 5em auto;\n        padding: 2em;\n        background-color: #fdfdff;\n        border-radius: 0.5em;\n        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);\n    }\n    a:link, a:visited {\n        color: #38488f;\n        text-decoration: none;\n    }\n    @media (max-width: 700px) {\n        div {\n            margin: 0 auto;\n            width: auto;\n        }\n    }\n    </style>    \n</head>\n\n<body>\n<div>\n    <h1>Example Domain</h1>\n    <p>This domain is for use in illustra"
+}
+2025-07-09 11:35:30,627 - INFO: Request: {
+  "method": "GET",
+  "url": "https://example.com/favicon.ico",
+  "headers": {
+    "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0",
+    "accept": "image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5",
+    "accept-language": "en-US,en;q=0.5",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "referer": "https://example.com/",
+    "sec-fetch-dest": "image",
+    "sec-fetch-mode": "no-cors",
+    "sec-fetch-site": "same-origin",
+    "priority": "u=6",
+    "te": "trailers"
+  },
+  "body": ""
+}
+2025-07-09 11:35:30,903 - INFO: Response: {
+  "status_code": 404,
+  "url": "https://example.com/favicon.ico",
+  "headers": {
+    "accept-ranges": "bytes",
+    "content-type": "text/html",
+    "etag": "\"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134\"",
+    "last-modified": "Mon, 13 Jan 2025 20:11:20 GMT",
+    "server": "AkamaiNetStorage",
+    "content-length": "1256",
+    "expires": "Wed, 09 Jul 2025 06:05:32 GMT",
+    "cache-control": "max-age=0, no-cache, no-store",
+    "pragma": "no-cache",
+    "date": "Wed, 09 Jul 2025 06:05:32 GMT"
+  },
+  "body": "<!doctype html>\n<html>\n<head>\n    <title>Example Domain</title>\n\n    <meta charset=\"utf-8\" />\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <style type=\"text/css\">\n    body {\n        background-color: #f0f0f2;\n        margin: 0;\n        padding: 0;\n        font-family: -apple-system, system-ui, BlinkMacSystemFont, \"Segoe UI\", \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n        \n    }\n    div {\n        width: 600px;\n        margin: 5em auto;\n        padding: 2em;\n        background-color: #fdfdff;\n        border-radius: 0.5em;\n        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);\n    }\n    a:link, a:visited {\n        color: #38488f;\n        text-decoration: none;\n    }\n    @media (max-width: 700px) {\n        div {\n            margin: 0 auto;\n            width: auto;\n        }\n    }\n    </style>    \n</head>\n\n<body>\n<div>\n    <h1>Example Domain</h1>\n    <p>This domain is for use in illustra"
+}
+2025-07-09 11:35:35,057 - INFO: client connect
+2025-07-09 11:35:35,075 - INFO: client disconnect
+2025-07-09 11:35:35,076 - INFO: error establishing server connection: client disconnected
+2025-07-09 11:35:36,055 - INFO: client connect
+2025-07-09 11:35:36,091 - INFO: server connect www.youtube.com:443 ([2404:6800:4002:806::200e]:443)
+2025-07-09 11:35:39,050 - INFO: client connect
+2025-07-09 11:35:39,064 - INFO: client connect
+2025-07-09 11:35:39,173 - INFO: server connect fonts.googleapis.com:443 ([2404:6800:4009:82f::200a]:443)
+2025-07-09 11:35:39,209 - INFO: server connect i.ytimg.com:443 ([2404:6800:4003:c03::77]:443)
+2025-07-09 11:35:41,409 - INFO: client connect
+2025-07-09 11:35:41,418 - INFO: client connect
+2025-07-09 11:35:41,420 - INFO: client disconnect
+2025-07-09 11:35:41,423 - INFO: error establishing server connection: client disconnected
+2025-07-09 11:35:41,514 - INFO: server connect accounts.google.com:443 ([2404:6800:4003:c02::54]:443)
+2025-07-09 11:35:42,058 - INFO: client connect
+2025-07-09 11:35:42,514 - INFO: client connect
+2025-07-09 11:35:42,535 - INFO: server connect googleads.g.doubleclick.net:443 ([2404:6800:4002:827::2002]:443)
+2025-07-09 11:35:42,797 - INFO: server connect www.google.com:443 ([2404:6800:4002:80e::2004]:443)
+2025-07-09 11:35:42,974 - INFO: client connect
+2025-07-09 11:35:42,975 - INFO: client connect
+2025-07-09 11:35:43,257 - INFO: server connect rr3---sn-q4fl6ns6.googlevideo.com:443 ([2607:f8b0:4000:1::8]:443)
+2025-07-09 11:35:43,264 - INFO: server connect rr3---sn-q4fl6ns6.googlevideo.com:443 ([2607:f8b0:4000:1::8]:443)
+2025-07-09 11:35:43,462 - INFO: client connect
+2025-07-09 11:35:43,463 - INFO: client connect
+2025-07-09 11:35:43,740 - INFO: client connect
+2025-07-09 11:35:43,741 - INFO: client connect
+2025-07-09 11:35:43,742 - INFO: client connect
+2025-07-09 11:35:43,820 - INFO: server connect yt3.ggpht.com:443 ([2404:6800:4002:80d::2001]:443)
+2025-07-09 11:35:43,823 - INFO: server connect yt3.ggpht.com:443 ([2404:6800:4002:80d::2001]:443)
+2025-07-09 11:35:43,824 - INFO: server connect yt3.ggpht.com:443 ([2404:6800:4002:80d::2001]:443)
+2025-07-09 11:35:43,898 - INFO: server disconnect rr3---sn-q4fl6ns6.googlevideo.com:443 ([2607:f8b0:4000:1::8]:443)
+2025-07-09 11:35:43,904 - INFO: server disconnect rr3---sn-q4fl6ns6.googlevideo.com:443 ([2607:f8b0:4000:1::8]:443)
+2025-07-09 11:35:43,922 - INFO: client disconnect
+2025-07-09 11:35:43,935 - INFO: client disconnect
+2025-07-09 11:35:43,966 - INFO: client disconnect
+2025-07-09 11:35:43,967 - INFO: server disconnect yt3.ggpht.com:443 ([2404:6800:4002:80d::2001]:443)
+2025-07-09 11:35:43,969 - INFO: client disconnect
+2025-07-09 11:35:43,970 - INFO: server disconnect yt3.ggpht.com:443 ([2404:6800:4002:80d::2001]:443)
+2025-07-09 11:35:45,053 - INFO: client connect
+2025-07-09 11:35:45,054 - INFO: client connect
+2025-07-09 11:35:45,171 - INFO: client connect
+2025-07-09 11:35:45,241 - INFO: server connect www.google.co.in:443 ([2404:6800:4002:80f::2003]:443)
+2025-07-09 11:35:45,312 - INFO: client connect
+2025-07-09 11:35:45,314 - INFO: client connect
+2025-07-09 11:35:45,354 - INFO: server connect rr3---sn-q4fl6ns6.googlevideo.com:443 ([2607:f8b0:4000:1::8]:443)
+2025-07-09 11:35:45,361 - INFO: server connect play.google.com:443 ([2404:6800:4009:80e::200e]:443)
+2025-07-09 11:35:45,364 - INFO: server connect rr3---sn-q4fl6ns6.googlevideo.com:443 ([2607:f8b0:4000:1::8]:443)
+2025-07-09 11:35:45,370 - INFO: server connect play.google.com:443 ([2404:6800:4009:80e::200e]:443)
+2025-07-09 11:35:45,614 - INFO: client disconnect
+2025-07-09 11:35:45,615 - INFO: server disconnect play.google.com:443 ([2404:6800:4009:80e::200e]:443)
+2025-07-09 11:35:45,917 - INFO: server disconnect rr3---sn-q4fl6ns6.googlevideo.com:443 ([2607:f8b0:4000:1::8]:443)
+2025-07-09 11:35:45,919 - INFO: client disconnect
+2025-07-09 11:35:45,925 - INFO: client connect
+2025-07-09 11:35:45,946 - INFO: server disconnect rr3---sn-q4fl6ns6.googlevideo.com:443 ([2607:f8b0:4000:1::8]:443)
+2025-07-09 11:35:45,947 - INFO: client disconnect
+2025-07-09 11:35:45,953 - INFO: client connect
+2025-07-09 11:35:46,280 - INFO: server connect rr3---sn-q4fl6ns6.googlevideo.com:443 ([2607:f8b0:4000:1::8]:443)
+2025-07-09 11:35:46,283 - INFO: server connect rr3---sn-q4fl6ns6.googlevideo.com:443 ([2607:f8b0:4000:1::8]:443)
+2025-07-09 11:35:46,852 - INFO: server disconnect rr3---sn-q4fl6ns6.googlevideo.com:443 ([2607:f8b0:4000:1::8]:443)
+2025-07-09 11:35:46,854 - INFO: client disconnect
+2025-07-09 11:35:46,860 - INFO: server disconnect rr3---sn-q4fl6ns6.googlevideo.com:443 ([2607:f8b0:4000:1::8]:443)
+2025-07-09 11:35:46,861 - INFO: client disconnect
+2025-07-09 11:35:48,337 - INFO: client connect
+2025-07-09 11:35:49,437 - INFO: client disconnect
+2025-07-09 11:35:49,439 - INFO: client disconnect
+2025-07-09 11:35:49,460 - INFO: server connect rr3---sn-gwpa-a0is.googlevideo.com:443 ([2405:200:161c:1726::e]:443)
+2025-07-09 11:35:51,355 - INFO: client connect
+2025-07-09 11:35:51,418 - INFO: server connect youtube.com:443 ([2404:6800:4009:829::200e]:443)
+2025-07-09 11:35:52,302 - INFO: client connect
+2025-07-09 11:35:52,334 - INFO: server connect rr7---sn-gwpa-a0i6.googlevideo.com:443 ([2405:200:161c:1716::12]:443)
+2025-07-09 11:35:52,458 - INFO: server disconnect rr7---sn-gwpa-a0i6.googlevideo.com:443 ([2405:200:161c:1716::12]:443)
+2025-07-09 11:35:52,460 - INFO: client disconnect
+2025-07-09 11:35:52,562 - INFO: server disconnect rr3---sn-gwpa-a0is.googlevideo.com:443 ([2405:200:161c:1726::e]:443)
+2025-07-09 11:35:52,563 - INFO: client disconnect
+2025-07-09 11:35:53,185 - INFO: client connect
+2025-07-09 11:35:53,292 - INFO: server connect static.doubleclick.net:443 ([2404:6800:4002:81e::2006]:443)
+2025-07-09 11:36:03,678 - INFO: client connect
+2025-07-09 11:36:04,880 - INFO: client disconnect
+2025-07-09 11:36:04,882 - INFO: error establishing server connection: client disconnected
+2025-07-09 11:36:04,922 - INFO: client connect
+2025-07-09 11:36:04,953 - INFO: server connect rr6---sn-gwpa-qxad.googlevideo.com:443 ([2405:200:1604:1716::11]:443)
+2025-07-09 11:36:05,745 - INFO: client connect
+2025-07-09 11:36:05,746 - INFO: client connect
+2025-07-09 11:36:05,774 - INFO: client connect
+2025-07-09 11:36:05,789 - INFO: client disconnect
+2025-07-09 11:36:05,796 - INFO: error establishing server connection: client disconnected
+2025-07-09 11:36:05,805 - INFO: client connect
+2025-07-09 11:36:05,810 - INFO: server connect www.googleadservices.com:443 (142.251.223.130:443)
+2025-07-09 11:36:05,812 - INFO: server connect www.gstatic.com:443 ([2404:6800:4002:82b::2003]:443)
+2025-07-09 11:36:05,864 - INFO: server connect csp.withgoogle.com:443 ([2404:6800:4002:812::2011]:443)
+2025-07-09 11:36:06,072 - INFO: client connect
+2025-07-09 11:36:06,075 - INFO: client connect
+2025-07-09 11:36:06,163 - INFO: server connect ogads-pa.clients6.google.com:443 ([2404:6800:4009:82a::200a]:443)
+2025-07-09 11:36:06,380 - INFO: server connect ogads-pa.clients6.google.com:443 ([2404:6800:4009:82a::200a]:443)
+2025-07-09 11:36:19,776 - INFO: client connect
+2025-07-09 11:36:19,826 - INFO: server connect checkout.stripe.com:443 (199.232.20.176:443)
+2025-07-09 11:36:19,905 - INFO: client connect
+2025-07-09 11:36:20,008 - INFO: server connect stripe.com:443 (54.179.176.233:443)
+2025-07-09 11:36:21,209 - INFO: client connect
+2025-07-09 11:36:21,238 - INFO: server connect b.stripecdn.com:443 (108.158.232.90:443)
+2025-07-09 11:36:21,242 - INFO: client connect
+2025-07-09 11:36:21,243 - INFO: client connect
+2025-07-09 11:36:21,244 - INFO: client connect
+2025-07-09 11:36:21,259 - INFO: client connect
+2025-07-09 11:36:21,260 - INFO: client connect
+2025-07-09 11:36:21,262 - INFO: client connect
+2025-07-09 11:36:21,291 - INFO: server connect images.stripeassets.com:443 ([2600:9000:213c:5600:15:c47c:d00:93a1]:443)
+2025-07-09 11:36:21,293 - INFO: server connect images.stripeassets.com:443 ([2600:9000:213c:5600:15:c47c:d00:93a1]:443)
+2025-07-09 11:36:21,295 - INFO: server connect b.stripecdn.com:443 (108.158.232.72:443)
+2025-07-09 11:36:21,296 - INFO: server connect images.stripeassets.com:443 ([2600:9000:213c:d400:15:c47c:d00:93a1]:443)
+2025-07-09 11:36:21,298 - INFO: server connect images.stripeassets.com:443 ([2600:9000:213c:c800:15:c47c:d00:93a1]:443)
+2025-07-09 11:36:21,323 - INFO: server connect b.stripecdn.com:443 (108.158.232.72:443)
+2025-07-09 11:36:21,562 - INFO: client disconnect
+2025-07-09 11:36:21,563 - INFO: client disconnect
+2025-07-09 11:36:21,564 - INFO: server disconnect b.stripecdn.com:443 (108.158.232.72:443)
+2025-07-09 11:36:21,565 - INFO: server disconnect images.stripeassets.com:443 ([2600:9000:213c:d400:15:c47c:d00:93a1]:443)
+2025-07-09 11:36:21,573 - INFO: client disconnect
+2025-07-09 11:36:21,577 - INFO: server disconnect images.stripeassets.com:443 ([2600:9000:213c:5600:15:c47c:d00:93a1]:443)
+2025-07-09 11:36:21,579 - INFO: client disconnect
+2025-07-09 11:36:21,582 - INFO: server disconnect images.stripeassets.com:443 ([2600:9000:213c:5600:15:c47c:d00:93a1]:443)
+2025-07-09 11:36:23,866 - INFO: client connect
+2025-07-09 11:36:23,917 - INFO: server connect assets.stripeassets.com:443 ([2600:9000:245a:1c00:11:cbeb:7680:93a1]:443)
+2025-07-09 11:36:24,607 - INFO: client connect
+2025-07-09 11:36:24,642 - INFO: client connect
+2025-07-09 11:36:24,643 - INFO: client connect
+2025-07-09 11:36:24,645 - INFO: client connect
+2025-07-09 11:36:24,647 - INFO: client connect
+2025-07-09 11:36:24,648 - INFO: client connect
+2025-07-09 11:36:24,654 - INFO: client connect
+2025-07-09 11:36:24,656 - INFO: client connect
+2025-07-09 11:36:24,672 - INFO: client connect
+2025-07-09 11:36:24,674 - INFO: client connect
+2025-07-09 11:36:24,744 - INFO: server connect www.googletagmanager.com:443 ([2404:6800:4002:820::2008]:443)
+2025-07-09 11:36:24,746 - INFO: server connect www.googletagmanager.com:443 ([2404:6800:4002:820::2008]:443)
+2025-07-09 11:36:25,002 - INFO: server connect r.stripe.com:443 (54.187.159.182:443)
+2025-07-09 11:36:25,023 - INFO: server connect r.stripe.com:443 (54.187.159.182:443)
+2025-07-09 11:36:25,025 - INFO: server connect r.stripe.com:443 (54.187.159.182:443)
+2025-07-09 11:36:25,028 - INFO: server connect q.stripe.com:443 (54.187.159.182:443)
+2025-07-09 11:36:25,030 - INFO: server connect q.stripe.com:443 (54.187.159.182:443)
+2025-07-09 11:36:25,032 - INFO: server connect r.stripe.com:443 (54.187.159.182:443)
+2025-07-09 11:36:25,038 - INFO: server connect q.stripe.com:443 (54.187.159.182:443)
+2025-07-09 11:36:25,044 - INFO: server connect q.stripe.com:443 (54.187.159.182:443)
+2025-07-09 11:36:25,087 - INFO: client disconnect
+2025-07-09 11:36:25,089 - INFO: server disconnect www.googletagmanager.com:443 ([2404:6800:4002:820::2008]:443)
+2025-07-09 11:36:25,350 - INFO: client connect
+2025-07-09 11:36:25,352 - INFO: client connect
+2025-07-09 11:36:25,394 - INFO: client connect
+2025-07-09 11:36:25,396 - INFO: client connect
+2025-07-09 11:36:25,402 - INFO: client connect
+2025-07-09 11:36:25,403 - INFO: client connect
+2025-07-09 11:36:25,430 - INFO: client connect
+2025-07-09 11:36:25,431 - INFO: client connect
+2025-07-09 11:36:25,533 - INFO: server connect js.zi-scripts.com:443 (104.18.37.212:443)
+2025-07-09 11:36:25,538 - INFO: server connect pixel.byspotify.com:443 (34.117.162.98:443)
+2025-07-09 11:36:25,760 - INFO: client connect
+2025-07-09 11:36:25,829 - INFO: server connect js.zi-scripts.com:443 (104.18.37.212:443)
+2025-07-09 11:36:25,831 - INFO: server connect q.stripe.com:443 (54.187.119.242:443)
+2025-07-09 11:36:25,832 - INFO: server connect q.stripe.com:443 (54.187.159.182:443)
+2025-07-09 11:36:25,845 - INFO: server connect q.stripe.com:443 (54.187.119.242:443)
+2025-07-09 11:36:25,850 - INFO: server connect q.stripe.com:443 (54.186.23.98:443)
+2025-07-09 11:36:25,856 - INFO: server connect q.stripe.com:443 (54.187.159.182:443)
+2025-07-09 11:36:25,863 - INFO: server connect q.stripe.com:443 (54.186.23.98:443)
+2025-07-09 11:36:26,220 - INFO: client disconnect
+2025-07-09 11:36:26,221 - INFO: server disconnect q.stripe.com:443 (54.187.159.182:443)
+2025-07-09 11:36:26,226 - INFO: client connect
+2025-07-09 11:36:26,259 - INFO: server connect pixels.spotify.com:443 ([2600:1901:1:7c5::]:443)
+2025-07-09 11:36:26,264 - INFO: client disconnect
+2025-07-09 11:36:26,266 - INFO: server disconnect r.stripe.com:443 (54.187.159.182:443)
+2025-07-09 11:36:26,283 - INFO: client disconnect
+2025-07-09 11:36:26,284 - INFO: server disconnect r.stripe.com:443 (54.187.159.182:443)
+2025-07-09 11:36:26,315 - INFO: client disconnect
+2025-07-09 11:36:26,317 - INFO: server disconnect q.stripe.com:443 (54.187.159.182:443)
+2025-07-09 11:36:26,328 - INFO: client disconnect
+2025-07-09 11:36:26,330 - INFO: server disconnect q.stripe.com:443 (54.187.159.182:443)
+2025-07-09 11:36:26,749 - INFO: client connect
+2025-07-09 11:36:26,750 - INFO: client connect
+2025-07-09 11:36:26,948 - INFO: client disconnect
+2025-07-09 11:36:26,950 - INFO: server disconnect r.stripe.com:443 (54.187.159.182:443)
+2025-07-09 11:36:26,989 - INFO: server connect analytics.google.com:443 ([2404:6800:4002:81e::200e]:443)
+2025-07-09 11:36:27,013 - INFO: server connect stats.g.doubleclick.net:443 ([2404:6800:4003:c05::9a]:443)
+2025-07-09 11:36:27,200 - INFO: client connect
+2025-07-09 11:36:27,451 - INFO: client disconnect
+2025-07-09 11:36:27,451 - INFO: client disconnect
+2025-07-09 11:36:27,452 - INFO: client disconnect
+2025-07-09 11:36:27,453 - INFO: client disconnect
+2025-07-09 11:36:27,453 - INFO: client disconnect
+2025-07-09 11:36:27,458 - INFO: server disconnect q.stripe.com:443 (54.187.159.182:443)
+2025-07-09 11:36:27,459 - INFO: server disconnect q.stripe.com:443 (54.187.119.242:443)
+2025-07-09 11:36:27,460 - INFO: server disconnect q.stripe.com:443 (54.186.23.98:443)
+2025-07-09 11:36:27,462 - INFO: server disconnect q.stripe.com:443 (54.187.159.182:443)
+2025-07-09 11:36:27,463 - INFO: server disconnect q.stripe.com:443 (54.186.23.98:443)
+2025-07-09 11:36:27,472 - INFO: server connect ad.doubleclick.net:443 (142.251.222.102:443)
+2025-07-09 11:36:27,965 - INFO: client connect
+2025-07-09 11:36:27,993 - INFO: client connect
+2025-07-09 11:36:27,995 - INFO: client connect
+2025-07-09 11:36:27,997 - INFO: client connect
+2025-07-09 11:36:27,998 - INFO: client connect
+2025-07-09 11:36:27,999 - INFO: client connect
+2025-07-09 11:36:28,000 - INFO: client connect
+2025-07-09 11:36:28,001 - INFO: client connect
+2025-07-09 11:36:28,001 - INFO: client connect
+2025-07-09 11:36:28,008 - INFO: client connect
+2025-07-09 11:36:28,009 - INFO: client connect
+2025-07-09 11:36:28,149 - INFO: server connect adservice.google.com:443 ([2404:6800:4009:828::2002]:443)
+2025-07-09 11:36:28,176 - INFO: server connect tag.demandbase.com:443 (18.164.246.121:443)
+2025-07-09 11:36:28,185 - INFO: server connect px.ads.linkedin.com:443 ([2620:1ec:50::12]:443)
+2025-07-09 11:36:28,194 - INFO: server connect munchkin.marketo.net:443 (104.108.232.109:443)
+2025-07-09 11:36:28,196 - INFO: server connect static.ads-twitter.com:443 (199.232.20.157:443)
+2025-07-09 11:36:28,218 - INFO: server connect www.facebook.com:443 ([2a03:2880:f349:1:face:b00c:0:25de]:443)
+2025-07-09 11:36:28,223 - INFO: server connect ws.zoominfo.com:443 ([2606:4700:90c2:4ef4:2f0c:b62:6810:752b]:443)
+2025-07-09 11:36:28,230 - INFO: server connect www.google-analytics.com:443 ([2404:6800:4009:830::200e]:443)
+2025-07-09 11:36:28,468 - INFO: client connect
+2025-07-09 11:36:28,470 - INFO: client connect
+2025-07-09 11:36:28,481 - INFO: server connect q.quora.com:443 (162.159.153.247:443)
+2025-07-09 11:36:28,514 - INFO: server connect b91.yahoo.co.jp:443 (182.22.30.204:443)
+2025-07-09 11:36:28,561 - INFO: client connect
+2025-07-09 11:36:28,710 - INFO: server connect api.company-target.com:443 (18.164.217.13:443)
+2025-07-09 11:36:28,737 - INFO: server connect id.rlcdn.com:443 (35.244.154.8:443)
+2025-07-09 11:36:28,740 - INFO: server connect s.company-target.com:443 (34.96.71.22:443)
+2025-07-09 11:36:29,017 - INFO: server connect ws.zoominfo.com:443 ([2606:4700:90c2:4ef4:2f0c:b62:6810:752b]:443)
+2025-07-09 11:36:29,165 - INFO: client connect
+2025-07-09 11:36:29,262 - INFO: server connect tag-logger.demandbase.com:443 ([2600:9000:256c:6200:1d:8d6d:3b40:93a1]:443)
+2025-07-09 11:36:29,369 - INFO: server disconnect b91.yahoo.co.jp:443 (182.22.30.204:443)
+2025-07-09 11:36:29,370 - INFO: client disconnect
+2025-07-09 11:36:29,394 - INFO: client connect
+2025-07-09 11:36:29,395 - INFO: client connect
+2025-07-09 11:36:29,396 - INFO: client connect
+2025-07-09 11:36:29,434 - INFO: server connect dsum-sec.casalemedia.com:443 (104.18.26.193:443)
+2025-07-09 11:36:29,663 - INFO: server connect partners.tremorhub.com:443 ([2600:1f10:4ce4:4a02:9180:81fb:4ab8:f39b]:443)
+2025-07-09 11:36:29,696 - INFO: server connect pixel.rubiconproject.com:443 (69.173.144.165:443)
+2025-07-09 11:36:29,756 - INFO: client connect
+2025-07-09 11:36:29,789 - INFO: server connect segments.company-target.com:443 (18.164.237.81:443)
+2025-07-09 11:36:53,772 - INFO: client connect
+2025-07-09 11:36:53,775 - INFO: client connect
+2025-07-09 11:36:53,830 - INFO: server connect t.co:443 (162.159.140.229:443)
+2025-07-09 11:36:53,834 - INFO: server connect analytics.twitter.com:443 (162.159.140.229:443)
+2025-07-09 11:36:57,636 - INFO: client connect
+2025-07-09 11:36:57,640 - INFO: client connect
+2025-07-09 11:36:57,641 - INFO: client connect
+2025-07-09 11:36:57,696 - INFO: server connect encrypted-tbn0.gstatic.com:443 ([2404:6800:4009:807::200e]:443)
+2025-07-09 11:36:57,698 - INFO: server connect encrypted-tbn0.gstatic.com:443 ([2404:6800:4009:807::200e]:443)
+2025-07-09 11:36:57,703 - INFO: server connect encrypted-tbn0.gstatic.com:443 ([2404:6800:4009:807::200e]:443)
+2025-07-09 11:36:57,835 - INFO: client disconnect
+2025-07-09 11:36:57,836 - INFO: server disconnect encrypted-tbn0.gstatic.com:443 ([2404:6800:4009:807::200e]:443)
+2025-07-09 11:36:57,850 - INFO: client disconnect
+2025-07-09 11:36:57,851 - INFO: server disconnect encrypted-tbn0.gstatic.com:443 ([2404:6800:4009:807::200e]:443)
+2025-07-09 11:36:59,190 - INFO: client connect
+2025-07-09 11:36:59,232 - INFO: server connect lh3.googleusercontent.com:443 ([2404:6800:4002:80d::2001]:443)
+2025-07-09 11:37:01,315 - INFO: client connect
+2025-07-09 11:37:01,473 - INFO: server connect paypal.com:443 (162.159.141.96:443)
+2025-07-09 11:37:01,554 - INFO: client connect
+2025-07-09 11:37:02,827 - INFO: server disconnect pixel.rubiconproject.com:443 (69.173.144.165:443)
+2025-07-09 11:37:06,858 - INFO: server connect www.paypal.com:443 (199.232.21.21:443)
+2025-07-09 11:37:07,706 - INFO: client connect
+2025-07-09 11:37:07,711 - INFO: client connect
+2025-07-09 11:37:07,712 - INFO: client connect
+2025-07-09 11:37:07,713 - INFO: client connect
+2025-07-09 11:37:07,714 - INFO: client connect
+2025-07-09 11:37:07,719 - INFO: client connect
+2025-07-09 11:37:07,722 - INFO: client connect
+2025-07-09 11:37:07,723 - INFO: client connect
+2025-07-09 11:37:07,724 - INFO: client connect
+2025-07-09 11:37:07,725 - INFO: client connect
+2025-07-09 11:37:07,736 - INFO: client connect
+2025-07-09 11:37:07,738 - INFO: client connect
+2025-07-09 11:37:07,794 - INFO: server connect www.paypalobjects.com:443 (104.18.34.93:443)
+2025-07-09 11:37:07,797 - INFO: server connect www.paypalobjects.com:443 (104.18.34.93:443)
+2025-07-09 11:37:07,798 - INFO: server connect www.paypalobjects.com:443 (104.18.34.93:443)
+2025-07-09 11:37:07,800 - INFO: server connect www.paypalobjects.com:443 (172.64.153.163:443)
+2025-07-09 11:37:07,801 - INFO: server connect www.paypalobjects.com:443 (104.18.34.93:443)
+2025-07-09 11:37:07,810 - INFO: server connect www.paypalobjects.com:443 (104.18.34.93:443)
+2025-07-09 11:37:07,811 - INFO: server connect www.paypalobjects.com:443 (104.18.34.93:443)
+2025-07-09 11:37:07,812 - INFO: server connect www.paypalobjects.com:443 (172.64.153.163:443)
+2025-07-09 11:37:07,813 - INFO: server connect www.paypalobjects.com:443 (172.64.153.163:443)
+2025-07-09 11:37:07,817 - INFO: server connect www.paypalobjects.com:443 (104.18.34.93:443)
+2025-07-09 11:37:07,818 - INFO: server connect www.paypalobjects.com:443 (104.18.34.93:443)
+2025-07-09 11:37:07,819 - INFO: server connect www.paypalobjects.com:443 (104.18.34.93:443)
+2025-07-09 11:37:08,223 - INFO: client disconnect
+2025-07-09 11:37:08,224 - INFO: client disconnect
+2025-07-09 11:37:08,241 - INFO: server disconnect www.paypalobjects.com:443 (104.18.34.93:443)
+2025-07-09 11:37:08,242 - INFO: server disconnect www.paypalobjects.com:443 (104.18.34.93:443)
+2025-07-09 11:37:08,263 - INFO: client disconnect
+2025-07-09 11:37:08,268 - INFO: server disconnect www.paypalobjects.com:443 (104.18.34.93:443)
+2025-07-09 11:37:08,269 - INFO: client disconnect
+2025-07-09 11:37:08,273 - INFO: server disconnect www.paypalobjects.com:443 (172.64.153.163:443)
+2025-07-09 11:37:08,273 - INFO: client disconnect
+2025-07-09 11:37:08,277 - INFO: server disconnect www.paypalobjects.com:443 (172.64.153.163:443)
+2025-07-09 11:37:08,278 - INFO: client disconnect
+2025-07-09 11:37:08,279 - INFO: client disconnect
+2025-07-09 11:37:08,281 - INFO: server disconnect www.paypalobjects.com:443 (104.18.34.93:443)
+2025-07-09 11:37:08,283 - INFO: server disconnect www.paypalobjects.com:443 (104.18.34.93:443)
+2025-07-09 11:37:08,285 - INFO: client disconnect
+2025-07-09 11:37:08,287 - INFO: server disconnect www.paypalobjects.com:443 (104.18.34.93:443)
+2025-07-09 11:37:08,374 - INFO: client disconnect
+2025-07-09 11:37:08,376 - INFO: server disconnect www.paypalobjects.com:443 (104.18.34.93:443)
+2025-07-09 11:37:08,491 - INFO: client disconnect
+2025-07-09 11:37:08,493 - INFO: server disconnect www.paypalobjects.com:443 (104.18.34.93:443)
+2025-07-09 11:37:08,741 - INFO: client connect
+2025-07-09 11:37:08,803 - INFO: server connect browser-intake-us5-datadoghq.com:443 ([2600:1901:0:c072::]:443)
+2025-07-09 11:37:09,692 - INFO: client connect
+2025-07-09 11:37:09,767 - INFO: client connect
+2025-07-09 11:37:09,801 - INFO: client connect
+2025-07-09 11:37:09,831 - INFO: server connect www.recaptcha.net:443 ([2404:6800:4002:813::2003]:443)
+2025-07-09 11:37:09,978 - INFO: server connect t.paypal.com:443 (199.232.23.1:443)
+2025-07-09 11:37:09,980 - INFO: server connect t.paypal.com:443 (199.232.23.1:443)
+2025-07-09 11:37:10,435 - INFO: client disconnect
+2025-07-09 11:37:10,437 - INFO: server disconnect t.paypal.com:443 (199.232.23.1:443)
+2025-07-09 11:37:10,974 - INFO: client connect
+2025-07-09 11:37:10,976 - INFO: client connect
+2025-07-09 11:37:11,009 - INFO: server connect fonts.gstatic.com:443 ([2404:6800:4002:812::2003]:443)
+2025-07-09 11:37:11,011 - INFO: server connect fonts.gstatic.com:443 ([2404:6800:4002:812::2003]:443)
+2025-07-09 11:37:11,102 - INFO: client disconnect
+2025-07-09 11:37:11,103 - INFO: server disconnect fonts.gstatic.com:443 ([2404:6800:4002:812::2003]:443)
+2025-07-09 11:37:12,181 - INFO: client disconnect
+2025-07-09 11:37:12,182 - INFO: server disconnect example.com:80 ([2600:1408:ec00:36::1736:7f24]:80)
+2025-07-09 11:37:32,366 - INFO: server disconnect example.com:443 ([2600:1406:bc00:53::b81e:94ce]:443)
+2025-07-09 11:37:39,997 - INFO: server disconnect stripe.com:443 (54.179.176.233:443)
+2025-07-09 11:37:51,729 - INFO: Proxy server manually stopped.
+2025-07-09 11:37:51,730 - INFO: Proxy server stopped.
+2025-07-09 12:06:07,016 - INFO: HTTPS Proxy started on 0.0.0.0:8080
+2025-07-09 12:06:07,017 - INFO: Payment filter activated
+2025-07-09 12:06:07,018 - INFO: HTTP(S) proxy listening at *:8080.
+2025-07-09 12:06:37,812 - INFO: client connect
+2025-07-09 12:06:37,909 - INFO: server connect incoming.telemetry.mozilla.org:443 (34.120.208.123:443)
+2025-07-09 12:06:37,958 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/baseline/1/64405734-403e-4008-be62-1895e1dc62db
+2025-07-09 12:06:37,958 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/baseline/1/64405734-403e-4008-be62-1895e1dc62db
+2025-07-09 12:06:40,013 - INFO: client connect
+2025-07-09 12:06:40,059 - INFO: server connect www.paypalobjects.com:443 (199.232.23.1:443)
+2025-07-09 12:06:40,100 - INFO: [PAYMENT KEYWORD MATCH] https://www.paypalobjects.com/marketing/web/us/en/rebrand/pictograms/personal-how-it-works.svg
+2025-07-09 12:06:40,101 - INFO: [PAYMENT BLOCKED] https://www.paypalobjects.com/marketing/web/US/en/rebrand/pictograms/personal-how-it-works.svg
+2025-07-09 12:06:40,102 - INFO: [PAYMENT KEYWORD MATCH] https://www.paypalobjects.com/marketing/web/us/en/rebrand/pictograms/personal-app.svg
+2025-07-09 12:06:40,103 - INFO: [PAYMENT BLOCKED] https://www.paypalobjects.com/marketing/web/US/en/rebrand/pictograms/personal-app.svg
+2025-07-09 12:06:40,105 - INFO: [PAYMENT KEYWORD MATCH] https://www.paypalobjects.com/marketing/web/us/en/rebrand/pictograms/protection-blue.svg
+2025-07-09 12:06:40,106 - INFO: [PAYMENT BLOCKED] https://www.paypalobjects.com/marketing/web/US/en/rebrand/pictograms/protection-blue.svg
+2025-07-09 12:06:41,673 - INFO: client connect
+2025-07-09 12:06:41,700 - INFO: server connect img-getpocket.cdn.mozilla.net:443 ([2600:1901:0:e988::]:443)
+2025-07-09 12:06:42,500 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/801e0606-4f23-45a8-b8eb-82062db82539
+2025-07-09 12:06:42,500 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/801e0606-4f23-45a8-b8eb-82062db82539
+2025-07-09 12:06:43,139 - INFO: client connect
+2025-07-09 12:06:43,193 - INFO: server connect www.google.com:443 ([2404:6800:4009:80c::2004]:443)
+2025-07-09 12:06:44,881 - INFO: client connect
+2025-07-09 12:06:44,914 - INFO: server connect encrypted-tbn0.gstatic.com:443 ([2404:6800:4002:808::200e]:443)
+2025-07-09 12:06:46,641 - INFO: client connect
+2025-07-09 12:06:46,696 - INFO: server connect www.google.com:443 ([2404:6800:4009:80c::2004]:443)
+2025-07-09 12:06:47,458 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/ac306aeb-3bef-4af2-a2be-bc9586426770
+2025-07-09 12:06:47,458 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/ac306aeb-3bef-4af2-a2be-bc9586426770
+2025-07-09 12:06:47,479 - INFO: client connect
+2025-07-09 12:06:47,490 - INFO: client connect
+2025-07-09 12:06:47,495 - INFO: client connect
+2025-07-09 12:06:47,668 - INFO: server connect www.googleadservices.com:443 (142.251.43.98:443)
+2025-07-09 12:06:47,741 - INFO: client connect
+2025-07-09 12:06:47,762 - INFO: client disconnect
+2025-07-09 12:06:47,762 - INFO: error establishing server connection: client disconnected
+2025-07-09 12:06:47,819 - INFO: client connect
+2025-07-09 12:06:48,110 - INFO: client connect
+2025-07-09 12:06:48,111 - INFO: client disconnect
+2025-07-09 12:06:48,181 - INFO: server connect csp.withgoogle.com:443 ([2404:6800:4002:829::2011]:443)
+2025-07-09 12:06:48,183 - INFO: server connect ogads-pa.clients6.google.com:443 ([2404:6800:4002:80d::200a]:443)
+2025-07-09 12:06:48,228 - INFO: [PAYMENT KEYWORD MATCH] https://csp.withgoogle.com/csp/gws/fff
+2025-07-09 12:06:48,229 - INFO: [PAYMENT BLOCKED] https://csp.withgoogle.com/csp/gws/fff
+2025-07-09 12:06:48,244 - INFO: client connect
+2025-07-09 12:06:48,245 - INFO: client connect
+2025-07-09 12:06:48,261 - INFO: client disconnect
+2025-07-09 12:06:48,262 - INFO: client disconnect
+2025-07-09 12:06:48,262 - INFO: error establishing server connection: client disconnected
+2025-07-09 12:06:48,264 - INFO: error establishing server connection: client disconnected
+2025-07-09 12:06:48,750 - INFO: [PAYMENT DOMAIN MATCH] https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://paytm.com/&ved=2ahukewipl7tolk-oaxvqxwwght3oi5kqfnoecaoqaq&usg=aovvaw1uq-tqboiogszauksqmm-e
+2025-07-09 12:06:48,751 - INFO: [PAYMENT BLOCKED] https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://paytm.com/&ved=2ahUKEwipl7TolK-OAxVqXWwGHT3oI5kQFnoECAoQAQ&usg=AOvVaw1uq-TQbOIOGSZAUksQMm-E
+2025-07-09 12:06:48,869 - INFO: client connect
+2025-07-09 12:06:48,899 - INFO: server connect play.google.com:443 ([2404:6800:4002:807::200e]:443)
+2025-07-09 12:06:48,919 - INFO: client connect
+2025-07-09 12:06:48,920 - INFO: client connect
+2025-07-09 12:06:48,936 - INFO: client disconnect
+2025-07-09 12:06:48,937 - INFO: server disconnect play.google.com:443 ([2404:6800:4002:807::200e]:443)
+2025-07-09 12:06:49,099 - INFO: server connect www.google.com:443 ([2404:6800:4009:80c::2004]:443)
+2025-07-09 12:06:49,100 - INFO: server connect paytm.com:443 (172.65.64.51:443)
+2025-07-09 12:06:49,103 - INFO: client disconnect
+2025-07-09 12:06:49,104 - INFO: server disconnect www.google.com:443 ([2404:6800:4009:80c::2004]:443)
+2025-07-09 12:06:49,165 - INFO: [PAYMENT DOMAIN MATCH] https://paytm.com/
+2025-07-09 12:06:49,166 - INFO: [PAYMENT BLOCKED] https://paytm.com/
+2025-07-09 12:06:49,220 - INFO: client connect
+2025-07-09 12:06:49,228 - INFO: [PAYMENT DOMAIN MATCH] https://paytm.com/favicon.ico
+2025-07-09 12:06:49,229 - INFO: [PAYMENT BLOCKED] https://paytm.com/favicon.ico
+2025-07-09 12:06:49,353 - INFO: server connect play.google.com:443 ([2404:6800:4002:807::200e]:443)
+2025-07-09 12:06:52,494 - INFO: client disconnect
+2025-07-09 12:08:23,739 - INFO: Proxy server manually stopped.
+2025-07-09 12:08:23,740 - INFO: Proxy server stopped.
