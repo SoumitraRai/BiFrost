@@ -62,7 +62,8 @@ class PaymentFilter:
 
         # Setup logger for payment filter
         self.payment_logger = logging.getLogger("payment_filter")
-        self.payment_logger.setLevel(logging.INFO)
+        # Set to DEBUG level to capture all the detailed logs we've added
+        self.payment_logger.setLevel(logging.DEBUG)
 
         # Configure handlers only if they haven't been added already
         if not self.payment_logger.handlers:
@@ -85,20 +86,22 @@ class PaymentFilter:
         try:
             url = flow.request.pretty_url.lower()
             headers = flow.request.headers
-            content = flow.request.get_text().lower() if flow.request.content else ""
+            content = flow.request.get_text()
+            if content:
+                content = str(content).lower()
+            else:
+                content = ""
 
             # Check if the URL matches any payment domains
             if any(domain in url for domain in self.config.payment_domains):
                 return True
 
             # Combine content and headers for keyword searching
-            combined_text = content + " " + " ".join(f"{k.lower()}:{v.lower()}" for k, v in headers.items())
+            combined_text = content + " " + " ".join(f"{str(k).lower()}:{str(v).lower()}" for k, v in headers.items())
             if any(keyword in combined_text for keyword in self.config.payment_keywords):
                 return True
 
-            # If we get here, it's not a payment request
             return False
-
         except Exception as e:
             self.payment_logger.error(f"[Detection Error in is_payment_request] {e}")
             return False
@@ -112,11 +115,12 @@ class PaymentFilter:
             
     def block_request(self, flow):
         """Block a payment request by returning a custom error page"""
-        flow.response = http.Response.make(
-            403,  # Forbidden status code
-            b"<html><body><h1>Payment Blocked</h1><p>This payment request has been blocked by BiFrost Proxy.</p></body></html>",
-            {"Content-Type": "text/html"}
-        )
+        if flow:
+            flow.response = http.Response.make(
+                403,
+                b"<html><body><h1>Payment Blocked</h1><p>This payment request has been blocked by BiFrost Proxy for your safety.</p></body></html>",
+                {"Content-Type": "text/html"}
+            )
 
     def handle_request_with_fallback(self, flow):
         """Handle a request with fallback behavior when approval service is unavailable"""
@@ -162,8 +166,8 @@ class PaymentFilter:
         
         return None
 
-    def cache_decision(self, flow, decision, ttl=3600):
-        """Cache a decision for similar requests"""
+    def cache_decision(self, flow, decision, ttl=120):
+        """Cache a decision for similar requests for 2 minutes"""
         if not self.redis_available or not self.redis_client:
             return
             
@@ -202,30 +206,33 @@ class PaymentFilter:
         Called when a client request is intercepted.
         This hook is used to detect and handle payment requests.
         """
+        import threading
         # Skip if flow is already being processed
         if hasattr(flow, "payment_intercepted") and flow.payment_intercepted:
             return
-            
+
         # Check if this is a payment request
         if self.is_payment_request(flow):
             flow.payment_intercepted = True
-            
-            # Log the intercepted payment request
             self.payment_logger.info(f"[Payment Detected] {flow.request.url}")
-            
-            # 1. Check cached decision first
+            self.payment_logger.debug(f"[DEBUG] Flow ID: {flow.id}, URL: {flow.request.url}")
+
+            # Check for cached decision first
             cached_decision = self.get_cached_decision(flow)
             if cached_decision:
                 self.payment_logger.info(f"[Cached Decision] {cached_decision} for {flow.request.url}")
                 if cached_decision == "deny":
-                    # Block immediately based on cached decision
                     self.block_request(flow)
+                elif cached_decision == "approve":
+                    # Let the request go through
+                    pass
+                self.payment_logger.debug(f"[DEBUG] Returning on cached decision: {cached_decision}")
                 return
-                
-            # 2. If no cached decision, check if approval service is available
+
+            # If approval service is available, intercept the request for approval
             if self.check_approval_service_health():
                 try:
-                    # Prepare flow data to send to approval mechanism
+                    # Send flow data to approval mechanism
                     flow_data = {
                         "id": flow.id,
                         "url": flow.request.url,
@@ -233,28 +240,27 @@ class PaymentFilter:
                         "headers": dict(flow.request.headers),
                         "timestamp": time.time()
                     }
-                    
-                    # Send to approval mechanism
-                    result = self.send_to_approval_mechanism(flow_data)
-                    
-                    # Block the request while waiting for approval
+                    self.send_to_approval_mechanism(flow_data)
+
+                    # Intercept the flow so the browser keeps loading
+                    self.payment_logger.info(f"[INTERCEPT] Intercepting flow {flow.id} for approval")
                     flow.intercept()
-                    
-                    # Store the flow ID for tracking
+
+                    # Store the flow for later reference
                     self.pending_flows[flow.id] = flow
-                    
-                    # Start a background task to check for decision
-                    self.check_for_decision(flow.id)
-                    
+
+                    # Start a background thread to wait for decision
+                    self.payment_logger.info(f"[THREAD] Starting approval wait thread for {flow.id}")
+                    thread = threading.Thread(target=self.wait_for_approval, args=(flow.id,), daemon=True)
+                    thread.start()
+                    self.payment_logger.debug(f"[DEBUG] Thread started: {thread.is_alive()}")
                 except Exception as e:
                     self.payment_logger.error(f"[Approval Error] {e}")
-                    # Fallback to blocking on error (safer option)
                     self.block_request(flow)
             else:
-                # Approval service is not available, use fallback behavior
                 self.payment_logger.warning(f"[Approval Service Unavailable] Blocking payment request: {flow.request.url}")
                 self.block_request(flow)
-                
+
     def response(self, flow):
         """
         Called when a server response is intercepted.
@@ -270,50 +276,85 @@ class PaymentFilter:
             {"Content-Type": "text/html"}
         )
         
-    def check_for_decision(self, flow_id):
+    def wait_for_approval(self, flow_id):
         """
-        Check for a decision from the approval mechanism.
-        This can be implemented as a non-blocking background task.
+        Wait for approval or timeout (60s) for a payment request.
+        If approved, create a response that mimics the original request going through.
         """
-        try:
-            # Try to get the flow
-            if flow_id not in self.pending_flows:
-                return
-                
-            flow = self.pending_flows[flow_id]
+        timeout = 60
+        start_time = time.time()
+        flow = self.pending_flows.get(flow_id)
+        
+        if not flow:
+            self.payment_logger.error(f"[CRITICAL] Flow {flow_id} not found in pending_flows!")
+            return
             
-            # Get decision (blocking call)
-            response = requests.get(f"{self.config.approval_url}/wait_decision/{flow_id}", timeout=35)
-            
-            if response.status_code == 200:
-                decision = response.json().get("decision")
+        self.payment_logger.debug(f"[DEBUG] Starting approval wait for flow {flow_id}")
+        
+        while flow and time.time() - start_time < timeout:
+            try:
+                response = requests.get(f"{self.config.approval_url}/decision/{flow_id}", timeout=2)
+                self.payment_logger.debug(f"[DEBUG] Approval poll response: {response.status_code}")
                 
-                if decision == "approve":
-                    # Allow the request to continue
-                    if hasattr(flow, "intercepted") and flow.intercepted:
-                        flow.resume()
-                    self.cache_decision(flow, "approve")
-                    self.payment_logger.info(f"[Payment Approved] {flow.request.url}")
-                else:
-                    # Block the request
-                    self.block_request(flow)
-                    self.cache_decision(flow, "deny")
-                    self.payment_logger.info(f"[Payment Denied] {flow.request.url}")
-            else:
-                # Default to blocking on error
-                self.block_request(flow)
-                self.payment_logger.warning(f"[Decision Error] Status {response.status_code} for {flow_id}")
-                     # Clean up
+                if response.status_code == 200:
+                    decision_data = response.json()
+                    decision = decision_data.get("decision")
+                    self.payment_logger.debug(f"[DEBUG] Decision received: {decision}")
+                    
+                    if decision == "approve":
+                        self.payment_logger.info(f"[APPROVE] Approved flow {flow_id}")
+                        
+                        # Instead of trying to resume an already-blocked flow, 
+                        # we'll modify the response to indicate approval
+                        url = getattr(getattr(flow, 'request', None), 'url', flow_id)
+                        self.payment_logger.info(f"[Payment Approved] {url}")
+                        
+                        # Save this decision for future requests
+                        self.cache_decision(flow, "approve")
+                        
+                        # This will allow the user to retry the request now that it's in the cache as approved
+                        flow.response = http.Response.make(
+                            200,
+                            b"<html><body><h1>Payment Approved</h1><p>This payment request has been approved. Please refresh or try again.</p></body></html>",
+                            {"Content-Type": "text/html"}
+                        )
+                        break
+                        
+                    elif decision == "deny":
+                        self.payment_logger.info(f"[BLOCK] Denying flow {flow_id}")
+                        # Flow is already blocked, but we'll update the response message
+                        flow.response = http.Response.make(
+                            403,
+                            b"<html><body><h1>Payment Denied</h1><p>This payment request has been denied by the administrator.</p></body></html>",
+                            {"Content-Type": "text/html"}
+                        )
+                        self.cache_decision(flow, "deny")
+                        url = getattr(getattr(flow, 'request', None), 'url', flow_id)
+                        self.payment_logger.info(f"[Payment Denied] {url}")
+                        break
+            except Exception as e:
+                self.payment_logger.error(f"[Approval Poll Error] {e} for {flow_id}")
+            
+            time.sleep(1)
+            
+        else:
+            # Timeout reached, make sure the request is blocked with a timeout message
+            self.payment_logger.warning(f"[Timeout] Approval wait timed out for flow {flow_id}")
+            
+            # Flow is already blocked, but we'll update the response message
+            flow.response = http.Response.make(
+                403,
+                b"<html><body><h1>Payment Timeout</h1><p>This payment request timed out waiting for approval.</p></body></html>",
+                {"Content-Type": "text/html"}
+            )
+            
+            url = getattr(getattr(flow, 'request', None), 'url', flow_id)
+            self.payment_logger.warning(f"[Approval Timeout] Payment request timed out for {url}")
+            
+        # Clean up
         if flow_id in self.pending_flows:
+            self.payment_logger.debug(f"[DEBUG] Removing flow {flow_id} from pending_flows")
             del self.pending_flows[flow_id]
-                
-        except Exception as e:
-            self.payment_logger.error(f"[Decision Error] {e} for {flow_id}")
-            # Try to get the flow and block it
-            if flow_id in self.pending_flows:
-                flow = self.pending_flows[flow_id]
-                self.block_request(flow)
-                del self.pending_flows[flow_id]
 
 
 # Create a default instance of the filter that can be used as an addon
