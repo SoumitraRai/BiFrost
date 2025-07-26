@@ -1,1 +1,259 @@
-paytm.com
+paytm.com2025-07-09 12:06:06,996 - INFO: [PAYMENT FILTER] Initialized and ready
+2025-07-09 12:06:37,958 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/baseline/1/64405734-403e-4008-be62-1895e1dc62db
+2025-07-09 12:06:37,958 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/baseline/1/64405734-403e-4008-be62-1895e1dc62db
+2025-07-09 12:06:40,100 - INFO: [PAYMENT KEYWORD MATCH] https://www.paypalobjects.com/marketing/web/us/en/rebrand/pictograms/personal-how-it-works.svg
+2025-07-09 12:06:40,101 - INFO: [PAYMENT BLOCKED] https://www.paypalobjects.com/marketing/web/US/en/rebrand/pictograms/personal-how-it-works.svg
+2025-07-09 12:06:40,102 - INFO: [PAYMENT KEYWORD MATCH] https://www.paypalobjects.com/marketing/web/us/en/rebrand/pictograms/personal-app.svg
+2025-07-09 12:06:40,103 - INFO: [PAYMENT BLOCKED] https://www.paypalobjects.com/marketing/web/US/en/rebrand/pictograms/personal-app.svg
+2025-07-09 12:06:40,105 - INFO: [PAYMENT KEYWORD MATCH] https://www.paypalobjects.com/marketing/web/us/en/rebrand/pictograms/protection-blue.svg
+2025-07-09 12:06:40,106 - INFO: [PAYMENT BLOCKED] https://www.paypalobjects.com/marketing/web/US/en/rebrand/pictograms/protection-blue.svg
+2025-07-09 12:06:42,500 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/801e0606-4f23-45a8-b8eb-82062db82539
+2025-07-09 12:06:42,500 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/801e0606-4f23-45a8-b8eb-82062db82539
+2025-07-09 12:06:47,458 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/ac306aeb-3bef-4af2-a2be-bc9586426770
+2025-07-09 12:06:47,458 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/ac306aeb-3bef-4af2-a2be-bc9586426770
+2025-07-09 12:06:48,228 - INFO: [PAYMENT KEYWORD MATCH] https://csp.withgoogle.com/csp/gws/fff
+2025-07-09 12:06:48,229 - INFO: [PAYMENT BLOCKED] https://csp.withgoogle.com/csp/gws/fff
+2025-07-09 12:06:48,750 - INFO: [PAYMENT DOMAIN MATCH] https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://paytm.com/&ved=2ahukewipl7tolk-oaxvqxwwght3oi5kqfnoecaoqaq&usg=aovvaw1uq-tqboiogszauksqmm-e
+2025-07-09 12:06:48,751 - INFO: [PAYMENT BLOCKED] https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://paytm.com/&ved=2ahUKEwipl7TolK-OAxVqXWwGHT3oI5kQFnoECAoQAQ&usg=AOvVaw1uq-TQbOIOGSZAUksQMm-E
+2025-07-09 12:06:49,165 - INFO: [PAYMENT DOMAIN MATCH] https://paytm.com/
+2025-07-09 12:06:49,166 - INFO: [PAYMENT BLOCKED] https://paytm.com/
+2025-07-09 12:06:49,228 - INFO: [PAYMENT DOMAIN MATCH] https://paytm.com/favicon.ico
+2025-07-09 12:06:49,229 - INFO: [PAYMENT BLOCKED] https://paytm.com/favicon.ico
+2025-07-22 13:13:13,024 - INFO: [PAYMENT FILTER] Initialized and ready
+2025-07-22 13:13:45,642 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/events/1/97e88c45-6198-4158-b988-9da040b5fdaa
+2025-07-22 13:13:45,642 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/events/1/97e88c45-6198-4158-b988-9da040b5fdaa
+2025-07-22 13:13:45,667 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/metrics/1/6acb87da-3a97-4b77-8a49-7c83387f58a6
+2025-07-22 13:13:45,668 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/metrics/1/6acb87da-3a97-4b77-8a49-7c83387f58a6
+2025-07-22 13:13:45,682 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/539a8426-8bdf-43f5-bec1-806b1c9a0a03
+2025-07-22 13:13:45,682 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/539a8426-8bdf-43f5-bec1-806b1c9a0a03
+2025-07-22 13:13:45,694 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/use-counters/1/551377bd-312b-439f-b0df-62abc1dce3cd
+2025-07-22 13:13:45,694 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/use-counters/1/551377bd-312b-439f-b0df-62abc1dce3cd
+2025-07-22 13:13:46,349 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/nimbus-targeting-context/1/18e85581-2455-4cc1-9c94-ebf1d3a70f5d
+2025-07-22 13:13:46,350 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/nimbus-targeting-context/1/18e85581-2455-4cc1-9c94-ebf1d3a70f5d
+2025-07-22 13:13:46,353 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/baseline/1/60c77ba5-b269-4b51-a5b5-073d343aa391
+2025-07-22 13:13:46,353 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/baseline/1/60c77ba5-b269-4b51-a5b5-073d343aa391
+2025-07-22 13:13:46,635 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/66c6f11d-89a6-4662-9c66-75e034bd4c45
+2025-07-22 13:13:46,635 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/66c6f11d-89a6-4662-9c66-75e034bd4c45
+2025-07-22 13:13:46,639 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/b034cd7f-d61e-4492-84fd-7339b64cf314
+2025-07-22 13:13:46,639 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/b034cd7f-d61e-4492-84fd-7339b64cf314
+2025-07-22 13:13:46,642 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/629c3a75-dfdd-45ce-b3a5-40a097ffc87e
+2025-07-22 13:13:46,642 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/629c3a75-dfdd-45ce-b3a5-40a097ffc87e
+2025-07-22 13:13:52,934 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/7ecad2aa-cffe-480f-9521-71318df11256
+2025-07-22 13:13:52,935 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/7ecad2aa-cffe-480f-9521-71318df11256
+2025-07-22 13:13:53,282 - INFO: [PAYMENT KEYWORD MATCH] https://csp.withgoogle.com/csp/gws/fff
+2025-07-22 13:13:53,282 - INFO: [PAYMENT BLOCKED] https://csp.withgoogle.com/csp/gws/fff
+2025-07-22 13:13:55,938 - INFO: [PAYMENT DOMAIN MATCH] https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://paytm.com/&ved=2ahukewiwuecc_m-oaxxftgwghaq5nk8qfnoecaoqaq&usg=aovvaw1uq-tqboiogszauksqmm-e
+2025-07-22 13:13:55,938 - INFO: [PAYMENT BLOCKED] https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://paytm.com/&ved=2ahUKEwiWueCC_M-OAxXfTGwGHaQ5Nk8QFnoECAoQAQ&usg=AOvVaw1uq-TQbOIOGSZAUksQMm-E
+2025-07-22 13:13:56,134 - INFO: [PAYMENT DOMAIN MATCH] https://paytm.com/
+2025-07-22 13:13:56,134 - INFO: [PAYMENT BLOCKED] https://paytm.com/
+2025-07-22 13:13:56,163 - INFO: [PAYMENT DOMAIN MATCH] https://paytm.com/favicon.ico
+2025-07-22 13:13:56,163 - INFO: [PAYMENT BLOCKED] https://paytm.com/favicon.ico
+2025-07-22 13:22:19,208 - INFO: [PAYMENT FILTER] Initialized and ready
+2025-07-22 13:22:48,438 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/events/1/cd4573d4-21c9-40c9-b4eb-6697207b2eff
+2025-07-22 13:22:48,439 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/events/1/cd4573d4-21c9-40c9-b4eb-6697207b2eff
+2025-07-22 13:22:48,451 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/59f3c92a-2b8c-443b-823a-cf4f3d883f5c
+2025-07-22 13:22:48,451 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/59f3c92a-2b8c-443b-823a-cf4f3d883f5c
+2025-07-22 13:22:48,466 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/use-counters/1/08e06530-2189-4d83-96f3-aa8e924c9758
+2025-07-22 13:22:48,467 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/use-counters/1/08e06530-2189-4d83-96f3-aa8e924c9758
+2025-07-22 13:22:49,069 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/nimbus-targeting-context/1/91c47d2c-4570-4a82-8074-0ab48f2023a5
+2025-07-22 13:22:49,069 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/nimbus-targeting-context/1/91c47d2c-4570-4a82-8074-0ab48f2023a5
+2025-07-22 13:22:49,074 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/baseline/1/502b176c-4801-4e0b-b78f-e35b32d3c9ed
+2025-07-22 13:22:49,074 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/baseline/1/502b176c-4801-4e0b-b78f-e35b32d3c9ed
+2025-07-22 13:22:49,402 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/1e7a5e37-0a57-4e9d-94e2-84dcd849f976
+2025-07-22 13:22:49,403 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/1e7a5e37-0a57-4e9d-94e2-84dcd849f976
+2025-07-22 13:22:49,407 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/6608fd84-3042-4c3c-9464-7dac7820dc43
+2025-07-22 13:22:49,408 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/6608fd84-3042-4c3c-9464-7dac7820dc43
+2025-07-22 13:22:49,411 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/ea34756f-d2b8-491b-bc6f-c106a6ee7469
+2025-07-22 13:22:49,412 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/ea34756f-d2b8-491b-bc6f-c106a6ee7469
+2025-07-22 13:22:50,884 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/67a4f76e-face-4667-83e5-9e0e7cb74b0d
+2025-07-22 13:22:50,884 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/67a4f76e-face-4667-83e5-9e0e7cb74b0d
+2025-07-22 13:22:51,950 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/7d12e9dc-664c-4ebd-9ce3-9cbc14910434
+2025-07-22 13:22:51,950 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/7d12e9dc-664c-4ebd-9ce3-9cbc14910434
+2025-07-22 13:23:08,661 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/a43e2f2c-8cb8-490d-b9bc-731ef5e20137
+2025-07-22 13:23:08,662 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/a43e2f2c-8cb8-490d-b9bc-731ef5e20137
+2025-07-22 13:23:08,973 - INFO: [PAYMENT KEYWORD MATCH] https://csp.withgoogle.com/csp/gws/fff
+2025-07-22 13:23:08,974 - INFO: [PAYMENT BLOCKED] https://csp.withgoogle.com/csp/gws/fff
+2025-07-22 13:23:11,639 - INFO: [PAYMENT DOMAIN MATCH] https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://paytm.com/&ved=2ahukewj9kd2l_s-oaxxqt2wghcwghs8qfnoecakqaq&usg=aovvaw1uq-tqboiogszauksqmm-e
+2025-07-22 13:23:11,640 - INFO: [PAYMENT BLOCKED] https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://paytm.com/&ved=2ahUKEwj9kd2L_s-OAxXQT2wGHcWgHs8QFnoECAkQAQ&usg=AOvVaw1uq-TQbOIOGSZAUksQMm-E
+2025-07-22 13:23:11,854 - INFO: [PAYMENT DOMAIN MATCH] https://paytm.com/
+2025-07-22 13:23:11,855 - INFO: [PAYMENT BLOCKED] https://paytm.com/
+2025-07-22 13:26:16,387 - INFO: [PAYMENT FILTER] Initialized and ready
+2025-07-22 13:26:22,759 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/events/1/29cf2b3c-4a15-491a-92bd-48a9e0fffdf6
+2025-07-22 13:26:22,759 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/events/1/29cf2b3c-4a15-491a-92bd-48a9e0fffdf6
+2025-07-22 13:26:22,771 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/037b1031-6538-488e-983a-aa83595bbd72
+2025-07-22 13:26:22,772 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/037b1031-6538-488e-983a-aa83595bbd72
+2025-07-22 13:26:22,781 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/use-counters/1/c7e1020a-6b75-4707-8102-48f1bb9f779e
+2025-07-22 13:26:22,782 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/use-counters/1/c7e1020a-6b75-4707-8102-48f1bb9f779e
+2025-07-22 13:26:23,373 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/nimbus-targeting-context/1/5e84b893-3092-4599-b1a0-180ea0c14fee
+2025-07-22 13:26:23,373 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/nimbus-targeting-context/1/5e84b893-3092-4599-b1a0-180ea0c14fee
+2025-07-22 13:26:23,379 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/baseline/1/4444029a-8624-4887-86fc-84f26e386d95
+2025-07-22 13:26:23,379 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/baseline/1/4444029a-8624-4887-86fc-84f26e386d95
+2025-07-22 13:26:23,678 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/38ea042a-8d5b-4bf9-9314-f59f3060a9e0
+2025-07-22 13:26:23,679 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/38ea042a-8d5b-4bf9-9314-f59f3060a9e0
+2025-07-22 13:26:30,642 - INFO: [PAYMENT DOMAIN MATCH] https://paytm.com/
+2025-07-22 13:26:30,642 - INFO: [PAYMENT BLOCKED] https://paytm.com/
+2025-07-22 13:26:30,673 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/96d044ed-7473-4c0e-ab9d-eafc140f83b1
+2025-07-22 13:26:30,673 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/96d044ed-7473-4c0e-ab9d-eafc140f83b1
+2025-07-22 13:26:30,682 - INFO: [PAYMENT DOMAIN MATCH] https://paytm.com/favicon.ico
+2025-07-22 13:26:30,683 - INFO: [PAYMENT BLOCKED] https://paytm.com/favicon.ico
+2025-07-22 13:33:08,741 - INFO: [PAYMENT FILTER] Initialized and ready
+2025-07-22 13:33:53,174 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/events/1/e9678055-02f0-47b8-a506-0b2bbb12603c
+2025-07-22 13:33:53,174 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/events/1/e9678055-02f0-47b8-a506-0b2bbb12603c
+2025-07-22 13:33:53,192 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/bca3e910-542e-44ac-984a-8a9c0e1598eb
+2025-07-22 13:33:53,193 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/bca3e910-542e-44ac-984a-8a9c0e1598eb
+2025-07-22 13:33:53,210 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/use-counters/1/1ea29c0b-da6a-499c-9ca3-d8ccc76ba4f2
+2025-07-22 13:33:53,210 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/use-counters/1/1ea29c0b-da6a-499c-9ca3-d8ccc76ba4f2
+2025-07-22 13:33:53,842 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/nimbus-targeting-context/1/b299a7cc-e60c-41bf-be90-29f371a74f99
+2025-07-22 13:33:53,843 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/nimbus-targeting-context/1/b299a7cc-e60c-41bf-be90-29f371a74f99
+2025-07-22 13:33:53,847 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/baseline/1/7858f3a5-3b0c-4676-85ce-b8b961e697c0
+2025-07-22 13:33:53,847 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/baseline/1/7858f3a5-3b0c-4676-85ce-b8b961e697c0
+2025-07-22 13:33:54,139 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/81b0ce70-c1fc-40c5-91da-50f52a1dd65c
+2025-07-22 13:33:54,140 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/messaging-system/1/81b0ce70-c1fc-40c5-91da-50f52a1dd65c
+2025-07-22 13:33:55,864 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/f7213665-8a56-4ff2-9883-96dad322e99d
+2025-07-22 13:33:55,864 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/f7213665-8a56-4ff2-9883-96dad322e99d
+2025-07-22 13:33:56,461 - INFO: [PAYMENT DOMAIN MATCH] https://paytm.com/v1/api/user/details?channel=web&child_site_id=1&site_id=1&version=2
+2025-07-22 13:33:56,462 - INFO: [PAYMENT BLOCKED] https://paytm.com/v1/api/user/details?channel=web&child_site_id=1&site_id=1&version=2
+2025-07-22 13:33:56,475 - INFO: [PAYMENT DOMAIN MATCH] https://www.google.com/ccm/collect?en=page_view&dl=https%3a%2f%2fpaytm.com%2f&scrsrc=www.googletagmanager.com&frm=0&rnd=1251566402.1753171436&dt=paytm%3a%20secure%20%26%20fast%20upi%20payments%2c%20recharge%20mobile%20%26%20pay%20bills&auid=1909567118.1752043169&navt=n&npa=0&gtm=45he57i1v9193891433za200zd9193891433&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104921715~104921717~104952209~104952211&tft=1753171436371&tfd=527&apve=1&apvf=f
+2025-07-22 13:33:56,475 - INFO: [PAYMENT BLOCKED] https://www.google.com/ccm/collect?en=page_view&dl=https%3A%2F%2Fpaytm.com%2F&scrsrc=www.googletagmanager.com&frm=0&rnd=1251566402.1753171436&dt=Paytm%3A%20Secure%20%26%20Fast%20UPI%20Payments%2C%20Recharge%20Mobile%20%26%20Pay%20Bills&auid=1909567118.1752043169&navt=n&npa=0&gtm=45He57i1v9193891433za200zd9193891433&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104921715~104921717~104952209~104952211&tft=1753171436371&tfd=527&apve=1&apvf=f
+2025-07-22 13:33:56,491 - INFO: [PAYMENT DOMAIN MATCH] https://paytm.com/favicon.ico
+2025-07-22 13:33:56,492 - INFO: [PAYMENT BLOCKED] https://paytm.com/favicon.ico
+2025-07-22 13:33:56,576 - INFO: [PAYMENT DOMAIN MATCH] https://paytm.com/v1/api/user/details
+2025-07-22 13:33:56,576 - INFO: [PAYMENT BLOCKED] https://paytm.com/v1/api/user/details
+2025-07-22 13:33:56,841 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,842 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,847 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,847 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,852 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,852 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,856 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,857 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,888 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,889 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,913 - INFO: [PAYMENT DOMAIN MATCH] https://storefront.paytm.com/v2/h/all_services_web?platform_version=s2(new)&channel=web&child_site_id=1&site_id=1&version=2
+2025-07-22 13:33:56,913 - INFO: [PAYMENT BLOCKED] https://storefront.paytm.com/v2/h/all_services_web?platform_version=S2(New)&channel=web&child_site_id=1&site_id=1&version=2
+2025-07-22 13:33:56,915 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,915 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,917 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,917 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,919 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,919 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,921 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,921 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,923 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,923 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,924 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,925 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,926 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,926 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,927 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,927 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,928 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,928 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,934 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,934 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,941 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,941 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,942 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,942 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,943 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,943 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,953 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,954 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,955 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,956 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,957 - INFO: [PAYMENT DOMAIN MATCH] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:56,957 - INFO: [PAYMENT BLOCKED] https://sig.paytm.com/v2/api/signals/batch
+2025-07-22 13:33:57,174 - INFO: [PAYMENT DOMAIN MATCH] https://travel.paytm.com/api/flights/v1/search_filters?origin=del&trip_type=oneway&destination=bom&client=web
+2025-07-22 13:33:57,174 - INFO: [PAYMENT BLOCKED] https://travel.paytm.com/api/flights/v1/search_filters?origin=DEL&trip_type=oneway&destination=BOM&client=web
+2025-07-22 13:33:57,245 - INFO: [PAYMENT DOMAIN MATCH] https://hawkeye-api.paytm.com/appdebuganalytics/triggers/save
+2025-07-22 13:33:57,245 - INFO: [PAYMENT BLOCKED] https://hawkeye-api.paytm.com/appdebuganalytics/triggers/save
+2025-07-22 13:33:58,198 - INFO: [PAYMENT KEYWORD MATCH] https://sentry-api.paytmdgt.io/api/793/envelope/?sentry_key=ae6f0dcd6c7640de9dff7b2d70930139&sentry_version=7&sentry_client=sentry.javascript.react%2f7.58.1
+2025-07-22 13:33:58,199 - INFO: [PAYMENT BLOCKED] https://sentry-api.paytmdgt.io/api/793/envelope/?sentry_key=ae6f0dcd6c7640de9dff7b2d70930139&sentry_version=7&sentry_client=sentry.javascript.react%2F7.58.1
+2025-07-22 13:34:00,058 - INFO: [PAYMENT DOMAIN MATCH] https://hawkeye-api.paytm.com/appdebuganalytics/triggers/save
+2025-07-22 13:34:00,058 - INFO: [PAYMENT BLOCKED] https://hawkeye-api.paytm.com/appdebuganalytics/triggers/save
+2025-07-22 13:34:02,271 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/8ad41e64-1f5b-4a5b-8b0b-2efebbc5588e
+2025-07-22 13:34:02,272 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/8ad41e64-1f5b-4a5b-8b0b-2efebbc5588e
+2025-07-22 13:34:02,438 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/static/pci-dss-c87a8378468cbcbb6ad4d7417fb370bc.png
+2025-07-22 13:34:02,439 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/static/pci-dss-c87a8378468cbcbb6ad4d7417fb370bc.png
+2025-07-22 13:34:02,439 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/static/sisa-449d370383459eec6ef4f303989d5dd9.png
+2025-07-22 13:34:02,439 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/static/sisa-449d370383459eec6ef4f303989d5dd9.png
+2025-07-22 13:34:02,443 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/static/money-safe-trust-925dad1ce11f98cd674acc71644d1437.svg
+2025-07-22 13:34:02,444 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/static/money-safe-trust-925dad1ce11f98cd674acc71644d1437.svg
+2025-07-22 13:34:02,446 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/static/share-market-24784595e0d4ea7e007a3f165e18615a.png
+2025-07-22 13:34:02,446 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/static/share-market-24784595e0d4ea7e007a3f165e18615a.png
+2025-07-22 13:34:02,452 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/static/iso-1aa9e50870b271244b221b83587d8350.png
+2025-07-22 13:34:02,452 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/static/iso-1aa9e50870b271244b221b83587d8350.png
+2025-07-22 13:34:02,513 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/webstatic/11168/static/phonepesans-regular-00e335472573f867945b9dc74d9f23a7.woff2
+2025-07-22 13:34:02,513 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/webstatic/11168/static/PhonePeSans-Regular-00e335472573f867945b9dc74d9f23a7.woff2
+2025-07-22 13:34:02,516 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/webstatic/11168/static/phonepesans-medium-2c1ed5081892b87cddccba2c1e2c1030.woff2
+2025-07-22 13:34:02,522 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/webstatic/11168/static/PhonePeSans-Medium-2c1ed5081892b87cddccba2c1e2c1030.woff2
+2025-07-22 13:34:02,549 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/webstatic/11168/commons-c05900b1a78ade02e07d.js
+2025-07-22 13:34:02,549 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/webstatic/11168/commons-c05900b1a78ade02e07d.js
+2025-07-22 13:34:02,552 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/webstatic/11168/7879-9252fc59d71082b4a6ae.js
+2025-07-22 13:34:02,553 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/webstatic/11168/7879-9252fc59d71082b4a6ae.js
+2025-07-22 13:34:02,619 - INFO: [PAYMENT DOMAIN MATCH] https://csp.phonepe.com/log
+2025-07-22 13:34:02,619 - INFO: [PAYMENT BLOCKED] https://csp.phonepe.com/log
+2025-07-22 13:34:02,623 - INFO: [PAYMENT DOMAIN MATCH] https://csp.phonepe.com/log
+2025-07-22 13:34:02,623 - INFO: [PAYMENT BLOCKED] https://csp.phonepe.com/log
+2025-07-22 13:34:02,626 - INFO: [PAYMENT DOMAIN MATCH] https://csp.phonepe.com/log
+2025-07-22 13:34:02,626 - INFO: [PAYMENT BLOCKED] https://csp.phonepe.com/log
+2025-07-22 13:34:02,632 - INFO: [PAYMENT DOMAIN MATCH] https://csp.phonepe.com/log
+2025-07-22 13:34:02,632 - INFO: [PAYMENT BLOCKED] https://csp.phonepe.com/log
+2025-07-22 13:34:02,714 - INFO: [PAYMENT DOMAIN MATCH] https://www.google.com/ccm/collect?en=page_view&dl=https%3a%2f%2fwww.phonepe.com%2f&scrsrc=www.googletagmanager.com&frm=0&rnd=1721127627.1753171443&dt=phonepe%3a%20upi%20payments%2c%20investment%2c%20insurance%2c%20recharges%2c%20dth%20%26%20more&auid=1181250308.1753171409&navt=n&npa=0&gtm=45he57i1v838805631za200zd838805631&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104921715~104921717~104948813~104952209~104952211&tft=1753171442706&tfd=471&apve=1&apvf=f
+2025-07-22 13:34:02,715 - INFO: [PAYMENT BLOCKED] https://www.google.com/ccm/collect?en=page_view&dl=https%3A%2F%2Fwww.phonepe.com%2F&scrsrc=www.googletagmanager.com&frm=0&rnd=1721127627.1753171443&dt=PhonePe%3A%20UPI%20Payments%2C%20Investment%2C%20Insurance%2C%20Recharges%2C%20DTH%20%26%20More&auid=1181250308.1753171409&navt=n&npa=0&gtm=45He57i1v838805631za200zd838805631&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104921715~104921717~104948813~104952209~104952211&tft=1753171442706&tfd=471&apve=1&apvf=f
+2025-07-22 13:34:02,753 - INFO: [PAYMENT DOMAIN MATCH] https://www.google-analytics.com/g/collect?v=2&tid=g-j88w1ye2f3&gtm=45je57l0h2v871131640z89191141531za200zb9191141531zd9191141531&_p=1753171435857&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104921715~104921717~104948813~104952209~104952211&cid=188893405.1752043169&ul=en-us&sr=1920x1080&frm=0&pscdl=noapi&_eu=aaaaaaq&_s=1&sid=1753171099&sct=2&seg=1&dl=https%3a%2f%2fpaytm.com%2f&dt=paytm%3a%20secure%20%26%20fast%20upi%20payments%2c%20recharge%20mobile%20%26%20pay%20bills&en=page_view&tfd=6218
+2025-07-22 13:34:02,753 - INFO: [PAYMENT BLOCKED] https://www.google-analytics.com/g/collect?v=2&tid=G-J88W1YE2F3&gtm=45je57l0h2v871131640z89191141531za200zb9191141531zd9191141531&_p=1753171435857&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104921715~104921717~104948813~104952209~104952211&cid=188893405.1752043169&ul=en-us&sr=1920x1080&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&sid=1753171099&sct=2&seg=1&dl=https%3A%2F%2Fpaytm.com%2F&dt=Paytm%3A%20Secure%20%26%20Fast%20UPI%20Payments%2C%20Recharge%20Mobile%20%26%20Pay%20Bills&en=page_view&tfd=6218
+2025-07-22 13:34:02,758 - INFO: [PAYMENT DOMAIN MATCH] https://csp.phonepe.com/log
+2025-07-22 13:34:02,759 - INFO: [PAYMENT BLOCKED] https://csp.phonepe.com/log
+2025-07-22 13:34:02,864 - INFO: [PAYMENT DOMAIN MATCH] https://analytics.google.com/g/collect?v=2&tid=g-9c45298bc8&gtm=45je57i1v9138789555z89193891433za200zb9193891433zd9193891433&_p=1753171435857&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104921715~104921717~104952209~104952211~104991059&cid=188893405.1752043169&ul=en-us&sr=1920x1080&frm=0&pscdl=noapi&_eu=aaaaaaq&_s=1&sid=1753171099&sct=2&seg=1&dl=https%3a%2f%2fpaytm.com%2f&dt=paytm%3a%20secure%20%26%20fast%20upi%20payments%2c%20recharge%20mobile%20%26%20pay%20bills&en=page_view&tfd=6218
+2025-07-22 13:34:02,864 - INFO: [PAYMENT BLOCKED] https://analytics.google.com/g/collect?v=2&tid=G-9C45298BC8&gtm=45je57i1v9138789555z89193891433za200zb9193891433zd9193891433&_p=1753171435857&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104921715~104921717~104952209~104952211~104991059&cid=188893405.1752043169&ul=en-us&sr=1920x1080&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&sid=1753171099&sct=2&seg=1&dl=https%3A%2F%2Fpaytm.com%2F&dt=Paytm%3A%20Secure%20%26%20Fast%20UPI%20Payments%2C%20Recharge%20Mobile%20%26%20Pay%20Bills&en=page_view&tfd=6218
+2025-07-22 13:34:02,964 - INFO: [PAYMENT DOMAIN MATCH] https://api.phonepe.com/apis/garfield/v1/init/phonepe_website
+2025-07-22 13:34:02,965 - INFO: [PAYMENT BLOCKED] https://api.phonepe.com/apis/garfield/v1/init/PHONEPE_WEBSITE
+2025-07-22 13:34:03,138 - INFO: [PAYMENT DOMAIN MATCH] https://hawkeye-api.paytm.com/appdebuganalytics/triggers/save
+2025-07-22 13:34:03,138 - INFO: [PAYMENT BLOCKED] https://hawkeye-api.paytm.com/appdebuganalytics/triggers/save
+2025-07-22 13:34:03,155 - INFO: [PAYMENT DOMAIN MATCH] https://www.google-analytics.com/j/collect?v=1&_v=j101&a=663153176&t=pageview&_s=1&dl=https%3a%2f%2fwww.phonepe.com%2f&ul=en-us&de=utf-8&dt=phonepe%3a%20upi%20payments%2c%20investment%2c%20insurance%2c%20recharges%2c%20dth%20%26%20more&sd=24-bit&sr=1920x1080&vp=1533x799&je=0&_u=qacaaeabaaaaacaai~&jid=&gjid=&cid=955143897.1753171409&tid=ua-187534980-1&_gid=2140584046.1753171409&_slc=1&gtm=45he57i1n81mz5vbxtv838805631za200zd838805631&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104921715~104921717~104948813~104952209~104952211&z=1486701221
+2025-07-22 13:34:03,156 - INFO: [PAYMENT BLOCKED] https://www.google-analytics.com/j/collect?v=1&_v=j101&a=663153176&t=pageview&_s=1&dl=https%3A%2F%2Fwww.phonepe.com%2F&ul=en-us&de=UTF-8&dt=PhonePe%3A%20UPI%20Payments%2C%20Investment%2C%20Insurance%2C%20Recharges%2C%20DTH%20%26%20More&sd=24-bit&sr=1920x1080&vp=1533x799&je=0&_u=QACAAEABAAAAACAAI~&jid=&gjid=&cid=955143897.1753171409&tid=UA-187534980-1&_gid=2140584046.1753171409&_slc=1&gtm=45He57i1n81MZ5VBXTv838805631za200zd838805631&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104921715~104921717~104948813~104952209~104952211&z=1486701221
+2025-07-22 13:34:03,298 - INFO: [PAYMENT DOMAIN MATCH] https://css.page-source.com/resizeimage.ashx?ig=www.phonepe.com&sz=165401
+2025-07-22 13:34:03,299 - INFO: [PAYMENT BLOCKED] https://css.page-source.com/resizeimage.ashx?ig=www.phonepe.com&sz=165401
+2025-07-22 13:34:03,328 - INFO: [PAYMENT DOMAIN MATCH] https://googleads.g.doubleclick.net/pagead/viewthroughconversion/842514865/?random=1753171443026&cv=11&fst=1753171443026&bg=ffffff&guid=on&async=1&gtm=45be57i1v9132870759z8838805631za200zb838805631zd838805631&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104921715~104921717~104952209~104952211&u_w=1920&u_h=1080&url=https%3a%2f%2fwww.phonepe.com%2f&hn=www.googleadservices.com&frm=0&tiba=phonepe%3a%20upi%20payments%2c%20investment%2c%20insurance%2c%20recharges%2c%20dth%20%26%20more&npa=0&pscdl=noapi&auid=1181250308.1753171409&fdr=qa&_tu=cg&rfmt=3&fmt=4
+2025-07-22 13:34:03,328 - INFO: [PAYMENT BLOCKED] https://googleads.g.doubleclick.net/pagead/viewthroughconversion/842514865/?random=1753171443026&cv=11&fst=1753171443026&bg=ffffff&guid=ON&async=1&gtm=45be57i1v9132870759z8838805631za200zb838805631zd838805631&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104921715~104921717~104952209~104952211&u_w=1920&u_h=1080&url=https%3A%2F%2Fwww.phonepe.com%2F&hn=www.googleadservices.com&frm=0&tiba=PhonePe%3A%20UPI%20Payments%2C%20Investment%2C%20Insurance%2C%20Recharges%2C%20DTH%20%26%20More&npa=0&pscdl=noapi&auid=1181250308.1753171409&fdr=QA&_tu=Cg&rfmt=3&fmt=4
+2025-07-22 13:34:03,478 - INFO: [PAYMENT DOMAIN MATCH] https://www.facebook.com/tr/?id=723803139097130&ev=pageview&dl=https%3a%2f%2fwww.phonepe.com&rl=&if=false&ts=1753171443294&sw=1920&sh=1080&v=2.9.218&r=stable&a=tmgoogletagmanager&ec=0&o=4124&fbp=fb.1.1753171409439.977404628496145004&pm=1&hrl=9cb9fa&ler=empty&plt=319&it=1753171443170&coo=false&cs_cc=1&cas=9790496547732076%2c8581704488528656&exp=r1&rqm=get
+2025-07-22 13:34:03,478 - INFO: [PAYMENT BLOCKED] https://www.facebook.com/tr/?id=723803139097130&ev=PageView&dl=https%3A%2F%2Fwww.phonepe.com&rl=&if=false&ts=1753171443294&sw=1920&sh=1080&v=2.9.218&r=stable&a=tmgoogletagmanager&ec=0&o=4124&fbp=fb.1.1753171409439.977404628496145004&pm=1&hrl=9cb9fa&ler=empty&plt=319&it=1753171443170&coo=false&cs_cc=1&cas=9790496547732076%2C8581704488528656&exp=r1&rqm=GET
+2025-07-22 13:34:03,532 - INFO: [PAYMENT DOMAIN MATCH] https://t.co/1/i/adsct?bci=4&dv=asia%2fkolkata%26en-us%2cen%26na%26linux%20x86_64%26255%261920%261080%2616%2624%261920%261080%260%26unspecified&eci=3&event=%7b%7d&event_id=d1db97e6-bc82-43ca-b487-2acc8780e150&integration=gtm&p_id=twitter&p_user_id=0&pl_id=6395f65d-5f98-4aa3-aba1-571ba2661f5d&tw_document_href=https%3a%2f%2fwww.phonepe.com%2f&tw_iframe_status=0&txn_id=oh98u&type=javascript&version=2.3.33
+2025-07-22 13:34:03,532 - INFO: [PAYMENT BLOCKED] https://t.co/1/i/adsct?bci=4&dv=Asia%2FKolkata%26en-US%2Cen%26na%26Linux%20x86_64%26255%261920%261080%2616%2624%261920%261080%260%26unspecified&eci=3&event=%7B%7D&event_id=d1db97e6-bc82-43ca-b487-2acc8780e150&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=6395f65d-5f98-4aa3-aba1-571ba2661f5d&tw_document_href=https%3A%2F%2Fwww.phonepe.com%2F&tw_iframe_status=0&txn_id=oh98u&type=javascript&version=2.3.33
+2025-07-22 13:34:03,537 - INFO: [PAYMENT DOMAIN MATCH] https://analytics.twitter.com/1/i/adsct?bci=4&dv=asia%2fkolkata%26en-us%2cen%26na%26linux%20x86_64%26255%261920%261080%2616%2624%261920%261080%260%26unspecified&eci=3&event=%7b%7d&event_id=d1db97e6-bc82-43ca-b487-2acc8780e150&integration=gtm&p_id=twitter&p_user_id=0&pl_id=6395f65d-5f98-4aa3-aba1-571ba2661f5d&tw_document_href=https%3a%2f%2fwww.phonepe.com%2f&tw_iframe_status=0&txn_id=oh98u&type=javascript&version=2.3.33
+2025-07-22 13:34:03,537 - INFO: [PAYMENT BLOCKED] https://analytics.twitter.com/1/i/adsct?bci=4&dv=Asia%2FKolkata%26en-US%2Cen%26na%26Linux%20x86_64%26255%261920%261080%2616%2624%261920%261080%260%26unspecified&eci=3&event=%7B%7D&event_id=d1db97e6-bc82-43ca-b487-2acc8780e150&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=6395f65d-5f98-4aa3-aba1-571ba2661f5d&tw_document_href=https%3A%2F%2Fwww.phonepe.com%2F&tw_iframe_status=0&txn_id=oh98u&type=javascript&version=2.3.33
+2025-07-22 13:34:07,564 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/webstatic/11168/page-data/business-solutions/offline-merchant/page-data.json
+2025-07-22 13:34:07,564 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/webstatic/11168/page-data/business-solutions/offline-merchant/page-data.json
+2025-07-22 13:34:07,568 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/webstatic/11168/page-data/business-solutions/offline-merchant/partner-program/page-data.json
+2025-07-22 13:34:07,568 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/webstatic/11168/page-data/business-solutions/offline-merchant/partner-program/page-data.json
+2025-07-22 13:34:07,569 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/webstatic/11168/page-data/business-solutions/payment-gateway/page-data.json
+2025-07-22 13:34:07,569 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/webstatic/11168/page-data/business-solutions/payment-gateway/page-data.json
+2025-07-22 13:34:07,570 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/webstatic/11168/page-data/business-solutions/payment-gateway/partner-program/page-data.json
+2025-07-22 13:34:07,570 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/webstatic/11168/page-data/business-solutions/payment-gateway/partner-program/page-data.json
+2025-07-22 13:34:07,575 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/webstatic/11168/component---src-pages-business-solutions-offline-merchant-index-js-338e2ed559c2fb773a57.js
+2025-07-22 13:34:07,575 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/webstatic/11168/component---src-pages-business-solutions-offline-merchant-index-js-338e2ed559c2fb773a57.js
+2025-07-22 13:34:07,576 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/webstatic/11168/component---src-pages-business-solutions-offline-merchant-partner-program-index-js-51c245e5eac8441beaec.js
+2025-07-22 13:34:07,576 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/webstatic/11168/component---src-pages-business-solutions-offline-merchant-partner-program-index-js-51c245e5eac8441beaec.js
+2025-07-22 13:34:07,577 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/webstatic/11168/component---src-pages-business-solutions-payment-gateway-index-js-d99b7be92be3ec5064c2.js
+2025-07-22 13:34:07,577 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/webstatic/11168/component---src-pages-business-solutions-payment-gateway-index-js-d99b7be92be3ec5064c2.js
+2025-07-22 13:34:09,163 - INFO: [PAYMENT DOMAIN MATCH] https://www.google-analytics.com/g/collect?v=2&tid=g-1bljf15zgz&gtm=45je57i1v9185052970z8838805631za200zb838805631zd838805631&_p=1753171442257&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104921715~104921717~104952209~104952211&cid=955143897.1753171409&ul=en-us&sr=1920x1080&frm=0&pscdl=noapi&_eu=aaaaaaq&_s=1&sid=1753171408&sct=1&seg=1&dl=https%3a%2f%2fwww.phonepe.com%2f&dt=phonepe%3a%20upi%20payments%2c%20investment%2c%20insurance%2c%20recharges%2c%20dth%20%26%20more&_tu=cg&en=page_view&_et=136&tfd=6322
+2025-07-22 13:34:09,164 - INFO: [PAYMENT BLOCKED] https://www.google-analytics.com/g/collect?v=2&tid=G-1BLJF15ZGZ&gtm=45je57i1v9185052970z8838805631za200zb838805631zd838805631&_p=1753171442257&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104921715~104921717~104952209~104952211&cid=955143897.1753171409&ul=en-us&sr=1920x1080&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&sid=1753171408&sct=1&seg=1&dl=https%3A%2F%2Fwww.phonepe.com%2F&dt=PhonePe%3A%20UPI%20Payments%2C%20Investment%2C%20Insurance%2C%20Recharges%2C%20DTH%20%26%20More&_tu=Cg&en=page_view&_et=136&tfd=6322
+2025-07-22 13:34:11,184 - INFO: [PAYMENT DOMAIN MATCH] https://stripe.com/
+2025-07-22 13:34:11,184 - INFO: [PAYMENT BLOCKED] https://stripe.com/
+2025-07-22 13:34:11,212 - INFO: [PAYMENT KEYWORD MATCH] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/9fa4289c-63d6-4874-b0bf-9bc5f4f6c705
+2025-07-22 13:34:11,212 - INFO: [PAYMENT BLOCKED] https://incoming.telemetry.mozilla.org/submit/firefox-desktop/newtab/1/9fa4289c-63d6-4874-b0bf-9bc5f4f6c705
+2025-07-22 13:34:11,214 - INFO: [PAYMENT DOMAIN MATCH] https://stripe.com/favicon.ico
+2025-07-22 13:34:11,215 - INFO: [PAYMENT BLOCKED] https://stripe.com/favicon.ico
+2025-07-22 13:34:12,581 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/webstatic/11168/page-data/business-solutions/payment-link/page-data.json
+2025-07-22 13:34:12,582 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/webstatic/11168/page-data/business-solutions/payment-link/page-data.json
+2025-07-22 13:34:12,585 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/webstatic/11168/page-data/lending/page-data.json
+2025-07-22 13:34:12,585 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/webstatic/11168/page-data/lending/page-data.json
+2025-07-22 13:34:12,586 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/webstatic/11168/page-data/business-solutions/merchant-advertisement/page-data.json
+2025-07-22 13:34:12,586 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/webstatic/11168/page-data/business-solutions/merchant-advertisement/page-data.json
+2025-07-22 13:34:12,587 - INFO: [PAYMENT DOMAIN MATCH] https://www.phonepe.com/webstatic/11168/page-data/business-solutions/guardian/page-data.json
+2025-07-22 13:34:12,587 - INFO: [PAYMENT BLOCKED] https://www.phonepe.com/webstatic/11168/page-data/business-solutions/guardian/page-data.json
+2025-07-22 13:34:16,097 - INFO: [PAYMENT DOMAIN MATCH] https://analytics.google.com/g/collect?v=2&tid=g-9c45298bc8&gtm=45je57i1v9138789555za200zb9193891433zd9193891433&_p=1753171435857&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104921715~104921717~104952209~104952211~104991059&cid=188893405.1752043169&ul=en-us&sr=1920x1080&frm=0&pscdl=noapi&_eu=aaaaaaq&_s=2&sid=1753171099&sct=2&seg=1&dl=https%3a%2f%2fpaytm.com%2f&dt=paytm%3a%20secure%20%26%20fast%20upi%20payments%2c%20recharge%20mobile%20%26%20pay%20bills&en=user_engagement&_et=1184&tfd=19648
+2025-07-22 13:34:16,097 - INFO: [PAYMENT BLOCKED] https://analytics.google.com/g/collect?v=2&tid=G-9C45298BC8&gtm=45je57i1v9138789555za200zb9193891433zd9193891433&_p=1753171435857&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104921715~104921717~104952209~104952211~104991059&cid=188893405.1752043169&ul=en-us&sr=1920x1080&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=2&sid=1753171099&sct=2&seg=1&dl=https%3A%2F%2Fpaytm.com%2F&dt=Paytm%3A%20Secure%20%26%20Fast%20UPI%20Payments%2C%20Recharge%20Mobile%20%26%20Pay%20Bills&en=user_engagement&_et=1184&tfd=19648
+2025-07-22 13:34:16,647 - INFO: [PAYMENT DOMAIN MATCH] https://www.google-analytics.com/g/collect?v=2&tid=g-1bljf15zgz&gtm=45je57i1v9185052970za200zb838805631zd838805631&_p=1753171442257&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104921715~104921717~104952209~104952211&cid=955143897.1753171409&ul=en-us&sr=1920x1080&frm=0&pscdl=noapi&_eu=aaaaaaq&_s=2&sid=1753171408&sct=1&seg=1&dl=https%3a%2f%2fwww.phonepe.com%2f&dt=phonepe%3a%20upi%20payments%2c%20investment%2c%20insurance%2c%20recharges%2c%20dth%20%26%20more&en=user_engagement&_et=1282&tfd=13807
+2025-07-22 13:34:16,647 - INFO: [PAYMENT BLOCKED] https://www.google-analytics.com/g/collect?v=2&tid=G-1BLJF15ZGZ&gtm=45je57i1v9185052970za200zb838805631zd838805631&_p=1753171442257&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104921715~104921717~104952209~104952211&cid=955143897.1753171409&ul=en-us&sr=1920x1080&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=2&sid=1753171408&sct=1&seg=1&dl=https%3A%2F%2Fwww.phonepe.com%2F&dt=PhonePe%3A%20UPI%20Payments%2C%20Investment%2C%20Insurance%2C%20Recharges%2C%20DTH%20%26%20More&en=user_engagement&_et=1282&tfd=13807

@@ -10,7 +10,7 @@ import time
 from typing import Optional, Dict, Any
 from mitmproxy import options
 from mitmproxy.tools.dump import DumpMaster
-import payment_filter
+import simple_payment_filter
 
 
 class AdvancedHTTPSProxy:
@@ -70,7 +70,7 @@ class AdvancedHTTPSProxy:
         self.master = None
 
         # Initialize the payment filter
-        self.payment_filter = payment_filter
+        self.payment_filter = simple_payment_filter
 
         # Initialize metrics
         self.metrics = {
@@ -178,15 +178,8 @@ class AdvancedHTTPSProxy:
         if self.should_intercept(flow):
             self.log_request(flow)
 
-        # Check with backend: is this flow flagged for approval?
-        try:
-            res = requests.get(f"http://localhost:5000/decision/{flow.id}")
-            if res.status_code == 200 and res.json().get("decision") is None:
-                self.logger.info(f"[⏸] Flow {flow.id} flagged for parent approval")
-                flow.intercept()
-                self.wait_for_decision(flow)
-        except Exception as e:
-            self.logger.error(f"[!] Error checking approval status for {flow.id}: {e}")
+        # Note: We don't need to check for approval here anymore
+        # The PaymentFilter addon will handle all payment detection and approval logic
     
     def response(self, flow: mitmproxy.http.HTTPFlow):
         """
@@ -207,14 +200,17 @@ class AdvancedHTTPSProxy:
                 listen_host=self.host,
                 listen_port=self.port,
                 confdir=self.cert_dir,
-                ssl_insecure=True
+                ssl_insecure=os.getenv('DEVELOPMENT_MODE', 'False').lower() == 'true'  # Only insecure in dev mode
             )
             
             # Create the proxy master
             self.master = DumpMaster(opts)
             
+            # Get the payment filter instance
+            from simple_payment_filter import payment_filter as pf
+            
             # Add payment filter addon
-            self.master.addons.add(self.payment_filter)
+            self.master.addons.add(pf)
             
             # Add self as addon for other proxy functionalities
             self.master.addons.add(self)
@@ -270,26 +266,7 @@ class AdvancedHTTPSProxy:
             'uptime': time.time() - self.start_time
         }
     
-    def wait_for_decision(self, flow_id: str) -> bool:
-        """
-        Wait for a decision from the approval mechanism
-        Returns True if approved, False if denied or timeout
-        """
-        try:
-            response = requests.get(
-                f"http://localhost:5000/wait_decision/{flow_id}",
-                timeout=35  # Slightly longer than approval mechanism timeout
-            )
-            
-            if response.status_code == 200:
-                decision = response.json().get("decision")
-                return decision == "approve"
-            
-            return False  # Any other response means deny
-            
-        except Exception as e:
-            self.logger.error(f"Error waiting for decision: {e}")
-            return False  # Fail closed (deny on error)
+    # Method removed - this functionality is now in the PaymentFilter class
 
 
 def main():
