@@ -14,8 +14,8 @@ app.use(express.json());
 // Create a direct database connection
 const connection = mysql.createConnection({
   host: 'localhost',
-  user: 'sr',
-  password: 'sr',
+  user: 'root',
+  password: 'admin',
   database: 'bifrost_db'
 });
 

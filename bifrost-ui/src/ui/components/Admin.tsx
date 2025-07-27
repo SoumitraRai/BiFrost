@@ -30,6 +30,13 @@ const Admin: React.FC<AdminProps> = ({
         setPendingPayments(formattedRequests);
       } catch (error) {
         console.error("Error loading payment requests:", error);
+        // Add some dummy data for testing
+        setPendingPayments([
+          { id: 1, message: "Payment Request: Amazon.com - $29.99" },
+          { id: 2, message: "Payment Request: Netflix.com - $15.99" },
+          { id: 3, message: "Payment Request: Steam Store - $59.99" },
+          { id: 4, message: "Payment Request: Spotify - $9.99" },
+        ]);
       }
     };
 
@@ -49,7 +56,7 @@ const Admin: React.FC<AdminProps> = ({
   };
 
   return (
-    <div>
+    <div className="admin-page">
       <div className="header-bar">
         <div>
           <h1 className="main-heading">Bifrost</h1>
@@ -61,24 +68,50 @@ const Admin: React.FC<AdminProps> = ({
       <div className="box-wrapper">
         <div className="container-box">
           <h2>Pending Approvals</h2>
-          <ul className="pending-list">
-            {pendingPayments.map((item) => (
-              <li key={item.id} className="pending-item">
-                <span>{item.message}</span>
-                <div className="button-group">
-                  <button onClick={() => handleApprove(item.id)}>✔</button>
-                  <button onClick={() => handleDeny(item.id)}>✘</button>
-                </div>
-              </li>
-            ))}
-          </ul>
+          <div className="payments-container">
+            {pendingPayments.length === 0 ? (
+              <div className="no-requests">
+                <p>No pending payment requests</p>
+              </div>
+            ) : (
+              <div className="payments-scroll-box">
+                <ul className="pending-list">
+                  {pendingPayments.map((item) => (
+                    <li key={item.id} className="pending-item">
+                      <span className="payment-message">{item.message}</span>
+                      <div className="button-group">
+                        <button 
+                          className="approve-btn"
+                          onClick={() => handleApprove(item.id)}
+                        >
+                          ✔ Approve
+                        </button>
+                        <button 
+                          className="deny-btn"
+                          onClick={() => handleDeny(item.id)}
+                        >
+                          ✘ Deny
+                        </button>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
         </div>
 
         <div className="container-box">
           <h2>Traffic Logs</h2>
-          <textarea readOnly className="traffic-log-box" value={logs} />
+          <div className="logs-container">
+            <textarea readOnly className="traffic-log-box" value={logs} />
+          </div>
         </div>
       </div>
+
+      <footer className="admin-footer">
+        <p>Copyright &copy; Team Bifrost</p>
+      </footer>
     </div>
   );
 };

@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap');
+
+/* --- Client Page Container --- */
+.client-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Client Layout --- */
+.client-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 4em;
+  padding: 0 1rem;
+  padding-bottom: 4em;
+  flex: 1;
+}
+
+.container-box-client {
+  background: rgba(17, 24, 39, 0.85);
+  border: 1.5px solid #38bdf8;
+  border-radius: 20px;
+  box-shadow: 0 8px 40px #0ea5e933, 0 1.5px 8px #2563eb22;
+  padding: 2.2em 2em 1em 2em;
+  width: 100%;
+  max-width: 650px;
+  min-width: 320px;
+  min-height: 70vh;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border 0.2s ease;
+  box-sizing: border-box;
+}
+
+.container-box-client:hover {
+  box-shadow: 0 16px 48px #0ea5e966;
+  transform: translateY(-4px) scale(1.025);
+  border-color: #0ea5e9;
+}
+
+.container-box-client::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 6px;
+  background: linear-gradient(180deg, #38bdf8 0%, #2563eb 100%);
+  border-radius: 8px 0 0 8px;
+}
+
+.container-box-client::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #1e3a8a11, #2563eb11);
+  pointer-events: none;
+}
+
+.container-box-client h2 {
+  color: #38bdf8;
+  margin-bottom: 1em;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding-left: 0.5em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  padding-bottom: 2rem;
+}
+
+/* --- Requests Container --- */
+.requests-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.requests-scroll-box {
+  width: 100%;
+  height: 500px;
+  background: rgba(24, 28, 36, 0.98);
+  border: 1.5px solid #334155;
+  border-radius: 12px;
+  padding: 1em;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px #0ea5e922;
+  transition: all 0.2s ease;
+}
+
+.requests-scroll-box:hover {
+  border-color: #38bdf8;
+  box-shadow: 0 4px 16px #0ea5e933;
+}
+
+.requests-scroll-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.requests-scroll-box::-webkit-scrollbar-track {
+  background: rgba(51, 65, 85, 0.3);
+  border-radius: 4px;
+}
+
+.requests-scroll-box::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+.requests-scroll-box::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* --- No Requests State --- */
+.no-requests {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  background: rgba(24, 28, 36, 0.98);
+  border: 1.5px solid #334155;
+  border-radius: 12px;
+  border-style: dashed;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.no-requests p {
+  color: #64748b;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* --- Request List --- */
+.request-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.request-item {
+  background: rgba(30, 41, 59, 0.97);
+  border: 1px solid #475569;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px #0ea5e922;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+
+.request-item:hover {
+  box-shadow: 0 8px 32px #38bdf855;
+  border-color: #38bdf8;
+  transform: scale(1.02);
+}
+
+.request-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.request-message {
+  font-weight: 600;
+  color: #e0e7ef;
+  letter-spacing: 0.01em;
+  font-size: 1rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  white-space: pre-wrap;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.request-status {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.status-badge {
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.status-badge.pending {
+  background: linear-gradient(90deg, #f59e0b, #d97706);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.02);
+  }
+}
+
+/* --- Header (Same as Admin) --- */
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5em;
+  padding: 1.5em 2em 1em 2em;
+  background: transparent;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main-heading {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 1.5px;
+  text-shadow: 0 4px 24px #0ea5e933;
+  line-height: 1.1;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.tagline {
+  color: #38bdf8;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px #0ea5e922;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* --- Logout Button --- */
+.logout-btn {
+  margin: 0;
+  padding: 0.7em 2em;
+  font-size: 1.05rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px #0ea5e933, 0 1.5px 8px #2563eb22;
+  background: linear-gradient(90deg, #0ea5e9 0%, #2563eb 100%);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.15s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(90deg, #2563eb 0%, #0ea5e9 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 32px #0ea5e955;
+}
+
+/* --- Footer --- */
+.client-footer {
+  background: rgba(17, 24, 39, 0.95);
+  border-top: 1px solid #334155;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  margin-top: auto;
+  backdrop-filter: blur(10px);
+}
+
+.client-footer p {
+  color: #94a3b8;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 900px) {
+  .container-box {
+    min-width: 70vw;
+    max-width: 90vw;
+  }
+  
+  .main-heading {
+    font-size: 2rem;
+  }
+  
+  .tagline {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-bar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1em 1rem;
+    text-align: center;
+  }
+  
+  .main-heading {
+    font-size: 1.8rem;
+  }
+  
+  .tagline {
+    font-size: 0.95rem;
+  }
+  
+  .logout-btn {
+    width: auto;
+    font-size: 1rem;
+    padding: 0.7em 1.5em;
+  }
+  
+  .container-box {
+    min-width: 85vw;
+    max-width: 95vw;
+    padding: 1.5em 1em;
+    margin: 0 1rem;
+  }
+  
+  .client-wrapper {
+    margin-top: 2em;
+  }
+  
+  .requests-scroll-box {
+    height: 300px;
+  }
+  
+  .no-requests {
+    height: 300px;
+  }
+  
+  .client-footer {
+    padding: 1rem;
+  }
+  
+  .client-footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .header-bar {
+    padding: 1em 0.5rem;
+  }
+  
+  .main-heading {
+    font-size: 1.5rem;
+  }
+  
+  .tagline {
+    font-size: 0.9rem;
+  }
+  
+  .container-box {
+    padding: 1rem 0.8rem;
+    min-width: 90vw;
+    max-width: 98vw;
+  }
+  
+  .container-box h2 {
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+  
+  .request-item {
+    padding: 1rem;
+  }
+  
+  .request-message {
+    font-size: 0.9rem;
+  }
+  
+  .requests-scroll-box {
+    height: 250px;
+  }
+  
+  .no-requests {
+    height: 250px;
+  }
+  
+  .client-footer p {
+    font-size: 0.85rem;
+  }
+  
+  .status-badge {
+    font-size: 0.8rem;
+    padding: 0.4em 0.8em;
+  }
+}
+
+@media (max-width: 400px) {
+  .container-box {
+    padding: 0.8rem 0.5rem;
+  }
+  
+  .request-item {
+    padding: 0.8rem;
+  }
+  
+  .request-message {
+    font-size: 0.85rem;
+  }
+  
+  .client-footer {
+    padding: 0.8rem 0.5rem;
+  }
+}
+
+@media (max-height: 600px) {
+  .container-box {
+    min-height: 40vh;
+  }
+  
+  .requests-scroll-box {
+    height: 200px;
+  }
+  
+  .no-requests {
+    height: 200px;
+  }
+}

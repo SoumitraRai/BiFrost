@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/login.css";
 
 // Define the API interface for TypeScript
@@ -25,6 +25,14 @@ export default function Login({ onLogin, onBack }: Props) {
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
     const [isLoggingIn, setIsLoggingIn] = useState(false);
+
+    // Remove the problematic useEffect that resets form values
+    // Instead, just clear error when component mounts
+    useEffect(() => {
+        setError("");
+        setIsLoggingIn(false);
+        // Don't reset username and password here as it interferes with user input
+    }, []); // Empty dependency array so it only runs once on mount
 
     const handleLogin = async () => {
         const trimmedUsername = username.trim();
@@ -124,6 +132,13 @@ export default function Login({ onLogin, onBack }: Props) {
         }
     };
 
+    // Add handler for Enter key press
+    const handleKeyPress = (e: React.KeyboardEvent) => {
+        if (e.key === 'Enter' && !isLoggingIn) {
+            handleLogin();
+        }
+    };
+
     return (
         <div className="auth-center">
             <div className="auth-container">
@@ -133,14 +148,20 @@ export default function Login({ onLogin, onBack }: Props) {
                     placeholder="Username"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
+                    onKeyPress={handleKeyPress}
                     className="auth-input"
+                    disabled={isLoggingIn}
+                    autoComplete="username"
                 />
                 <input
                     type="password"
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
+                    onKeyPress={handleKeyPress}
                     className="auth-input"
+                    disabled={isLoggingIn}
+                    autoComplete="current-password"
                 />
                 <div className="button-group">
                     <button 
